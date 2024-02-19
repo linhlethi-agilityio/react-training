@@ -1,0 +1,27 @@
+:root {
+  --font-primary: 'Open Sans', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+  --font-tertiary: 'Fjalla One', sans-serif;
+  --font-quaternary: 'Montserrat', sans-serif;
+
+  --color-primary: #4c84c3;
+  --color-secondary: #283779;
+  --color-tertiary: rgba(178, 221, 237, 0.3);
+
+  --text-xxx-small: 13px;
+  --text-xx-small: 14px;
+  --text-x-small: 15px;
+  --text-small: 16px;
+  --text-medium: 18px;
+  --text-x-medium: 20px;
+  --text-xx-medium: 23px;
+  --text-large: 24px;
+  --text-x-large: 28px;
+  --text-xx-large: 30px;
+  --text-xxx-large: 40px;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+}
