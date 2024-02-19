@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing ProductCard component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-beqWaB fA-dLcB sc-dmqHEX dJTcTQ"
+  >
+    <img
+      alt="product-cart"
+      src="https://via.placeholder.com/300x300.png?text=ProductCard%20Image"
+    />
+    <p
+      class="sc-gueYoa eKmBZI"
+      color="primary"
+      font-size="20"
+      font-weight="400"
+    >
+      Lira Earrings
+    </p>
+    <p
+      class="sc-gueYoa iejqln"
+      color="secondary"
+      font-size="20"
+      font-weight="500"
+    >
+      $ 300
+    </p>
+  </div>
+</DocumentFragment>
+`;

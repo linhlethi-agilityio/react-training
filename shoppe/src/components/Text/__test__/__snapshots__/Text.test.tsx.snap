@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Text component matches snapshot 1`] = `
+<DocumentFragment>
+  <p
+    class="sc-beqWaB kUUa-DN"
+    color="primary"
+    font-size="16"
+    font-weight="400"
+  >
+    text
+  </p>
+</DocumentFragment>
+`;
+
+exports[`testing Text component should be render error color 1`] = `
+<DocumentFragment>
+  <p
+    class="sc-beqWaB juyElp"
+    color="error"
+    font-size="16"
+    font-weight="400"
+  >
+    text
+  </p>
+</DocumentFragment>
+`;
+
+exports[`testing Text component should be render secondary color 1`] = `
+<DocumentFragment>
+  <p
+    class="sc-beqWaB gtPLXO"
+    color="secondary"
+    font-size="16"
+    font-weight="400"
+  >
+    text
+  </p>
+</DocumentFragment>
+`;
+
+exports[`testing Text component should be render tertiary color 1`] = `
+<DocumentFragment>
+  <p
+    class="sc-beqWaB eTZMSC"
+    color="tertiary"
+    font-size="16"
+    font-weight="400"
+  >
+    text
+  </p>
+</DocumentFragment>
+`;

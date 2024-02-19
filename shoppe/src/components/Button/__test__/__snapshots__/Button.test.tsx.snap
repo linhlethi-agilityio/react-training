@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Button component testing outline variant props 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-beqWaB fiuVov"
+  >
+    Button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`testing Button component testing primary variant props 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-beqWaB jDRNRg"
+  >
+    Button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`testing Button component testing secondary variant props 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-beqWaB IlpDp"
+  >
+    Button
+  </button>
+</DocumentFragment>
+`;

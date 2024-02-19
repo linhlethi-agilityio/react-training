@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Link component Link component matches snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class="sc-beqWaB iEMdCi"
+    href="/"
+  >
+    link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`testing Link component NavigationLink component matches snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class="sc-beqWaB iEMdCi sc-gueYoa cqdWIK"
+    href="/"
+  >
+    link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`testing Link component should render disabled props 1`] = `
+<DocumentFragment>
+  <a
+    class="sc-beqWaB fmIVOE"
+    disabled=""
+    href="/"
+  >
+    link
+  </a>
+</DocumentFragment>
+`;

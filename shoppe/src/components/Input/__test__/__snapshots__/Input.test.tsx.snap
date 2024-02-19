@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Input component should have defaultProps variant 1`] = `
+<DocumentFragment>
+  <input
+    class="sc-beqWaB iLafpI"
+  />
+</DocumentFragment>
+`;
+
+exports[`testing Input component testing border-bottom with color error props 1`] = `
+<DocumentFragment>
+  <input
+    class="sc-beqWaB jaRarU"
+  />
+</DocumentFragment>
+`;
+
+exports[`testing Input component testing primary variant props 1`] = `
+<DocumentFragment>
+  <input
+    class="sc-beqWaB iLafpI"
+  />
+</DocumentFragment>
+`;
+
+exports[`testing Input component testing secondary variant props 1`] = `
+<DocumentFragment>
+  <input
+    class="sc-beqWaB iqNjic"
+  />
+</DocumentFragment>
+`;

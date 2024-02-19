@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Footer component matches snapshot 1`] = `
+<DocumentFragment>
+  <footer
+    class="sc-fsQiph faIboU"
+  >
+    <div
+      class="sc-beqWaB fA-dLcB"
+    >
+      <nav
+        class="sc-hLseeU hjEKxQ"
+      >
+        <a
+          class="sc-gueYoa bUubIY sc-dmqHEX UjDqr"
+          href="/contact"
+        >
+          Contact
+        </a>
+        <a
+          class="sc-gueYoa bUubIY sc-dmqHEX UjDqr"
+          href="/terms-or-services"
+        >
+          Terms or services
+        </a>
+        <a
+          class="sc-gueYoa bUubIY sc-dmqHEX UjDqr"
+          href="/shipping-and-returns"
+        >
+          shipping and returns
+        </a>
+      </nav>
+      <p
+        class="sc-eDDNvR dVMFOs"
+        color="primary"
+        font-size="16"
+        font-weight="400"
+      >
+        © 2021 Shelly. Terms of use and privacy policy.
+      </p>
+    </div>
+    <div
+      class="sc-qRumB iajnKs"
+    >
+      <form
+        class="sc-gLDzan jtPZFu"
+      >
+        <input
+          class="sc-jTrPJq hxxbGt"
+          placeholder="Give an email, get the newsletter."
+          value=""
+        />
+        <button
+          type="submit"
+        >
+          <svg
+            fill="none"
+            height="9"
+            viewBox="0 0 25 9"
+            width="25"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 4.991v-1.25c0-.345.28-.625.625-.625h19.381v-2.5A.625.625 0 0 1 21.07.18l3.751 3.75c.24.247.24.64 0 .887l-3.751 3.75a.625.625 0 0 1-1.063-.45v-2.5H.626A.625.625 0 0 1 0 4.991Z"
+              fill="#707070"
+            />
+          </svg>
+        </button>
+      </form>
+      <div
+        class="sc-iAEyYk gsIcLK"
+      >
+        <a
+          class="sc-gueYoa bUubIY"
+          href="https://www.linkedin.com/"
+        >
+          <img
+            alt="linkedinIcon"
+            src="http://localhost/images/linkedinIcon.webp"
+          />
+        </a>
+        <a
+          class="sc-gueYoa bUubIY"
+          href="https://www.facebook.com/"
+        >
+          <img
+            alt="facebookIcon"
+            src="http://localhost/images/facebookIcon.webp"
+          />
+        </a>
+        <a
+          class="sc-gueYoa bUubIY"
+          href="https://www.instagram.com/"
+        >
+          <img
+            alt="instagramIcon"
+            src="http://localhost/images/instagramIcon.webp"
+          />
+        </a>
+        <a
+          class="sc-gueYoa bUubIY"
+          href="https://twitter.com/"
+        >
+          <img
+            alt="twitterIcon"
+            src="http://localhost/images/twitterIcon.webp"
+          />
+        </a>
+      </div>
+    </div>
+  </footer>
+</DocumentFragment>
+`;
