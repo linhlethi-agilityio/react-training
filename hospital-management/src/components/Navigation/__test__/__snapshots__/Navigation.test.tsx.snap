@@ -1,0 +1,252 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`testing Navigation component > snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <nav
+        class="mantine-14n9mxy"
+      >
+        <a
+          class="mantine-UnstyledButton-root mantine-NavLink-root mantine-1w8njn9"
+          href="/appointments"
+        >
+          <span
+            class="mantine-dstkpx mantine-NavLink-body"
+          >
+            <span
+              class="mantine-Text-root mantine-NavLink-label mantine-162lpqd"
+            >
+              Appointments
+            </span>
+            <span
+              class="mantine-Text-root mantine-NavLink-description mantine-1hwiwhc"
+            />
+          </span>
+        </a>
+        <div
+          aria-hidden="true"
+          class="mantine-1avyp1d"
+          style="box-sizing: border-box; display: none; height: 0px; overflow: hidden;"
+        >
+          <div
+            style="opacity: 0; transition: opacity 200ms ease;"
+          >
+            <div
+              class="mantine-1c04k7q mantine-NavLink-children"
+            />
+          </div>
+        </div>
+        <a
+          class="mantine-UnstyledButton-root mantine-NavLink-root mantine-1w8njn9"
+          href="/consult-doctors"
+        >
+          <span
+            class="mantine-dstkpx mantine-NavLink-body"
+          >
+            <span
+              class="mantine-Text-root mantine-NavLink-label mantine-162lpqd"
+            >
+              Consult Doctors
+            </span>
+            <span
+              class="mantine-Text-root mantine-NavLink-description mantine-1hwiwhc"
+            />
+          </span>
+        </a>
+        <div
+          aria-hidden="true"
+          class="mantine-1avyp1d"
+          style="box-sizing: border-box; display: none; height: 0px; overflow: hidden;"
+        >
+          <div
+            style="opacity: 0; transition: opacity 200ms ease;"
+          >
+            <div
+              class="mantine-1c04k7q mantine-NavLink-children"
+            />
+          </div>
+        </div>
+        <a
+          class="mantine-UnstyledButton-root mantine-NavLink-root mantine-1w8njn9"
+          href="/diagnostics"
+        >
+          <span
+            class="mantine-dstkpx mantine-NavLink-body"
+          >
+            <span
+              class="mantine-Text-root mantine-NavLink-label mantine-162lpqd"
+            >
+              Diagnostics
+            </span>
+            <span
+              class="mantine-Text-root mantine-NavLink-description mantine-1hwiwhc"
+            />
+          </span>
+        </a>
+        <div
+          aria-hidden="true"
+          class="mantine-1avyp1d"
+          style="box-sizing: border-box; display: none; height: 0px; overflow: hidden;"
+        >
+          <div
+            style="opacity: 0; transition: opacity 200ms ease;"
+          >
+            <div
+              class="mantine-1c04k7q mantine-NavLink-children"
+            />
+          </div>
+        </div>
+      </nav>
+    </div>
+  </body>,
+  "container": <div>
+    <nav
+      class="mantine-14n9mxy"
+    >
+      <a
+        class="mantine-UnstyledButton-root mantine-NavLink-root mantine-1w8njn9"
+        href="/appointments"
+      >
+        <span
+          class="mantine-dstkpx mantine-NavLink-body"
+        >
+          <span
+            class="mantine-Text-root mantine-NavLink-label mantine-162lpqd"
+          >
+            Appointments
+          </span>
+          <span
+            class="mantine-Text-root mantine-NavLink-description mantine-1hwiwhc"
+          />
+        </span>
+      </a>
+      <div
+        aria-hidden="true"
+        class="mantine-1avyp1d"
+        style="box-sizing: border-box; display: none; height: 0px; overflow: hidden;"
+      >
+        <div
+          style="opacity: 0; transition: opacity 200ms ease;"
+        >
+          <div
+            class="mantine-1c04k7q mantine-NavLink-children"
+          />
+        </div>
+      </div>
+      <a
+        class="mantine-UnstyledButton-root mantine-NavLink-root mantine-1w8njn9"
+        href="/consult-doctors"
+      >
+        <span
+          class="mantine-dstkpx mantine-NavLink-body"
+        >
+          <span
+            class="mantine-Text-root mantine-NavLink-label mantine-162lpqd"
+          >
+            Consult Doctors
+          </span>
+          <span
+            class="mantine-Text-root mantine-NavLink-description mantine-1hwiwhc"
+          />
+        </span>
+      </a>
+      <div
+        aria-hidden="true"
+        class="mantine-1avyp1d"
+        style="box-sizing: border-box; display: none; height: 0px; overflow: hidden;"
+      >
+        <div
+          style="opacity: 0; transition: opacity 200ms ease;"
+        >
+          <div
+            class="mantine-1c04k7q mantine-NavLink-children"
+          />
+        </div>
+      </div>
+      <a
+        class="mantine-UnstyledButton-root mantine-NavLink-root mantine-1w8njn9"
+        href="/diagnostics"
+      >
+        <span
+          class="mantine-dstkpx mantine-NavLink-body"
+        >
+          <span
+            class="mantine-Text-root mantine-NavLink-label mantine-162lpqd"
+          >
+            Diagnostics
+          </span>
+          <span
+            class="mantine-Text-root mantine-NavLink-description mantine-1hwiwhc"
+          />
+        </span>
+      </a>
+      <div
+        aria-hidden="true"
+        class="mantine-1avyp1d"
+        style="box-sizing: border-box; display: none; height: 0px; overflow: hidden;"
+      >
+        <div
+          style="opacity: 0; transition: opacity 200ms ease;"
+        >
+          <div
+            class="mantine-1c04k7q mantine-NavLink-children"
+          />
+        </div>
+      </div>
+    </nav>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
