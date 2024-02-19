@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url(@fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf) format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(@fonts/Roboto-Italic.ttf) format('woff2');
+}
+
+@font-face {
+  font-family: 'Fjalla One';
+  src: url(@fonts/FjallaOne-Regular.ttf) format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(@fonts/Montserrat-BoldItalic.otf) format('woff2');
+}
