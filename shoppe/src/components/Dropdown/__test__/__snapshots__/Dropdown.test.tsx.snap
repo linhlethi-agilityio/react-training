@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Dropdown component matches snapshot 1`] = `
+<DocumentFragment>
+  <select
+    class="sc-beqWaB jgrrNY"
+  >
+    <option
+      disabled=""
+      hidden=""
+      value=""
+    >
+      sortBy
+    </option>
+    <option
+      value="price_asc"
+    >
+      By Price Ascending
+    </option>
+    <option
+      value="price_desc"
+    >
+      By Price Descending
+    </option>
+    <option
+      value="name_asc"
+    >
+      By Product Name Ascending
+    </option>
+    <option
+      value="name_desc"
+    >
+      By Product Name Descending
+    </option>
+  </select>
+</DocumentFragment>
+`;

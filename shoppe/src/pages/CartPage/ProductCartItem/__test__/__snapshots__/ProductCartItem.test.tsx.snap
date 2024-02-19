@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing ProductCartItem component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-gueYoa gLWIDK sc-gLDzan kgDzRz"
+  >
+    <div
+      class="sc-gueYoa iuvAgX"
+    >
+      <img
+        alt="product-cart"
+        src="https://via.placeholder.com/300x300.png?text=ProductCard%20Image"
+      />
+      <div
+        class="sc-jTrPJq fcrfAE"
+      >
+        <p
+          class="sc-beqWaB gKikYA"
+          color="primary"
+          font-size="20"
+          font-weight="400"
+        >
+          Lira Earrings
+        </p>
+        <p
+          class="sc-beqWaB cZSNEM"
+          color="secondary"
+          font-size="16"
+          font-weight="400"
+        >
+          $ 200
+        </p>
+      </div>
+    </div>
+    <div
+      class="sc-gueYoa fDRbIm"
+    >
+      <div
+        class="sc-eDDNvR hWZpyq"
+      >
+        <button
+          class="sc-dmqHEX gnhQWY"
+        >
+          -
+        </button>
+        <input
+          class="sc-hLseeU cMfXqU"
+          readonly=""
+          type="number"
+          value="5"
+        />
+        <button
+          class="sc-dmqHEX gnhQWY"
+        >
+          +
+        </button>
+      </div>
+      <button
+        class="sc-iAEyYk cXHbsn"
+      >
+        <svg
+          fill="none"
+          height="14"
+          viewBox="0 0 14 14"
+          width="14"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 1.183 12.817 13M1 12.817 12.817 1"
+            stroke="#000"
+            stroke-width="1.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

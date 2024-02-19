@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Box component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-beqWaB fA-dLcB"
+  >
+    Box
+  </div>
+</DocumentFragment>
+`;

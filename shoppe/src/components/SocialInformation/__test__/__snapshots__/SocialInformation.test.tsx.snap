@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing SocialInformation component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-dmqHEX caBKCy"
+  >
+    <a
+      class="sc-beqWaB iEMdCi"
+      href="https://www.linkedin.com/"
+    >
+      <img
+        alt="linkedinIcon"
+        src="http://localhost/images/linkedinIcon.webp"
+      />
+    </a>
+    <a
+      class="sc-beqWaB iEMdCi"
+      href="https://www.facebook.com/"
+    >
+      <img
+        alt="facebookIcon"
+        src="http://localhost/images/facebookIcon.webp"
+      />
+    </a>
+    <a
+      class="sc-beqWaB iEMdCi"
+      href="https://www.instagram.com/"
+    >
+      <img
+        alt="instagramIcon"
+        src="http://localhost/images/instagramIcon.webp"
+      />
+    </a>
+    <a
+      class="sc-beqWaB iEMdCi"
+      href="https://twitter.com/"
+    >
+      <img
+        alt="twitterIcon"
+        src="http://localhost/images/twitterIcon.webp"
+      />
+    </a>
+  </div>
+</DocumentFragment>
+`;

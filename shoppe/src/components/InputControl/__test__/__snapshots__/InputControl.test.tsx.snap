@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing InputControl component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-gueYoa DaLyK"
+  >
+    <label
+      for="name"
+    >
+      Name:
+    </label>
+    <input
+      class="sc-beqWaB iqNjic"
+      id="name"
+      name="name"
+      value="value"
+    />
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Header component matches snapshot 1`] = `
+<DocumentFragment>
+  <header
+    class="sc-iAEyYk fSlYWw"
+  >
+    <a
+      class="sc-gueYoa bUubIY sc-gLDzan czuHkQ"
+      href="/"
+    >
+      <h1
+        class="sc-beqWaB kUUa-DN"
+        color="primary"
+        font-size="16"
+        font-weight="400"
+      >
+        Shoppe
+      </h1>
+      <img
+        alt="logo"
+        src="http://localhost/images/logo.webp"
+      />
+    </a>
+    <div
+      class="sc-jTrPJq jZIELI"
+    >
+      <a
+        class="sc-gueYoa bUubIY"
+        href="/cart"
+      >
+        <svg
+          fill="none"
+          height="16"
+          viewBox="0 0 21 16"
+          width="21"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.766 12.577h11.158a.615.615 0 0 0 .591-.447l2.461-8.613a.616.616 0 0 0-.591-.784H5.347l-.44-1.98a.615.615 0 0 0-.6-.481H.615a.615.615 0 1 0 0 1.23h3.198l2.221 9.996a1.848 1.848 0 0 0-1.112 1.694c0 1.017.828 1.845 1.846 1.845h11.156a.615.615 0 0 0 0-1.23H6.768a.616.616 0 0 1-.002-1.23Zm12.803-8.614-2.11 7.383H7.262l-1.64-7.383h13.948Z"
+            fill="#000"
+          />
+        </svg>
+      </a>
+      <button
+        class="sc-hLseeU ljZzqi"
+      >
+        logout
+      </button>
+    </div>
+  </header>
+</DocumentFragment>
+`;
+
+exports[`testing Header component should be render LoadingSpinner when loading is true 1`] = `
+<DocumentFragment>
+  <header
+    class="sc-iAEyYk fSlYWw"
+  >
+    <a
+      class="sc-gueYoa bUubIY sc-gLDzan czuHkQ"
+      href="/"
+    >
+      <h1
+        class="sc-beqWaB kUUa-DN"
+        color="primary"
+        font-size="16"
+        font-weight="400"
+      >
+        Shoppe
+      </h1>
+      <img
+        alt="logo"
+        src="http://localhost/images/logo.webp"
+      />
+    </a>
+    <div
+      class="sc-jTrPJq jZIELI"
+    >
+      <a
+        class="sc-gueYoa bUubIY"
+        href="/cart"
+      >
+        <svg
+          fill="none"
+          height="16"
+          viewBox="0 0 21 16"
+          width="21"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.766 12.577h11.158a.615.615 0 0 0 .591-.447l2.461-8.613a.616.616 0 0 0-.591-.784H5.347l-.44-1.98a.615.615 0 0 0-.6-.481H.615a.615.615 0 1 0 0 1.23h3.198l2.221 9.996a1.848 1.848 0 0 0-1.112 1.694c0 1.017.828 1.845 1.846 1.845h11.156a.615.615 0 0 0 0-1.23H6.768a.616.616 0 0 1-.002-1.23Zm12.803-8.614-2.11 7.383H7.262l-1.64-7.383h13.948Z"
+            fill="#000"
+          />
+        </svg>
+      </a>
+      <button
+        class="sc-hLseeU ljZzqi"
+      >
+        logout
+      </button>
+      <div
+        class="sc-eDDNvR hIwHBW"
+      >
+        <div />
+      </div>
+    </div>
+  </header>
+</DocumentFragment>
+`;

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Flexbox component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-beqWaB fDdkWj"
+  />
+</DocumentFragment>
+`;

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Navigation component matches snapshot 1`] = `
+<DocumentFragment>
+  <nav
+    class="sc-dmqHEX ggQQIX"
+  >
+    <a
+      class="sc-beqWaB iEMdCi sc-gueYoa cqdWIK"
+      href="/contact"
+    >
+      Contact
+    </a>
+    <a
+      class="sc-beqWaB iEMdCi sc-gueYoa cqdWIK"
+      href="/terms-or-services"
+    >
+      Terms or services
+    </a>
+    <a
+      class="sc-beqWaB iEMdCi sc-gueYoa cqdWIK"
+      href="/shipping-and-returns"
+    >
+      shipping and returns
+    </a>
+  </nav>
+</DocumentFragment>
+`;

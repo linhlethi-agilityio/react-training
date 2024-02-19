@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing NumberInput component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-dmqHEX uoWqI"
+  >
+    <button
+      class="sc-beqWaB fiuVov"
+    >
+      -
+    </button>
+    <input
+      class="sc-gueYoa iVJHy"
+      readonly=""
+      type="number"
+      value="5"
+    />
+    <button
+      class="sc-beqWaB fiuVov"
+    >
+      +
+    </button>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing SubmitableForm component matches snapshot 1`] = `
+<DocumentFragment>
+  <form
+    class="sc-gueYoa beEJqU"
+  >
+    <input
+      class="sc-beqWaB cNLbQU"
+      placeholder="Email"
+      value="value"
+    />
+    <button
+      type="submit"
+    >
+      <svg
+        fill="none"
+        height="9"
+        viewBox="0 0 25 9"
+        width="25"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 4.991v-1.25c0-.345.28-.625.625-.625h19.381v-2.5A.625.625 0 0 1 21.07.18l3.751 3.75c.24.247.24.64 0 .887l-3.751 3.75a.625.625 0 0 1-1.063-.45v-2.5H.626A.625.625 0 0 1 0 4.991Z"
+          fill="#707070"
+        />
+      </svg>
+    </button>
+  </form>
+</DocumentFragment>
+`;
