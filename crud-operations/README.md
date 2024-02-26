@@ -28,7 +28,7 @@ Crud operations is a system management users with base features are: crud studen
 
 ### Run app
 
-- `pnpm run app`
+- `pnpm run dev`
 - open localhost to view it in the browser
 
 ## TECH STACKS
