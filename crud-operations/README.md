@@ -1,30 +1,44 @@
-# React + TypeScript + Vite
+# CRUD OPERATIONS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Crud operations is a system management users with base features are: crud students, payment,...
 
-Currently, two official plugins are available:
+### Documents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Requirement](https://docs.google.com/document/d/1ZRrRazIHFuGrfIa_zIM4kk9Irpu00fOdRTIu_nUG7R0/edit?pli=1)
 
-## Expanding the ESLint configuration
+### Design
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [Crud operations](<https://www.figma.com/file/1h2ESeueL00vIExorPZJjT/Crud-Operations-(Community)?type=design&node-id=0-1&mode=design&t=T8gW7yBstuHRBtzh-0>)
 
-- Configure the top-level `parserOptions` property like this:
+## HOW TO GETTING START WITH APP
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Prerequisites
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Make sure you install packages with correct version below:
+
+- [node v18.12.0](https://nodejs.org/en/)
+- [pnpm 7.32.2](https://pnpm.io/)
+
+2. Checkout branch and cd to crud-operations folder
+
+- `git checkout feat/crud-operations-practice`
+- `cd crud-operations`
+
+3. In the project directory, install all dependencies packages with command `pnpm install`
+
+### Run app
+
+- `pnpm run app`
+- open localhost to view it in the browser
+
+## TECH STACKS
+
+### Frameworks & Libraries
+
+- [React](https://reactjs.org/): A JavaScript library for building user interfaces
+- [react-hook-form](https://react-hook-form.com/): React Hooks for form state management and validation
+
+### Developer Tools
+
+- [Typescript](https://www.typescriptlang.org/): TypeScript is an open-source language which builds on JavaScript, one of the world's most used tools, by adding static type definitions.
+- [Husky](https://typicode.github.io/): Husky improves your commits and more! You can use it to lint your commit messages, run tests, lint code, etc... when you commit or push. Husky supports all Git hooks.
