@@ -28,6 +28,7 @@ export const colors = {
   },
 
   icon: {
+    focus: '#3262AC',
     primary: '#C4C4C4',
     secondary: '#000000',
     student: '#74C1ED',
