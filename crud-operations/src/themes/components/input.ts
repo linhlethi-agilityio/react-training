@@ -11,6 +11,10 @@ export const Input = defineStyleConfig({
   variants: {
     outline: {
       field: {
+        lineHeight: 'sm',
+        fontSize: 'text.sm',
+        borderColor: 'border.primary',
+
         _hover: {
           borderColor: 'border.secondary',
         },
