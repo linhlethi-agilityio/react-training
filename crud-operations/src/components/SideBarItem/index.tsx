@@ -10,7 +10,7 @@ interface SideBarItemProps {
   label: string;
 }
 
-const SideBarItem = ({ icon, onNavigate, label, router, isFocused, iconFocused }: SideBarItemProps) => {
+const SideBarItem = ({ icon, onNavigate, label, router, isFocused }: SideBarItemProps) => {
   const handleNavigate = (): void => {
     onNavigate && router && onNavigate(router);
   };
@@ -20,14 +20,15 @@ const SideBarItem = ({ icon, onNavigate, label, router, isFocused, iconFocused }
       gap="15px"
       paddingY="12px"
       justifyContent="center"
+      cursor="pointer"
       {...(isFocused && {
         backgroundColor: 'primary',
         borderRadius: 'xs',
       })}
       onClick={handleNavigate}
     >
-      {isFocused ? iconFocused : icon}
-      <Text fontWeight={isFocused ? 'bold' : 'normal'}>{label}</Text>
+      {icon}
+      <Text>{label}</Text>
     </Flex>
   );
 };
