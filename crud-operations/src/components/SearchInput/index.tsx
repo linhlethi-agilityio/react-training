@@ -2,7 +2,7 @@ import { memo } from 'react';
 import { Input, InputProps, InputGroup, InputRightElement } from '@chakra-ui/react';
 
 // Components
-import { Search } from '../../icons';
+import { Search } from '@icons';
 
 interface SearchInputProps extends InputProps {
   placeholder?: string;
