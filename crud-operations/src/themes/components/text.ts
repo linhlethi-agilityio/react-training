@@ -8,7 +8,7 @@ export const Text = defineStyleConfig({
 
   variants: {
     bold: {
-      fontWeight: 'bolder',
+      fontWeight: 'bold',
       color: 'default',
     },
   },
