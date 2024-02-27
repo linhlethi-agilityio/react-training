@@ -16,6 +16,9 @@ const SearchInput = ({ placeholder = 'Start typing...', onChange, value, ...rest
       <Input
         borderRadius="sm"
         focusBorderColor="transparent"
+        _placeholder={{
+          color: 'text.placeholder',
+        }}
         placeholder={placeholder}
         onChange={onChange}
         value={value}

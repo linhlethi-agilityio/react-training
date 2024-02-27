@@ -15,7 +15,7 @@ export const colors = {
 
   text: {
     default: '#6C6C6C',
-    placeholder: '#CDCDCD',
+    placeholder: '#C4C4C4',
   },
 
   button: {
