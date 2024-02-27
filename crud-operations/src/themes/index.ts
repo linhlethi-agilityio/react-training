@@ -5,7 +5,7 @@ import { colors } from './colors';
 
 // Components styles
 import { Text, Button, Heading, Input } from './components';
-import { fontSizes, fontWeights, radius, fonts } from './typography';
+import { fontSizes, fontWeights, radius, fonts, lineHeights } from './typography';
 
 export const theme = extendTheme({
   colors,
@@ -13,6 +13,7 @@ export const theme = extendTheme({
   fontWeights,
   radii: radius,
   fonts,
+  lineHeights,
   components: {
     Text,
     Button,
