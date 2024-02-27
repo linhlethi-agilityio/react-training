@@ -1,5 +1,7 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
+# Address the folder which want to check
 
 cd ./crud-operations
+
+# Verify the build
+
 pnpm build

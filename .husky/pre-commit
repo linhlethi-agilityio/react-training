@@ -1,6 +1,7 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
+# Apply lint-staged
+
+# TODO: Update this to avoid addressing specific folders
 
 cd ./crud-operations
-npx lint-staged --relative
 
+npx lint-staged --relative
