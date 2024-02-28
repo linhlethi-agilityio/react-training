@@ -29,11 +29,11 @@ const StudentDetailModal = ({
 }: StudentModalDetailModalProps) => {
   const formInitData = useMemo(
     () => ({
-      name: name,
-      email: email,
-      phone: phone,
-      enrollNumber: enrollNumber,
-      dateOfAdmission: dateOfAdmission,
+      name,
+      email,
+      phone,
+      enrollNumber,
+      dateOfAdmission,
     }),
     [name, email, phone, enrollNumber, dateOfAdmission],
   );
