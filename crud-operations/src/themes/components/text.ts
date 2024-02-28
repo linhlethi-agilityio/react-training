@@ -11,6 +11,10 @@ export const Text = defineStyleConfig({
       fontWeight: 'bold',
       color: 'default',
     },
+
+    error: {
+      color: 'error',
+    },
   },
 
   sizes: {
