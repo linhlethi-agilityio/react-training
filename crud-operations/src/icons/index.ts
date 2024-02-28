@@ -6,3 +6,5 @@ export * from './Report';
 export * from './Setting';
 export * from './Bookmark';
 export * from './Search';
+export * from './Pen';
+export * from './Trash';
