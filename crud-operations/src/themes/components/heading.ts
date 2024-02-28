@@ -11,12 +11,14 @@ export const Heading = defineStyleConfig({
       fontSize: 'text.xs',
       lineHeight: 'md',
     },
-
+    extraSmall: {
+      fontSize: 'heading.sm',
+      lineHeight: 'lg',
+    },
     medium: {
       fontSize: 'heading.md',
       lineHeight: 'lg',
     },
-
     large: {
       fontSize: 'heading.lg',
       lineHeight: 'xxl',
