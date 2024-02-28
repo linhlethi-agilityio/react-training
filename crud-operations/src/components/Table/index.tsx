@@ -2,8 +2,7 @@ import { ReactNode } from 'react';
 import { Table as BaseTable, Tbody, Th, Thead, Tr } from '@chakra-ui/react';
 
 // Components
-import TableCell from '@components/TableCell';
-import TableRow from '@components/TableRow';
+import { TableCell, TableRow } from '@components';
 
 export type TTableAccessor<T> = ((item: T, inputProps?: object) => ReactNode) | keyof T;
 
@@ -12,8 +11,6 @@ export interface ITableColumn<T> {
   fieldName: string;
   accessor: TTableAccessor<T>;
   header: string;
-  mWidth?: string;
-  width?: string;
 }
 
 interface ICustomTableProps<T> {
@@ -24,17 +21,15 @@ interface ICustomTableProps<T> {
 const Table = <T,>({ columns, data }: ICustomTableProps<T>) => {
   const headerRow = (
     <Tr>
-      {columns.map((columnConfig) => (
-        <Th
-          key={`header-${columnConfig.id}`}
-          textTransform="unset"
-          color="tableHeader"
-          fontWeight="semiBold"
-          lineHeight="xs"
-        >
-          {columnConfig.header}
-        </Th>
-      ))}
+      {columns.map((columnConfig) => {
+        const { id, header } = columnConfig;
+
+        return (
+          <Th key={`header-${id}`} textTransform="unset" color="tableHeader" fontWeight="semiBold" lineHeight="xs">
+            {header}
+          </Th>
+        );
+      })}
     </Tr>
   );
 
