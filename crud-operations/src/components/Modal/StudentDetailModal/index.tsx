@@ -6,11 +6,10 @@ import { Box, Button, FormControl, FormLabel, Input, Text } from '@chakra-ui/rea
 import { CustomModal } from '@components';
 
 // Constants
-import { ERROR_MESSAGES, StudentType } from '@constants';
+import { ERROR_MESSAGES, StudentType, REGEX_PATTERN } from '@constants';
 
 // Utils
 import { clearErrorOnChange, isValidFormat, validateRequired } from '@utils';
-import { REGEX_PATTERN } from '@constants/validate';
 
 interface StudentModalDetailModalProps extends StudentType {
   isOpen: boolean;
@@ -30,11 +29,11 @@ const StudentDetailModal = ({
 }: StudentModalDetailModalProps) => {
   const formInitData = useMemo(
     () => ({
-      name: name || '',
-      email: email || '',
-      phone: phone || '',
-      enrollNumber: enrollNumber || '',
-      dateOfAdmission: dateOfAdmission || '',
+      name: name,
+      email: email,
+      phone: phone,
+      enrollNumber: enrollNumber,
+      dateOfAdmission: dateOfAdmission,
     }),
     [name, email, phone, enrollNumber, dateOfAdmission],
   );
@@ -103,7 +102,7 @@ const StudentDetailModal = ({
                 }}
                 {...rest}
               />
-              {!!error?.message && (
+              {error?.message && (
                 <Text variant="error" size="small" marginTop="8px" textAlign="left">
                   {error.message}
                 </Text>
@@ -129,7 +128,7 @@ const StudentDetailModal = ({
                 }}
                 {...rest}
               />
-              {!!error?.message && (
+              {error?.message && (
                 <Text variant="error" size="small" marginTop="8px" textAlign="left">
                   {error.message}
                 </Text>
@@ -154,7 +153,7 @@ const StudentDetailModal = ({
                 }}
                 {...rest}
               />
-              {!!error?.message && (
+              {error?.message && (
                 <Text variant="error" size="small" marginTop="8px" textAlign="left">
                   {error.message}
                 </Text>
@@ -179,7 +178,7 @@ const StudentDetailModal = ({
                 }}
                 {...rest}
               />
-              {!!error?.message && (
+              {error?.message && (
                 <Text variant="error" size="small" marginTop="8px" textAlign="left">
                   {error.message}
                 </Text>
@@ -204,7 +203,7 @@ const StudentDetailModal = ({
                 }}
                 {...rest}
               />
-              {!!error?.message && (
+              {error?.message && (
                 <Text variant="error" size="small" marginTop="8px" textAlign="left">
                   {error.message}
                 </Text>
