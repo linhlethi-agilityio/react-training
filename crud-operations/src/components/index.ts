@@ -5,3 +5,4 @@ export { default as TableCell } from './TableCell';
 export { default as TableRow } from './TableRow';
 export { default as CustomModal } from './Modal/CustomModal';
 export { default as StudentDetailModal } from './Modal/StudentDetailModal';
+export { default as PaymentDetailModal } from './Modal/PaymentDetailModal';
