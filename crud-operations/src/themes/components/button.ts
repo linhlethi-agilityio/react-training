@@ -22,6 +22,11 @@ export const Button = defineStyleConfig({
         backgroundColor: 'button.primary',
       },
     },
+    outline: {
+      backgroundColor: 'transparent',
+      borderColor: 'primary',
+      color: 'primary',
+    },
   },
 
   defaultProps: {
