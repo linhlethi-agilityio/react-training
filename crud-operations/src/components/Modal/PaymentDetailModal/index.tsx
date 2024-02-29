@@ -53,6 +53,7 @@ const PaymentDetailModal = ({
       <Box paddingX="40px" paddingBottom="40px">
         {PaymentDetailArray.map((item) => {
           const { name, value } = item;
+
           return (
             <Flex justifyContent="space-between" marginTop="10px" alignItems="center" key={`payment-item-${name}`}>
               <Heading size="small">{name}:</Heading>
