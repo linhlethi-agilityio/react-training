@@ -1,6 +1,6 @@
 import { SVGProps } from 'react';
 
-export const Bookmark = ({ width = 12, height = 15, fill = '#000000', ...rest }: SVGProps<SVGSVGElement>) => (
+export const BookmarkIcon = ({ width = 12, height = 15, fill = '#000000', ...rest }: SVGProps<SVGSVGElement>) => (
   <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} {...rest}>
     <path
       fill={fill}

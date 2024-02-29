@@ -1,6 +1,6 @@
 import { SVGProps } from 'react';
 
-export const Report = ({ width = 13, height = 17, fill = '#000000', ...rest }: SVGProps<SVGSVGElement>) => (
+export const ReportIcon = ({ width = 13, height = 17, fill = '#000000', ...rest }: SVGProps<SVGSVGElement>) => (
   <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} {...rest}>
     <path
       fill={fill}

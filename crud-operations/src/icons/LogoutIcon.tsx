@@ -1,6 +1,6 @@
 import { SVGProps } from 'react';
 
-export const Logout = ({ width = 17, height = 13, fill = '#000000', ...rest }: SVGProps<SVGSVGElement>) => (
+export const LogoutIcon = ({ width = 17, height = 13, fill = '#000000', ...rest }: SVGProps<SVGSVGElement>) => (
   <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} {...rest}>
     <path
       fill={fill}
