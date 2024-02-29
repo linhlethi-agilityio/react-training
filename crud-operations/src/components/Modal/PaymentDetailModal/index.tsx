@@ -48,6 +48,7 @@ const PaymentDetailModal = ({
       value: date,
     },
   ];
+
   return (
     <CustomModal isOpen={isOpen} onClose={onClose} title="Payment Detail">
       <Box paddingX="40px" paddingBottom="40px">
