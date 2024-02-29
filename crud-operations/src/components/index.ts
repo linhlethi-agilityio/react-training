@@ -1,6 +1,7 @@
 export { default as SideBarItem } from './SideBarItem';
 export { default as SearchInput } from './SearchInput';
 export { default as CardItem } from './CardItem';
+export { default as Header } from './Header';
 
 // Table
 export { default as Table } from './Table';
