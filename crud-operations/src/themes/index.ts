@@ -4,7 +4,7 @@ import { extendTheme } from '@chakra-ui/react';
 import { colors } from './colors';
 
 // Components styles
-import { Text, Button, Heading, Input } from './components';
+import { Text, Button, Heading, Input, Card } from './components';
 import { fontSizes, fontWeights, radius, fonts, lineHeights } from './typography';
 
 export const theme = extendTheme({
@@ -19,6 +19,7 @@ export const theme = extendTheme({
     Button,
     Heading,
     Input,
+    Card,
   },
   styles: {
     global: {
