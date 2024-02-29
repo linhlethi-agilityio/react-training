@@ -1,6 +1,6 @@
 import { SVGProps } from 'react';
 
-export const Caret = ({ width = 18, height = 18, fill = '#C4C4C4', ...rest }: SVGProps<SVGSVGElement>) => (
+export const CaretIcon = ({ width = 18, height = 18, fill = '#C4C4C4', ...rest }: SVGProps<SVGSVGElement>) => (
   <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} {...rest}>
     <path
       fill={fill}

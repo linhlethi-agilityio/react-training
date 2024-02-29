@@ -27,6 +27,11 @@ export const Button = defineStyleConfig({
       borderColor: 'primary',
       color: 'primary',
     },
+    ghost: {
+      _hover: {
+        backgroundColor: 'transparent',
+      },
+    },
   },
 
   defaultProps: {

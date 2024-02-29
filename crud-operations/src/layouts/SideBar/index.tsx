@@ -9,7 +9,7 @@ import { SideBarItemProps } from '@components/SideBarItem';
 import { ROUTERS } from '@constants';
 
 // Icons
-import { Bookmark, GraduationSmall, Home, Logout, Payment, Report, Setting } from '@icons';
+import { BookmarkIcon, GraduationSmallIcon, HomeIcon, LogoutIcon, PaymentIcon, ReportIcon, SettingIcon } from '@icons';
 
 interface SideBarProps {
   onNavigate: (path: string) => void;
@@ -19,32 +19,32 @@ interface SideBarProps {
 const SideBar = ({ onNavigate, onLogout }: SideBarProps) => {
   const navBarItems: SideBarItemProps[] = [
     {
-      icon: <Home />,
+      icon: <HomeIcon />,
       label: 'Home',
       router: ROUTERS.DASHBOARD,
     },
     {
-      icon: <Bookmark />,
+      icon: <BookmarkIcon />,
       label: 'Course',
       router: ROUTERS.COURSE,
     },
     {
-      icon: <GraduationSmall />,
+      icon: <GraduationSmallIcon />,
       label: 'Students',
       router: ROUTERS.STUDENTS,
     },
     {
-      icon: <Payment />,
+      icon: <PaymentIcon />,
       label: 'Payment',
       router: ROUTERS.PAYMENT,
     },
     {
-      icon: <Report />,
+      icon: <ReportIcon />,
       label: 'Report',
       router: ROUTERS.REPORT,
     },
     {
-      icon: <Setting />,
+      icon: <SettingIcon />,
       label: 'Settings',
       router: ROUTERS.SETTINGS,
     },
@@ -80,7 +80,7 @@ const SideBar = ({ onNavigate, onLogout }: SideBarProps) => {
       </Box>
       <Box width="100%" textAlign="center" marginTop="148px">
         <Button
-          rightIcon={<Logout style={{ marginLeft: '15px' }} />}
+          rightIcon={<LogoutIcon style={{ marginLeft: '15px' }} />}
           variant="ghost"
           textTransform="unset"
           _hover={{

@@ -2,7 +2,7 @@ import { memo } from 'react';
 import { Input, InputProps, InputGroup, InputRightElement } from '@chakra-ui/react';
 
 // Components
-import { Search } from '@icons';
+import { SearchIcon } from '@icons';
 
 interface SearchInputProps extends InputProps {
   placeholder?: string;
@@ -25,7 +25,7 @@ const SearchInput = ({ placeholder = 'Start typing...', onChange, value, ...rest
         {...rest}
       />
       <InputRightElement style={{ cursor: 'pointer' }}>
-        <Search />
+        <SearchIcon />
       </InputRightElement>
     </InputGroup>
   );

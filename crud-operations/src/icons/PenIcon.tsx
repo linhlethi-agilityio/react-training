@@ -1,6 +1,6 @@
 import { SVGProps } from 'react';
 
-export const Pen = ({ width = 19, height = 19, fill = '#FEAF00', ...rest }: SVGProps<SVGSVGElement>) => (
+export const PenIcon = ({ width = 19, height = 19, fill = '#FEAF00', ...rest }: SVGProps<SVGSVGElement>) => (
   <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} {...rest}>
     <path
       fill={fill}
