@@ -1,4 +1,5 @@
 export * from './Graduation';
+export * from './GraduationSmall';
 export * from './Home';
 export * from './Logout';
 export * from './Payment';
