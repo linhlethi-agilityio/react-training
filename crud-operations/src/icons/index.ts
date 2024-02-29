@@ -8,3 +8,5 @@ export * from './Bookmark';
 export * from './Search';
 export * from './Pen';
 export * from './Trash';
+export * from './Caret';
+export * from './Bell';
