@@ -1,9 +1,8 @@
-import { Flex, Text } from '@chakra-ui/react';
+import { Box, Flex, Text } from '@chakra-ui/react';
 import { ReactNode, memo } from 'react';
 
-interface SideBarItemProps {
+export interface SideBarItemProps {
   isFocused?: boolean;
-  iconFocused: ReactNode;
   icon: ReactNode;
   onNavigate?: (route: string) => void;
   router?: string;
@@ -17,18 +16,20 @@ const SideBarItem = ({ icon, onNavigate, label, router, isFocused }: SideBarItem
 
   return (
     <Flex
-      gap="15px"
       paddingY="12px"
-      justifyContent="center"
+      marginTop="16px"
       cursor="pointer"
       {...(isFocused && {
         backgroundColor: 'primary',
         borderRadius: 'xs',
       })}
+      position="relative"
       onClick={handleNavigate}
     >
-      {icon}
-      <Text>{label}</Text>
+      <Box position="absolute" left="41px">
+        {icon}
+      </Box>
+      <Text paddingLeft="75px">{label}</Text>
     </Flex>
   );
 };
