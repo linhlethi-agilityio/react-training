@@ -1,4 +1,4 @@
-import { memo, useMemo } from 'react';
+import { memo } from 'react';
 import { Avatar, Heading, Text, VStack } from '@chakra-ui/react';
 
 // Components

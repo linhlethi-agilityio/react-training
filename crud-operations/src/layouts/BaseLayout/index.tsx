@@ -42,18 +42,17 @@ const BaseLayout = () => {
 
   return (
     <Flex height="100vh">
-      <SideBar
-        isClosed={sideBarState === SideBarState.Closed}
-        onLogout={handleLogout}
-        onNavigate={navigate}
-        onToggle={handleToggleSideBar}
-      />
+      <SideBar isClosed={sideBarState === SideBarState.Closed} onLogout={handleLogout} onNavigate={navigate} />
       <Box width="auto" flex={1}>
         {/* Header */}
-        <Header isClosedSideBar={sideBarState === SideBarState.Closed} onSearch={handleOnSearch} onToggleSideBar={handleToggleSideBar} />
+        <Header
+          isClosedSideBar={sideBarState === SideBarState.Closed}
+          onSearch={handleOnSearch}
+          onToggleSideBar={handleToggleSideBar}
+        />
 
         {/* Content of page will render here */}
-        <Box overflowY="auto" height="calc(100vh - 64px)" px={30} pb={30} >
+        <Box overflowY="auto" height="calc(100vh - 64px)" px={30} pb={30}>
           <Outlet />
         </Box>
       </Box>
