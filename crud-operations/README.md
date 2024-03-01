@@ -42,3 +42,7 @@ Crud operations is a system management users with base features are: crud studen
 
 - [Typescript](https://www.typescriptlang.org/): TypeScript is an open-source language which builds on JavaScript, one of the world's most used tools, by adding static type definitions.
 - [Husky](https://typicode.github.io/): Husky improves your commits and more! You can use it to lint your commit messages, run tests, lint code, etc... when you commit or push. Husky supports all Git hooks.
+
+### Todo
+
+1. Move icons into the components folder

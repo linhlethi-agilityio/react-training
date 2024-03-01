@@ -1,97 +1,56 @@
 import { memo } from 'react';
-import { Avatar, Box, Button, Heading, Text } from '@chakra-ui/react';
+import { Avatar, Heading, Text, VStack } from '@chakra-ui/react';
 
 // Components
-import { SideBarItem, LogoBrand } from '@components';
-import { SideBarItemProps } from '@components/SideBarItem';
+import { BrandLogo, Navigation, LogoutButton } from '@components';
 
 // Constants
 import { ROUTERS } from '@constants';
 
-// Icons
-import { BookmarkIcon, GraduationSmallIcon, HomeIcon, LogoutIcon, PaymentIcon, ReportIcon, SettingIcon } from '@icons';
+// Utils
+import { acronymText } from '@utils';
 
 interface SideBarProps {
+  isClosed?: boolean;
   onNavigate: (path: string) => void;
   onLogout: () => void;
 }
 
-const SideBar = ({ onNavigate, onLogout }: SideBarProps) => {
-  const navBarItems: SideBarItemProps[] = [
-    {
-      icon: <HomeIcon />,
-      label: 'Home',
-      router: ROUTERS.DASHBOARD,
-    },
-    {
-      icon: <BookmarkIcon />,
-      label: 'Course',
-      router: ROUTERS.COURSE,
-    },
-    {
-      icon: <GraduationSmallIcon />,
-      label: 'Students',
-      router: ROUTERS.STUDENTS,
-    },
-    {
-      icon: <PaymentIcon />,
-      label: 'Payment',
-      router: ROUTERS.PAYMENT,
-    },
-    {
-      icon: <ReportIcon />,
-      label: 'Report',
-      router: ROUTERS.REPORT,
-    },
-    {
-      icon: <SettingIcon />,
-      label: 'Settings',
-      router: ROUTERS.SETTINGS,
-    },
-  ];
-
-  // TODO: update when api ready
+const SideBar = ({ isClosed, onNavigate, onLogout }: SideBarProps) => {
+  // TODO: Mock data for now, will update later
   const user = {
-    avatarUrl:
-      'https://cc-prod.scene7.com/is/image/CCProdAuthor/adobe-firefly-marquee-text-to-image-0-desktop-1000x1000?$pjpeg$&jpegSize=300&wid=1000',
-    name: 'Karthi Madesh',
-    rule: 'admin',
+    avatarUrl: '',
+    name: 'John Smith',
+    rule: 'Admin',
   };
 
-  const renderSidebar = navBarItems.map((item: SideBarItemProps, index: number) => {
-    const { icon, label, router } = item;
-
-    return <SideBarItem key={`${label}${index}`} icon={icon} label={label} router={router} onNavigate={onNavigate} />;
-  });
-
   return (
-    <Box bgColor="background.sidebar" maxW="270px" paddingX="25px" paddingTop="18px" paddingBottom="33px">
-      <LogoBrand size="extraSmall" onNavigate={onNavigate} />
+    <VStack w={isClosed ? 75 : 270} px={isClosed ? 2 : 5} py={18} bg="background.sidebar" transition="1s">
+      <BrandLogo isAcronym={isClosed} onClick={() => onNavigate(ROUTERS.DASHBOARD)} />
 
-      <Box textAlign="center" marginTop="54px">
-        <Avatar width="128px" height="128px" src={user.avatarUrl} />
-        <Heading marginTop="18px" fontWeight="bold" fontSize="heading.xs" lineHeight="md">
-          {user.name}
-        </Heading>
-        <Text color="primary">{user.rule}</Text>
-      </Box>
-      <Box marginTop="64px" paddingX="14px">
-        {renderSidebar}
-      </Box>
-      <Box width="100%" textAlign="center" marginTop="148px">
-        <Button
-          rightIcon={<LogoutIcon style={{ marginLeft: '15px' }} />}
-          variant="ghost"
-          textTransform="unset"
-          _hover={{
-            backgroundColor: 'transparent',
-          }}
-          onClick={onLogout}
-        >
-          Logout
-        </Button>
-      </Box>
-    </Box>
+      {/* User profile */}
+      <VStack boxSize="100%" spacing={20}>
+        <VStack mt={54} maxW={130} mx="auto" spacing={isClosed ? 2 : 5}>
+          <Avatar boxSize={isClosed ? 45 : 128} borderWidth={1} borderStyle="solid" transition="1s" />
+          <VStack textAlign="center" spacing={isClosed ? 0 : 2.5}>
+            <Heading fontWeight="bold" fontSize={isClosed ? 'xs' : 'sm'} lineHeight="md">
+              {isClosed ? acronymText(user.name) : user.name}
+            </Heading>
+            <Text color="primary" fontSize={isClosed ? 'xs' : 'sm'}>
+              {user.rule}
+            </Text>
+          </VStack>
+        </VStack>
+
+        <VStack w="100%" justifyContent="space-between" h="100%">
+          {/* Menu */}
+          <Navigation isShorter={isClosed} />
+
+          {/* Logout button */}
+          <LogoutButton isShorter={isClosed} onLogout={onLogout} />
+        </VStack>
+      </VStack>
+    </VStack>
   );
 };
 
