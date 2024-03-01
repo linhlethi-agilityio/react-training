@@ -4,4 +4,5 @@ const REGEX_EMAIL = new RegExp(
 
 export const REGEX_PATTERN = {
   EMAIL: REGEX_EMAIL,
+  PASSWORD: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})/,
 };

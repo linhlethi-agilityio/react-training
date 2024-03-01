@@ -7,4 +7,11 @@ export const Card = defineStyleConfig({
       boxShadow: 'none',
     },
   },
+  sizes: {
+    xl: {
+      container: {
+        maxW: 475,
+      },
+    },
+  },
 });

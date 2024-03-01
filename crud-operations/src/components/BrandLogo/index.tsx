@@ -15,6 +15,7 @@ const brandName = 'crud operations';
 
 const BrandLogo = ({ size = 'md', isAcronym, onClick }: BrandLogoProps) => (
   <Link
+    w="fit-content"
     _hover={{
       textDecoration: 'none',
     }}

@@ -5,7 +5,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { theme } from './themes';
 
 // Constants
-import { SIDEBAR_NAVIGATION } from '@constants';
+import { ROUTERS, SIDEBAR_NAVIGATION } from '@constants';
+
+// Pages
+import { LoginPage } from '@pages';
 
 // Components
 import { BaseLayout } from '@components';
@@ -25,6 +28,7 @@ const App = () => (
             <Route key={router} path={router} element={<TestPage pageName={label} />} />
           ))}
         </Route>
+        <Route path={ROUTERS.LOGIN} element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   </ChakraProvider>
