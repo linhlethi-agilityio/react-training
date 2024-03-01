@@ -4,8 +4,8 @@ import { Box, Flex, Heading, Text } from '@chakra-ui/react';
 // Components
 import { CustomModal } from '@components';
 
-// Constants
-import { PaymentType } from '@constants';
+// Types
+import { PaymentType } from '@types';
 
 interface PaymentDetailModalProps extends PaymentType {
   isOpen: boolean;
