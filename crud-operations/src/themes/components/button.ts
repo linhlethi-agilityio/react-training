@@ -28,6 +28,8 @@ export const Button = defineStyleConfig({
       color: 'primary',
     },
     ghost: {
+      textTransform: 'capital',
+
       _hover: {
         backgroundColor: 'transparent',
       },

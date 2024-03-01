@@ -20,12 +20,17 @@ export const theme = extendTheme({
     Heading,
     Input,
     Card,
-  },
-  styles: {
-    global: {
-      'html, body': {
-        fontFamily: 'body',
+    Box: {
+      baseStyle: {
+        marginTop: 0
       },
-    },
+    }
   },
+  // styles: {
+  //   global: {
+  //     'html, body': {
+  //       fontFamily: 'body',
+  //     },
+  //   },
+  // },
 });

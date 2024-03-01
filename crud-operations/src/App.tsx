@@ -1,27 +1,33 @@
-import { ChakraProvider } from '@chakra-ui/react';
+import { Box, ChakraProvider, Text } from '@chakra-ui/react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 // Theme config
 import { theme } from './themes';
 
-//Components
+// Constants
+import { SIDEBAR_NAVIGATION } from '@constants';
+
+// Components
 import { BaseLayout } from '@components';
 
-// Constants
-import { ROUTERS } from '@constants';
+const TestPage = ({ pageName }: { pageName: string }) => (
+  <Box>
+    <Text>Hello world! {pageName} page</Text>
+  </Box>
+);
 
-const App = () => {
-  return (
-    <ChakraProvider theme={theme}>
-      <BrowserRouter>
-        <Routes>
-          <Route element={<BaseLayout />}>
-            <Route path={ROUTERS.DASHBOARD} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </ChakraProvider>
-  );
-};
+const App = () => (
+  <ChakraProvider theme={theme}>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<BaseLayout />}>
+          {SIDEBAR_NAVIGATION.map(({ router, label }) => (
+            <Route key={router} path={router} element={<TestPage pageName={label} />} />
+          ))}
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  </ChakraProvider>
+);
 
 export default App;

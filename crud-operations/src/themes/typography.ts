@@ -1,5 +1,6 @@
 export const fonts = {
-  body: `Montserrat, sans-serif`,
+  heading: "'Montserrat', sans-serif",
+  body: "'Montserrat', sans-serif",
 };
 
 export const fontSizes = {
