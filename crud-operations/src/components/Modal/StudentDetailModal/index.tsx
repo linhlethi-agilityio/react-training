@@ -6,10 +6,13 @@ import { Box, Button, FormControl, FormLabel, Input, Text } from '@chakra-ui/rea
 import { CustomModal } from '@components';
 
 // Constants
-import { ERROR_MESSAGES, StudentType, REGEX_PATTERN } from '@constants';
+import { ERROR_MESSAGES, REGEX_PATTERN } from '@constants';
 
 // Utils
 import { clearErrorOnChange, isValidFormat, validateRequired } from '@utils';
+
+// Types
+import { StudentType } from '@types';
 
 interface StudentModalDetailModalProps extends StudentType {
   isOpen: boolean;
