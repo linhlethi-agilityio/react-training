@@ -1,7 +1,7 @@
 import { UseFormClearErrors, FieldErrors, Path, FieldValues } from 'react-hook-form';
 
 /**
- * Clear error message when the users typing
+ * Clear errors for React hooks form
  */
 export const clearErrorOnChange = <T extends FieldValues>(
   fieldName: Path<T>,
