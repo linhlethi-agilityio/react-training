@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { useCallback, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Controller, useForm } from 'react-hook-form';
 import {
@@ -16,13 +16,16 @@ import {
 } from '@chakra-ui/react';
 
 // Constants
-import { ERROR_MESSAGES, MIN_PASSWORD_LENGTH } from '@constants';
+import { ERROR_MESSAGES, MIN_PASSWORD_LENGTH, ROUTERS } from '@constants';
 
 // Utils
 import { clearErrorOnChange, isValidEmail } from '@utils';
 
 // Components
 import { BrandLogo } from '@components';
+
+// Hooks
+import { useAuth, useToastCustom } from '@hooks';
 
 interface LoginFormData {
   email: string;
@@ -31,7 +34,8 @@ interface LoginFormData {
 
 const LoginPage = () => {
   const navigate = useNavigate();
-
+  const toast = useToastCustom();
+  const { loginWithEmailPassword, getCurrentUser } = useAuth();
   const {
     control,
     formState: { errors },
@@ -46,8 +50,27 @@ const LoginPage = () => {
     },
   });
 
-  const handleLogin = useCallback((formData: LoginFormData) => {
-    console.log(formData);
+  const handleLogin = useCallback(async ({ email, password }: LoginFormData) => {
+    const loginResponse = await loginWithEmailPassword(email, password);
+    if (loginResponse) {
+      navigate('/');
+    } else {
+      toast({
+        title: ERROR_MESSAGES.LOGIN_FAILED,
+        description: ERROR_MESSAGES.USER_NOT_FOUND,
+        status: 'error',
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    const handleGetCurrentUser = async () => {
+      const user = await getCurrentUser();
+
+      navigate(user ? ROUTERS.DASHBOARD : ROUTERS.LOGIN);
+    };
+
+    handleGetCurrentUser();
   }, []);
 
   return (

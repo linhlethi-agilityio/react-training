@@ -1,6 +1,5 @@
-import { useMemo } from 'react';
 import { Box, ChakraProvider, Text } from '@chakra-ui/react';
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 // Theme config
 import { theme } from './themes';
@@ -20,31 +19,20 @@ const TestPage = ({ pageName }: { pageName: string }) => (
   </Box>
 );
 
-const isAuthenticated = false;
-
 const App = () => {
-  const defaultRoute = useMemo(() => (isAuthenticated ? '/' : '/login'), []);
-
   return (
     <ChakraProvider theme={theme}>
       <BrowserRouter>
         <Routes>
-          {isAuthenticated ? (
-            <>
-              <Route element={<BaseLayout />}>
-                {SIDEBAR_NAVIGATION.map(({ router, label }) => (
-                  <Route key={router} path={router} element={<TestPage pageName={label} />} />
-                ))}
-              </Route>
-            </>
-          ) : (
-            <>
-              <Route path={ROUTERS.LOGIN} element={<LoginPage />} />
-            </>
-          )}
+          <Route element={<BaseLayout />}>
+            {SIDEBAR_NAVIGATION.map(({ router, label }) => (
+              <Route key={router} path={router} element={<TestPage pageName={label} />} />
+            ))}
+          </Route>
+          <Route path={ROUTERS.LOGIN} element={<LoginPage />} />
 
           {/* Navigation when access wrong route */}
-          <Route path="*" element={<Navigate to={defaultRoute} />} />
+          {/* <Route path="*" element={<Navigate to={defaultRoute} />} /> */}
         </Routes>
       </BrowserRouter>
     </ChakraProvider>

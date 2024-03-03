@@ -1,3 +1,68 @@
+import * as jose from 'jose';
+
+// Constants
 import { REGEX_PATTERN } from '@constants';
 
 export const isValidEmail = (value: string) => REGEX_PATTERN.EMAIL.test(value);
+
+type Options = {
+  method?: 'GET' | 'POST' | 'PUT' | 'DELETE';
+  headers?: {
+    Accept: string;
+    Origin: string;
+  };
+};
+
+/**
+ * @deprecated This function will be removed soon to replace SWR request
+ */
+export const getRequest = async (endpoint: string, options?: Options) => {
+  try {
+    const request = await fetch(endpoint, {
+      ...(options ?? {}),
+    });
+    const dataResponse = await request.json();
+
+    return dataResponse;
+  } catch (error) {
+    return null;
+  }
+};
+
+export const addHoursFromCurrent = (hours: number) => {
+  const currentDate = new Date();
+
+  currentDate.setHours(currentDate.getHours() + hours);
+
+  return currentDate;
+};
+
+export const createJWT = async (data: jose.JWTPayload, secret: string) => {
+  const secretEncode = new TextEncoder().encode(secret);
+
+  // Create JWT based on the data provided
+  const jwt = await new jose.SignJWT(data)
+
+    // The algorithm used: HS256
+    .setProtectedHeader({ alg: 'HS256' })
+    .setIssuedAt(new Date().getTime())
+
+    // The JWT will expire after 2 hours
+    .setExpirationTime(addHoursFromCurrent(2).getTime())
+    .sign(secretEncode);
+
+  return jwt;
+};
+
+export const isFutureTime = (timestamp: number | undefined) => {
+  const currentTimestamp = Date.now();
+
+  return timestamp && timestamp > currentTimestamp;
+};
+
+export const verifyJWT = async (token: string, secretInput: string) => {
+  const secret = new TextEncoder().encode(secretInput);
+  const { payload } = await jose.jwtVerify(token, secret);
+
+  return payload;
+};
