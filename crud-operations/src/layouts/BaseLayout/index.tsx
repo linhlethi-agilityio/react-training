@@ -2,11 +2,8 @@ import { useCallback, useEffect, useState } from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
 import { Box, Flex } from '@chakra-ui/react';
 
-// Constants
-import { ROUTERS } from '@constants';
-
 // Hooks
-import { useAuth } from '@hooks';
+import { useAuth, useToastCustom, useValidateIdentity } from '@hooks';
 
 // Components
 import SideBar from '../SideBar';
@@ -19,8 +16,11 @@ enum SideBarState {
 
 const BaseLayout = () => {
   const navigate = useNavigate();
+  const toast = useToastCustom();
   const [sideBarState, setSideBarState] = useState('');
-  const { logout, getCurrentUser } = useAuth();
+  const { logout } = useAuth();
+
+  useValidateIdentity(navigate, toast);
 
   useEffect(() => {
     const getSideBarState = localStorage.getItem('sidebar');
@@ -28,16 +28,6 @@ const BaseLayout = () => {
     if (getSideBarState && sideBarState !== getSideBarState) {
       setSideBarState(getSideBarState);
     }
-  }, []);
-
-  useEffect(() => {
-    const handleGetCurrentUser = async () => {
-      const user = await getCurrentUser();
-
-      navigate(user ? ROUTERS.DASHBOARD : ROUTERS.LOGIN);
-    };
-
-    handleGetCurrentUser();
   }, []);
 
   const handleLogout = useCallback(() => {
