@@ -1,4 +1,4 @@
-import { useCallback, useEffect } from 'react';
+import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Controller, useForm } from 'react-hook-form';
 import {
@@ -16,7 +16,7 @@ import {
 } from '@chakra-ui/react';
 
 // Constants
-import { ERROR_MESSAGES, MIN_PASSWORD_LENGTH, ROUTERS } from '@constants';
+import { ERROR_MESSAGES, MIN_PASSWORD_LENGTH } from '@constants';
 
 // Utils
 import { clearErrorOnChange, isValidEmail } from '@utils';
@@ -25,7 +25,7 @@ import { clearErrorOnChange, isValidEmail } from '@utils';
 import { BrandLogo } from '@components';
 
 // Hooks
-import { useAuth, useToastCustom } from '@hooks';
+import { useAuth, useToastCustom, useValidateIdentity } from '@hooks';
 
 interface LoginFormData {
   email: string;
@@ -35,7 +35,7 @@ interface LoginFormData {
 const LoginPage = () => {
   const navigate = useNavigate();
   const toast = useToastCustom();
-  const { loginWithEmailPassword, getCurrentUser } = useAuth();
+  const { loginWithEmailPassword } = useAuth();
   const {
     control,
     formState: { errors },
@@ -63,15 +63,7 @@ const LoginPage = () => {
     }
   }, []);
 
-  useEffect(() => {
-    const handleGetCurrentUser = async () => {
-      const user = await getCurrentUser();
-
-      navigate(user ? ROUTERS.DASHBOARD : ROUTERS.LOGIN);
-    };
-
-    handleGetCurrentUser();
-  }, []);
+  useValidateIdentity(navigate, toast);
 
   return (
     <Box bgGradient={`linear(to-r, ${'primary'}, ${'background.body'})`} height="100vh">
