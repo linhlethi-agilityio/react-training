@@ -32,16 +32,21 @@ export const useStudents = () => {
     }
   };
 
-  const updateStudent = async (updatedStudent: Student): Promise<void> => {
+  const updateStudent = async (updatedStudent: Student) => {
     try {
-      const response: ApiResponse<Student> = await put(`${studentsEndPoint}/${updatedStudent.id}`, updatedStudent);
+      const { id, ...newStudentData } = updatedStudent;
+      const response: Student = await put(`${studentsEndPoint}/${id}`, newStudentData);
+
       const updatedStudents = (data || []).map((student: Student) =>
-        student.id === updatedStudent.id ? response.data : student,
+        student.id === updatedStudent.id ? response : student,
       );
+
       mutateStudents(updatedStudents, false);
+
+      return response;
     } catch (error) {
       // Handle error
-      console.error('Error updating student:', error);
+      return error;
     }
   };
 

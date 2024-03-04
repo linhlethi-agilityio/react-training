@@ -6,7 +6,7 @@ import { Box, Button, FormControl, FormHelperText, FormLabel, Input } from '@cha
 import { ERROR_MESSAGES } from '@constants';
 
 // Utils
-import { clearErrorOnChange, isValidEmail } from '@utils';
+import { clearErrorOnChange, formatDate, isValidEmail } from '@utils';
 
 // Types
 import { Student } from '@types';
@@ -14,37 +14,24 @@ import { Student } from '@types';
 // Components
 import { CustomModal } from '@components';
 import { useStudents, useToastCustom } from '@hooks';
-interface StudentModalDetailModalProps extends Student {
+interface StudentModalDetailModalProps {
   isOpen: boolean;
+  previewData?: Student | null;
   onClose: () => void;
 }
 
 type StudentFormState = Omit<Student, 'id'>;
 
-const StudentDetailModal = ({
-  isOpen,
-  name,
-  email,
-  phone,
-  enrollNumber,
-  dateOfAdmission,
-  onClose,
-}: StudentModalDetailModalProps) => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const formInitData = useMemo(
-    () => ({
-      name,
-      email,
-      phone,
-      enrollNumber,
-      dateOfAdmission,
-    }),
-    [name, email, phone, enrollNumber, dateOfAdmission],
-  );
+const initFormData = {
+  name: '',
+  email: '',
+  phone: '',
+  enrollNumber: '',
+  dateOfAdmission: '',
+};
 
-  formInitData;
-
-  const { createStudent } = useStudents();
+const StudentDetailModal = ({ isOpen, previewData, onClose }: StudentModalDetailModalProps) => {
+  const { createStudent, updateStudent } = useStudents();
   const toast = useToastCustom();
 
   const {
@@ -55,24 +42,34 @@ const StudentDetailModal = ({
   } = useForm<StudentFormState>({
     mode: 'onBlur',
     reValidateMode: 'onBlur',
-    defaultValues: {
-      name: 'John Smith',
-      email: 'john-smit@gmail.com',
-      phone: '+1 446-454-5576',
-      enrollNumber: '123456789',
-      dateOfAdmission: 1676134800000,
-    },
+    defaultValues: previewData ? previewData : initFormData,
   });
 
+  const isEditMode = useMemo(() => !!previewData?.id, [previewData?.id]);
+
   const handleOnSubmit = async (fromData: StudentFormState) => {
-    const response = await createStudent(fromData);
+    let response = null;
+    const dateOfAdmission = new Date(fromData.dateOfAdmission).getTime();
+
+    if (isEditMode) {
+      response = await updateStudent({
+        ...previewData,
+        ...fromData,
+        dateOfAdmission,
+      });
+    } else {
+      response = await createStudent({
+        ...fromData,
+        dateOfAdmission,
+      });
+    }
 
     onClose();
 
     if (response) {
       toast({
         title: 'Request sent successfully!',
-        description: 'A new student has been added!',
+        description: `A new student has been ${isEditMode ? 'edited' : 'added'}!`,
         status: 'success',
       });
     } else {
@@ -212,12 +209,14 @@ const StudentDetailModal = ({
           name="dateOfAdmission"
           control={control}
           rules={{ required: ERROR_MESSAGES.FIELD_REQUIRED }}
-          render={({ field: { name, onChange, ...rest }, fieldState: { error } }) => (
+          render={({ field: { name, value, onChange, ...rest }, fieldState: { error } }) => (
             <Box marginBottom={error?.message ? 0 : 25}>
               <FormLabel fontSize="sm" lineHeight="sm" color="text.default">
                 Date of admission
               </FormLabel>
               <Input
+                type="date"
+                value={formatDate(value, true)}
                 isInvalid={!!error?.message}
                 onChange={(e) => {
                   onChange(e.target.value);

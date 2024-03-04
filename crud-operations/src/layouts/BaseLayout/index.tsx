@@ -6,12 +6,13 @@ import { Box, Flex } from '@chakra-ui/react';
 import { useAuth, useToastCustom } from '@hooks';
 
 // Constants
-import { ERROR_MESSAGES, ROUTERS } from '@constants';
+import { ERROR_MESSAGES, LOCAL_STORAGE_KEY, ROUTERS } from '@constants';
 
 // Components
 import SideBar from '../SideBar';
 import { Header } from '@components';
 import { isFutureTime } from '@utils';
+import { removeItemLocalStorage } from '@services';
 
 enum SideBarState {
   Open = 'open',
@@ -30,6 +31,8 @@ const BaseLayout = () => {
 
       if (user) {
         if (!isFutureTime(user.exp)) {
+          removeItemLocalStorage(LOCAL_STORAGE_KEY.TOKEN);
+
           toast({
             title: ERROR_MESSAGES.LOGIN_FAILED,
             description: ERROR_MESSAGES.INVALID_ACCESS_TOKEN,
