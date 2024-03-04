@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Box, ChakraProvider, Text } from '@chakra-ui/react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -20,16 +21,18 @@ const PlaceholderPage = ({ pageName }: { pageName: string }) => (
 );
 
 const App = () => {
+  const [search, setSearch] = useState('');
+
   return (
     <ChakraProvider theme={theme}>
       <BrowserRouter>
         <Routes>
-          <Route element={<BaseLayout />}>
+          <Route element={<BaseLayout onSearch={setSearch} />}>
             {SIDEBAR_NAVIGATION.map(({ router, label, element: Element }) => (
               <Route
                 key={router}
                 path={router}
-                element={Element ? <Element /> : <PlaceholderPage pageName={label} />}
+                element={Element ? <Element keyword={search} /> : <PlaceholderPage pageName={label} />}
               />
             ))}
           </Route>

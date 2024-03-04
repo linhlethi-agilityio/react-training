@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react';
-import { Avatar, Box, Button, Flex, HStack, Heading, Icon, Spinner, useDisclosure } from '@chakra-ui/react';
+import { Avatar, Box, Button, Flex, HStack, Heading, Icon, Spinner, Text, useDisclosure } from '@chakra-ui/react';
 
 // Icons
 import { PenIcon, SortIcon, TrashIcon } from '@icons';
@@ -17,10 +17,20 @@ import { formatDate } from '@utils';
 // Components
 import { ConfirmModal, StudentDetailModal, Table } from '@components';
 
-const StudentsPage = () => {
+interface StudentsPageProps {
+  keyword: string;
+}
+
+enum SortType {
+  Ascending = 'ascending',
+  Descending = 'descending',
+}
+
+const StudentsPage = ({ keyword }: StudentsPageProps) => {
   const { students, isLoading, deleteStudent } = useStudents();
+  const [sortType, setSortType] = useState('');
+
   const [previewData, setPreviewData] = useState<Student | null>(null);
-  const [removedId, setRemovedId] = useState<string>('');
 
   const { isOpen: isOpenAddStudent, onOpen: onOpenAddStudent, onClose: onCloseAddStudent } = useDisclosure();
 
@@ -33,7 +43,17 @@ const StudentsPage = () => {
       ...student,
       dateOfAdmission: formatDate(+student.dateOfAdmission),
     }))
-    .reverse();
+    .reverse()
+    .filter((student) => JSON.stringify(Object.values(student)).toLowerCase().includes(keyword.toLowerCase()))
+    .sort((prev, next) => {
+      if (sortType) {
+        return sortType === SortType.Ascending
+          ? prev.name.localeCompare(next.name)
+          : next.name.localeCompare(prev.name);
+      }
+
+      return 1;
+    });
 
   const studentsColumns: TableColumn<Student>[] = [
     {
@@ -73,19 +93,26 @@ const StudentsPage = () => {
     },
   ];
 
-  const handleDeleteStudent = () => {
+  const handleDeleteStudent = useCallback(() => {
     onCloseConfirm();
-    deleteStudent(removedId);
+
+    if (previewData?.id) {
+      deleteStudent(previewData?.id);
+    }
 
     toast({
       title: 'Delete Success',
       status: 'success',
     });
-  };
+  }, [deleteStudent, onCloseConfirm, previewData?.id, toast]);
 
-  const openConfirmModal = (id?: string) => {
-    onOpenConfirm();
-    id && setRemovedId(id);
+  const openConfirmModal = (selectedId?: string) => {
+    const currentStudent = formattedStudents?.find(({ id }) => id === selectedId);
+
+    if (currentStudent) {
+      setPreviewData(currentStudent);
+      onOpenConfirm();
+    }
   };
 
   const handleEditStudent = async (selectedId?: string) => {
@@ -96,6 +123,20 @@ const StudentsPage = () => {
       onOpenAddStudent();
     }
   };
+
+  const handleOnSort = useCallback(() => {
+    if (!sortType) {
+      return setSortType(SortType.Ascending);
+    }
+
+    if (sortType) {
+      if (sortType === SortType.Descending) {
+        return setSortType('');
+      }
+
+      setSortType(sortType === SortType.Ascending ? SortType.Descending : SortType.Ascending);
+    }
+  }, [sortType]);
 
   const handleAddNewStudent = useCallback(() => {
     onOpenAddStudent();
@@ -108,8 +149,8 @@ const StudentsPage = () => {
         <Flex justifyContent="space-between" alignItems="center" borderBottomWidth={1} pb={3}>
           <Heading size="md">Students List</Heading>
           <Flex>
-            <Button variant="ghost">
-              <SortIcon />
+            <Button variant="ghost" onClick={handleOnSort}>
+              <SortIcon isUp={sortType === SortType.Ascending} isDown={sortType === SortType.Descending} />
             </Button>
             <Button onClick={handleAddNewStudent}>Add new student</Button>
           </Flex>
@@ -120,7 +161,15 @@ const StudentsPage = () => {
               <Spinner size="lg" />
             </Box>
           ) : (
-            <Table<Student> columns={studentsColumns} data={formattedStudents || []} />
+            <>
+              {formattedStudents?.length ? (
+                <Table<Student> columns={studentsColumns} data={formattedStudents || []} />
+              ) : (
+                <Text textAlign="center" mt={20} fontSize="md">
+                  No record not found!
+                </Text>
+              )}
+            </>
           )}
         </Box>
       </Box>
@@ -129,14 +178,16 @@ const StudentsPage = () => {
         <StudentDetailModal isOpen={isOpenAddStudent} onClose={onCloseAddStudent} previewData={previewData} />
       )}
 
-      <ConfirmModal
-        isOpen={isOpenConfirm}
-        onCancel={onCloseConfirm}
-        title="Delete Student"
-        description="Are you sure you would like to delete student"
-        buttonLabel="Submit"
-        onConfirm={handleDeleteStudent}
-      />
+      {isOpenConfirm && (
+        <ConfirmModal
+          isOpen={isOpenConfirm}
+          onCancel={onCloseConfirm}
+          title="Delete Student"
+          description="Are you sure you would like to delete student"
+          buttonLabel="Submit"
+          onConfirm={handleDeleteStudent}
+        />
+      )}
     </>
   );
 };

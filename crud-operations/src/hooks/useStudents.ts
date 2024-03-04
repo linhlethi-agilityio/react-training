@@ -28,7 +28,7 @@ export const useStudents = () => {
 
       return response;
     } catch (error) {
-      return error;
+      return null;
     }
   };
 
@@ -45,19 +45,19 @@ export const useStudents = () => {
 
       return response;
     } catch (error) {
-      // Handle error
-      return error;
+      return null;
     }
   };
 
-  const deleteStudent = async (studentId: string): Promise<void> => {
+  const deleteStudent = async (studentId: string) => {
     try {
       await remove(`${studentsEndPoint}/${studentId}`);
       const updatedStudents = (data || []).filter((student) => student.id !== studentId);
       mutateStudents(updatedStudents, false);
+
+      return true;
     } catch (error) {
-      // Handle error
-      console.error('Error deleting student:', error);
+      return null;
     }
   };
 

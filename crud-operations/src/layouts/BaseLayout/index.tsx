@@ -19,7 +19,11 @@ enum SideBarState {
   Closed = 'closed',
 }
 
-const BaseLayout = () => {
+interface BaseLayoutProps {
+  onSearch: (keyword: string) => void;
+}
+
+const BaseLayout = ({ onSearch }: BaseLayoutProps) => {
   const navigate = useNavigate();
   const toast = useToastCustom();
   const [sideBarState, setSideBarState] = useState('');
@@ -62,10 +66,6 @@ const BaseLayout = () => {
     navigate(ROUTERS.LOGIN);
   }, [logout, navigate]);
 
-  const handleOnSearch = useCallback((keyword: string) => {
-    console.log(`TODO: Handle search with: ${keyword}`);
-  }, []);
-
   const handleToggleSideBar = useCallback(() => {
     setSideBarState((prev) => {
       const nextState = prev === SideBarState.Open ? SideBarState.Closed : SideBarState.Open;
@@ -82,7 +82,7 @@ const BaseLayout = () => {
         {/* Header */}
         <Header
           isClosedSideBar={sideBarState === SideBarState.Closed}
-          onSearch={handleOnSearch}
+          onSearch={onSearch}
           onToggleSideBar={handleToggleSideBar}
         />
 

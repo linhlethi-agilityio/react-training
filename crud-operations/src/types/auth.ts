@@ -5,6 +5,6 @@ export interface User {
   password: string;
   createdAt: number;
   updatedAt: number;
-  fullName: string;
+  name: string;
   rule: UserRule;
 }
