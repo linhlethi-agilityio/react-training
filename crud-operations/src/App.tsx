@@ -13,7 +13,7 @@ import { LoginPage } from '@pages';
 // Components
 import { BaseLayout } from '@components';
 
-const TestPage = ({ pageName }: { pageName: string }) => (
+const PlaceholderPage = ({ pageName }: { pageName: string }) => (
   <Box>
     <Text>Hello world! {pageName} page</Text>
   </Box>
@@ -25,14 +25,15 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route element={<BaseLayout />}>
-            {SIDEBAR_NAVIGATION.map(({ router, label }) => (
-              <Route key={router} path={router} element={<TestPage pageName={label} />} />
+            {SIDEBAR_NAVIGATION.map(({ router, label, element: Element }) => (
+              <Route
+                key={router}
+                path={router}
+                element={Element ? <Element /> : <PlaceholderPage pageName={label} />}
+              />
             ))}
           </Route>
           <Route path={ROUTERS.LOGIN} element={<LoginPage />} />
-
-          {/* Navigation when access wrong route */}
-          {/* <Route path="*" element={<Navigate to={defaultRoute} />} /> */}
         </Routes>
       </BrowserRouter>
     </ChakraProvider>

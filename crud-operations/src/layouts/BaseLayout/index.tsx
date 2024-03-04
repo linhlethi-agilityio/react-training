@@ -3,14 +3,15 @@ import { Outlet, useNavigate } from 'react-router-dom';
 import { Box, Flex } from '@chakra-ui/react';
 
 // Hooks
-import { useAuth, useToastCustom, useValidateIdentity } from '@hooks';
+import { useAuth, useToastCustom } from '@hooks';
 
 // Constants
-import { ROUTERS } from '@constants';
+import { ERROR_MESSAGES, ROUTERS } from '@constants';
 
 // Components
 import SideBar from '../SideBar';
 import { Header } from '@components';
+import { isFutureTime } from '@utils';
 
 enum SideBarState {
   Open = 'open',
@@ -21,9 +22,29 @@ const BaseLayout = () => {
   const navigate = useNavigate();
   const toast = useToastCustom();
   const [sideBarState, setSideBarState] = useState('');
-  const { logout } = useAuth();
+  const { logout, getCurrentUser } = useAuth();
 
-  useValidateIdentity(navigate, toast);
+  useEffect(() => {
+    const handleValidate = async () => {
+      const user = await getCurrentUser();
+
+      if (user) {
+        if (!isFutureTime(user.exp)) {
+          toast({
+            title: ERROR_MESSAGES.LOGIN_FAILED,
+            description: ERROR_MESSAGES.INVALID_ACCESS_TOKEN,
+            status: 'error',
+          });
+
+          return navigate(ROUTERS.LOGIN);
+        }
+      } else {
+        return navigate(ROUTERS.LOGIN);
+      }
+    };
+
+    handleValidate();
+  }, [getCurrentUser, navigate, toast]);
 
   useEffect(() => {
     const getSideBarState = localStorage.getItem('sidebar');
@@ -31,12 +52,12 @@ const BaseLayout = () => {
     if (getSideBarState && sideBarState !== getSideBarState) {
       setSideBarState(getSideBarState);
     }
-  }, []);
+  }, [sideBarState]);
 
   const handleLogout = useCallback(() => {
     logout();
     navigate(ROUTERS.LOGIN);
-  }, []);
+  }, [logout, navigate]);
 
   const handleOnSearch = useCallback((keyword: string) => {
     console.log(`TODO: Handle search with: ${keyword}`);

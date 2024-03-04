@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { useCallback, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Controller, useForm } from 'react-hook-form';
 import {
@@ -25,7 +25,7 @@ import { clearErrorOnChange, isValidEmail } from '@utils';
 import { BrandLogo } from '@components';
 
 // Hooks
-import { useAuth, useToastCustom, useValidateIdentity } from '@hooks';
+import { useAuth, useToastCustom } from '@hooks';
 
 interface LoginFormData {
   email: string;
@@ -35,7 +35,7 @@ interface LoginFormData {
 const LoginPage = () => {
   const navigate = useNavigate();
   const toast = useToastCustom();
-  const { loginWithEmailPassword } = useAuth();
+  const { loginWithEmailPassword, getCurrentUser } = useAuth();
   const {
     control,
     formState: { errors },
@@ -50,20 +50,33 @@ const LoginPage = () => {
     },
   });
 
-  const handleLogin = useCallback(async ({ email, password }: LoginFormData) => {
-    const loginResponse = await loginWithEmailPassword(email, password);
-    if (loginResponse) {
-      navigate(ROUTERS.DASHBOARD);
-    } else {
-      toast({
-        title: ERROR_MESSAGES.LOGIN_FAILED,
-        description: ERROR_MESSAGES.USER_NOT_FOUND,
-        status: 'error',
-      });
-    }
-  }, []);
+  const handleLogin = useCallback(
+    async ({ email, password }: LoginFormData) => {
+      const loginResponse = await loginWithEmailPassword(email, password);
+      if (loginResponse) {
+        navigate(ROUTERS.DASHBOARD);
+      } else {
+        toast({
+          title: ERROR_MESSAGES.LOGIN_FAILED,
+          description: ERROR_MESSAGES.USER_NOT_FOUND,
+          status: 'error',
+        });
+      }
+    },
+    [loginWithEmailPassword, navigate, toast],
+  );
 
-  useValidateIdentity(navigate, toast);
+  useEffect(() => {
+    const handleValidate = async () => {
+      const response = await getCurrentUser();
+
+      if (response) {
+        return navigate(ROUTERS.DASHBOARD);
+      }
+    };
+
+    handleValidate();
+  }, [getCurrentUser, navigate]);
 
   return (
     <Box bgGradient={`linear(to-r, ${'primary'}, ${'background.body'})`} height="100vh">
