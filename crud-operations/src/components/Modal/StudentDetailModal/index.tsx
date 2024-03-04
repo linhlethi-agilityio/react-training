@@ -42,6 +42,8 @@ const StudentDetailModal = ({
     [name, email, phone, enrollNumber, dateOfAdmission],
   );
 
+  formInitData;
+
   const { createStudent } = useStudents();
   const toast = useToastCustom();
 
