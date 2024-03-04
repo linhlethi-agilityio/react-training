@@ -1,4 +1,5 @@
 export interface Student {
+  id: string;
   avatarUrl?: string;
   name: string;
   email: string;

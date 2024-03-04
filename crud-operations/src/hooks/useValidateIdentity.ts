@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { NavigateFunction } from 'react-router-dom';
+import { NavigateFunction, useLocation } from 'react-router-dom';
 
 // Constants
 import { ERROR_MESSAGES, ROUTERS } from '@constants';
@@ -11,6 +11,9 @@ import { isFutureTime } from '@utils';
 
 export const useValidateIdentity = async (navigate: NavigateFunction, toast: CreateToastFnReturn) => {
   const { getCurrentUser } = useAuth();
+  const location = useLocation();
+
+  const currentPath = location.pathname;
 
   useEffect(() => {
     const handleGetCurrentUser = async () => {
@@ -28,7 +31,7 @@ export const useValidateIdentity = async (navigate: NavigateFunction, toast: Cre
           return navigate(ROUTERS.LOGIN);
         }
 
-        return navigate(ROUTERS.DASHBOARD);
+        return navigate(currentPath);
       }
 
       return navigate(ROUTERS.LOGIN);

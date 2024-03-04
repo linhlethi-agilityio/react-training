@@ -19,8 +19,6 @@ interface CustomTableProps<T> {
 }
 
 const Table = <T,>({ columns, data }: CustomTableProps<T>) => {
-  console.log(data);
-
   const headerRow = (
     <Tr>
       {columns.map((columnConfig) => {
