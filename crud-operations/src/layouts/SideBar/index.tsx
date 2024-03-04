@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import { useEffect, useState } from 'react';
 import { Avatar, Heading, Text, VStack } from '@chakra-ui/react';
 
 // Components
@@ -9,6 +9,8 @@ import { ROUTERS } from '@constants';
 
 // Utils
 import { acronymText } from '@utils';
+import { useAuth } from '@hooks';
+import { User } from '@types';
 
 interface SideBarProps {
   isClosed?: boolean;
@@ -17,12 +19,17 @@ interface SideBarProps {
 }
 
 const SideBar = ({ isClosed, onNavigate, onLogout }: SideBarProps) => {
-  // TODO: Mock data for now, will update later
-  const user = {
-    avatarUrl: '',
-    name: 'John Smith',
-    rule: 'Admin',
-  };
+  const { getCurrentUser } = useAuth();
+  const [currentUser, setCurrentUser] = useState<User | null>(null);
+
+  useEffect(() => {
+    const getMe = async () => {
+      const userResponse = await getCurrentUser();
+      setCurrentUser(userResponse as unknown as User);
+    };
+
+    getMe();
+  }, [getCurrentUser]);
 
   return (
     <VStack w={isClosed ? 75 : 270} px={isClosed ? 2 : 5} py={18} bg="background.sidebar" transition="1s">
@@ -34,10 +41,10 @@ const SideBar = ({ isClosed, onNavigate, onLogout }: SideBarProps) => {
           <Avatar boxSize={isClosed ? 45 : 128} borderWidth={1} borderStyle="solid" transition="1s" />
           <VStack textAlign="center" spacing={isClosed ? 0 : 2.5}>
             <Heading fontWeight="bold" fontSize={isClosed ? 'xs' : 'sm'} lineHeight="md">
-              {isClosed ? acronymText(user.name) : user.name}
+              {isClosed ? acronymText(currentUser?.name || '') : currentUser?.name}
             </Heading>
-            <Text color="primary" fontSize={isClosed ? 'xs' : 'sm'}>
-              {user.rule}
+            <Text color="primary" fontSize={isClosed ? 'xs' : 'sm'} textTransform="capitalize">
+              {currentUser?.rule}
             </Text>
           </VStack>
         </VStack>
@@ -54,4 +61,4 @@ const SideBar = ({ isClosed, onNavigate, onLogout }: SideBarProps) => {
   );
 };
 
-export default memo(SideBar);
+export default SideBar;

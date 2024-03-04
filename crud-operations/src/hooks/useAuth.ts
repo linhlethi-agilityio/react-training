@@ -19,6 +19,8 @@ interface ErrorResponse {
 interface Me {
   email: string;
   createdAt: number;
+  rule: string;
+  name: string;
   jwt: string;
 }
 
@@ -33,7 +35,7 @@ const verifyEmailAndPassword = async (emailInput: string, passwordInput: string)
   });
 
   if (user) {
-    const userData = { email: user.email, createdAt: user.createdAt };
+    const userData = { email: user.email, createdAt: user.createdAt, name: user.name, rule: user.rule };
     const jwt = await createJWT(userData, ENVS.VITE_SECRET_KEY);
 
     return {
