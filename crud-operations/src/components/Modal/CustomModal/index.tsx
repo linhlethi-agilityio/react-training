@@ -1,4 +1,4 @@
-import { ReactNode, memo } from 'react';
+import { ReactNode } from 'react';
 import { Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay } from '@chakra-ui/react';
 
 interface CustomModalProps {
@@ -10,7 +10,7 @@ interface CustomModalProps {
 
 const CustomModal = ({ isOpen, onClose, children, title }: CustomModalProps) => {
   return (
-    <Modal isOpen={isOpen} onClose={onClose}>
+    <Modal isOpen={isOpen} onClose={onClose} isCentered>
       <ModalOverlay />
       <ModalContent opacity={0.6}>
         <ModalHeader textAlign="center">{title}</ModalHeader>
@@ -21,4 +21,4 @@ const CustomModal = ({ isOpen, onClose, children, title }: CustomModalProps) => 
   );
 };
 
-export default memo(CustomModal);
+export default CustomModal;

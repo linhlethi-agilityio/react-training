@@ -19,14 +19,16 @@ export const useStudents = () => {
 
   const { data, error, isValidating, mutate: mutateStudents } = useSWR<Student[]>(studentsEndPoint, get);
 
-  const createStudent = async (newStudent: Student): Promise<void> => {
+  const createStudent = async (newStudent: Partial<Student>) => {
     try {
-      const response: ApiResponse<Student> = await post(studentsEndPoint, newStudent);
+      const response: Student = await post(studentsEndPoint, newStudent);
+
       // Optimistically update the local data without waiting for the server response
-      mutateStudents([...(data || []), response.data], false);
+      mutateStudents([...(data || []), response], false);
+
+      return response;
     } catch (error) {
-      // Handle error
-      console.error('Error creating student:', error);
+      return error;
     }
   };
 

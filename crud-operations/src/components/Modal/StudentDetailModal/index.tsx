@@ -1,4 +1,4 @@
-import { memo, useMemo } from 'react';
+import { useMemo } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 import { Box, Button, FormControl, FormHelperText, FormLabel, Input } from '@chakra-ui/react';
 
@@ -13,20 +13,24 @@ import { Student } from '@types';
 
 // Components
 import { CustomModal } from '@components';
+import { useStudents, useToastCustom } from '@hooks';
 interface StudentModalDetailModalProps extends Student {
   isOpen: boolean;
   onClose: () => void;
 }
 
+type StudentFormState = Omit<Student, 'id'>;
+
 const StudentDetailModal = ({
   isOpen,
-  onClose,
   name,
   email,
   phone,
   enrollNumber,
   dateOfAdmission,
+  onClose,
 }: StudentModalDetailModalProps) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const formInitData = useMemo(
     () => ({
       name,
@@ -38,19 +42,44 @@ const StudentDetailModal = ({
     [name, email, phone, enrollNumber, dateOfAdmission],
   );
 
+  const { createStudent } = useStudents();
+  const toast = useToastCustom();
+
   const {
     control,
     clearErrors,
     handleSubmit,
     formState: { errors },
-  } = useForm({
+  } = useForm<StudentFormState>({
     mode: 'onBlur',
     reValidateMode: 'onBlur',
-    defaultValues: formInitData,
+    defaultValues: {
+      name: 'John Smith',
+      email: 'john-smit@gmail.com',
+      phone: '+1 446-454-5576',
+      enrollNumber: '123456789',
+      dateOfAdmission: 1676134800000,
+    },
   });
 
-  const handleOnSubmit = () => {
-    // Todo: update later
+  const handleOnSubmit = async (fromData: StudentFormState) => {
+    const response = await createStudent(fromData);
+
+    onClose();
+
+    if (response) {
+      toast({
+        title: 'Request sent successfully!',
+        description: 'A new student has been added!',
+        status: 'success',
+      });
+    } else {
+      toast({
+        title: 'Request failed!',
+        description: 'Something went wrong, please try again!',
+        status: 'error',
+      });
+    }
   };
 
   return (
@@ -64,7 +93,7 @@ const StudentDetailModal = ({
           render={({ field: { name, onChange, ...rest }, fieldState: { error } }) => (
             <Box marginBottom={error?.message ? 0 : 27}>
               <FormLabel fontSize="sm" lineHeight="sm" color="text.default">
-                Name:
+                Name
               </FormLabel>
               <Input
                 isInvalid={!!error?.message}
@@ -96,7 +125,7 @@ const StudentDetailModal = ({
           render={({ field: { name, onChange, ...rest }, fieldState: { error } }) => (
             <Box marginBottom={error?.message ? 0 : 27}>
               <FormLabel fontSize="sm" lineHeight="sm" color="text.default">
-                Email:
+                Email
               </FormLabel>
               <Input
                 aria-label="Email"
@@ -126,7 +155,7 @@ const StudentDetailModal = ({
           render={({ field: { name, onChange, ...rest }, fieldState: { error } }) => (
             <Box marginBottom={error?.message ? 0 : 27}>
               <FormLabel fontSize="sm" lineHeight="sm" color="text.default">
-                Phone:
+                Phone
               </FormLabel>
               <Input
                 isInvalid={!!error?.message}
@@ -155,7 +184,7 @@ const StudentDetailModal = ({
           render={({ field: { name, onChange, ...rest }, fieldState: { error } }) => (
             <Box marginBottom={error?.message ? 0 : '25px'}>
               <FormLabel fontSize="sm" lineHeight="sm" color="text.default">
-                Enroll number:
+                Enroll number
               </FormLabel>
               <Input
                 isInvalid={!!error?.message}
@@ -184,7 +213,7 @@ const StudentDetailModal = ({
           render={({ field: { name, onChange, ...rest }, fieldState: { error } }) => (
             <Box marginBottom={error?.message ? 0 : 25}>
               <FormLabel fontSize="sm" lineHeight="sm" color="text.default">
-                Date of admission:
+                Date of admission
               </FormLabel>
               <Input
                 isInvalid={!!error?.message}
@@ -212,4 +241,4 @@ const StudentDetailModal = ({
   );
 };
 
-export default memo(StudentDetailModal);
+export default StudentDetailModal;

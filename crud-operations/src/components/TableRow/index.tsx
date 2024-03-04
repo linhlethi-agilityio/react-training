@@ -7,7 +7,11 @@ interface TableRowProps {
 }
 
 const TableRow = ({ children, handleClickRow }: TableRowProps) => {
-  return <Tr onClick={handleClickRow}>{children}</Tr>;
+  return (
+    <Tr onClick={handleClickRow} bg="white" borderTopWidth="10px" borderColor="background.table">
+      {children}
+    </Tr>
+  );
 };
 
 export default TableRow;

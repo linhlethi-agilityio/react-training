@@ -7,7 +7,6 @@ import { TableCell, TableRow } from '@components';
 export type TTableAccessor<T> = ((item: T, inputProps?: object) => ReactNode) | keyof T;
 
 export interface TableColumn<T> {
-  id: string;
   fieldName?: string;
   accessor: TTableAccessor<T>;
   header?: string;
@@ -21,12 +20,12 @@ interface CustomTableProps<T> {
 const Table = <T,>({ columns, data }: CustomTableProps<T>) => {
   const headerRow = (
     <Tr>
-      {columns.map((columnConfig) => {
-        const { id, header } = columnConfig;
+      {columns.map((columnConfig, index) => {
+        const { header } = columnConfig;
 
         return (
           <Th
-            key={`header-${id}`}
+            key={`${header}${index}`}
             borderBottomWidth={0}
             textTransform="unset"
             color="tableHeader"
@@ -57,11 +56,9 @@ const Table = <T,>({ columns, data }: CustomTableProps<T>) => {
       <Tbody>
         {data.map((item, index) => (
           <TableRow key={`table-row-${index}`}>
-            {columns.map((columnConfig) => (
-              <TableCell key={`table-cell-${index}-${columnConfig.id}`}>
-                {renderCell(item, columnConfig.accessor)}
-              </TableCell>
-            ))}
+            {columns.map((columnConfig, indexColumn) => {
+              return <TableCell key={`table-cell-${indexColumn}`}>{renderCell(item, columnConfig.accessor)}</TableCell>;
+            })}
           </TableRow>
         ))}
       </Tbody>

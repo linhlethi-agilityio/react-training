@@ -1,6 +1,8 @@
-export const formatDate = (inputDate: string) => {
-  const options = { month: 'short', day: 'numeric', year: 'numeric' } as Intl.DateTimeFormatOptions;
-  const date = new Date(inputDate);
+export const formatDate = (timestamp: number) => {
+  const date = new Date(timestamp);
+  const day = date.getUTCDate();
+  const month = date.toLocaleString('default', { month: 'long' });
+  const year = date.getUTCFullYear();
 
-  return date.toLocaleDateString('en-US', options);
+  return `${day}-${month.slice(0, 3)}, ${year}`;
 };

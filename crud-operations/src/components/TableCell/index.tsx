@@ -1,13 +1,13 @@
 import { ReactNode } from 'react';
-import { Td } from '@chakra-ui/react';
+import { Td, TableCellProps as ChakraTableCellProps } from '@chakra-ui/react';
 
-interface TableCellProps {
+interface TableCellProps extends ChakraTableCellProps {
   children: ReactNode;
 }
 
-const TableCell = ({ children }: TableCellProps) => {
+const TableCell = ({ children, ...rest }: TableCellProps) => {
   return (
-    <Td fontSize="text.sm" lineHeight="sm" color="default" bgColor="white" borderRadius="sm" borderTop={2.5}>
+    <Td fontSize="text.sm" lineHeight="sm" color="default" {...rest}>
       {children}
     </Td>
   );

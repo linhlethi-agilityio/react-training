@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Avatar, Box, Button, Flex, Heading, Spinner, useDisclosure } from '@chakra-ui/react';
+import { Avatar, Box, Button, Flex, HStack, Heading, Icon, Spinner, useDisclosure } from '@chakra-ui/react';
 
 // Icons
 import { PenIcon, SortIcon, TrashIcon } from '@icons';
@@ -27,10 +27,12 @@ const StudentsPage = () => {
 
   const toast = useToastCustom();
 
-  const formattedStudents = students?.map((student) => ({
-    ...student,
-    dateOfAdmission: formatDate(student.dateOfAdmission),
-  }));
+  const formattedStudents = students
+    ?.map((student) => ({
+      ...student,
+      dateOfAdmission: formatDate(+student.dateOfAdmission),
+    }))
+    .reverse();
 
   const initFormData = {
     name: '',
@@ -42,43 +44,38 @@ const StudentsPage = () => {
 
   const studentsColumns: TableColumn<Student>[] = [
     {
-      id: '1',
-      accessor: (data: Student) => <Avatar src={data.avatarUrl} borderRadius={8} />,
+      accessor: (data: Student) => <Avatar src={data.avatarUrl} borderRadius={8} objectFit="contain" />,
     },
     {
-      id: '2',
       header: 'Name',
       accessor: 'name',
     },
     {
-      id: '3',
       header: 'Email',
       accessor: 'email',
     },
     {
-      id: '4',
+      header: 'Phone',
+      accessor: 'phone',
+    },
+    {
       header: 'Enroll Number',
       accessor: 'enrollNumber',
     },
     {
-      id: '5',
       header: 'Date of admission',
       accessor: 'dateOfAdmission',
     },
     {
-      id: '6',
       accessor: (data: Student) => (
-        <Button variant="ghost" onClick={() => handleEditStudent(data.id)}>
-          <PenIcon />
-        </Button>
-      ),
-    },
-    {
-      id: '7',
-      accessor: (data: Student) => (
-        <Button variant="ghost" onClick={() => openConfirmModal(data.id)}>
-          <TrashIcon />
-        </Button>
+        <HStack justifyContent="flex-end" spacing={0}>
+          <Button variant="ghost" onClick={() => handleEditStudent(data?.id)}>
+            <Icon as={PenIcon} />
+          </Button>
+          <Button variant="ghost" onClick={() => openConfirmModal(data?.id)}>
+            <TrashIcon />
+          </Button>
+        </HStack>
       ),
     },
   ];
@@ -93,13 +90,13 @@ const StudentsPage = () => {
     });
   };
 
-  const openConfirmModal = (id: string) => {
+  const openConfirmModal = (id?: string) => {
     onOpenConfirm();
-    setRemovedId(id);
+    id && setRemovedId(id);
   };
 
-  const handleEditStudent = async (id: string) => {
-    getStudentById(id);
+  const handleEditStudent = async (id?: string) => {
+    id && getStudentById(id);
   };
 
   return (
@@ -132,7 +129,7 @@ const StudentsPage = () => {
         email={initFormData.email}
         phone={initFormData.phone}
         enrollNumber={initFormData.enrollNumber}
-        dateOfAdmission={initFormData.dateOfAdmission}
+        dateOfAdmission={+initFormData.dateOfAdmission}
       />
       <ConfirmModal
         isOpen={isOpenConfirm}

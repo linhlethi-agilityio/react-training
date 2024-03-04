@@ -1,9 +1,9 @@
 export interface Student {
-  id: string;
+  id?: string;
   avatarUrl?: string;
   name: string;
   email: string;
   phone: string;
   enrollNumber: string;
-  dateOfAdmission: string;
+  dateOfAdmission: number | string;
 }
