@@ -5,30 +5,6 @@ import { REGEX_PATTERN } from '@constants';
 
 export const isValidEmail = (value: string) => REGEX_PATTERN.EMAIL.test(value);
 
-type Options = {
-  method?: 'GET' | 'POST' | 'PUT' | 'DELETE';
-  headers?: {
-    Accept: string;
-    Origin: string;
-  };
-};
-
-/**
- * @deprecated This function will be removed soon to replace SWR request
- */
-export const getRequest = async (endpoint: string, options?: Options) => {
-  try {
-    const request = await fetch(endpoint, {
-      ...(options ?? {}),
-    });
-    const dataResponse = await request.json();
-
-    return dataResponse;
-  } catch (error) {
-    return null;
-  }
-};
-
 export const addHoursFromCurrent = (hours: number) => {
   const currentDate = new Date();
 

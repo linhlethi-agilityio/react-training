@@ -1,16 +1,16 @@
 import { useState } from 'react';
 
 // Constants
-import { API_ENDPOINTS, ENVS } from '@constants';
+import { API_ENDPOINTS, ENVS, LOCAL_STORAGE_KEY } from '@constants';
 
 // Interface, types
 import { User } from '@types';
 
 // Utils
-import { createJWT, decryptPassword, getRequest, verifyJWT } from '@utils';
+import { createJWT, decryptPassword, verifyJWT } from '@utils';
 
 // Services
-import { getItemLocalStorage, setItemLocalStorage, removeItemLocalStorage } from '@services';
+import { getItemLocalStorage, setItemLocalStorage, removeItemLocalStorage, get } from '@services';
 
 interface ErrorResponse {
   message: string;
@@ -23,7 +23,7 @@ interface Me {
 }
 
 const verifyEmailAndPassword = async (emailInput: string, passwordInput: string) => {
-  const users: User[] | null = await getRequest(`${ENVS.VITE_API_ENDPOINT}${API_ENDPOINTS.USERS}`);
+  const users: User[] | null = await get(`${ENVS.VITE_API_ENDPOINT}${API_ENDPOINTS.USERS}`);
 
   const user = users?.find(({ email, password }) => {
     const isValidPassword = decryptPassword(password) === passwordInput;
@@ -44,7 +44,7 @@ const verifyEmailAndPassword = async (emailInput: string, passwordInput: string)
 };
 
 export const getCurrentUser = async () => {
-  const jwtToken = getItemLocalStorage('token');
+  const jwtToken = getItemLocalStorage(LOCAL_STORAGE_KEY.TOKEN);
 
   try {
     return await verifyJWT(jwtToken, ENVS.VITE_SECRET_KEY);
@@ -71,8 +71,7 @@ export const useAuth = () => {
         setErrorMessage('');
 
         // Save token into local storage
-
-        setItemLocalStorage('token', jwt);
+        setItemLocalStorage(LOCAL_STORAGE_KEY.TOKEN, jwt);
 
         return authResponse;
       }
@@ -82,11 +81,11 @@ export const useAuth = () => {
   };
 
   const logout = () => {
-    removeItemLocalStorage('token');
+    removeItemLocalStorage(LOCAL_STORAGE_KEY.TOKEN);
   };
 
   const getCurrentUser = async () => {
-    const jwtToken = getItemLocalStorage('token');
+    const jwtToken = getItemLocalStorage(LOCAL_STORAGE_KEY.TOKEN);
 
     try {
       return await verifyJWT(jwtToken, ENVS.VITE_SECRET_KEY);

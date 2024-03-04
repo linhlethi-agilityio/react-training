@@ -1,6 +1,7 @@
 // Icons
 import { BookmarkIcon, GraduationSmallIcon, HomeIcon, PaymentIcon, ReportIcon, SettingIcon } from '@icons';
 import { ROUTERS } from './routes';
+import { StudentsPage } from '@pages';
 
 export const SIDEBAR_NAVIGATION = [
   {
@@ -17,6 +18,7 @@ export const SIDEBAR_NAVIGATION = [
     icon: GraduationSmallIcon,
     label: 'Students',
     router: ROUTERS.STUDENTS,
+    element: StudentsPage,
   },
   {
     icon: PaymentIcon,

@@ -1,4 +1,3 @@
-export * from './paymentType';
-export * from './studentType';
-export * from './userType';
+export * from './payment';
+export * from './student';
 export * from './auth';

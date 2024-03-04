@@ -12,9 +12,9 @@
 // import { clearErrorOnChange, isValidFormat, validateRequired } from '@utils';
 
 // // Types
-// import { StudentType } from '@types';
+// import { Student } from '@types';
 
-// interface StudentModalDetailModalProps extends StudentType {
+// interface StudentModalDetailModalProps extends Student {
 //   isOpen: boolean;
 //   onClose: () => void;
 // }

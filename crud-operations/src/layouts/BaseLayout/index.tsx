@@ -5,6 +5,9 @@ import { Box, Flex } from '@chakra-ui/react';
 // Hooks
 import { useAuth, useToastCustom, useValidateIdentity } from '@hooks';
 
+// Constants
+import { ROUTERS } from '@constants';
+
 // Components
 import SideBar from '../SideBar';
 import { Header } from '@components';
@@ -32,7 +35,7 @@ const BaseLayout = () => {
 
   const handleLogout = useCallback(() => {
     logout();
-    navigate('/login');
+    navigate(ROUTERS.LOGIN);
   }, []);
 
   const handleOnSearch = useCallback((keyword: string) => {
@@ -60,7 +63,7 @@ const BaseLayout = () => {
         />
 
         {/* Content of page will render here */}
-        <Box overflowY="auto" height="calc(100vh - 64px)" px={30} pb={30}>
+        <Box overflowY="auto" height="calc(100vh - 64px)" px={30} pb={30} bgColor="background.table">
           <Outlet />
         </Box>
       </Box>

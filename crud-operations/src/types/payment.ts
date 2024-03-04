@@ -1,4 +1,4 @@
-export interface PaymentType {
+export interface Payment {
   name: string;
   paymentSchedule: string;
   billNumber: number;
