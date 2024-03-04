@@ -6,26 +6,36 @@ import { TableCell, TableRow } from '@components';
 
 export type TTableAccessor<T> = ((item: T, inputProps?: object) => ReactNode) | keyof T;
 
-export interface ITableColumn<T> {
+export interface TableColumn<T> {
   id: string;
-  fieldName: string;
+  fieldName?: string;
   accessor: TTableAccessor<T>;
-  header: string;
+  header?: string;
 }
 
-interface ICustomTableProps<T> {
-  columns: ITableColumn<T>[];
+interface CustomTableProps<T> {
+  columns: TableColumn<T>[];
   data: T[];
 }
 
-const Table = <T,>({ columns, data }: ICustomTableProps<T>) => {
+const Table = <T,>({ columns, data }: CustomTableProps<T>) => {
+  console.log(data);
+
   const headerRow = (
     <Tr>
       {columns.map((columnConfig) => {
         const { id, header } = columnConfig;
 
         return (
-          <Th key={`header-${id}`} textTransform="unset" color="tableHeader" fontWeight="semiBold" lineHeight="xs">
+          <Th
+            key={`header-${id}`}
+            borderBottomWidth={0}
+            textTransform="unset"
+            color="tableHeader"
+            fontWeight="semiBold"
+            lineHeight="xs"
+            py={21}
+          >
             {header}
           </Th>
         );

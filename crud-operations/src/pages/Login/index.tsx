@@ -16,7 +16,7 @@ import {
 } from '@chakra-ui/react';
 
 // Constants
-import { ERROR_MESSAGES, MIN_PASSWORD_LENGTH } from '@constants';
+import { ERROR_MESSAGES, MIN_PASSWORD_LENGTH, ROUTERS } from '@constants';
 
 // Utils
 import { clearErrorOnChange, isValidEmail } from '@utils';
@@ -53,7 +53,7 @@ const LoginPage = () => {
   const handleLogin = useCallback(async ({ email, password }: LoginFormData) => {
     const loginResponse = await loginWithEmailPassword(email, password);
     if (loginResponse) {
-      navigate('/');
+      navigate(ROUTERS.DASHBOARD);
     } else {
       toast({
         title: ERROR_MESSAGES.LOGIN_FAILED,
@@ -69,7 +69,7 @@ const LoginPage = () => {
     <Box bgGradient={`linear(to-r, ${'primary'}, ${'background.body'})`} height="100vh">
       <Center h="full">
         <Card size="xl" w="full" px={30} py={42} alignItems="center">
-          <BrandLogo size="lg" onClick={() => navigate('/')} />
+          <BrandLogo size="lg" onClick={() => navigate(ROUTERS.DASHBOARD)} />
           <Heading size="md" fontWeight="semiBold" textTransform="uppercase" mt={43}>
             Sign In
           </Heading>

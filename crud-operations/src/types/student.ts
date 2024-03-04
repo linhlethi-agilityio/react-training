@@ -1,4 +1,4 @@
-export interface StudentType {
+export interface Student {
   avatarUrl?: string;
   name: string;
   email: string;

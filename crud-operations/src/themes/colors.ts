@@ -7,6 +7,7 @@ export const colors = {
 
   background: {
     sidebar: '#F2EAE1',
+    table: '#F8F8F8',
     body: '#F8D442',
     cardStudent: '#F0F9FF',
     cardCourse: '#FEF6FB',
