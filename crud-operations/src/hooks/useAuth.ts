@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 
 // Constants
 import { API_ENDPOINTS, ENVS, LOCAL_STORAGE_KEY } from '@constants';
@@ -43,6 +43,9 @@ const verifyEmailAndPassword = async (emailInput: string, passwordInput: string)
   }
 };
 
+/**
+ * @deprecated Moved to useAuth, please don't use it
+ */
 export const getCurrentUser = async () => {
   const jwtToken = getItemLocalStorage(LOCAL_STORAGE_KEY.TOKEN);
 
@@ -84,7 +87,7 @@ export const useAuth = () => {
     removeItemLocalStorage(LOCAL_STORAGE_KEY.TOKEN);
   };
 
-  const getCurrentUser = async () => {
+  const getCurrentUser = useCallback(async () => {
     const jwtToken = getItemLocalStorage(LOCAL_STORAGE_KEY.TOKEN);
 
     try {
@@ -92,7 +95,7 @@ export const useAuth = () => {
     } catch (error) {
       return null;
     }
-  };
+  }, []);
 
   return {
     me,
