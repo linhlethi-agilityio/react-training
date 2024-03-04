@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import { Avatar, Box, Button, Flex, HStack, Heading, Icon, Spinner, useDisclosure } from '@chakra-ui/react';
 
 // Icons
@@ -18,7 +18,8 @@ import { formatDate } from '@utils';
 import { ConfirmModal, StudentDetailModal, Table } from '@components';
 
 const StudentsPage = () => {
-  const { students, isLoading, deleteStudent, getStudentById } = useStudents();
+  const { students, isLoading, deleteStudent } = useStudents();
+  const [previewData, setPreviewData] = useState<Student | null>(null);
   const [removedId, setRemovedId] = useState<string>('');
 
   const { isOpen: isOpenAddStudent, onOpen: onOpenAddStudent, onClose: onCloseAddStudent } = useDisclosure();
@@ -27,20 +28,12 @@ const StudentsPage = () => {
 
   const toast = useToastCustom();
 
-  const formattedStudents = students
+  const formattedStudents: Student[] | undefined = students
     ?.map((student) => ({
       ...student,
       dateOfAdmission: formatDate(+student.dateOfAdmission),
     }))
     .reverse();
-
-  const initFormData = {
-    name: '',
-    email: '',
-    phone: '',
-    enrollNumber: '',
-    dateOfAdmission: '',
-  };
 
   const studentsColumns: TableColumn<Student>[] = [
     {
@@ -95,9 +88,19 @@ const StudentsPage = () => {
     id && setRemovedId(id);
   };
 
-  const handleEditStudent = async (id?: string) => {
-    id && getStudentById(id);
+  const handleEditStudent = async (selectedId?: string) => {
+    const currentStudent = formattedStudents?.find(({ id }) => id === selectedId);
+
+    if (currentStudent) {
+      setPreviewData(currentStudent);
+      onOpenAddStudent();
+    }
   };
+
+  const handleAddNewStudent = useCallback(() => {
+    onOpenAddStudent();
+    setPreviewData(null);
+  }, [onOpenAddStudent]);
 
   return (
     <>
@@ -108,7 +111,7 @@ const StudentsPage = () => {
             <Button variant="ghost">
               <SortIcon />
             </Button>
-            <Button onClick={() => onOpenAddStudent()}>Add new student</Button>
+            <Button onClick={handleAddNewStudent}>Add new student</Button>
           </Flex>
         </Flex>
         <Box>
@@ -121,16 +124,11 @@ const StudentsPage = () => {
           )}
         </Box>
       </Box>
-      <StudentDetailModal
-        isOpen={isOpenAddStudent}
-        onClose={onCloseAddStudent}
-        id=""
-        name={initFormData.name}
-        email={initFormData.email}
-        phone={initFormData.phone}
-        enrollNumber={initFormData.enrollNumber}
-        dateOfAdmission={+initFormData.dateOfAdmission}
-      />
+
+      {isOpenAddStudent && (
+        <StudentDetailModal isOpen={isOpenAddStudent} onClose={onCloseAddStudent} previewData={previewData} />
+      )}
+
       <ConfirmModal
         isOpen={isOpenConfirm}
         onCancel={onCloseConfirm}
