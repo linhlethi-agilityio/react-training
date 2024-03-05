@@ -5,7 +5,7 @@ import { BookmarkIcon, GraduationSmallIcon, HomeIcon, PaymentIcon, ReportIcon, S
 import { ROUTERS } from './routes';
 
 // Pages
-import { PaymentPage, StudentsPage } from '@pages';
+import { PaymentsPage, StudentsPage } from '@pages';
 
 export const SIDEBAR_NAVIGATION = [
   {
@@ -28,7 +28,7 @@ export const SIDEBAR_NAVIGATION = [
     icon: PaymentIcon,
     label: 'Payment',
     router: ROUTERS.PAYMENT,
-    element: PaymentPage,
+    element: PaymentsPage,
   },
   {
     icon: ReportIcon,

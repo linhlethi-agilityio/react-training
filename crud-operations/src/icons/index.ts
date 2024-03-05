@@ -12,3 +12,4 @@ export * from './TrashIcon';
 export * from './CaretIcon';
 export * from './BellIcon';
 export * from './SortIcon';
+export * from './EyeIcon';

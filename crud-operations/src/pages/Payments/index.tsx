@@ -1,21 +1,33 @@
 import { useCallback, useState } from 'react';
-import { Box, Button, Flex, Heading, Icon } from '@chakra-ui/react';
+import { Box, Button, Flex, Heading, Icon, Spinner, Text } from '@chakra-ui/react';
 
 // Icons
-import { PenIcon, SortIcon } from '@icons';
+import { EyeIcon, SortIcon } from '@icons';
+
+// Types
+import { Payment } from '@types';
+import { TableColumn } from '@components/Table';
+
+// Hooks
+import { usePayments } from '@hooks';
 
 // Components
 import { Table } from '@components';
-import { Payment } from '@types';
-import { TableColumn } from '@components/Table';
+import { formatDate } from '@utils';
+
+interface PaymentsPageProps {
+  keyword: string;
+}
 
 enum SortType {
   Ascending = 'ascending',
   Descending = 'descending',
 }
 
-const PaymentPage = () => {
+const PaymentPage = ({ keyword }: PaymentsPageProps) => {
   const [sortType, setSortType] = useState<string>('');
+
+  const { payments, isLoading } = usePayments();
 
   const handleOnSort = useCallback(() => {
     if (!sortType) {
@@ -30,6 +42,23 @@ const PaymentPage = () => {
       setSortType(sortType === SortType.Ascending ? SortType.Descending : SortType.Ascending);
     }
   }, [sortType]);
+
+  const formattedPayments: Payment[] | undefined = payments
+    ?.map((payment) => ({
+      ...payment,
+      date: formatDate(+payment.date),
+    }))
+    .reverse()
+    .filter((payment) => JSON.stringify(Object.values(payment)).toLowerCase().includes(keyword.toLowerCase()))
+    .sort((prev, next) => {
+      if (sortType) {
+        return sortType === SortType.Ascending
+          ? prev.name.localeCompare(next.name)
+          : next.name.localeCompare(prev.name);
+      }
+
+      return 1;
+    });
 
   const paymentColumns: TableColumn<Payment>[] = [
     {
@@ -46,11 +75,11 @@ const PaymentPage = () => {
     },
     {
       header: 'Amount Paid',
-      accessor: 'amountPaid',
+      accessor: (value: Payment) => `INR ${value.amountPaid}`,
     },
     {
       header: 'Balance amount',
-      accessor: 'balanceAmount',
+      accessor: (value: Payment) => `INR ${value.balanceAmount}`,
     },
     {
       header: 'Date',
@@ -59,7 +88,7 @@ const PaymentPage = () => {
     {
       accessor: () => (
         <Button variant="ghost">
-          <Icon as={PenIcon} />
+          <Icon as={EyeIcon} />
         </Button>
       ),
     },
@@ -74,7 +103,21 @@ const PaymentPage = () => {
         </Button>
       </Flex>
       <Box>
-        <Table columns={paymentColumns} data={[]} />
+        {isLoading ? (
+          <Box textAlign="center" mt={10}>
+            <Spinner size="lg" />
+          </Box>
+        ) : (
+          <>
+            {formattedPayments?.length ? (
+              <Table columns={paymentColumns} data={formattedPayments || []} />
+            ) : (
+              <Text textAlign="center" mt={20} fontSize="md">
+                No record not found!
+              </Text>
+            )}
+          </>
+        )}
       </Box>
     </Box>
   );

@@ -3,7 +3,7 @@ export const ROUTERS = {
   DASHBOARD: '/',
   COURSE: '/course',
   STUDENTS: '/students',
-  PAYMENT: '/payment',
+  PAYMENT: '/payments',
   REPORT: '/report',
   SETTINGS: '/setting',
 };

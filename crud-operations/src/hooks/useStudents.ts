@@ -9,11 +9,6 @@ import { API_ENDPOINTS, ENVS } from '@constants';
 // Types
 import { Student } from '@types';
 
-interface ApiResponse<T> {
-  data: T;
-  status: number;
-}
-
 export const useStudents = () => {
   const studentsEndPoint = `${ENVS.VITE_API_ENDPOINT}${API_ENDPOINTS.STUDENTS}`;
 
@@ -61,18 +56,6 @@ export const useStudents = () => {
     }
   };
 
-  const getStudentById = async (studentId: string): Promise<Student | undefined> => {
-    try {
-      const response: ApiResponse<Student> = await get(`${studentsEndPoint}/${studentId}`);
-
-      return response.data;
-    } catch (error) {
-      // Handle error
-      console.error('Error fetching student by ID:', error);
-      return undefined;
-    }
-  };
-
   return {
     students: data,
     isLoading: !data && !error,
@@ -80,6 +63,5 @@ export const useStudents = () => {
     createStudent,
     updateStudent,
     deleteStudent,
-    getStudentById,
   };
 };
