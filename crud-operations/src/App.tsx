@@ -21,7 +21,7 @@ const PlaceholderPage = ({ pageName }: { pageName: string }) => (
 );
 
 const App = () => {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState<string>('');
 
   return (
     <ChakraProvider theme={theme}>
