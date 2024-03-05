@@ -1,24 +1,41 @@
 import { ReactNode, memo } from 'react';
-import { Card, Heading, Text } from '@chakra-ui/react';
+import { Card, Heading, Text, Box, Flex } from '@chakra-ui/react';
 
 interface CardItemProps {
-  cardColor: string;
+  cardColor?: string;
+  bgGradient?: string;
   color?: string;
   name: string;
   icon: ReactNode;
-  count: number;
+  count: number | string;
+  isMoney?: boolean;
 }
 
-const CardItem = ({ cardColor, count, color = 'text.default', name, icon }: CardItemProps) => {
+const CardItem = ({
+  isMoney = false,
+  cardColor,
+  count,
+  color = 'text.default',
+  name,
+  icon,
+  bgGradient,
+}: CardItemProps) => {
   return (
-    <Card bgColor={cardColor} maxW="255px" padding="20px">
-      {icon}
-      <Heading fontSize="text.sm" lineHeight="sm" fontWeight="normal" color={color} marginTop="15px">
+    <Card bgColor={cardColor} padding={5} flex={1} bgGradient={bgGradient}>
+      <Box h={10}>{icon}</Box>
+      <Heading fontSize="text.sm" lineHeight="sm" fontWeight="normal" color={color} marginTop={15}>
         {name}
       </Heading>
-      <Text textAlign="end" size="large" fontWeight="bold">
-        {count}
-      </Text>
+      <Flex justifyContent="end">
+        {isMoney && (
+          <Text fontSize={18} lineHeight="xl" mr={1} fontWeight="bold">
+            INR
+          </Text>
+        )}
+        <Text textAlign="end" size="large" fontWeight="bold">
+          {count}
+        </Text>
+      </Flex>
     </Card>
   );
 };

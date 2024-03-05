@@ -5,13 +5,14 @@ import { BookmarkIcon, GraduationSmallIcon, HomeIcon, PaymentIcon, ReportIcon, S
 import { ROUTERS } from './routes';
 
 // Pages
-import { PaymentsPage, StudentsPage } from '@pages';
+import { DashboardPage, PaymentsPage, StudentsPage } from '@pages';
 
 export const SIDEBAR_NAVIGATION = [
   {
     icon: HomeIcon,
     label: 'Home',
     router: ROUTERS.DASHBOARD,
+    element: DashboardPage,
   },
   {
     icon: BookmarkIcon,

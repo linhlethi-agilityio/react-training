@@ -15,8 +15,8 @@ import { LoginPage } from '@pages';
 import { BaseLayout } from '@components';
 
 const PlaceholderPage = ({ pageName }: { pageName: string }) => (
-  <Box>
-    <Text>Hello world! {pageName} page</Text>
+  <Box mt={30}>
+    <Text>{pageName} page coming soon!...</Text>
   </Box>
 );
 
