@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react';
-import { Box, Button, Flex, Heading, Icon, Spinner, Text } from '@chakra-ui/react';
+import { Box, Button, Flex, Heading, Icon, Spinner, Text, useDisclosure } from '@chakra-ui/react';
 
 // Icons
 import { EyeIcon, SortIcon } from '@icons';
@@ -12,7 +12,7 @@ import { TableColumn } from '@components/Table';
 import { usePayments } from '@hooks';
 
 // Components
-import { Table } from '@components';
+import { PaymentDetailModal, Table } from '@components';
 import { formatDate } from '@utils';
 
 interface PaymentsPageProps {
@@ -26,8 +26,11 @@ enum SortType {
 
 const PaymentPage = ({ keyword }: PaymentsPageProps) => {
   const [sortType, setSortType] = useState<string>('');
+  const [previewData, setPreviewData] = useState<Payment | null>(null);
 
   const { payments, isLoading } = usePayments();
+
+  const { isOpen: isOpenPaymentDetail, onOpen: onOpenPaymentDetail, onClose: onClosePaymentDetail } = useDisclosure();
 
   const handleOnSort = useCallback(() => {
     if (!sortType) {
@@ -86,40 +89,55 @@ const PaymentPage = ({ keyword }: PaymentsPageProps) => {
       accessor: 'date',
     },
     {
-      accessor: () => (
-        <Button variant="ghost">
+      accessor: (data: Payment) => (
+        <Button variant="ghost" onClick={() => handleOpenPaymentDetailModal(data.id)}>
           <Icon as={EyeIcon} />
         </Button>
       ),
     },
   ];
 
+  const handleOpenPaymentDetailModal = (selectedId: string) => {
+    const currentPayment = formattedPayments?.find(({ id }) => id === selectedId);
+
+    onOpenPaymentDetail();
+
+    if (currentPayment) {
+      setPreviewData(currentPayment);
+    }
+  };
+
   return (
-    <Box mt={5}>
-      <Flex justifyContent="space-between" alignItems="center" borderBottomWidth={1} pb={3}>
-        <Heading size="md">Students List</Heading>
-        <Button variant="ghost" onClick={handleOnSort}>
-          <SortIcon isUp={sortType === SortType.Ascending} isDown={sortType === SortType.Descending} />
-        </Button>
-      </Flex>
-      <Box>
-        {isLoading ? (
-          <Box textAlign="center" mt={10}>
-            <Spinner size="lg" />
-          </Box>
-        ) : (
-          <>
-            {formattedPayments?.length ? (
-              <Table columns={paymentColumns} data={formattedPayments || []} />
-            ) : (
-              <Text textAlign="center" mt={20} fontSize="md">
-                No record not found!
-              </Text>
-            )}
-          </>
-        )}
+    <>
+      <Box mt={5}>
+        <Flex justifyContent="space-between" alignItems="center" borderBottomWidth={1} pb={3}>
+          <Heading size="md">Students List</Heading>
+          <Button variant="ghost" onClick={handleOnSort}>
+            <SortIcon isUp={sortType === SortType.Ascending} isDown={sortType === SortType.Descending} />
+          </Button>
+        </Flex>
+        <Box>
+          {isLoading ? (
+            <Box textAlign="center" mt={10}>
+              <Spinner size="lg" />
+            </Box>
+          ) : (
+            <>
+              {formattedPayments?.length ? (
+                <Table isStriped columns={paymentColumns} data={formattedPayments || []} />
+              ) : (
+                <Text textAlign="center" mt={20} fontSize="md">
+                  No record not found!
+                </Text>
+              )}
+            </>
+          )}
+        </Box>
       </Box>
-    </Box>
+      {isOpenPaymentDetail && (
+        <PaymentDetailModal previewData={previewData} isOpen={isOpenPaymentDetail} onClose={onClosePaymentDetail} />
+      )}
+    </>
   );
 };
 

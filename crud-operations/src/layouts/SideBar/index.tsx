@@ -1,16 +1,20 @@
 import { useEffect, useState } from 'react';
 import { Avatar, Heading, Text, VStack } from '@chakra-ui/react';
 
-// Components
-import { BrandLogo, Navigation, LogoutButton } from '@components';
-
 // Constants
 import { ROUTERS } from '@constants';
 
 // Utils
 import { acronymText } from '@utils';
+
+// Hooks
 import { useAuth } from '@hooks';
+
+// Types
 import { User } from '@types';
+
+// Components
+import { BrandLogo, Navigation, LogoutButton } from '@components';
 
 interface SideBarProps {
   isClosed?: boolean;
@@ -25,6 +29,7 @@ const SideBar = ({ isClosed, onNavigate, onLogout }: SideBarProps) => {
   useEffect(() => {
     const getMe = async () => {
       const userResponse = await getCurrentUser();
+
       setCurrentUser(userResponse as unknown as User);
     };
 

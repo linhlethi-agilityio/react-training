@@ -86,7 +86,7 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
             <Icon as={PenIcon} />
           </Button>
           <Button variant="ghost" onClick={() => openConfirmModal(data?.id)}>
-            <TrashIcon />
+            <Icon as={TrashIcon} />
           </Button>
         </HStack>
       ),
@@ -148,7 +148,7 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
       <Box pt={5}>
         <Flex justifyContent="space-between" alignItems="center" borderBottomWidth={1} pb={3}>
           <Heading size="md">Students List</Heading>
-          <Flex>
+          <Flex gap={1}>
             <Button variant="ghost" onClick={handleOnSort}>
               <SortIcon isUp={sortType === SortType.Ascending} isDown={sortType === SortType.Descending} />
             </Button>

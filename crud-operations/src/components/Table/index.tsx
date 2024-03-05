@@ -14,10 +14,11 @@ export interface TableColumn<T> {
 
 interface CustomTableProps<T> {
   columns: TableColumn<T>[];
+  isStriped?: boolean;
   data: T[];
 }
 
-const Table = <T,>({ columns, data }: CustomTableProps<T>) => {
+const Table = <T,>({ columns, data, isStriped = false }: CustomTableProps<T>) => {
   const headerRow = (
     <Tr>
       {columns.map((columnConfig, index) => {
@@ -51,7 +52,10 @@ const Table = <T,>({ columns, data }: CustomTableProps<T>) => {
   };
 
   return (
-    <BaseTable>
+    <BaseTable
+      bg={!isStriped ? 'while' : 'background.table'}
+      {...(isStriped && { variant: 'striped', colorScheme: 'telegram' })}
+    >
       <Thead>{headerRow}</Thead>
       <Tbody>
         {data.map((item, index) => (

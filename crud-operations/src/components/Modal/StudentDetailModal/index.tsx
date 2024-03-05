@@ -82,7 +82,7 @@ const StudentDetailModal = ({ isOpen, previewData, onClose }: StudentModalDetail
   };
 
   return (
-    <CustomModal isOpen={isOpen} onClose={onClose} title="Student Detail">
+    <CustomModal isOpen={isOpen} onClose={onClose} title={isEditMode ? 'Update Student' : 'Add Student'}>
       <FormControl textAlign="center">
         {/* Name */}
         <Controller

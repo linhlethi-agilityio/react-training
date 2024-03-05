@@ -3,7 +3,7 @@ export const acronymText = (phrase: string) => {
   let acronym = '';
 
   words.forEach((word) => {
-    acronym += word[0].toUpperCase();
+    acronym += word[0];
   });
 
   return acronym;
