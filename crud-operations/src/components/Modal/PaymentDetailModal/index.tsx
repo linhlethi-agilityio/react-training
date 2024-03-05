@@ -7,21 +7,15 @@ import { CustomModal } from '@components';
 // Types
 import { Payment } from '@types';
 
-interface PaymentDetailModalProps extends Payment {
+interface PaymentDetailModalProps {
   isOpen: boolean;
+  previewData: Payment | null;
   onClose: () => void;
 }
 
-const PaymentDetailModal = ({
-  isOpen,
-  onClose,
-  name,
-  paymentSchedule,
-  billNumber,
-  amountPaid,
-  balanceAmount,
-  date,
-}: PaymentDetailModalProps) => {
+const PaymentDetailModal = ({ isOpen, previewData, onClose }: PaymentDetailModalProps) => {
+  const { name, paymentSchedule, billNumber, amountPaid, balanceAmount, date } = previewData || {};
+
   const PaymentDetailArray = [
     {
       name: 'Name',
@@ -57,7 +51,7 @@ const PaymentDetailModal = ({
 
           return (
             <Flex justifyContent="space-between" marginTop="10px" alignItems="center" key={`payment-item-${name}`}>
-              <Heading size="small">{name}:</Heading>
+              <Heading size="xs">{name}:</Heading>
               <Text size="small">{value}</Text>
             </Flex>
           );

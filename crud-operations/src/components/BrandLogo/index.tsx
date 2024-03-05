@@ -4,16 +4,16 @@ import { Heading, Link } from '@chakra-ui/react';
 // Utils
 import { acronymText } from '@utils';
 
+// Constants
+import { BRAND_NAME } from '@constants';
+
 interface BrandLogoProps {
-  size?: 'md' | 'lg';
+  size?: 'sm' | 'lg';
   isAcronym?: boolean;
   onClick: () => void;
 }
 
-// TODO: Move this into constant, such as Brand Name
-const brandName = 'crud operations';
-
-const BrandLogo = ({ size = 'md', isAcronym, onClick }: BrandLogoProps) => (
+const BrandLogo = ({ size = 'sm', isAcronym, onClick }: BrandLogoProps) => (
   <Link
     w="fit-content"
     _hover={{
@@ -23,12 +23,12 @@ const BrandLogo = ({ size = 'md', isAcronym, onClick }: BrandLogoProps) => (
   >
     <Heading
       size={size}
-      paddingLeft="12px"
+      paddingLeft={3}
       textTransform="uppercase"
-      borderLeftWidth="4px"
+      borderLeftWidth={4}
       borderLeftColor="border.secondary"
     >
-      {isAcronym ? acronymText(brandName) : brandName}
+      {isAcronym ? acronymText(BRAND_NAME) : BRAND_NAME}
     </Heading>
   </Link>
 );
