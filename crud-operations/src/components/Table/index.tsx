@@ -52,16 +52,17 @@ const Table = <T,>({ columns, data, isStriped = false }: CustomTableProps<T>) =>
   };
 
   return (
-    <BaseTable
-      bg={!isStriped ? 'while' : 'background.table'}
-      {...(isStriped && { variant: 'striped', colorScheme: 'telegram' })}
-    >
+    <BaseTable {...(isStriped && { variant: 'striped', colorScheme: 'telegram' })}>
       <Thead>{headerRow}</Thead>
       <Tbody>
         {data.map((item, index) => (
           <TableRow key={`table-row-${index}`}>
             {columns.map((columnConfig, indexColumn) => {
-              return <TableCell key={`table-cell-${indexColumn}`}>{renderCell(item, columnConfig.accessor)}</TableCell>;
+              return (
+                <TableCell bg={!isStriped ? 'while' : 'background.table'} key={`table-cell-${indexColumn}`}>
+                  {renderCell(item, columnConfig.accessor)}
+                </TableCell>
+              );
             })}
           </TableRow>
         ))}
