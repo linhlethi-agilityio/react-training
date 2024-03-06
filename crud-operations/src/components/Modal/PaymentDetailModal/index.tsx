@@ -1,11 +1,11 @@
 import { memo } from 'react';
 import { Box, Flex, Heading, Text } from '@chakra-ui/react';
 
-// Components
-import { CustomModal } from '@components';
-
 // Types
 import { Payment } from '@types';
+
+// Components
+import { CustomModal } from '@components';
 
 interface PaymentDetailModalProps {
   isOpen: boolean;

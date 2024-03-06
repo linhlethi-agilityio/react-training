@@ -3,9 +3,11 @@ import { Flex } from '@chakra-ui/react';
 // Icons
 import { BookmarkMediumIcon, GraduationIcon, SquareIcon, UserIcon } from '@icons';
 
+// Hooks
+import { usePayments, useStudents } from '@hooks';
+
 // Components
 import { CardItem } from '@components';
-import { usePayments, useStudents } from '@hooks';
 
 const DashboardPage = () => {
   const { payments } = usePayments();

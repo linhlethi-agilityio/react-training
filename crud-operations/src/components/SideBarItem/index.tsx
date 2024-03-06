@@ -1,5 +1,5 @@
-import { Box, HStack, Link, Text } from '@chakra-ui/react';
 import { ReactNode, memo } from 'react';
+import { Box, HStack, Link, Text } from '@chakra-ui/react';
 
 export interface SideBarItemProps {
   isFocused?: boolean;

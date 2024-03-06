@@ -11,9 +11,11 @@ import { clearErrorOnChange, formatDate, isValidEmail } from '@utils';
 // Types
 import { Student } from '@types';
 
+// Hooks
+import { useStudents, useToastCustom } from '@hooks';
+
 // Components
 import { CustomModal } from '@components';
-import { useStudents, useToastCustom } from '@hooks';
 interface StudentModalDetailModalProps {
   isOpen: boolean;
   previewData?: Student | null;
