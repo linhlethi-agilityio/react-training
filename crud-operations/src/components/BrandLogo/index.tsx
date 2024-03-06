@@ -1,11 +1,11 @@
 import { memo } from 'react';
 import { Heading, Link } from '@chakra-ui/react';
 
-// Utils
-import { acronymText } from '@utils';
-
 // Constants
 import { BRAND_NAME } from '@constants';
+
+// Utils
+import { acronymText } from '@utils';
 
 interface BrandLogoProps {
   size?: 'sm' | 'lg';

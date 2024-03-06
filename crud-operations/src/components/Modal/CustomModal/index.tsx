@@ -8,17 +8,15 @@ interface CustomModalProps {
   children: ReactNode;
 }
 
-const CustomModal = ({ isOpen, onClose, children, title }: CustomModalProps) => {
-  return (
-    <Modal isOpen={isOpen} onClose={onClose} isCentered>
-      <ModalOverlay />
-      <ModalContent opacity={0.6}>
-        <ModalHeader textAlign="center">{title}</ModalHeader>
-        <ModalCloseButton />
-        <ModalBody>{children}</ModalBody>
-      </ModalContent>
-    </Modal>
-  );
-};
+const CustomModal = ({ isOpen, onClose, children, title }: CustomModalProps) => (
+  <Modal isOpen={isOpen} onClose={onClose} isCentered>
+    <ModalOverlay />
+    <ModalContent opacity={0.6}>
+      <ModalHeader textAlign="center">{title}</ModalHeader>
+      <ModalCloseButton />
+      <ModalBody>{children}</ModalBody>
+    </ModalContent>
+  </Modal>
+);
 
 export default CustomModal;

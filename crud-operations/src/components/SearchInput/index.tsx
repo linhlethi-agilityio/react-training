@@ -1,7 +1,7 @@
 import { memo } from 'react';
 import { Input, InputProps, InputGroup, InputRightElement } from '@chakra-ui/react';
 
-// Components
+// Icons
 import { SearchIcon } from '@icons';
 
 interface SearchInputProps extends InputProps {
@@ -10,25 +10,23 @@ interface SearchInputProps extends InputProps {
   value: string;
 }
 
-const SearchInput = ({ placeholder = 'Start typing...', onChange, value, ...rest }: SearchInputProps) => {
-  return (
-    <InputGroup maxW={212}>
-      <Input
-        borderRadius="sm"
-        focusBorderColor="transparent"
-        _placeholder={{
-          color: 'text.placeholder',
-        }}
-        placeholder={placeholder}
-        onChange={onChange}
-        value={value}
-        {...rest}
-      />
-      <InputRightElement style={{ cursor: 'pointer' }}>
-        <SearchIcon />
-      </InputRightElement>
-    </InputGroup>
-  );
-};
+const SearchInput = ({ placeholder = 'Start typing...', onChange, value, ...rest }: SearchInputProps) => (
+  <InputGroup maxW={212}>
+    <Input
+      borderRadius="sm"
+      focusBorderColor="transparent"
+      _placeholder={{
+        color: 'text.placeholder',
+      }}
+      placeholder={placeholder}
+      onChange={onChange}
+      value={value}
+      {...rest}
+    />
+    <InputRightElement style={{ cursor: 'pointer' }}>
+      <SearchIcon />
+    </InputRightElement>
+  </InputGroup>
+);
 
 export default memo(SearchInput);

@@ -2,17 +2,21 @@ import { useCallback, useEffect, useState } from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
 import { Box, Flex } from '@chakra-ui/react';
 
+// Constants
+import { ERROR_MESSAGES, LOCAL_STORAGE_KEY, ROUTERS } from '@constants';
+
 // Hooks
 import { useAuth, useToastCustom } from '@hooks';
 
-// Constants
-import { ERROR_MESSAGES, LOCAL_STORAGE_KEY, ROUTERS } from '@constants';
+// Utils
+import { isFutureTime } from '@utils';
+
+// Services
+import { removeItemLocalStorage } from '@services';
 
 // Components
 import SideBar from '../SideBar';
 import { Header } from '@components';
-import { isFutureTime } from '@utils';
-import { removeItemLocalStorage } from '@services';
 
 enum SideBarState {
   Open = 'open',

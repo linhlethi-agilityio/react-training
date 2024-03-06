@@ -5,12 +5,10 @@ interface TableCellProps extends ChakraTableCellProps {
   children: ReactNode;
 }
 
-const TableCell = ({ children, ...rest }: TableCellProps) => {
-  return (
-    <Td fontSize="text.sm" lineHeight="sm" color="default" {...rest}>
-      {children}
-    </Td>
-  );
-};
+const TableCell = ({ children, ...rest }: TableCellProps) => (
+  <Td fontSize="text.sm" lineHeight="sm" color="default" {...rest}>
+    {children}
+  </Td>
+);
 
 export default TableCell;
