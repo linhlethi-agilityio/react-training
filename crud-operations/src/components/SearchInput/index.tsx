@@ -12,7 +12,7 @@ interface SearchInputProps extends InputProps {
 
 const SearchInput = ({ placeholder = 'Start typing...', onChange, value, ...rest }: SearchInputProps) => {
   return (
-    <InputGroup maxW="212px">
+    <InputGroup maxW={212}>
       <Input
         borderRadius="sm"
         focusBorderColor="transparent"

@@ -24,11 +24,16 @@ const Header = ({ isClosedSideBar, onToggleSideBar, onSearch }: HeaderProps) => 
   };
 
   return (
-    <Flex justifyContent="space-between" alignItems="center" padding="12px">
+    <Flex justifyContent="space-between" alignItems="center" padding={3}>
       <Button variant="ghost" onClick={onToggleSideBar}>
-        <Icon as={CaretIcon} boxSize={18} transform={isClosedSideBar ? 'rotate(180deg)' : 'rotate(0deg)'} transition="1s" />
+        <Icon
+          as={CaretIcon}
+          boxSize={18}
+          transform={isClosedSideBar ? 'rotate(180deg)' : 'rotate(0deg)'}
+          transition="1s"
+        />
       </Button>
-      <Flex gap="27px" alignItems="center">
+      <Flex gap={27} alignItems="center">
         <SearchInput placeholder="Search..." onChange={handleOnChange} value={searchValue} />
         <Button variant="ghost">
           <BellIcon />

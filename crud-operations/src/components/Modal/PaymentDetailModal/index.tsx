@@ -45,12 +45,12 @@ const PaymentDetailModal = ({ isOpen, previewData, onClose }: PaymentDetailModal
 
   return (
     <CustomModal isOpen={isOpen} onClose={onClose} title="Payment Detail">
-      <Box paddingX="40px" paddingBottom="40px">
+      <Box paddingX={10} paddingBottom={10}>
         {PaymentDetailArray.map((item) => {
           const { name, value } = item;
 
           return (
-            <Flex justifyContent="space-between" marginTop="10px" alignItems="center" key={`payment-item-${name}`}>
+            <Flex justifyContent="space-between" marginTop={2.5} alignItems="center" key={`payment-item-${name}`}>
               <Heading size="xs">{name}:</Heading>
               <Text size="small">{value}</Text>
             </Flex>
