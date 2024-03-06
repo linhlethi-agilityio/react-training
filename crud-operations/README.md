@@ -16,8 +16,8 @@ Crud operations is a system management users with base features are: crud studen
 
 1. Make sure you install packages with correct version below:
 
-- [node v18.12.0](https://nodejs.org/en/)
-- [pnpm 7.32.2](https://pnpm.io/)
+- [node v20.11.1](https://nodejs.org/en/)
+- [pnpm 8.15.4](https://pnpm.io/)
 
 2. Checkout branch and cd to crud-operations folder
 
@@ -28,6 +28,7 @@ Crud operations is a system management users with base features are: crud studen
 
 ### Run app
 
+- `pnpm start`
 - `pnpm run dev`
 - open localhost to view it in the browser
 
@@ -42,7 +43,4 @@ Crud operations is a system management users with base features are: crud studen
 
 - [Typescript](https://www.typescriptlang.org/): TypeScript is an open-source language which builds on JavaScript, one of the world's most used tools, by adding static type definitions.
 - [Husky](https://typicode.github.io/): Husky improves your commits and more! You can use it to lint your commit messages, run tests, lint code, etc... when you commit or push. Husky supports all Git hooks.
-
-### Todo
-
-1. Move icons into the components folder
+- [jwt](https://jwt.io/): JWT stands for JSON Web Token. It is a compact, URL-safe means of representing claims between two parties. This token format is often used for authentication and authorization purposes in web development. JWTs consist of three parts: a header, a payload, and a signature.
