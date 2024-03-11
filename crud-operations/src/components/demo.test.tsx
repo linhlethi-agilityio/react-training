@@ -1,22 +1,9 @@
-import { render } from '@testing-library/react';
+import { render } from '@test-utils';
 import BrandLogo from './BrandLogo';
 
 export const Demo = () => {
   return <p>hello man</p>;
 };
-
-jest.mock('jose', () => {
-  return {
-    // Mock implementations or objects
-  };
-});
-
-jest.mock('@constants', () => ({
-  ENVS: {
-    VITE_API_ENDPOINT: 'import.meta.env.VITE_API_ENDPOINT',
-    VITE_SECRET_KEY: 'import.meta.env.VITE_SECRET_KEY',
-  },
-}));
 
 describe('BrandLogo component', () => {
   test('should match snapshot for BrandLogo', () => {

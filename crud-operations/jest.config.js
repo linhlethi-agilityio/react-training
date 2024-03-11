@@ -17,7 +17,7 @@ export default {
     '@hooks': '<rootDir>/src/hooks',
     '@types': '<rootDir>/src/types',
     '@services': '<rootDir>/src/services',
-    // "@*": '<rootDir>/src/*'
+    '@test-utils': '<rootDir>/src/utils/testUtils.tsx',
   },
   transform: {
     '^.+\\.[t|j]sx?$': 'babel-jest',
