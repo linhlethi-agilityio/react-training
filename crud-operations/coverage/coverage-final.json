@@ -1,0 +1,3851 @@
+{
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/App.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/App.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 17, "column": 24 }, "end": { "line": 21, "column": 1 } },
+      "1": { "start": { "line": 18, "column": 2 }, "end": { "line": 20, "column": 8 } },
+      "2": { "start": { "line": 23, "column": 12 }, "end": { "line": 44, "column": 1 } },
+      "3": { "start": { "line": 24, "column": 30 }, "end": { "line": 24, "column": 50 } },
+      "4": { "start": { "line": 26, "column": 2 }, "end": { "line": 43, "column": 4 } },
+      "5": { "start": { "line": 32, "column": 14 }, "end": { "line": 36, "column": 16 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 17, "column": 24 }, "end": { "line": 17, "column": 25 } },
+        "loc": { "start": { "line": 18, "column": 2 }, "end": { "line": 20, "column": 8 } },
+        "line": 18
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": { "start": { "line": 23, "column": 12 }, "end": { "line": 23, "column": 13 } },
+        "loc": { "start": { "line": 23, "column": 18 }, "end": { "line": 44, "column": 1 } },
+        "line": 23
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": { "start": { "line": 31, "column": 36 }, "end": { "line": 31, "column": 37 } },
+        "loc": { "start": { "line": 32, "column": 14 }, "end": { "line": 36, "column": 16 } },
+        "line": 32
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 35, "column": 25 }, "end": { "line": 35, "column": 102 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 35, "column": 35 }, "end": { "line": 35, "column": 63 } },
+          { "start": { "line": 35, "column": 66 }, "end": { "line": 35, "column": 102 } }
+        ],
+        "line": 35
+      }
+    },
+    "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0 },
+    "f": { "0": 0, "1": 0, "2": 0 },
+    "b": { "0": [0, 0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/main.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/main.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 7, "column": 13 }, "end": { "line": 7, "column": 71 } },
+      "1": { "start": { "line": 9, "column": 0 }, "end": { "line": 13, "column": 2 } }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0, "1": 0 },
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/vite-env.d.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/vite-env.d.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/index.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/index.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/BrandLogo/index.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/BrandLogo/index.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 16, "column": 18 }, "end": { "line": 34, "column": 1 } },
+      "1": { "start": { "line": 17, "column": 2 }, "end": { "line": 33, "column": 9 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 16, "column": 18 }, "end": { "line": 16, "column": 19 } },
+        "loc": { "start": { "line": 17, "column": 2 }, "end": { "line": 33, "column": 9 } },
+        "line": 17
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 16, "column": 21 }, "end": { "line": 16, "column": 32 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 16, "column": 28 }, "end": { "line": 16, "column": 32 } }],
+        "line": 16
+      },
+      "1": {
+        "loc": { "start": { "line": 31, "column": 7 }, "end": { "line": 31, "column": 55 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 31, "column": 19 }, "end": { "line": 31, "column": 42 } },
+          { "start": { "line": 31, "column": 45 }, "end": { "line": 31, "column": 55 } }
+        ],
+        "line": 31
+      }
+    },
+    "s": { "0": 1, "1": 1 },
+    "f": { "0": 1 },
+    "b": { "0": [1], "1": [0, 1] },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "78ad35a38f694e37c92d212dd768a6f2b3a66d2d"
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/CardItem/index.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/CardItem/index.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 14, "column": 17 }, "end": { "line": 41, "column": 1 } },
+      "1": { "start": { "line": 23, "column": 2 }, "end": { "line": 40, "column": 4 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 14, "column": 17 }, "end": { "line": 14, "column": 18 } },
+        "loc": { "start": { "line": 22, "column": 21 }, "end": { "line": 41, "column": 1 } },
+        "line": 22
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 15, "column": 2 }, "end": { "line": 15, "column": 17 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 15, "column": 12 }, "end": { "line": 15, "column": 17 } }],
+        "line": 15
+      },
+      "1": {
+        "loc": { "start": { "line": 18, "column": 2 }, "end": { "line": 18, "column": 24 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 18, "column": 10 }, "end": { "line": 18, "column": 24 } }],
+        "line": 18
+      },
+      "2": {
+        "loc": { "start": { "line": 30, "column": 9 }, "end": { "line": 34, "column": 9 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 30, "column": 9 }, "end": { "line": 30, "column": 16 } },
+          { "start": { "line": 31, "column": 10 }, "end": { "line": 33, "column": 17 } }
+        ],
+        "line": 30
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0], "1": [0], "2": [0, 0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/Header/index.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/Header/index.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 16, "column": 15 }, "end": { "line": 44, "column": 1 } },
+      "1": { "start": { "line": 17, "column": 40 }, "end": { "line": 17, "column": 60 } },
+      "2": { "start": { "line": 19, "column": 25 }, "end": { "line": 24, "column": 3 } },
+      "3": { "start": { "line": 20, "column": 25 }, "end": { "line": 20, "column": 39 } },
+      "4": { "start": { "line": 22, "column": 4 }, "end": { "line": 22, "column": 33 } },
+      "5": { "start": { "line": 23, "column": 4 }, "end": { "line": 23, "column": 27 } },
+      "6": { "start": { "line": 26, "column": 2 }, "end": { "line": 43, "column": 4 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 16, "column": 15 }, "end": { "line": 16, "column": 16 } },
+        "loc": { "start": { "line": 16, "column": 80 }, "end": { "line": 44, "column": 1 } },
+        "line": 16
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": { "start": { "line": 19, "column": 25 }, "end": { "line": 19, "column": 26 } },
+        "loc": { "start": { "line": 19, "column": 69 }, "end": { "line": 24, "column": 3 } },
+        "line": 19
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 32, "column": 21 }, "end": { "line": 32, "column": 72 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 32, "column": 39 }, "end": { "line": 32, "column": 55 } },
+          { "start": { "line": 32, "column": 58 }, "end": { "line": 32, "column": 72 } }
+        ],
+        "line": 32
+      }
+    },
+    "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0 },
+    "f": { "0": 0, "1": 0 },
+    "b": { "0": [0, 0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/LogoutButton/index.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/LogoutButton/index.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 12, "column": 21 }, "end": { "line": 16, "column": 1 } },
+      "1": { "start": { "line": 13, "column": 2 }, "end": { "line": 15, "column": 11 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 12, "column": 21 }, "end": { "line": 12, "column": 22 } },
+        "loc": { "start": { "line": 13, "column": 2 }, "end": { "line": 15, "column": 11 } },
+        "line": 13
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 12, "column": 24 }, "end": { "line": 12, "column": 39 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 12, "column": 31 }, "end": { "line": 12, "column": 39 } }],
+        "line": 12
+      },
+      "1": {
+        "loc": { "start": { "line": 13, "column": 47 }, "end": { "line": 13, "column": 65 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 13, "column": 59 }, "end": { "line": 13, "column": 60 } },
+          { "start": { "line": 13, "column": 63 }, "end": { "line": 13, "column": 65 } }
+        ],
+        "line": 13
+      },
+      "2": {
+        "loc": { "start": { "line": 14, "column": 5 }, "end": { "line": 14, "column": 23 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 14, "column": 5 }, "end": { "line": 14, "column": 15 } },
+          { "start": { "line": 14, "column": 19 }, "end": { "line": 14, "column": 23 } }
+        ],
+        "line": 14
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0], "1": [0, 0], "2": [0, 0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/Modal/ConfirmModal/index.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/Modal/ConfirmModal/index.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 16, "column": 21 }, "end": { "line": 30, "column": 1 } },
+      "1": { "start": { "line": 17, "column": 2 }, "end": { "line": 29, "column": 16 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 16, "column": 21 }, "end": { "line": 16, "column": 22 } },
+        "loc": { "start": { "line": 17, "column": 2 }, "end": { "line": 29, "column": 16 } },
+        "line": 17
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/Modal/CustomModal/index.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/Modal/CustomModal/index.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 11, "column": 20 }, "end": { "line": 20, "column": 1 } },
+      "1": { "start": { "line": 12, "column": 2 }, "end": { "line": 19, "column": 10 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 11, "column": 20 }, "end": { "line": 11, "column": 21 } },
+        "loc": { "start": { "line": 12, "column": 2 }, "end": { "line": 19, "column": 10 } },
+        "line": 12
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/Modal/PaymentDetailModal/index.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/Modal/PaymentDetailModal/index.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 16, "column": 27 }, "end": { "line": 62, "column": 1 } },
+      "1": { "start": { "line": 17, "column": 81 }, "end": { "line": 17, "column": 98 } },
+      "2": { "start": { "line": 19, "column": 29 }, "end": { "line": 44, "column": 3 } },
+      "3": { "start": { "line": 46, "column": 2 }, "end": { "line": 61, "column": 4 } },
+      "4": { "start": { "line": 50, "column": 34 }, "end": { "line": 50, "column": 38 } },
+      "5": { "start": { "line": 52, "column": 10 }, "end": { "line": 57, "column": 12 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 16, "column": 27 }, "end": { "line": 16, "column": 28 } },
+        "loc": { "start": { "line": 16, "column": 90 }, "end": { "line": 62, "column": 1 } },
+        "line": 16
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": { "start": { "line": 49, "column": 32 }, "end": { "line": 49, "column": 33 } },
+        "loc": { "start": { "line": 49, "column": 42 }, "end": { "line": 58, "column": 9 } },
+        "line": 49
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 17, "column": 81 }, "end": { "line": 17, "column": 98 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 17, "column": 81 }, "end": { "line": 17, "column": 92 } },
+          { "start": { "line": 17, "column": 96 }, "end": { "line": 17, "column": 98 } }
+        ],
+        "line": 17
+      }
+    },
+    "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0 },
+    "f": { "0": 0, "1": 0 },
+    "b": { "0": [0, 0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/Modal/StudentDetailModal/index.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/Modal/StudentDetailModal/index.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 27, "column": 21 }, "end": { "line": 33, "column": 1 } },
+      "1": { "start": { "line": 35, "column": 27 }, "end": { "line": 245, "column": 1 } },
+      "2": { "start": { "line": 36, "column": 43 }, "end": { "line": 36, "column": 56 } },
+      "3": { "start": { "line": 37, "column": 16 }, "end": { "line": 37, "column": 32 } },
+      "4": { "start": { "line": 44, "column": 6 }, "end": { "line": 48, "column": 4 } },
+      "5": { "start": { "line": 50, "column": 21 }, "end": { "line": 50, "column": 72 } },
+      "6": { "start": { "line": 50, "column": 35 }, "end": { "line": 50, "column": 52 } },
+      "7": { "start": { "line": 52, "column": 25 }, "end": { "line": 84, "column": 3 } },
+      "8": { "start": { "line": 53, "column": 19 }, "end": { "line": 53, "column": 23 } },
+      "9": { "start": { "line": 54, "column": 28 }, "end": { "line": 54, "column": 72 } },
+      "10": { "start": { "line": 56, "column": 4 }, "end": { "line": 67, "column": 5 } },
+      "11": { "start": { "line": 57, "column": 6 }, "end": { "line": 61, "column": 9 } },
+      "12": { "start": { "line": 63, "column": 6 }, "end": { "line": 66, "column": 9 } },
+      "13": { "start": { "line": 69, "column": 4 }, "end": { "line": 69, "column": 14 } },
+      "14": { "start": { "line": 71, "column": 4 }, "end": { "line": 83, "column": 5 } },
+      "15": { "start": { "line": 72, "column": 6 }, "end": { "line": 76, "column": 9 } },
+      "16": { "start": { "line": 78, "column": 6 }, "end": { "line": 82, "column": 9 } },
+      "17": { "start": { "line": 86, "column": 2 }, "end": { "line": 244, "column": 4 } },
+      "18": { "start": { "line": 95, "column": 12 }, "end": { "line": 114, "column": 18 } },
+      "19": { "start": { "line": 102, "column": 18 }, "end": { "line": 102, "column": 43 } },
+      "20": { "start": { "line": 105, "column": 18 }, "end": { "line": 105, "column": 64 } },
+      "21": { "start": { "line": 124, "column": 33 }, "end": { "line": 124, "column": 84 } },
+      "22": { "start": { "line": 127, "column": 12 }, "end": { "line": 147, "column": 18 } },
+      "23": { "start": { "line": 135, "column": 18 }, "end": { "line": 135, "column": 43 } },
+      "24": { "start": { "line": 138, "column": 18 }, "end": { "line": 138, "column": 64 } },
+      "25": { "start": { "line": 157, "column": 12 }, "end": { "line": 176, "column": 18 } },
+      "26": { "start": { "line": 164, "column": 18 }, "end": { "line": 164, "column": 43 } },
+      "27": { "start": { "line": 167, "column": 18 }, "end": { "line": 167, "column": 64 } },
+      "28": { "start": { "line": 186, "column": 12 }, "end": { "line": 205, "column": 18 } },
+      "29": { "start": { "line": 193, "column": 18 }, "end": { "line": 193, "column": 43 } },
+      "30": { "start": { "line": 196, "column": 18 }, "end": { "line": 196, "column": 64 } },
+      "31": { "start": { "line": 215, "column": 12 }, "end": { "line": 236, "column": 18 } },
+      "32": { "start": { "line": 224, "column": 18 }, "end": { "line": 224, "column": 43 } },
+      "33": { "start": { "line": 227, "column": 18 }, "end": { "line": 227, "column": 64 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 35, "column": 27 }, "end": { "line": 35, "column": 28 } },
+        "loc": { "start": { "line": 35, "column": 95 }, "end": { "line": 245, "column": 1 } },
+        "line": 35
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": { "start": { "line": 50, "column": 29 }, "end": { "line": 50, "column": 30 } },
+        "loc": { "start": { "line": 50, "column": 35 }, "end": { "line": 50, "column": 52 } },
+        "line": 50
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": { "start": { "line": 52, "column": 25 }, "end": { "line": 52, "column": 26 } },
+        "loc": { "start": { "line": 52, "column": 63 }, "end": { "line": 84, "column": 3 } },
+        "line": 52
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": { "start": { "line": 94, "column": 18 }, "end": { "line": 94, "column": 19 } },
+        "loc": { "start": { "line": 95, "column": 12 }, "end": { "line": 114, "column": 18 } },
+        "line": 95
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": { "start": { "line": 101, "column": 26 }, "end": { "line": 101, "column": 27 } },
+        "loc": { "start": { "line": 101, "column": 33 }, "end": { "line": 106, "column": 17 } },
+        "line": 101
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": { "start": { "line": 124, "column": 22 }, "end": { "line": 124, "column": 23 } },
+        "loc": { "start": { "line": 124, "column": 33 }, "end": { "line": 124, "column": 84 } },
+        "line": 124
+      },
+      "6": {
+        "name": "(anonymous_6)",
+        "decl": { "start": { "line": 126, "column": 18 }, "end": { "line": 126, "column": 19 } },
+        "loc": { "start": { "line": 127, "column": 12 }, "end": { "line": 147, "column": 18 } },
+        "line": 127
+      },
+      "7": {
+        "name": "(anonymous_7)",
+        "decl": { "start": { "line": 134, "column": 26 }, "end": { "line": 134, "column": 27 } },
+        "loc": { "start": { "line": 134, "column": 33 }, "end": { "line": 139, "column": 17 } },
+        "line": 134
+      },
+      "8": {
+        "name": "(anonymous_8)",
+        "decl": { "start": { "line": 156, "column": 18 }, "end": { "line": 156, "column": 19 } },
+        "loc": { "start": { "line": 157, "column": 12 }, "end": { "line": 176, "column": 18 } },
+        "line": 157
+      },
+      "9": {
+        "name": "(anonymous_9)",
+        "decl": { "start": { "line": 163, "column": 26 }, "end": { "line": 163, "column": 27 } },
+        "loc": { "start": { "line": 163, "column": 33 }, "end": { "line": 168, "column": 17 } },
+        "line": 163
+      },
+      "10": {
+        "name": "(anonymous_10)",
+        "decl": { "start": { "line": 185, "column": 18 }, "end": { "line": 185, "column": 19 } },
+        "loc": { "start": { "line": 186, "column": 12 }, "end": { "line": 205, "column": 18 } },
+        "line": 186
+      },
+      "11": {
+        "name": "(anonymous_11)",
+        "decl": { "start": { "line": 192, "column": 26 }, "end": { "line": 192, "column": 27 } },
+        "loc": { "start": { "line": 192, "column": 33 }, "end": { "line": 197, "column": 17 } },
+        "line": 192
+      },
+      "12": {
+        "name": "(anonymous_12)",
+        "decl": { "start": { "line": 214, "column": 18 }, "end": { "line": 214, "column": 19 } },
+        "loc": { "start": { "line": 215, "column": 12 }, "end": { "line": 236, "column": 18 } },
+        "line": 215
+      },
+      "13": {
+        "name": "(anonymous_13)",
+        "decl": { "start": { "line": 223, "column": 26 }, "end": { "line": 223, "column": 27 } },
+        "loc": { "start": { "line": 223, "column": 33 }, "end": { "line": 228, "column": 17 } },
+        "line": 223
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 47, "column": 19 }, "end": { "line": 47, "column": 59 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 47, "column": 33 }, "end": { "line": 47, "column": 44 } },
+          { "start": { "line": 47, "column": 47 }, "end": { "line": 47, "column": 59 } }
+        ],
+        "line": 47
+      },
+      "1": {
+        "loc": { "start": { "line": 56, "column": 4 }, "end": { "line": 67, "column": 5 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 56, "column": 4 }, "end": { "line": 67, "column": 5 } },
+          { "start": { "line": 62, "column": 11 }, "end": { "line": 67, "column": 5 } }
+        ],
+        "line": 56
+      },
+      "2": {
+        "loc": { "start": { "line": 71, "column": 4 }, "end": { "line": 83, "column": 5 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 71, "column": 4 }, "end": { "line": 83, "column": 5 } },
+          { "start": { "line": 77, "column": 11 }, "end": { "line": 83, "column": 5 } }
+        ],
+        "line": 71
+      },
+      "3": {
+        "loc": { "start": { "line": 74, "column": 47 }, "end": { "line": 74, "column": 78 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 74, "column": 60 }, "end": { "line": 74, "column": 68 } },
+          { "start": { "line": 74, "column": 71 }, "end": { "line": 74, "column": 78 } }
+        ],
+        "line": 74
+      },
+      "4": {
+        "loc": { "start": { "line": 87, "column": 58 }, "end": { "line": 87, "column": 103 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 87, "column": 71 }, "end": { "line": 87, "column": 87 } },
+          { "start": { "line": 87, "column": 90 }, "end": { "line": 87, "column": 103 } }
+        ],
+        "line": 87
+      },
+      "5": {
+        "loc": { "start": { "line": 95, "column": 31 }, "end": { "line": 95, "column": 54 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 95, "column": 48 }, "end": { "line": 95, "column": 49 } },
+          { "start": { "line": 95, "column": 52 }, "end": { "line": 95, "column": 54 } }
+        ],
+        "line": 95
+      },
+      "6": {
+        "loc": { "start": { "line": 109, "column": 15 }, "end": { "line": 113, "column": 15 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 109, "column": 15 }, "end": { "line": 109, "column": 29 } },
+          { "start": { "line": 110, "column": 16 }, "end": { "line": 112, "column": 33 } }
+        ],
+        "line": 109
+      },
+      "7": {
+        "loc": { "start": { "line": 124, "column": 33 }, "end": { "line": 124, "column": 84 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 124, "column": 33 }, "end": { "line": 124, "column": 52 } },
+          { "start": { "line": 124, "column": 56 }, "end": { "line": 124, "column": 84 } }
+        ],
+        "line": 124
+      },
+      "8": {
+        "loc": { "start": { "line": 127, "column": 31 }, "end": { "line": 127, "column": 54 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 127, "column": 48 }, "end": { "line": 127, "column": 49 } },
+          { "start": { "line": 127, "column": 52 }, "end": { "line": 127, "column": 54 } }
+        ],
+        "line": 127
+      },
+      "9": {
+        "loc": { "start": { "line": 142, "column": 15 }, "end": { "line": 146, "column": 15 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 142, "column": 15 }, "end": { "line": 142, "column": 29 } },
+          { "start": { "line": 143, "column": 16 }, "end": { "line": 145, "column": 33 } }
+        ],
+        "line": 142
+      },
+      "10": {
+        "loc": { "start": { "line": 157, "column": 31 }, "end": { "line": 157, "column": 54 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 157, "column": 48 }, "end": { "line": 157, "column": 49 } },
+          { "start": { "line": 157, "column": 52 }, "end": { "line": 157, "column": 54 } }
+        ],
+        "line": 157
+      },
+      "11": {
+        "loc": { "start": { "line": 171, "column": 15 }, "end": { "line": 175, "column": 15 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 171, "column": 15 }, "end": { "line": 171, "column": 29 } },
+          { "start": { "line": 172, "column": 16 }, "end": { "line": 174, "column": 33 } }
+        ],
+        "line": 171
+      },
+      "12": {
+        "loc": { "start": { "line": 186, "column": 31 }, "end": { "line": 186, "column": 58 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 186, "column": 48 }, "end": { "line": 186, "column": 49 } },
+          { "start": { "line": 186, "column": 52 }, "end": { "line": 186, "column": 58 } }
+        ],
+        "line": 186
+      },
+      "13": {
+        "loc": { "start": { "line": 200, "column": 15 }, "end": { "line": 204, "column": 15 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 200, "column": 15 }, "end": { "line": 200, "column": 29 } },
+          { "start": { "line": 201, "column": 16 }, "end": { "line": 203, "column": 33 } }
+        ],
+        "line": 200
+      },
+      "14": {
+        "loc": { "start": { "line": 215, "column": 31 }, "end": { "line": 215, "column": 54 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 215, "column": 48 }, "end": { "line": 215, "column": 49 } },
+          { "start": { "line": 215, "column": 52 }, "end": { "line": 215, "column": 54 } }
+        ],
+        "line": 215
+      },
+      "15": {
+        "loc": { "start": { "line": 231, "column": 15 }, "end": { "line": 235, "column": 15 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 231, "column": 15 }, "end": { "line": 231, "column": 29 } },
+          { "start": { "line": 232, "column": 16 }, "end": { "line": 234, "column": 33 } }
+        ],
+        "line": 231
+      }
+    },
+    "s": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0,
+      "25": 0,
+      "26": 0,
+      "27": 0,
+      "28": 0,
+      "29": 0,
+      "30": 0,
+      "31": 0,
+      "32": 0,
+      "33": 0
+    },
+    "f": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0
+    },
+    "b": {
+      "0": [0, 0],
+      "1": [0, 0],
+      "2": [0, 0],
+      "3": [0, 0],
+      "4": [0, 0],
+      "5": [0, 0],
+      "6": [0, 0],
+      "7": [0, 0],
+      "8": [0, 0],
+      "9": [0, 0],
+      "10": [0, 0],
+      "11": [0, 0],
+      "12": [0, 0],
+      "13": [0, 0],
+      "14": [0, 0],
+      "15": [0, 0]
+    }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/Navigation/index.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/Navigation/index.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 14, "column": 19 }, "end": { "line": 41, "column": 1 } },
+      "1": { "start": { "line": 15, "column": 19 }, "end": { "line": 15, "column": 32 } },
+      "2": { "start": { "line": 16, "column": 19 }, "end": { "line": 16, "column": 32 } },
+      "3": { "start": { "line": 18, "column": 2 }, "end": { "line": 40, "column": 4 } },
+      "4": { "start": { "line": 27, "column": 26 }, "end": { "line": 27, "column": 54 } },
+      "5": { "start": { "line": 29, "column": 8 }, "end": { "line": 37, "column": 10 } },
+      "6": { "start": { "line": 35, "column": 27 }, "end": { "line": 35, "column": 43 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 14, "column": 19 }, "end": { "line": 14, "column": 20 } },
+        "loc": { "start": { "line": 14, "column": 55 }, "end": { "line": 41, "column": 1 } },
+        "line": 14
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": { "start": { "line": 26, "column": 30 }, "end": { "line": 26, "column": 31 } },
+        "loc": { "start": { "line": 26, "column": 59 }, "end": { "line": 38, "column": 7 } },
+        "line": 26
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": { "start": { "line": 35, "column": 21 }, "end": { "line": 35, "column": 22 } },
+        "loc": { "start": { "line": 35, "column": 27 }, "end": { "line": 35, "column": 43 } },
+        "line": 35
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 20, "column": 15 }, "end": { "line": 20, "column": 33 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 20, "column": 27 }, "end": { "line": 20, "column": 28 } },
+          { "start": { "line": 20, "column": 31 }, "end": { "line": 20, "column": 33 } }
+        ],
+        "line": 20
+      },
+      "1": {
+        "loc": { "start": { "line": 23, "column": 9 }, "end": { "line": 23, "column": 33 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 23, "column": 21 }, "end": { "line": 23, "column": 27 } },
+          { "start": { "line": 23, "column": 30 }, "end": { "line": 23, "column": 33 } }
+        ],
+        "line": 23
+      },
+      "2": {
+        "loc": { "start": { "line": 34, "column": 19 }, "end": { "line": 34, "column": 38 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 34, "column": 19 }, "end": { "line": 34, "column": 29 } },
+          { "start": { "line": 34, "column": 33 }, "end": { "line": 34, "column": 38 } }
+        ],
+        "line": 34
+      }
+    },
+    "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0 },
+    "f": { "0": 0, "1": 0, "2": 0 },
+    "b": { "0": [0, 0], "1": [0, 0], "2": [0, 0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/SearchInput/index.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/SearchInput/index.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 13, "column": 20 }, "end": { "line": 30, "column": 1 } },
+      "1": { "start": { "line": 14, "column": 2 }, "end": { "line": 29, "column": 15 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 13, "column": 20 }, "end": { "line": 13, "column": 21 } },
+        "loc": { "start": { "line": 14, "column": 2 }, "end": { "line": 29, "column": 15 } },
+        "line": 14
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 13, "column": 23 }, "end": { "line": 13, "column": 54 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 13, "column": 37 }, "end": { "line": 13, "column": 54 } }],
+        "line": 13
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/SideBarItem/index.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/SideBarItem/index.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 11, "column": 20 }, "end": { "line": 40, "column": 1 } },
+      "1": { "start": { "line": 12, "column": 2 }, "end": { "line": 39, "column": 11 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 11, "column": 20 }, "end": { "line": 11, "column": 21 } },
+        "loc": { "start": { "line": 12, "column": 2 }, "end": { "line": 39, "column": 11 } },
+        "line": 12
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 14, "column": 8 }, "end": { "line": 14, "column": 22 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 14, "column": 16 }, "end": { "line": 14, "column": 18 } },
+          { "start": { "line": 14, "column": 21 }, "end": { "line": 14, "column": 22 } }
+        ],
+        "line": 14
+      },
+      "1": {
+        "loc": { "start": { "line": 15, "column": 8 }, "end": { "line": 15, "column": 21 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 15, "column": 16 }, "end": { "line": 15, "column": 17 } },
+          { "start": { "line": 15, "column": 20 }, "end": { "line": 15, "column": 21 } }
+        ],
+        "line": 15
+      },
+      "2": {
+        "loc": { "start": { "line": 23, "column": 9 }, "end": { "line": 26, "column": 5 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 23, "column": 9 }, "end": { "line": 23, "column": 18 } },
+          { "start": { "line": 23, "column": 22 }, "end": { "line": 26, "column": 5 } }
+        ],
+        "line": 23
+      },
+      "3": {
+        "loc": { "start": { "line": 30, "column": 11 }, "end": { "line": 34, "column": 7 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 30, "column": 11 }, "end": { "line": 30, "column": 17 } },
+          { "start": { "line": 30, "column": 21 }, "end": { "line": 34, "column": 7 } }
+        ],
+        "line": 30
+      },
+      "4": {
+        "loc": { "start": { "line": 38, "column": 5 }, "end": { "line": 38, "column": 34 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 38, "column": 5 }, "end": { "line": 38, "column": 10 } },
+          { "start": { "line": 38, "column": 14 }, "end": { "line": 38, "column": 34 } }
+        ],
+        "line": 38
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0, 0], "1": [0, 0], "2": [0, 0], "3": [0, 0], "4": [0, 0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/Table/index.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/Table/index.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 21, "column": 14 }, "end": { "line": 72, "column": 1 } },
+      "1": { "start": { "line": 23, "column": 4 }, "end": { "line": 41, "column": 9 } },
+      "2": { "start": { "line": 25, "column": 27 }, "end": { "line": 25, "column": 39 } },
+      "3": { "start": { "line": 27, "column": 8 }, "end": { "line": 39, "column": 10 } },
+      "4": { "start": { "line": 44, "column": 21 }, "end": { "line": 52, "column": 3 } },
+      "5": { "start": { "line": 45, "column": 4 }, "end": { "line": 47, "column": 5 } },
+      "6": { "start": { "line": 46, "column": 6 }, "end": { "line": 46, "column": 41 } },
+      "7": { "start": { "line": 49, "column": 4 }, "end": { "line": 51, "column": 5 } },
+      "8": { "start": { "line": 50, "column": 6 }, "end": { "line": 50, "column": 28 } },
+      "9": { "start": { "line": 54, "column": 2 }, "end": { "line": 71, "column": 4 } },
+      "10": { "start": { "line": 59, "column": 10 }, "end": { "line": 67, "column": 21 } },
+      "11": { "start": { "line": 61, "column": 14 }, "end": { "line": 65, "column": 16 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 21, "column": 14 }, "end": { "line": 21, "column": 15 } },
+        "loc": { "start": { "line": 21, "column": 81 }, "end": { "line": 72, "column": 1 } },
+        "line": 21
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": { "start": { "line": 24, "column": 19 }, "end": { "line": 24, "column": 20 } },
+        "loc": { "start": { "line": 24, "column": 44 }, "end": { "line": 40, "column": 7 } },
+        "line": 24
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": { "start": { "line": 44, "column": 21 }, "end": { "line": 44, "column": 22 } },
+        "loc": { "start": { "line": 44, "column": 74 }, "end": { "line": 52, "column": 3 } },
+        "line": 44
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": { "start": { "line": 58, "column": 18 }, "end": { "line": 58, "column": 19 } },
+        "loc": { "start": { "line": 59, "column": 10 }, "end": { "line": 67, "column": 21 } },
+        "line": 59
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": { "start": { "line": 60, "column": 25 }, "end": { "line": 60, "column": 26 } },
+        "loc": { "start": { "line": 60, "column": 56 }, "end": { "line": 66, "column": 13 } },
+        "line": 60
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 21, "column": 36 }, "end": { "line": 21, "column": 53 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 21, "column": 48 }, "end": { "line": 21, "column": 53 } }],
+        "line": 21
+      },
+      "1": {
+        "loc": { "start": { "line": 45, "column": 4 }, "end": { "line": 47, "column": 5 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 45, "column": 4 }, "end": { "line": 47, "column": 5 } },
+          { "start": {}, "end": {} }
+        ],
+        "line": 45
+      },
+      "2": {
+        "loc": { "start": { "line": 49, "column": 4 }, "end": { "line": 51, "column": 5 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 49, "column": 4 }, "end": { "line": 51, "column": 5 } },
+          { "start": {}, "end": {} }
+        ],
+        "line": 49
+      },
+      "3": {
+        "loc": { "start": { "line": 55, "column": 20 }, "end": { "line": 55, "column": 80 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 55, "column": 20 }, "end": { "line": 55, "column": 29 } },
+          { "start": { "line": 55, "column": 33 }, "end": { "line": 55, "column": 80 } }
+        ],
+        "line": 55
+      },
+      "4": {
+        "loc": { "start": { "line": 62, "column": 31 }, "end": { "line": 62, "column": 72 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 62, "column": 44 }, "end": { "line": 62, "column": 51 } },
+          { "start": { "line": 62, "column": 54 }, "end": { "line": 62, "column": 72 } }
+        ],
+        "line": 62
+      }
+    },
+    "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 0, "10": 0, "11": 0 },
+    "f": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0 },
+    "b": { "0": [0], "1": [0, 0], "2": [0, 0], "3": [0, 0], "4": [0, 0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/TableCell/index.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/TableCell/index.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 8, "column": 18 }, "end": { "line": 12, "column": 1 } },
+      "1": { "start": { "line": 9, "column": 2 }, "end": { "line": 11, "column": 7 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 8, "column": 18 }, "end": { "line": 8, "column": 19 } },
+        "loc": { "start": { "line": 9, "column": 2 }, "end": { "line": 11, "column": 7 } },
+        "line": 9
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/TableRow/index.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/components/TableRow/index.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 9, "column": 17 }, "end": { "line": 13, "column": 1 } },
+      "1": { "start": { "line": 10, "column": 2 }, "end": { "line": 12, "column": 7 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 9, "column": 17 }, "end": { "line": 9, "column": 18 } },
+        "loc": { "start": { "line": 10, "column": 2 }, "end": { "line": 12, "column": 7 } },
+        "line": 10
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/constants/apiEndpoints.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/constants/apiEndpoints.ts",
+    "statementMap": { "0": { "start": { "line": 1, "column": 29 }, "end": { "line": 5, "column": 1 } } },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0 },
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/constants/brandName.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/constants/brandName.ts",
+    "statementMap": { "0": { "start": { "line": 1, "column": 26 }, "end": { "line": 1, "column": 43 } } },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0 },
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/constants/envs.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/constants/envs.ts",
+    "statementMap": { "0": { "start": { "line": 1, "column": 20 }, "end": { "line": 4, "column": 1 } } },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0 },
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/constants/index.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/constants/index.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/constants/localStorageKeys.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/constants/localStorageKeys.ts",
+    "statementMap": { "0": { "start": { "line": 1, "column": 33 }, "end": { "line": 3, "column": 1 } } },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0 },
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/constants/messages.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/constants/messages.ts",
+    "statementMap": {
+      "0": { "start": { "line": 1, "column": 30 }, "end": { "line": 9, "column": 1 } },
+      "1": { "start": { "line": 4, "column": 43 }, "end": { "line": 4, "column": 87 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 4, "column": 23 }, "end": { "line": 4, "column": 24 } },
+        "loc": { "start": { "line": 4, "column": 43 }, "end": { "line": 4, "column": 87 } },
+        "line": 4
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/constants/navigation.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/constants/navigation.ts",
+    "statementMap": { "0": { "start": { "line": 10, "column": 34 }, "end": { "line": 44, "column": 1 } } },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0 },
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/constants/routes.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/constants/routes.ts",
+    "statementMap": { "0": { "start": { "line": 1, "column": 23 }, "end": { "line": 9, "column": 1 } } },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0 },
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/constants/validate.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/constants/validate.ts",
+    "statementMap": {
+      "0": { "start": { "line": 1, "column": 29 }, "end": { "line": 5, "column": 1 } },
+      "1": { "start": { "line": 7, "column": 35 }, "end": { "line": 7, "column": 36 } }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0, "1": 0 },
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/hooks/index.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/hooks/index.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/hooks/useAuth.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/hooks/useAuth.ts",
+    "statementMap": {
+      "0": { "start": { "line": 27, "column": 31 }, "end": { "line": 47, "column": 1 } },
+      "1": { "start": { "line": 28, "column": 31 }, "end": { "line": 28, "column": 91 } },
+      "2": { "start": { "line": 30, "column": 15 }, "end": { "line": 35, "column": 4 } },
+      "3": { "start": { "line": 31, "column": 28 }, "end": { "line": 31, "column": 71 } },
+      "4": { "start": { "line": 32, "column": 25 }, "end": { "line": 32, "column": 45 } },
+      "5": { "start": { "line": 34, "column": 4 }, "end": { "line": 34, "column": 43 } },
+      "6": { "start": { "line": 37, "column": 2 }, "end": { "line": 46, "column": 3 } },
+      "7": { "start": { "line": 38, "column": 21 }, "end": { "line": 38, "column": 103 } },
+      "8": { "start": { "line": 40, "column": 16 }, "end": { "line": 40, "column": 63 } },
+      "9": { "start": { "line": 42, "column": 4 }, "end": { "line": 45, "column": 12 } },
+      "10": { "start": { "line": 52, "column": 30 }, "end": { "line": 60, "column": 1 } },
+      "11": { "start": { "line": 53, "column": 19 }, "end": { "line": 53, "column": 63 } },
+      "12": { "start": { "line": 55, "column": 2 }, "end": { "line": 59, "column": 3 } },
+      "13": { "start": { "line": 56, "column": 4 }, "end": { "line": 56, "column": 59 } },
+      "14": { "start": { "line": 58, "column": 4 }, "end": { "line": 58, "column": 16 } },
+      "15": { "start": { "line": 62, "column": 23 }, "end": { "line": 110, "column": 1 } },
+      "16": { "start": { "line": 63, "column": 42 }, "end": { "line": 63, "column": 54 } },
+      "17": { "start": { "line": 64, "column": 22 }, "end": { "line": 64, "column": 47 } },
+      "18": { "start": { "line": 66, "column": 33 }, "end": { "line": 87, "column": 3 } },
+      "19": { "start": { "line": 67, "column": 4 }, "end": { "line": 86, "column": 5 } },
+      "20": { "start": { "line": 68, "column": 27 }, "end": { "line": 68, "column": 72 } },
+      "21": { "start": { "line": 70, "column": 6 }, "end": { "line": 83, "column": 7 } },
+      "22": { "start": { "line": 71, "column": 24 }, "end": { "line": 71, "column": 36 } },
+      "23": { "start": { "line": 74, "column": 8 }, "end": { "line": 74, "column": 28 } },
+      "24": { "start": { "line": 77, "column": 8 }, "end": { "line": 77, "column": 28 } },
+      "25": { "start": { "line": 80, "column": 8 }, "end": { "line": 80, "column": 58 } },
+      "26": { "start": { "line": 82, "column": 8 }, "end": { "line": 82, "column": 28 } },
+      "27": { "start": { "line": 85, "column": 6 }, "end": { "line": 85, "column": 56 } },
+      "28": { "start": { "line": 89, "column": 17 }, "end": { "line": 91, "column": 3 } },
+      "29": { "start": { "line": 90, "column": 4 }, "end": { "line": 90, "column": 52 } },
+      "30": { "start": { "line": 93, "column": 25 }, "end": { "line": 101, "column": 8 } },
+      "31": { "start": { "line": 94, "column": 21 }, "end": { "line": 94, "column": 65 } },
+      "32": { "start": { "line": 96, "column": 4 }, "end": { "line": 100, "column": 5 } },
+      "33": { "start": { "line": 97, "column": 6 }, "end": { "line": 97, "column": 61 } },
+      "34": { "start": { "line": 99, "column": 6 }, "end": { "line": 99, "column": 18 } },
+      "35": { "start": { "line": 103, "column": 2 }, "end": { "line": 109, "column": 4 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 27, "column": 31 }, "end": { "line": 27, "column": 32 } },
+        "loc": { "start": { "line": 27, "column": 84 }, "end": { "line": 47, "column": 1 } },
+        "line": 27
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": { "start": { "line": 30, "column": 27 }, "end": { "line": 30, "column": 28 } },
+        "loc": { "start": { "line": 30, "column": 52 }, "end": { "line": 35, "column": 3 } },
+        "line": 30
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": { "start": { "line": 52, "column": 30 }, "end": { "line": 52, "column": 31 } },
+        "loc": { "start": { "line": 52, "column": 42 }, "end": { "line": 60, "column": 1 } },
+        "line": 52
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": { "start": { "line": 62, "column": 23 }, "end": { "line": 62, "column": 24 } },
+        "loc": { "start": { "line": 62, "column": 29 }, "end": { "line": 110, "column": 1 } },
+        "line": 62
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": { "start": { "line": 66, "column": 33 }, "end": { "line": 66, "column": 34 } },
+        "loc": { "start": { "line": 66, "column": 76 }, "end": { "line": 87, "column": 3 } },
+        "line": 66
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": { "start": { "line": 89, "column": 17 }, "end": { "line": 89, "column": 18 } },
+        "loc": { "start": { "line": 89, "column": 23 }, "end": { "line": 91, "column": 3 } },
+        "line": 89
+      },
+      "6": {
+        "name": "(anonymous_6)",
+        "decl": { "start": { "line": 93, "column": 37 }, "end": { "line": 93, "column": 38 } },
+        "loc": { "start": { "line": 93, "column": 49 }, "end": { "line": 101, "column": 3 } },
+        "line": 93
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 34, "column": 11 }, "end": { "line": 34, "column": 42 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 34, "column": 11 }, "end": { "line": 34, "column": 23 } },
+          { "start": { "line": 34, "column": 27 }, "end": { "line": 34, "column": 42 } }
+        ],
+        "line": 34
+      },
+      "1": {
+        "loc": { "start": { "line": 37, "column": 2 }, "end": { "line": 46, "column": 3 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 37, "column": 2 }, "end": { "line": 46, "column": 3 } },
+          { "start": {}, "end": {} }
+        ],
+        "line": 37
+      },
+      "2": {
+        "loc": { "start": { "line": 70, "column": 6 }, "end": { "line": 83, "column": 7 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 70, "column": 6 }, "end": { "line": 83, "column": 7 } },
+          { "start": {}, "end": {} }
+        ],
+        "line": 70
+      }
+    },
+    "s": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0,
+      "25": 0,
+      "26": 0,
+      "27": 0,
+      "28": 0,
+      "29": 0,
+      "30": 0,
+      "31": 0,
+      "32": 0,
+      "33": 0,
+      "34": 0,
+      "35": 0
+    },
+    "f": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0 },
+    "b": { "0": [0, 0], "1": [0, 0], "2": [0, 0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/hooks/usePayments.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/hooks/usePayments.ts",
+    "statementMap": {
+      "0": { "start": { "line": 12, "column": 27 }, "end": { "line": 21, "column": 1 } },
+      "1": { "start": { "line": 13, "column": 27 }, "end": { "line": 13, "column": 79 } },
+      "2": { "start": { "line": 15, "column": 26 }, "end": { "line": 15, "column": 66 } },
+      "3": { "start": { "line": 17, "column": 2 }, "end": { "line": 20, "column": 4 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 12, "column": 27 }, "end": { "line": 12, "column": 28 } },
+        "loc": { "start": { "line": 12, "column": 33 }, "end": { "line": 21, "column": 1 } },
+        "line": 12
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 19, "column": 15 }, "end": { "line": 19, "column": 30 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 19, "column": 15 }, "end": { "line": 19, "column": 20 } },
+          { "start": { "line": 19, "column": 24 }, "end": { "line": 19, "column": 30 } }
+        ],
+        "line": 19
+      }
+    },
+    "s": { "0": 0, "1": 0, "2": 0, "3": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0, 0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/hooks/useStudents.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/hooks/useStudents.ts",
+    "statementMap": {
+      "0": { "start": { "line": 12, "column": 27 }, "end": { "line": 67, "column": 1 } },
+      "1": { "start": { "line": 13, "column": 27 }, "end": { "line": 13, "column": 79 } },
+      "2": { "start": { "line": 15, "column": 64 }, "end": { "line": 15, "column": 104 } },
+      "3": { "start": { "line": 17, "column": 24 }, "end": { "line": 28, "column": 3 } },
+      "4": { "start": { "line": 18, "column": 4 }, "end": { "line": 27, "column": 5 } },
+      "5": { "start": { "line": 19, "column": 32 }, "end": { "line": 19, "column": 72 } },
+      "6": { "start": { "line": 22, "column": 6 }, "end": { "line": 22, "column": 57 } },
+      "7": { "start": { "line": 24, "column": 6 }, "end": { "line": 24, "column": 22 } },
+      "8": { "start": { "line": 26, "column": 6 }, "end": { "line": 26, "column": 18 } },
+      "9": { "start": { "line": 30, "column": 24 }, "end": { "line": 45, "column": 3 } },
+      "10": { "start": { "line": 31, "column": 4 }, "end": { "line": 44, "column": 5 } },
+      "11": { "start": { "line": 32, "column": 40 }, "end": { "line": 32, "column": 54 } },
+      "12": { "start": { "line": 33, "column": 32 }, "end": { "line": 33, "column": 86 } },
+      "13": { "start": { "line": 35, "column": 30 }, "end": { "line": 37, "column": 7 } },
+      "14": { "start": { "line": 36, "column": 8 }, "end": { "line": 36, "column": 61 } },
+      "15": { "start": { "line": 39, "column": 6 }, "end": { "line": 39, "column": 45 } },
+      "16": { "start": { "line": 41, "column": 6 }, "end": { "line": 41, "column": 22 } },
+      "17": { "start": { "line": 43, "column": 6 }, "end": { "line": 43, "column": 18 } },
+      "18": { "start": { "line": 47, "column": 24 }, "end": { "line": 57, "column": 3 } },
+      "19": { "start": { "line": 48, "column": 4 }, "end": { "line": 56, "column": 5 } },
+      "20": { "start": { "line": 49, "column": 6 }, "end": { "line": 49, "column": 55 } },
+      "21": { "start": { "line": 50, "column": 30 }, "end": { "line": 50, "column": 88 } },
+      "22": { "start": { "line": 50, "column": 63 }, "end": { "line": 50, "column": 87 } },
+      "23": { "start": { "line": 51, "column": 6 }, "end": { "line": 51, "column": 45 } },
+      "24": { "start": { "line": 53, "column": 6 }, "end": { "line": 53, "column": 18 } },
+      "25": { "start": { "line": 55, "column": 6 }, "end": { "line": 55, "column": 18 } },
+      "26": { "start": { "line": 59, "column": 2 }, "end": { "line": 66, "column": 4 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 12, "column": 27 }, "end": { "line": 12, "column": 28 } },
+        "loc": { "start": { "line": 12, "column": 33 }, "end": { "line": 67, "column": 1 } },
+        "line": 12
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": { "start": { "line": 17, "column": 24 }, "end": { "line": 17, "column": 25 } },
+        "loc": { "start": { "line": 17, "column": 64 }, "end": { "line": 28, "column": 3 } },
+        "line": 17
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": { "start": { "line": 30, "column": 24 }, "end": { "line": 30, "column": 25 } },
+        "loc": { "start": { "line": 30, "column": 59 }, "end": { "line": 45, "column": 3 } },
+        "line": 30
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": { "start": { "line": 35, "column": 47 }, "end": { "line": 35, "column": 48 } },
+        "loc": { "start": { "line": 36, "column": 8 }, "end": { "line": 36, "column": 61 } },
+        "line": 36
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": { "start": { "line": 47, "column": 24 }, "end": { "line": 47, "column": 25 } },
+        "loc": { "start": { "line": 47, "column": 53 }, "end": { "line": 57, "column": 3 } },
+        "line": 47
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": { "start": { "line": 50, "column": 50 }, "end": { "line": 50, "column": 51 } },
+        "loc": { "start": { "line": 50, "column": 63 }, "end": { "line": 50, "column": 87 } },
+        "line": 50
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 22, "column": 26 }, "end": { "line": 22, "column": 36 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 22, "column": 26 }, "end": { "line": 22, "column": 30 } },
+          { "start": { "line": 22, "column": 34 }, "end": { "line": 22, "column": 36 } }
+        ],
+        "line": 22
+      },
+      "1": {
+        "loc": { "start": { "line": 35, "column": 31 }, "end": { "line": 35, "column": 41 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 35, "column": 31 }, "end": { "line": 35, "column": 35 } },
+          { "start": { "line": 35, "column": 39 }, "end": { "line": 35, "column": 41 } }
+        ],
+        "line": 35
+      },
+      "2": {
+        "loc": { "start": { "line": 36, "column": 8 }, "end": { "line": 36, "column": 61 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 36, "column": 43 }, "end": { "line": 36, "column": 51 } },
+          { "start": { "line": 36, "column": 54 }, "end": { "line": 36, "column": 61 } }
+        ],
+        "line": 36
+      },
+      "3": {
+        "loc": { "start": { "line": 50, "column": 31 }, "end": { "line": 50, "column": 41 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 50, "column": 31 }, "end": { "line": 50, "column": 35 } },
+          { "start": { "line": 50, "column": 39 }, "end": { "line": 50, "column": 41 } }
+        ],
+        "line": 50
+      },
+      "4": {
+        "loc": { "start": { "line": 61, "column": 15 }, "end": { "line": 61, "column": 30 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 61, "column": 15 }, "end": { "line": 61, "column": 20 } },
+          { "start": { "line": 61, "column": 24 }, "end": { "line": 61, "column": 30 } }
+        ],
+        "line": 61
+      }
+    },
+    "s": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0,
+      "25": 0,
+      "26": 0
+    },
+    "f": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0 },
+    "b": { "0": [0, 0], "1": [0, 0], "2": [0, 0], "3": [0, 0], "4": [0, 0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/hooks/useToastCustom.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/hooks/useToastCustom.ts",
+    "statementMap": {
+      "0": { "start": { "line": 3, "column": 30 }, "end": { "line": 8, "column": 4 } },
+      "1": { "start": { "line": 4, "column": 2 }, "end": { "line": 8, "column": 4 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 3, "column": 30 }, "end": { "line": 3, "column": 31 } },
+        "loc": { "start": { "line": 4, "column": 2 }, "end": { "line": 8, "column": 4 } },
+        "line": 4
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/BellIcon.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/BellIcon.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 3, "column": 24 }, "end": { "line": 10, "column": 1 } },
+      "1": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 3, "column": 24 }, "end": { "line": 3, "column": 25 } },
+        "loc": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } },
+        "line": 4
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 3, "column": 27 }, "end": { "line": 3, "column": 37 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 35 }, "end": { "line": 3, "column": 37 } }],
+        "line": 3
+      },
+      "1": {
+        "loc": { "start": { "line": 3, "column": 39 }, "end": { "line": 3, "column": 50 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 48 }, "end": { "line": 3, "column": 50 } }],
+        "line": 3
+      },
+      "2": {
+        "loc": { "start": { "line": 3, "column": 52 }, "end": { "line": 3, "column": 68 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 59 }, "end": { "line": 3, "column": 68 } }],
+        "line": 3
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0], "1": [0], "2": [0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/BookmarkIcon.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/BookmarkIcon.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 3, "column": 28 }, "end": { "line": 10, "column": 1 } },
+      "1": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 3, "column": 28 }, "end": { "line": 3, "column": 29 } },
+        "loc": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } },
+        "line": 4
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 3, "column": 31 }, "end": { "line": 3, "column": 41 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 39 }, "end": { "line": 3, "column": 41 } }],
+        "line": 3
+      },
+      "1": {
+        "loc": { "start": { "line": 3, "column": 43 }, "end": { "line": 3, "column": 54 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 52 }, "end": { "line": 3, "column": 54 } }],
+        "line": 3
+      },
+      "2": {
+        "loc": { "start": { "line": 3, "column": 56 }, "end": { "line": 3, "column": 72 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 63 }, "end": { "line": 3, "column": 72 } }],
+        "line": 3
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0], "1": [0], "2": [0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/BookmarkMediumIcon.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/BookmarkMediumIcon.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 3, "column": 34 }, "end": { "line": 17, "column": 1 } },
+      "1": { "start": { "line": 4, "column": 2 }, "end": { "line": 16, "column": 8 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 3, "column": 34 }, "end": { "line": 3, "column": 35 } },
+        "loc": { "start": { "line": 4, "column": 2 }, "end": { "line": 16, "column": 8 } },
+        "line": 4
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 3, "column": 37 }, "end": { "line": 3, "column": 47 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 45 }, "end": { "line": 3, "column": 47 } }],
+        "line": 3
+      },
+      "1": {
+        "loc": { "start": { "line": 3, "column": 49 }, "end": { "line": 3, "column": 60 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 58 }, "end": { "line": 3, "column": 60 } }],
+        "line": 3
+      },
+      "2": {
+        "loc": { "start": { "line": 3, "column": 62 }, "end": { "line": 3, "column": 78 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 69 }, "end": { "line": 3, "column": 78 } }],
+        "line": 3
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0], "1": [0], "2": [0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/CaretIcon.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/CaretIcon.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 3, "column": 25 }, "end": { "line": 10, "column": 1 } },
+      "1": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 3, "column": 25 }, "end": { "line": 3, "column": 26 } },
+        "loc": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } },
+        "line": 4
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 3, "column": 28 }, "end": { "line": 3, "column": 38 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 36 }, "end": { "line": 3, "column": 38 } }],
+        "line": 3
+      },
+      "1": {
+        "loc": { "start": { "line": 3, "column": 40 }, "end": { "line": 3, "column": 51 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 49 }, "end": { "line": 3, "column": 51 } }],
+        "line": 3
+      },
+      "2": {
+        "loc": { "start": { "line": 3, "column": 53 }, "end": { "line": 3, "column": 69 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 60 }, "end": { "line": 3, "column": 69 } }],
+        "line": 3
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0], "1": [0], "2": [0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/EyeIcon.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/EyeIcon.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 3, "column": 23 }, "end": { "line": 10, "column": 1 } },
+      "1": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 3, "column": 23 }, "end": { "line": 3, "column": 24 } },
+        "loc": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } },
+        "line": 4
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 3, "column": 26 }, "end": { "line": 3, "column": 36 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 34 }, "end": { "line": 3, "column": 36 } }],
+        "line": 3
+      },
+      "1": {
+        "loc": { "start": { "line": 3, "column": 38 }, "end": { "line": 3, "column": 49 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 47 }, "end": { "line": 3, "column": 49 } }],
+        "line": 3
+      },
+      "2": {
+        "loc": { "start": { "line": 3, "column": 51 }, "end": { "line": 3, "column": 67 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 58 }, "end": { "line": 3, "column": 67 } }],
+        "line": 3
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0], "1": [0], "2": [0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/GraduationIcon.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/GraduationIcon.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 3, "column": 30 }, "end": { "line": 10, "column": 1 } },
+      "1": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 3, "column": 30 }, "end": { "line": 3, "column": 31 } },
+        "loc": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } },
+        "line": 4
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 3, "column": 33 }, "end": { "line": 3, "column": 43 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 41 }, "end": { "line": 3, "column": 43 } }],
+        "line": 3
+      },
+      "1": {
+        "loc": { "start": { "line": 3, "column": 45 }, "end": { "line": 3, "column": 56 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 54 }, "end": { "line": 3, "column": 56 } }],
+        "line": 3
+      },
+      "2": {
+        "loc": { "start": { "line": 3, "column": 58 }, "end": { "line": 3, "column": 74 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 65 }, "end": { "line": 3, "column": 74 } }],
+        "line": 3
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0], "1": [0], "2": [0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/GraduationSmallIcon.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/GraduationSmallIcon.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 3, "column": 35 }, "end": { "line": 15, "column": 1 } },
+      "1": { "start": { "line": 9, "column": 2 }, "end": { "line": 14, "column": 8 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 3, "column": 35 }, "end": { "line": 3, "column": 36 } },
+        "loc": { "start": { "line": 9, "column": 2 }, "end": { "line": 14, "column": 8 } },
+        "line": 9
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 4, "column": 2 }, "end": { "line": 4, "column": 12 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 4, "column": 10 }, "end": { "line": 4, "column": 12 } }],
+        "line": 4
+      },
+      "1": {
+        "loc": { "start": { "line": 5, "column": 2 }, "end": { "line": 5, "column": 13 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 5, "column": 11 }, "end": { "line": 5, "column": 13 } }],
+        "line": 5
+      },
+      "2": {
+        "loc": { "start": { "line": 6, "column": 2 }, "end": { "line": 6, "column": 18 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 6, "column": 9 }, "end": { "line": 6, "column": 18 } }],
+        "line": 6
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0], "1": [0], "2": [0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/HomeIcon.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/HomeIcon.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 3, "column": 24 }, "end": { "line": 10, "column": 1 } },
+      "1": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 3, "column": 24 }, "end": { "line": 3, "column": 25 } },
+        "loc": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } },
+        "line": 4
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 3, "column": 27 }, "end": { "line": 3, "column": 37 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 35 }, "end": { "line": 3, "column": 37 } }],
+        "line": 3
+      },
+      "1": {
+        "loc": { "start": { "line": 3, "column": 39 }, "end": { "line": 3, "column": 50 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 48 }, "end": { "line": 3, "column": 50 } }],
+        "line": 3
+      },
+      "2": {
+        "loc": { "start": { "line": 3, "column": 52 }, "end": { "line": 3, "column": 68 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 59 }, "end": { "line": 3, "column": 68 } }],
+        "line": 3
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0], "1": [0], "2": [0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/LogoutIcon.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/LogoutIcon.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 3, "column": 26 }, "end": { "line": 10, "column": 1 } },
+      "1": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 3, "column": 26 }, "end": { "line": 3, "column": 27 } },
+        "loc": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } },
+        "line": 4
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 3, "column": 29 }, "end": { "line": 3, "column": 39 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 37 }, "end": { "line": 3, "column": 39 } }],
+        "line": 3
+      },
+      "1": {
+        "loc": { "start": { "line": 3, "column": 41 }, "end": { "line": 3, "column": 52 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 50 }, "end": { "line": 3, "column": 52 } }],
+        "line": 3
+      },
+      "2": {
+        "loc": { "start": { "line": 3, "column": 54 }, "end": { "line": 3, "column": 70 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 61 }, "end": { "line": 3, "column": 70 } }],
+        "line": 3
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0], "1": [0], "2": [0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/PaymentIcon.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/PaymentIcon.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 3, "column": 27 }, "end": { "line": 10, "column": 1 } },
+      "1": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 3, "column": 27 }, "end": { "line": 3, "column": 28 } },
+        "loc": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } },
+        "line": 4
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 3, "column": 30 }, "end": { "line": 3, "column": 40 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 38 }, "end": { "line": 3, "column": 40 } }],
+        "line": 3
+      },
+      "1": {
+        "loc": { "start": { "line": 3, "column": 42 }, "end": { "line": 3, "column": 53 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 51 }, "end": { "line": 3, "column": 53 } }],
+        "line": 3
+      },
+      "2": {
+        "loc": { "start": { "line": 3, "column": 55 }, "end": { "line": 3, "column": 71 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 62 }, "end": { "line": 3, "column": 71 } }],
+        "line": 3
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0], "1": [0], "2": [0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/PenIcon.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/PenIcon.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 3, "column": 23 }, "end": { "line": 10, "column": 1 } },
+      "1": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 3, "column": 23 }, "end": { "line": 3, "column": 24 } },
+        "loc": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } },
+        "line": 4
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 3, "column": 26 }, "end": { "line": 3, "column": 36 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 34 }, "end": { "line": 3, "column": 36 } }],
+        "line": 3
+      },
+      "1": {
+        "loc": { "start": { "line": 3, "column": 38 }, "end": { "line": 3, "column": 49 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 47 }, "end": { "line": 3, "column": 49 } }],
+        "line": 3
+      },
+      "2": {
+        "loc": { "start": { "line": 3, "column": 51 }, "end": { "line": 3, "column": 67 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 58 }, "end": { "line": 3, "column": 67 } }],
+        "line": 3
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0], "1": [0], "2": [0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/ReportIcon.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/ReportIcon.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 3, "column": 26 }, "end": { "line": 10, "column": 1 } },
+      "1": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 3, "column": 26 }, "end": { "line": 3, "column": 27 } },
+        "loc": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } },
+        "line": 4
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 3, "column": 29 }, "end": { "line": 3, "column": 39 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 37 }, "end": { "line": 3, "column": 39 } }],
+        "line": 3
+      },
+      "1": {
+        "loc": { "start": { "line": 3, "column": 41 }, "end": { "line": 3, "column": 52 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 50 }, "end": { "line": 3, "column": 52 } }],
+        "line": 3
+      },
+      "2": {
+        "loc": { "start": { "line": 3, "column": 54 }, "end": { "line": 3, "column": 70 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 61 }, "end": { "line": 3, "column": 70 } }],
+        "line": 3
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0], "1": [0], "2": [0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/SearchIcon.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/SearchIcon.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 3, "column": 26 }, "end": { "line": 10, "column": 1 } },
+      "1": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 3, "column": 26 }, "end": { "line": 3, "column": 27 } },
+        "loc": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } },
+        "line": 4
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 3, "column": 29 }, "end": { "line": 3, "column": 39 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 37 }, "end": { "line": 3, "column": 39 } }],
+        "line": 3
+      },
+      "1": {
+        "loc": { "start": { "line": 3, "column": 41 }, "end": { "line": 3, "column": 52 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 50 }, "end": { "line": 3, "column": 52 } }],
+        "line": 3
+      },
+      "2": {
+        "loc": { "start": { "line": 3, "column": 54 }, "end": { "line": 3, "column": 70 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 61 }, "end": { "line": 3, "column": 70 } }],
+        "line": 3
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0], "1": [0], "2": [0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/SettingIcon.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/SettingIcon.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 3, "column": 27 }, "end": { "line": 10, "column": 1 } },
+      "1": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 3, "column": 27 }, "end": { "line": 3, "column": 28 } },
+        "loc": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } },
+        "line": 4
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 3, "column": 30 }, "end": { "line": 3, "column": 40 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 38 }, "end": { "line": 3, "column": 40 } }],
+        "line": 3
+      },
+      "1": {
+        "loc": { "start": { "line": 3, "column": 42 }, "end": { "line": 3, "column": 53 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 51 }, "end": { "line": 3, "column": 53 } }],
+        "line": 3
+      },
+      "2": {
+        "loc": { "start": { "line": 3, "column": 55 }, "end": { "line": 3, "column": 71 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 62 }, "end": { "line": 3, "column": 71 } }],
+        "line": 3
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0], "1": [0], "2": [0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/SortIcon.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/SortIcon.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 8, "column": 24 }, "end": { "line": 51, "column": 1 } },
+      "1": { "start": { "line": 9, "column": 2 }, "end": { "line": 50, "column": 8 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 8, "column": 24 }, "end": { "line": 8, "column": 25 } },
+        "loc": { "start": { "line": 9, "column": 2 }, "end": { "line": 50, "column": 8 } },
+        "line": 9
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 8, "column": 27 }, "end": { "line": 8, "column": 37 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 8, "column": 35 }, "end": { "line": 8, "column": 37 } }],
+        "line": 8
+      },
+      "1": {
+        "loc": { "start": { "line": 8, "column": 39 }, "end": { "line": 8, "column": 50 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 8, "column": 48 }, "end": { "line": 8, "column": 50 } }],
+        "line": 8
+      },
+      "2": {
+        "loc": { "start": { "line": 8, "column": 52 }, "end": { "line": 8, "column": 68 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 8, "column": 59 }, "end": { "line": 8, "column": 68 } }],
+        "line": 8
+      },
+      "3": {
+        "loc": { "start": { "line": 23, "column": 15 }, "end": { "line": 29, "column": 15 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 24, "column": 14 }, "end": { "line": 26, "column": 15 } },
+          { "start": { "line": 27, "column": 14 }, "end": { "line": 29, "column": 15 } }
+        ],
+        "line": 23
+      },
+      "4": {
+        "loc": { "start": { "line": 35, "column": 15 }, "end": { "line": 41, "column": 15 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 36, "column": 14 }, "end": { "line": 38, "column": 15 } },
+          { "start": { "line": 39, "column": 14 }, "end": { "line": 41, "column": 15 } }
+        ],
+        "line": 35
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0], "1": [0], "2": [0], "3": [0, 0], "4": [0, 0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/SquareIcon.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/SquareIcon.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 3, "column": 26 }, "end": { "line": 10, "column": 1 } },
+      "1": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 3, "column": 26 }, "end": { "line": 3, "column": 27 } },
+        "loc": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } },
+        "line": 4
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 3, "column": 29 }, "end": { "line": 3, "column": 39 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 37 }, "end": { "line": 3, "column": 39 } }],
+        "line": 3
+      },
+      "1": {
+        "loc": { "start": { "line": 3, "column": 41 }, "end": { "line": 3, "column": 52 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 50 }, "end": { "line": 3, "column": 52 } }],
+        "line": 3
+      },
+      "2": {
+        "loc": { "start": { "line": 3, "column": 54 }, "end": { "line": 3, "column": 70 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 61 }, "end": { "line": 3, "column": 70 } }],
+        "line": 3
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0], "1": [0], "2": [0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/TrashIcon.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/TrashIcon.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 3, "column": 25 }, "end": { "line": 10, "column": 1 } },
+      "1": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 3, "column": 25 }, "end": { "line": 3, "column": 26 } },
+        "loc": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } },
+        "line": 4
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 3, "column": 28 }, "end": { "line": 3, "column": 38 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 36 }, "end": { "line": 3, "column": 38 } }],
+        "line": 3
+      },
+      "1": {
+        "loc": { "start": { "line": 3, "column": 40 }, "end": { "line": 3, "column": 51 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 49 }, "end": { "line": 3, "column": 51 } }],
+        "line": 3
+      },
+      "2": {
+        "loc": { "start": { "line": 3, "column": 53 }, "end": { "line": 3, "column": 69 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 60 }, "end": { "line": 3, "column": 69 } }],
+        "line": 3
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0], "1": [0], "2": [0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/UserIcon.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/UserIcon.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 3, "column": 24 }, "end": { "line": 10, "column": 1 } },
+      "1": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 3, "column": 24 }, "end": { "line": 3, "column": 25 } },
+        "loc": { "start": { "line": 4, "column": 2 }, "end": { "line": 9, "column": 8 } },
+        "line": 4
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 3, "column": 27 }, "end": { "line": 3, "column": 37 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 35 }, "end": { "line": 3, "column": 37 } }],
+        "line": 3
+      },
+      "1": {
+        "loc": { "start": { "line": 3, "column": 39 }, "end": { "line": 3, "column": 50 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 48 }, "end": { "line": 3, "column": 50 } }],
+        "line": 3
+      },
+      "2": {
+        "loc": { "start": { "line": 3, "column": 52 }, "end": { "line": 3, "column": 68 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 59 }, "end": { "line": 3, "column": 68 } }],
+        "line": 3
+      }
+    },
+    "s": { "0": 0, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0], "1": [0], "2": [0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/index.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/icons/index.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/layouts/BaseLayout/index.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/layouts/BaseLayout/index.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 30, "column": 19 }, "end": { "line": 100, "column": 1 } },
+      "1": { "start": { "line": 31, "column": 19 }, "end": { "line": 31, "column": 32 } },
+      "2": { "start": { "line": 32, "column": 16 }, "end": { "line": 32, "column": 32 } },
+      "3": { "start": { "line": 33, "column": 42 }, "end": { "line": 33, "column": 54 } },
+      "4": { "start": { "line": 34, "column": 37 }, "end": { "line": 34, "column": 46 } },
+      "5": { "start": { "line": 36, "column": 2 }, "end": { "line": 58, "column": 40 } },
+      "6": { "start": { "line": 37, "column": 27 }, "end": { "line": 55, "column": 5 } },
+      "7": { "start": { "line": 38, "column": 19 }, "end": { "line": 38, "column": 41 } },
+      "8": { "start": { "line": 40, "column": 6 }, "end": { "line": 54, "column": 7 } },
+      "9": { "start": { "line": 41, "column": 8 }, "end": { "line": 51, "column": 9 } },
+      "10": { "start": { "line": 42, "column": 10 }, "end": { "line": 42, "column": 58 } },
+      "11": { "start": { "line": 44, "column": 10 }, "end": { "line": 48, "column": 13 } },
+      "12": { "start": { "line": 50, "column": 10 }, "end": { "line": 50, "column": 41 } },
+      "13": { "start": { "line": 53, "column": 8 }, "end": { "line": 53, "column": 39 } },
+      "14": { "start": { "line": 57, "column": 4 }, "end": { "line": 57, "column": 21 } },
+      "15": { "start": { "line": 60, "column": 2 }, "end": { "line": 66, "column": 21 } },
+      "16": { "start": { "line": 61, "column": 28 }, "end": { "line": 61, "column": 59 } },
+      "17": { "start": { "line": 63, "column": 4 }, "end": { "line": 65, "column": 5 } },
+      "18": { "start": { "line": 64, "column": 6 }, "end": { "line": 64, "column": 39 } },
+      "19": { "start": { "line": 68, "column": 23 }, "end": { "line": 71, "column": 24 } },
+      "20": { "start": { "line": 69, "column": 4 }, "end": { "line": 69, "column": 13 } },
+      "21": { "start": { "line": 70, "column": 4 }, "end": { "line": 70, "column": 28 } },
+      "22": { "start": { "line": 73, "column": 30 }, "end": { "line": 80, "column": 8 } },
+      "23": { "start": { "line": 74, "column": 4 }, "end": { "line": 79, "column": 7 } },
+      "24": { "start": { "line": 75, "column": 24 }, "end": { "line": 75, "column": 92 } },
+      "25": { "start": { "line": 76, "column": 6 }, "end": { "line": 76, "column": 49 } },
+      "26": { "start": { "line": 78, "column": 6 }, "end": { "line": 78, "column": 23 } },
+      "27": { "start": { "line": 82, "column": 2 }, "end": { "line": 99, "column": 4 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 30, "column": 19 }, "end": { "line": 30, "column": 20 } },
+        "loc": { "start": { "line": 30, "column": 54 }, "end": { "line": 100, "column": 1 } },
+        "line": 30
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": { "start": { "line": 36, "column": 12 }, "end": { "line": 36, "column": 13 } },
+        "loc": { "start": { "line": 36, "column": 18 }, "end": { "line": 58, "column": 3 } },
+        "line": 36
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": { "start": { "line": 37, "column": 27 }, "end": { "line": 37, "column": 28 } },
+        "loc": { "start": { "line": 37, "column": 39 }, "end": { "line": 55, "column": 5 } },
+        "line": 37
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": { "start": { "line": 60, "column": 12 }, "end": { "line": 60, "column": 13 } },
+        "loc": { "start": { "line": 60, "column": 18 }, "end": { "line": 66, "column": 3 } },
+        "line": 60
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": { "start": { "line": 68, "column": 35 }, "end": { "line": 68, "column": 36 } },
+        "loc": { "start": { "line": 68, "column": 41 }, "end": { "line": 71, "column": 3 } },
+        "line": 68
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": { "start": { "line": 73, "column": 42 }, "end": { "line": 73, "column": 43 } },
+        "loc": { "start": { "line": 73, "column": 48 }, "end": { "line": 80, "column": 3 } },
+        "line": 73
+      },
+      "6": {
+        "name": "(anonymous_6)",
+        "decl": { "start": { "line": 74, "column": 20 }, "end": { "line": 74, "column": 21 } },
+        "loc": { "start": { "line": 74, "column": 30 }, "end": { "line": 79, "column": 5 } },
+        "line": 74
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 40, "column": 6 }, "end": { "line": 54, "column": 7 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 40, "column": 6 }, "end": { "line": 54, "column": 7 } },
+          { "start": { "line": 52, "column": 13 }, "end": { "line": 54, "column": 7 } }
+        ],
+        "line": 40
+      },
+      "1": {
+        "loc": { "start": { "line": 41, "column": 8 }, "end": { "line": 51, "column": 9 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 41, "column": 8 }, "end": { "line": 51, "column": 9 } },
+          { "start": {}, "end": {} }
+        ],
+        "line": 41
+      },
+      "2": {
+        "loc": { "start": { "line": 63, "column": 4 }, "end": { "line": 65, "column": 5 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 63, "column": 4 }, "end": { "line": 65, "column": 5 } },
+          { "start": {}, "end": {} }
+        ],
+        "line": 63
+      },
+      "3": {
+        "loc": { "start": { "line": 63, "column": 8 }, "end": { "line": 63, "column": 59 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 63, "column": 8 }, "end": { "line": 63, "column": 23 } },
+          { "start": { "line": 63, "column": 27 }, "end": { "line": 63, "column": 59 } }
+        ],
+        "line": 63
+      },
+      "4": {
+        "loc": { "start": { "line": 75, "column": 24 }, "end": { "line": 75, "column": 92 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 75, "column": 53 }, "end": { "line": 75, "column": 72 } },
+          { "start": { "line": 75, "column": 75 }, "end": { "line": 75, "column": 92 } }
+        ],
+        "line": 75
+      }
+    },
+    "s": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0,
+      "25": 0,
+      "26": 0,
+      "27": 0
+    },
+    "f": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0 },
+    "b": { "0": [0, 0], "1": [0, 0], "2": [0, 0], "3": [0, 0], "4": [0, 0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/layouts/SideBar/index.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/layouts/SideBar/index.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 25, "column": 16 }, "end": { "line": 67, "column": 1 } },
+      "1": { "start": { "line": 26, "column": 29 }, "end": { "line": 26, "column": 38 } },
+      "2": { "start": { "line": 27, "column": 40 }, "end": { "line": 27, "column": 67 } },
+      "3": { "start": { "line": 29, "column": 2 }, "end": { "line": 37, "column": 23 } },
+      "4": { "start": { "line": 30, "column": 18 }, "end": { "line": 34, "column": 5 } },
+      "5": { "start": { "line": 31, "column": 27 }, "end": { "line": 31, "column": 49 } },
+      "6": { "start": { "line": 33, "column": 6 }, "end": { "line": 33, "column": 54 } },
+      "7": { "start": { "line": 36, "column": 4 }, "end": { "line": 36, "column": 12 } },
+      "8": { "start": { "line": 39, "column": 2 }, "end": { "line": 66, "column": 4 } },
+      "9": { "start": { "line": 41, "column": 53 }, "end": { "line": 41, "column": 82 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 25, "column": 16 }, "end": { "line": 25, "column": 17 } },
+        "loc": { "start": { "line": 25, "column": 70 }, "end": { "line": 67, "column": 1 } },
+        "line": 25
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": { "start": { "line": 29, "column": 12 }, "end": { "line": 29, "column": 13 } },
+        "loc": { "start": { "line": 29, "column": 18 }, "end": { "line": 37, "column": 3 } },
+        "line": 29
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": { "start": { "line": 30, "column": 18 }, "end": { "line": 30, "column": 19 } },
+        "loc": { "start": { "line": 30, "column": 30 }, "end": { "line": 34, "column": 5 } },
+        "line": 30
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": { "start": { "line": 41, "column": 47 }, "end": { "line": 41, "column": 48 } },
+        "loc": { "start": { "line": 41, "column": 53 }, "end": { "line": 41, "column": 82 } },
+        "line": 41
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 40, "column": 15 }, "end": { "line": 40, "column": 34 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 40, "column": 26 }, "end": { "line": 40, "column": 28 } },
+          { "start": { "line": 40, "column": 31 }, "end": { "line": 40, "column": 34 } }
+        ],
+        "line": 40
+      },
+      "1": {
+        "loc": { "start": { "line": 40, "column": 40 }, "end": { "line": 40, "column": 56 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 40, "column": 51 }, "end": { "line": 40, "column": 52 } },
+          { "start": { "line": 40, "column": 55 }, "end": { "line": 40, "column": 56 } }
+        ],
+        "line": 40
+      },
+      "2": {
+        "loc": { "start": { "line": 45, "column": 54 }, "end": { "line": 45, "column": 70 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 45, "column": 65 }, "end": { "line": 45, "column": 66 } },
+          { "start": { "line": 45, "column": 69 }, "end": { "line": 45, "column": 70 } }
+        ],
+        "line": 45
+      },
+      "3": {
+        "loc": { "start": { "line": 46, "column": 27 }, "end": { "line": 46, "column": 46 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 46, "column": 38 }, "end": { "line": 46, "column": 40 } },
+          { "start": { "line": 46, "column": 43 }, "end": { "line": 46, "column": 46 } }
+        ],
+        "line": 46
+      },
+      "4": {
+        "loc": { "start": { "line": 47, "column": 46 }, "end": { "line": 47, "column": 64 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 47, "column": 57 }, "end": { "line": 47, "column": 58 } },
+          { "start": { "line": 47, "column": 61 }, "end": { "line": 47, "column": 64 } }
+        ],
+        "line": 47
+      },
+      "5": {
+        "loc": { "start": { "line": 48, "column": 49 }, "end": { "line": 48, "column": 71 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 48, "column": 60 }, "end": { "line": 48, "column": 64 } },
+          { "start": { "line": 48, "column": 67 }, "end": { "line": 48, "column": 71 } }
+        ],
+        "line": 48
+      },
+      "6": {
+        "loc": { "start": { "line": 49, "column": 15 }, "end": { "line": 49, "column": 82 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 49, "column": 26 }, "end": { "line": 49, "column": 62 } },
+          { "start": { "line": 49, "column": 65 }, "end": { "line": 49, "column": 82 } }
+        ],
+        "line": 49
+      },
+      "7": {
+        "loc": { "start": { "line": 49, "column": 38 }, "end": { "line": 49, "column": 61 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 49, "column": 38 }, "end": { "line": 49, "column": 55 } },
+          { "start": { "line": 49, "column": 59 }, "end": { "line": 49, "column": 61 } }
+        ],
+        "line": 49
+      },
+      "8": {
+        "loc": { "start": { "line": 51, "column": 44 }, "end": { "line": 51, "column": 66 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 51, "column": 55 }, "end": { "line": 51, "column": 59 } },
+          { "start": { "line": 51, "column": 62 }, "end": { "line": 51, "column": 66 } }
+        ],
+        "line": 51
+      }
+    },
+    "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 0 },
+    "f": { "0": 0, "1": 0, "2": 0, "3": 0 },
+    "b": {
+      "0": [0, 0],
+      "1": [0, 0],
+      "2": [0, 0],
+      "3": [0, 0],
+      "4": [0, 0],
+      "5": [0, 0],
+      "6": [0, 0],
+      "7": [0, 0],
+      "8": [0, 0]
+    }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/pages/index.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/pages/index.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/pages/Dashboard/index.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/pages/Dashboard/index.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 12, "column": 22 }, "end": { "line": 66, "column": 1 } },
+      "1": { "start": { "line": 13, "column": 23 }, "end": { "line": 13, "column": 36 } },
+      "2": { "start": { "line": 14, "column": 23 }, "end": { "line": 14, "column": 36 } },
+      "3": { "start": { "line": 16, "column": 35 }, "end": { "line": 16, "column": 107 } },
+      "4": { "start": { "line": 16, "column": 72 }, "end": { "line": 16, "column": 98 } },
+      "5": { "start": { "line": 18, "column": 25 }, "end": { "line": 45, "column": 3 } },
+      "6": { "start": { "line": 47, "column": 2 }, "end": { "line": 65, "column": 4 } },
+      "7": { "start": { "line": 50, "column": 77 }, "end": { "line": 50, "column": 81 } },
+      "8": { "start": { "line": 52, "column": 8 }, "end": { "line": 62, "column": 10 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 12, "column": 22 }, "end": { "line": 12, "column": 23 } },
+        "loc": { "start": { "line": 12, "column": 28 }, "end": { "line": 66, "column": 1 } },
+        "line": 12
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": { "start": { "line": 16, "column": 52 }, "end": { "line": 16, "column": 53 } },
+        "loc": { "start": { "line": 16, "column": 72 }, "end": { "line": 16, "column": 98 } },
+        "line": 16
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": { "start": { "line": 49, "column": 26 }, "end": { "line": 49, "column": 27 } },
+        "loc": { "start": { "line": 49, "column": 36 }, "end": { "line": 63, "column": 7 } },
+        "line": 49
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 16, "column": 35 }, "end": { "line": 16, "column": 107 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 16, "column": 35 }, "end": { "line": 16, "column": 102 } },
+          { "start": { "line": 16, "column": 106 }, "end": { "line": 16, "column": 107 } }
+        ],
+        "line": 16
+      },
+      "1": {
+        "loc": { "start": { "line": 23, "column": 13 }, "end": { "line": 23, "column": 34 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 23, "column": 13 }, "end": { "line": 23, "column": 29 } },
+          { "start": { "line": 23, "column": 33 }, "end": { "line": 23, "column": 34 } }
+        ],
+        "line": 23
+      }
+    },
+    "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0 },
+    "f": { "0": 0, "1": 0, "2": 0 },
+    "b": { "0": [0, 0], "1": [0, 0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/pages/Login/index.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/pages/Login/index.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 35, "column": 18 }, "end": { "line": 171, "column": 1 } },
+      "1": { "start": { "line": 36, "column": 19 }, "end": { "line": 36, "column": 32 } },
+      "2": { "start": { "line": 37, "column": 16 }, "end": { "line": 37, "column": 32 } },
+      "3": { "start": { "line": 38, "column": 53 }, "end": { "line": 38, "column": 62 } },
+      "4": { "start": { "line": 44, "column": 6 }, "end": { "line": 51, "column": 4 } },
+      "5": { "start": { "line": 53, "column": 22 }, "end": { "line": 67, "column": 3 } },
+      "6": { "start": { "line": 55, "column": 28 }, "end": { "line": 55, "column": 73 } },
+      "7": { "start": { "line": 56, "column": 6 }, "end": { "line": 64, "column": 7 } },
+      "8": { "start": { "line": 57, "column": 8 }, "end": { "line": 57, "column": 36 } },
+      "9": { "start": { "line": 59, "column": 8 }, "end": { "line": 63, "column": 11 } },
+      "10": { "start": { "line": 69, "column": 2 }, "end": { "line": 79, "column": 33 } },
+      "11": { "start": { "line": 70, "column": 27 }, "end": { "line": 76, "column": 5 } },
+      "12": { "start": { "line": 71, "column": 23 }, "end": { "line": 71, "column": 45 } },
+      "13": { "start": { "line": 73, "column": 6 }, "end": { "line": 75, "column": 7 } },
+      "14": { "start": { "line": 74, "column": 8 }, "end": { "line": 74, "column": 43 } },
+      "15": { "start": { "line": 78, "column": 4 }, "end": { "line": 78, "column": 21 } },
+      "16": { "start": { "line": 81, "column": 2 }, "end": { "line": 170, "column": 4 } },
+      "17": { "start": { "line": 85, "column": 46 }, "end": { "line": 85, "column": 73 } },
+      "18": { "start": { "line": 98, "column": 37 }, "end": { "line": 98, "column": 88 } },
+      "19": { "start": { "line": 101, "column": 16 }, "end": { "line": 120, "column": 22 } },
+      "20": { "start": { "line": 108, "column": 22 }, "end": { "line": 108, "column": 47 } },
+      "21": { "start": { "line": 111, "column": 22 }, "end": { "line": 111, "column": 68 } },
+      "22": { "start": { "line": 134, "column": 16 }, "end": { "line": 154, "column": 22 } },
+      "23": { "start": { "line": 142, "column": 22 }, "end": { "line": 142, "column": 47 } },
+      "24": { "start": { "line": 145, "column": 22 }, "end": { "line": 145, "column": 68 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 35, "column": 18 }, "end": { "line": 35, "column": 19 } },
+        "loc": { "start": { "line": 35, "column": 24 }, "end": { "line": 171, "column": 1 } },
+        "line": 35
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": { "start": { "line": 54, "column": 4 }, "end": { "line": 54, "column": 5 } },
+        "loc": { "start": { "line": 54, "column": 50 }, "end": { "line": 65, "column": 5 } },
+        "line": 54
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": { "start": { "line": 69, "column": 12 }, "end": { "line": 69, "column": 13 } },
+        "loc": { "start": { "line": 69, "column": 18 }, "end": { "line": 79, "column": 3 } },
+        "line": 69
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": { "start": { "line": 70, "column": 27 }, "end": { "line": 70, "column": 28 } },
+        "loc": { "start": { "line": 70, "column": 39 }, "end": { "line": 76, "column": 5 } },
+        "line": 70
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": { "start": { "line": 85, "column": 40 }, "end": { "line": 85, "column": 41 } },
+        "loc": { "start": { "line": 85, "column": 46 }, "end": { "line": 85, "column": 73 } },
+        "line": 85
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": { "start": { "line": 98, "column": 26 }, "end": { "line": 98, "column": 27 } },
+        "loc": { "start": { "line": 98, "column": 37 }, "end": { "line": 98, "column": 88 } },
+        "line": 98
+      },
+      "6": {
+        "name": "(anonymous_6)",
+        "decl": { "start": { "line": 100, "column": 22 }, "end": { "line": 100, "column": 23 } },
+        "loc": { "start": { "line": 101, "column": 16 }, "end": { "line": 120, "column": 22 } },
+        "line": 101
+      },
+      "7": {
+        "name": "(anonymous_7)",
+        "decl": { "start": { "line": 107, "column": 30 }, "end": { "line": 107, "column": 31 } },
+        "loc": { "start": { "line": 107, "column": 37 }, "end": { "line": 112, "column": 21 } },
+        "line": 107
+      },
+      "8": {
+        "name": "(anonymous_8)",
+        "decl": { "start": { "line": 133, "column": 22 }, "end": { "line": 133, "column": 23 } },
+        "loc": { "start": { "line": 134, "column": 16 }, "end": { "line": 154, "column": 22 } },
+        "line": 134
+      },
+      "9": {
+        "name": "(anonymous_9)",
+        "decl": { "start": { "line": 141, "column": 30 }, "end": { "line": 141, "column": 31 } },
+        "loc": { "start": { "line": 141, "column": 37 }, "end": { "line": 146, "column": 21 } },
+        "line": 141
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 56, "column": 6 }, "end": { "line": 64, "column": 7 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 56, "column": 6 }, "end": { "line": 64, "column": 7 } },
+          { "start": { "line": 58, "column": 13 }, "end": { "line": 64, "column": 7 } }
+        ],
+        "line": 56
+      },
+      "1": {
+        "loc": { "start": { "line": 73, "column": 6 }, "end": { "line": 75, "column": 7 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 73, "column": 6 }, "end": { "line": 75, "column": 7 } },
+          { "start": {}, "end": {} }
+        ],
+        "line": 73
+      },
+      "2": {
+        "loc": { "start": { "line": 98, "column": 37 }, "end": { "line": 98, "column": 88 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 98, "column": 37 }, "end": { "line": 98, "column": 56 } },
+          { "start": { "line": 98, "column": 60 }, "end": { "line": 98, "column": 88 } }
+        ],
+        "line": 98
+      },
+      "3": {
+        "loc": { "start": { "line": 101, "column": 35 }, "end": { "line": 101, "column": 58 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 101, "column": 52 }, "end": { "line": 101, "column": 53 } },
+          { "start": { "line": 101, "column": 56 }, "end": { "line": 101, "column": 58 } }
+        ],
+        "line": 101
+      },
+      "4": {
+        "loc": { "start": { "line": 115, "column": 19 }, "end": { "line": 119, "column": 19 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 115, "column": 19 }, "end": { "line": 115, "column": 33 } },
+          { "start": { "line": 116, "column": 20 }, "end": { "line": 118, "column": 37 } }
+        ],
+        "line": 115
+      },
+      "5": {
+        "loc": { "start": { "line": 134, "column": 35 }, "end": { "line": 134, "column": 58 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 134, "column": 52 }, "end": { "line": 134, "column": 53 } },
+          { "start": { "line": 134, "column": 56 }, "end": { "line": 134, "column": 58 } }
+        ],
+        "line": 134
+      },
+      "6": {
+        "loc": { "start": { "line": 149, "column": 19 }, "end": { "line": 153, "column": 19 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 149, "column": 19 }, "end": { "line": 149, "column": 33 } },
+          { "start": { "line": 150, "column": 20 }, "end": { "line": 152, "column": 37 } }
+        ],
+        "line": 149
+      }
+    },
+    "s": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0
+    },
+    "f": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 0 },
+    "b": { "0": [0, 0], "1": [0, 0], "2": [0, 0], "3": [0, 0], "4": [0, 0], "5": [0, 0], "6": [0, 0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/pages/Payments/index.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/pages/Payments/index.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 27, "column": 20 }, "end": { "line": 142, "column": 1 } },
+      "1": { "start": { "line": 28, "column": 34 }, "end": { "line": 28, "column": 54 } },
+      "2": { "start": { "line": 29, "column": 40 }, "end": { "line": 29, "column": 70 } },
+      "3": { "start": { "line": 31, "column": 34 }, "end": { "line": 31, "column": 47 } },
+      "4": { "start": { "line": 33, "column": 102 }, "end": { "line": 33, "column": 117 } },
+      "5": { "start": { "line": 35, "column": 23 }, "end": { "line": 47, "column": 16 } },
+      "6": { "start": { "line": 36, "column": 4 }, "end": { "line": 38, "column": 5 } },
+      "7": { "start": { "line": 37, "column": 6 }, "end": { "line": 37, "column": 45 } },
+      "8": { "start": { "line": 40, "column": 4 }, "end": { "line": 46, "column": 5 } },
+      "9": { "start": { "line": 41, "column": 6 }, "end": { "line": 43, "column": 7 } },
+      "10": { "start": { "line": 42, "column": 8 }, "end": { "line": 42, "column": 31 } },
+      "11": { "start": { "line": 45, "column": 6 }, "end": { "line": 45, "column": 94 } },
+      "12": { "start": { "line": 49, "column": 51 }, "end": { "line": 64, "column": 6 } },
+      "13": { "start": { "line": 50, "column": 24 }, "end": { "line": 53, "column": 5 } },
+      "14": { "start": { "line": 55, "column": 25 }, "end": { "line": 55, "column": 109 } },
+      "15": { "start": { "line": 57, "column": 6 }, "end": { "line": 61, "column": 7 } },
+      "16": { "start": { "line": 58, "column": 8 }, "end": { "line": 60, "column": 47 } },
+      "17": { "start": { "line": 63, "column": 6 }, "end": { "line": 63, "column": 15 } },
+      "18": { "start": { "line": 66, "column": 49 }, "end": { "line": 98, "column": 3 } },
+      "19": { "start": { "line": 81, "column": 36 }, "end": { "line": 81, "column": 61 } },
+      "20": { "start": { "line": 85, "column": 36 }, "end": { "line": 85, "column": 64 } },
+      "21": { "start": { "line": 93, "column": 8 }, "end": { "line": 95, "column": 17 } },
+      "22": { "start": { "line": 93, "column": 47 }, "end": { "line": 93, "column": 84 } },
+      "23": { "start": { "line": 100, "column": 39 }, "end": { "line": 108, "column": 3 } },
+      "24": { "start": { "line": 101, "column": 27 }, "end": { "line": 101, "column": 81 } },
+      "25": { "start": { "line": 101, "column": 63 }, "end": { "line": 101, "column": 80 } },
+      "26": { "start": { "line": 103, "column": 4 }, "end": { "line": 103, "column": 26 } },
+      "27": { "start": { "line": 105, "column": 4 }, "end": { "line": 107, "column": 5 } },
+      "28": { "start": { "line": 106, "column": 6 }, "end": { "line": 106, "column": 37 } },
+      "29": { "start": { "line": 110, "column": 2 }, "end": { "line": 141, "column": 4 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 27, "column": 20 }, "end": { "line": 27, "column": 21 } },
+        "loc": { "start": { "line": 27, "column": 56 }, "end": { "line": 142, "column": 1 } },
+        "line": 27
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": { "start": { "line": 35, "column": 35 }, "end": { "line": 35, "column": 36 } },
+        "loc": { "start": { "line": 35, "column": 41 }, "end": { "line": 47, "column": 3 } },
+        "line": 35
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": { "start": { "line": 50, "column": 10 }, "end": { "line": 50, "column": 11 } },
+        "loc": { "start": { "line": 50, "column": 24 }, "end": { "line": 53, "column": 5 } },
+        "line": 50
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": { "start": { "line": 55, "column": 12 }, "end": { "line": 55, "column": 13 } },
+        "loc": { "start": { "line": 55, "column": 25 }, "end": { "line": 55, "column": 109 } },
+        "line": 55
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": { "start": { "line": 56, "column": 10 }, "end": { "line": 56, "column": 11 } },
+        "loc": { "start": { "line": 56, "column": 26 }, "end": { "line": 64, "column": 5 } },
+        "line": 56
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": { "start": { "line": 81, "column": 16 }, "end": { "line": 81, "column": 17 } },
+        "loc": { "start": { "line": 81, "column": 36 }, "end": { "line": 81, "column": 61 } },
+        "line": 81
+      },
+      "6": {
+        "name": "(anonymous_6)",
+        "decl": { "start": { "line": 85, "column": 16 }, "end": { "line": 85, "column": 17 } },
+        "loc": { "start": { "line": 85, "column": 36 }, "end": { "line": 85, "column": 64 } },
+        "line": 85
+      },
+      "7": {
+        "name": "(anonymous_7)",
+        "decl": { "start": { "line": 92, "column": 16 }, "end": { "line": 92, "column": 17 } },
+        "loc": { "start": { "line": 93, "column": 8 }, "end": { "line": 95, "column": 17 } },
+        "line": 93
+      },
+      "8": {
+        "name": "(anonymous_8)",
+        "decl": { "start": { "line": 93, "column": 41 }, "end": { "line": 93, "column": 42 } },
+        "loc": { "start": { "line": 93, "column": 47 }, "end": { "line": 93, "column": 84 } },
+        "line": 93
+      },
+      "9": {
+        "name": "(anonymous_9)",
+        "decl": { "start": { "line": 100, "column": 39 }, "end": { "line": 100, "column": 40 } },
+        "loc": { "start": { "line": 100, "column": 63 }, "end": { "line": 108, "column": 3 } },
+        "line": 100
+      },
+      "10": {
+        "name": "(anonymous_10)",
+        "decl": { "start": { "line": 101, "column": 51 }, "end": { "line": 101, "column": 52 } },
+        "loc": { "start": { "line": 101, "column": 63 }, "end": { "line": 101, "column": 80 } },
+        "line": 101
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 36, "column": 4 }, "end": { "line": 38, "column": 5 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 36, "column": 4 }, "end": { "line": 38, "column": 5 } },
+          { "start": {}, "end": {} }
+        ],
+        "line": 36
+      },
+      "1": {
+        "loc": { "start": { "line": 40, "column": 4 }, "end": { "line": 46, "column": 5 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 40, "column": 4 }, "end": { "line": 46, "column": 5 } },
+          { "start": {}, "end": {} }
+        ],
+        "line": 40
+      },
+      "2": {
+        "loc": { "start": { "line": 41, "column": 6 }, "end": { "line": 43, "column": 7 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 41, "column": 6 }, "end": { "line": 43, "column": 7 } },
+          { "start": {}, "end": {} }
+        ],
+        "line": 41
+      },
+      "3": {
+        "loc": { "start": { "line": 45, "column": 18 }, "end": { "line": 45, "column": 92 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 45, "column": 52 }, "end": { "line": 45, "column": 71 } },
+          { "start": { "line": 45, "column": 74 }, "end": { "line": 45, "column": 92 } }
+        ],
+        "line": 45
+      },
+      "4": {
+        "loc": { "start": { "line": 57, "column": 6 }, "end": { "line": 61, "column": 7 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 57, "column": 6 }, "end": { "line": 61, "column": 7 } },
+          { "start": {}, "end": {} }
+        ],
+        "line": 57
+      },
+      "5": {
+        "loc": { "start": { "line": 58, "column": 15 }, "end": { "line": 60, "column": 46 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 59, "column": 12 }, "end": { "line": 59, "column": 46 } },
+          { "start": { "line": 60, "column": 12 }, "end": { "line": 60, "column": 46 } }
+        ],
+        "line": 58
+      },
+      "6": {
+        "loc": { "start": { "line": 105, "column": 4 }, "end": { "line": 107, "column": 5 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 105, "column": 4 }, "end": { "line": 107, "column": 5 } },
+          { "start": {}, "end": {} }
+        ],
+        "line": 105
+      },
+      "7": {
+        "loc": { "start": { "line": 120, "column": 11 }, "end": { "line": 134, "column": 11 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 121, "column": 12 }, "end": { "line": 123, "column": 18 } },
+          { "start": { "line": 125, "column": 12 }, "end": { "line": 133, "column": 15 } }
+        ],
+        "line": 120
+      },
+      "8": {
+        "loc": { "start": { "line": 126, "column": 15 }, "end": { "line": 132, "column": 15 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 127, "column": 16 }, "end": { "line": 127, "column": 91 } },
+          { "start": { "line": 129, "column": 16 }, "end": { "line": 131, "column": 23 } }
+        ],
+        "line": 126
+      },
+      "9": {
+        "loc": { "start": { "line": 127, "column": 64 }, "end": { "line": 127, "column": 87 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 127, "column": 64 }, "end": { "line": 127, "column": 81 } },
+          { "start": { "line": 127, "column": 85 }, "end": { "line": 127, "column": 87 } }
+        ],
+        "line": 127
+      },
+      "10": {
+        "loc": { "start": { "line": 137, "column": 7 }, "end": { "line": 139, "column": 7 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 137, "column": 7 }, "end": { "line": 137, "column": 26 } },
+          { "start": { "line": 138, "column": 8 }, "end": { "line": 138, "column": 116 } }
+        ],
+        "line": 137
+      }
+    },
+    "s": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0,
+      "25": 0,
+      "26": 0,
+      "27": 0,
+      "28": 0,
+      "29": 0
+    },
+    "f": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 0, "10": 0 },
+    "b": {
+      "0": [0, 0],
+      "1": [0, 0],
+      "2": [0, 0],
+      "3": [0, 0],
+      "4": [0, 0],
+      "5": [0, 0],
+      "6": [0, 0],
+      "7": [0, 0],
+      "8": [0, 0],
+      "9": [0, 0],
+      "10": [0, 0]
+    }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/pages/Students/index.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/pages/Students/index.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 29, "column": 21 }, "end": { "line": 193, "column": 1 } },
+      "1": { "start": { "line": 30, "column": 49 }, "end": { "line": 30, "column": 62 } },
+      "2": { "start": { "line": 31, "column": 34 }, "end": { "line": 31, "column": 46 } },
+      "3": { "start": { "line": 33, "column": 40 }, "end": { "line": 33, "column": 70 } },
+      "4": { "start": { "line": 35, "column": 93 }, "end": { "line": 35, "column": 108 } },
+      "5": { "start": { "line": 37, "column": 84 }, "end": { "line": 37, "column": 99 } },
+      "6": { "start": { "line": 39, "column": 16 }, "end": { "line": 39, "column": 32 } },
+      "7": { "start": { "line": 41, "column": 51 }, "end": { "line": 56, "column": 6 } },
+      "8": { "start": { "line": 42, "column": 24 }, "end": { "line": 45, "column": 5 } },
+      "9": { "start": { "line": 47, "column": 25 }, "end": { "line": 47, "column": 109 } },
+      "10": { "start": { "line": 49, "column": 6 }, "end": { "line": 53, "column": 7 } },
+      "11": { "start": { "line": 50, "column": 8 }, "end": { "line": 52, "column": 47 } },
+      "12": { "start": { "line": 55, "column": 6 }, "end": { "line": 55, "column": 15 } },
+      "13": { "start": { "line": 58, "column": 50 }, "end": { "line": 94, "column": 3 } },
+      "14": { "start": { "line": 60, "column": 35 }, "end": { "line": 60, "column": 103 } },
+      "15": { "start": { "line": 84, "column": 8 }, "end": { "line": 91, "column": 17 } },
+      "16": { "start": { "line": 85, "column": 49 }, "end": { "line": 85, "column": 76 } },
+      "17": { "start": { "line": 88, "column": 49 }, "end": { "line": 88, "column": 75 } },
+      "18": { "start": { "line": 96, "column": 30 }, "end": { "line": 107, "column": 61 } },
+      "19": { "start": { "line": 97, "column": 4 }, "end": { "line": 97, "column": 21 } },
+      "20": { "start": { "line": 99, "column": 4 }, "end": { "line": 101, "column": 5 } },
+      "21": { "start": { "line": 100, "column": 6 }, "end": { "line": 100, "column": 37 } },
+      "22": { "start": { "line": 103, "column": 4 }, "end": { "line": 106, "column": 7 } },
+      "23": { "start": { "line": 109, "column": 27 }, "end": { "line": 116, "column": 3 } },
+      "24": { "start": { "line": 110, "column": 27 }, "end": { "line": 110, "column": 81 } },
+      "25": { "start": { "line": 110, "column": 63 }, "end": { "line": 110, "column": 80 } },
+      "26": { "start": { "line": 112, "column": 4 }, "end": { "line": 115, "column": 5 } },
+      "27": { "start": { "line": 113, "column": 6 }, "end": { "line": 113, "column": 37 } },
+      "28": { "start": { "line": 114, "column": 6 }, "end": { "line": 114, "column": 22 } },
+      "29": { "start": { "line": 118, "column": 28 }, "end": { "line": 125, "column": 3 } },
+      "30": { "start": { "line": 119, "column": 27 }, "end": { "line": 119, "column": 81 } },
+      "31": { "start": { "line": 119, "column": 63 }, "end": { "line": 119, "column": 80 } },
+      "32": { "start": { "line": 121, "column": 4 }, "end": { "line": 124, "column": 5 } },
+      "33": { "start": { "line": 122, "column": 6 }, "end": { "line": 122, "column": 37 } },
+      "34": { "start": { "line": 123, "column": 6 }, "end": { "line": 123, "column": 25 } },
+      "35": { "start": { "line": 127, "column": 23 }, "end": { "line": 139, "column": 16 } },
+      "36": { "start": { "line": 128, "column": 4 }, "end": { "line": 130, "column": 5 } },
+      "37": { "start": { "line": 129, "column": 6 }, "end": { "line": 129, "column": 45 } },
+      "38": { "start": { "line": 132, "column": 4 }, "end": { "line": 138, "column": 5 } },
+      "39": { "start": { "line": 133, "column": 6 }, "end": { "line": 135, "column": 7 } },
+      "40": { "start": { "line": 134, "column": 8 }, "end": { "line": 134, "column": 31 } },
+      "41": { "start": { "line": 137, "column": 6 }, "end": { "line": 137, "column": 94 } },
+      "42": { "start": { "line": 141, "column": 30 }, "end": { "line": 144, "column": 24 } },
+      "43": { "start": { "line": 142, "column": 4 }, "end": { "line": 142, "column": 23 } },
+      "44": { "start": { "line": 143, "column": 4 }, "end": { "line": 143, "column": 25 } },
+      "45": { "start": { "line": 146, "column": 2 }, "end": { "line": 192, "column": 4 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 29, "column": 21 }, "end": { "line": 29, "column": 22 } },
+        "loc": { "start": { "line": 29, "column": 57 }, "end": { "line": 193, "column": 1 } },
+        "line": 29
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": { "start": { "line": 42, "column": 10 }, "end": { "line": 42, "column": 11 } },
+        "loc": { "start": { "line": 42, "column": 24 }, "end": { "line": 45, "column": 5 } },
+        "line": 42
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": { "start": { "line": 47, "column": 12 }, "end": { "line": 47, "column": 13 } },
+        "loc": { "start": { "line": 47, "column": 25 }, "end": { "line": 47, "column": 109 } },
+        "line": 47
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": { "start": { "line": 48, "column": 10 }, "end": { "line": 48, "column": 11 } },
+        "loc": { "start": { "line": 48, "column": 26 }, "end": { "line": 56, "column": 5 } },
+        "line": 48
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": { "start": { "line": 60, "column": 16 }, "end": { "line": 60, "column": 17 } },
+        "loc": { "start": { "line": 60, "column": 35 }, "end": { "line": 60, "column": 103 } },
+        "line": 60
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": { "start": { "line": 83, "column": 16 }, "end": { "line": 83, "column": 17 } },
+        "loc": { "start": { "line": 84, "column": 8 }, "end": { "line": 91, "column": 17 } },
+        "line": 84
+      },
+      "6": {
+        "name": "(anonymous_6)",
+        "decl": { "start": { "line": 85, "column": 43 }, "end": { "line": 85, "column": 44 } },
+        "loc": { "start": { "line": 85, "column": 49 }, "end": { "line": 85, "column": 76 } },
+        "line": 85
+      },
+      "7": {
+        "name": "(anonymous_7)",
+        "decl": { "start": { "line": 88, "column": 43 }, "end": { "line": 88, "column": 44 } },
+        "loc": { "start": { "line": 88, "column": 49 }, "end": { "line": 88, "column": 75 } },
+        "line": 88
+      },
+      "8": {
+        "name": "(anonymous_8)",
+        "decl": { "start": { "line": 96, "column": 42 }, "end": { "line": 96, "column": 43 } },
+        "loc": { "start": { "line": 96, "column": 48 }, "end": { "line": 107, "column": 3 } },
+        "line": 96
+      },
+      "9": {
+        "name": "(anonymous_9)",
+        "decl": { "start": { "line": 109, "column": 27 }, "end": { "line": 109, "column": 28 } },
+        "loc": { "start": { "line": 109, "column": 52 }, "end": { "line": 116, "column": 3 } },
+        "line": 109
+      },
+      "10": {
+        "name": "(anonymous_10)",
+        "decl": { "start": { "line": 110, "column": 51 }, "end": { "line": 110, "column": 52 } },
+        "loc": { "start": { "line": 110, "column": 63 }, "end": { "line": 110, "column": 80 } },
+        "line": 110
+      },
+      "11": {
+        "name": "(anonymous_11)",
+        "decl": { "start": { "line": 118, "column": 28 }, "end": { "line": 118, "column": 29 } },
+        "loc": { "start": { "line": 118, "column": 59 }, "end": { "line": 125, "column": 3 } },
+        "line": 118
+      },
+      "12": {
+        "name": "(anonymous_12)",
+        "decl": { "start": { "line": 119, "column": 51 }, "end": { "line": 119, "column": 52 } },
+        "loc": { "start": { "line": 119, "column": 63 }, "end": { "line": 119, "column": 80 } },
+        "line": 119
+      },
+      "13": {
+        "name": "(anonymous_13)",
+        "decl": { "start": { "line": 127, "column": 35 }, "end": { "line": 127, "column": 36 } },
+        "loc": { "start": { "line": 127, "column": 41 }, "end": { "line": 139, "column": 3 } },
+        "line": 127
+      },
+      "14": {
+        "name": "(anonymous_14)",
+        "decl": { "start": { "line": 141, "column": 42 }, "end": { "line": 141, "column": 43 } },
+        "loc": { "start": { "line": 141, "column": 48 }, "end": { "line": 144, "column": 3 } },
+        "line": 141
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 49, "column": 6 }, "end": { "line": 53, "column": 7 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 49, "column": 6 }, "end": { "line": 53, "column": 7 } },
+          { "start": {}, "end": {} }
+        ],
+        "line": 49
+      },
+      "1": {
+        "loc": { "start": { "line": 50, "column": 15 }, "end": { "line": 52, "column": 46 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 51, "column": 12 }, "end": { "line": 51, "column": 46 } },
+          { "start": { "line": 52, "column": 12 }, "end": { "line": 52, "column": 46 } }
+        ],
+        "line": 50
+      },
+      "2": {
+        "loc": { "start": { "line": 99, "column": 4 }, "end": { "line": 101, "column": 5 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 99, "column": 4 }, "end": { "line": 101, "column": 5 } },
+          { "start": {}, "end": {} }
+        ],
+        "line": 99
+      },
+      "3": {
+        "loc": { "start": { "line": 112, "column": 4 }, "end": { "line": 115, "column": 5 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 112, "column": 4 }, "end": { "line": 115, "column": 5 } },
+          { "start": {}, "end": {} }
+        ],
+        "line": 112
+      },
+      "4": {
+        "loc": { "start": { "line": 121, "column": 4 }, "end": { "line": 124, "column": 5 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 121, "column": 4 }, "end": { "line": 124, "column": 5 } },
+          { "start": {}, "end": {} }
+        ],
+        "line": 121
+      },
+      "5": {
+        "loc": { "start": { "line": 128, "column": 4 }, "end": { "line": 130, "column": 5 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 128, "column": 4 }, "end": { "line": 130, "column": 5 } },
+          { "start": {}, "end": {} }
+        ],
+        "line": 128
+      },
+      "6": {
+        "loc": { "start": { "line": 132, "column": 4 }, "end": { "line": 138, "column": 5 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 132, "column": 4 }, "end": { "line": 138, "column": 5 } },
+          { "start": {}, "end": {} }
+        ],
+        "line": 132
+      },
+      "7": {
+        "loc": { "start": { "line": 133, "column": 6 }, "end": { "line": 135, "column": 7 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 133, "column": 6 }, "end": { "line": 135, "column": 7 } },
+          { "start": {}, "end": {} }
+        ],
+        "line": 133
+      },
+      "8": {
+        "loc": { "start": { "line": 137, "column": 18 }, "end": { "line": 137, "column": 92 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 137, "column": 52 }, "end": { "line": 137, "column": 71 } },
+          { "start": { "line": 137, "column": 74 }, "end": { "line": 137, "column": 92 } }
+        ],
+        "line": 137
+      },
+      "9": {
+        "loc": { "start": { "line": 159, "column": 11 }, "end": { "line": 173, "column": 11 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 160, "column": 12 }, "end": { "line": 162, "column": 18 } },
+          { "start": { "line": 164, "column": 12 }, "end": { "line": 172, "column": 15 } }
+        ],
+        "line": 159
+      },
+      "10": {
+        "loc": { "start": { "line": 165, "column": 15 }, "end": { "line": 171, "column": 15 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 166, "column": 16 }, "end": { "line": 166, "column": 91 } },
+          { "start": { "line": 168, "column": 16 }, "end": { "line": 170, "column": 23 } }
+        ],
+        "line": 165
+      },
+      "11": {
+        "loc": { "start": { "line": 166, "column": 64 }, "end": { "line": 166, "column": 87 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 166, "column": 64 }, "end": { "line": 166, "column": 81 } },
+          { "start": { "line": 166, "column": 85 }, "end": { "line": 166, "column": 87 } }
+        ],
+        "line": 166
+      },
+      "12": {
+        "loc": { "start": { "line": 177, "column": 7 }, "end": { "line": 179, "column": 7 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 177, "column": 7 }, "end": { "line": 177, "column": 23 } },
+          { "start": { "line": 178, "column": 8 }, "end": { "line": 178, "column": 110 } }
+        ],
+        "line": 177
+      },
+      "13": {
+        "loc": { "start": { "line": 181, "column": 7 }, "end": { "line": 190, "column": 7 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 181, "column": 7 }, "end": { "line": 181, "column": 20 } },
+          { "start": { "line": 182, "column": 8 }, "end": { "line": 189, "column": 10 } }
+        ],
+        "line": 181
+      }
+    },
+    "s": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0,
+      "25": 0,
+      "26": 0,
+      "27": 0,
+      "28": 0,
+      "29": 0,
+      "30": 0,
+      "31": 0,
+      "32": 0,
+      "33": 0,
+      "34": 0,
+      "35": 0,
+      "36": 0,
+      "37": 0,
+      "38": 0,
+      "39": 0,
+      "40": 0,
+      "41": 0,
+      "42": 0,
+      "43": 0,
+      "44": 0,
+      "45": 0
+    },
+    "f": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0
+    },
+    "b": {
+      "0": [0, 0],
+      "1": [0, 0],
+      "2": [0, 0],
+      "3": [0, 0],
+      "4": [0, 0],
+      "5": [0, 0],
+      "6": [0, 0],
+      "7": [0, 0],
+      "8": [0, 0],
+      "9": [0, 0],
+      "10": [0, 0],
+      "11": [0, 0],
+      "12": [0, 0],
+      "13": [0, 0]
+    }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/services/api.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/services/api.ts",
+    "statementMap": {
+      "0": { "start": { "line": 1, "column": 19 }, "end": { "line": 24, "column": 1 } },
+      "1": { "start": { "line": 5, "column": 2 }, "end": { "line": 23, "column": 3 } },
+      "2": { "start": { "line": 6, "column": 21 }, "end": { "line": 13, "column": 6 } },
+      "3": { "start": { "line": 15, "column": 4 }, "end": { "line": 17, "column": 5 } },
+      "4": { "start": { "line": 16, "column": 6 }, "end": { "line": 16, "column": 22 } },
+      "5": { "start": { "line": 19, "column": 26 }, "end": { "line": 19, "column": 47 } },
+      "6": { "start": { "line": 20, "column": 4 }, "end": { "line": 20, "column": 24 } },
+      "7": { "start": { "line": 22, "column": 4 }, "end": { "line": 22, "column": 25 } },
+      "8": { "start": { "line": 26, "column": 12 }, "end": { "line": 29, "column": 1 } },
+      "9": { "start": { "line": 27, "column": 19 }, "end": { "line": 27, "column": 53 } },
+      "10": { "start": { "line": 28, "column": 2 }, "end": { "line": 28, "column": 25 } },
+      "11": { "start": { "line": 31, "column": 14 }, "end": { "line": 34, "column": 1 } },
+      "12": { "start": { "line": 32, "column": 19 }, "end": { "line": 32, "column": 76 } },
+      "13": { "start": { "line": 33, "column": 2 }, "end": { "line": 33, "column": 25 } },
+      "14": { "start": { "line": 36, "column": 12 }, "end": { "line": 39, "column": 1 } },
+      "15": { "start": { "line": 37, "column": 19 }, "end": { "line": 37, "column": 74 } },
+      "16": { "start": { "line": 38, "column": 2 }, "end": { "line": 38, "column": 25 } },
+      "17": { "start": { "line": 41, "column": 13 }, "end": { "line": 44, "column": 1 } },
+      "18": { "start": { "line": 42, "column": 19 }, "end": { "line": 42, "column": 75 } },
+      "19": { "start": { "line": 43, "column": 2 }, "end": { "line": 43, "column": 25 } },
+      "20": { "start": { "line": 46, "column": 15 }, "end": { "line": 47, "column": 54 } },
+      "21": { "start": { "line": 47, "column": 2 }, "end": { "line": 47, "column": 54 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 1, "column": 19 }, "end": { "line": 1, "column": 20 } },
+        "loc": { "start": { "line": 4, "column": 24 }, "end": { "line": 24, "column": 1 } },
+        "line": 4
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": { "start": { "line": 26, "column": 12 }, "end": { "line": 26, "column": 13 } },
+        "loc": { "start": { "line": 26, "column": 73 }, "end": { "line": 29, "column": 1 } },
+        "line": 26
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": { "start": { "line": 31, "column": 14 }, "end": { "line": 31, "column": 15 } },
+        "loc": { "start": { "line": 31, "column": 103 }, "end": { "line": 34, "column": 1 } },
+        "line": 31
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": { "start": { "line": 36, "column": 12 }, "end": { "line": 36, "column": 13 } },
+        "loc": { "start": { "line": 36, "column": 94 }, "end": { "line": 39, "column": 1 } },
+        "line": 36
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": { "start": { "line": 41, "column": 13 }, "end": { "line": 41, "column": 14 } },
+        "loc": { "start": { "line": 41, "column": 95 }, "end": { "line": 44, "column": 1 } },
+        "line": 41
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": { "start": { "line": 46, "column": 15 }, "end": { "line": 46, "column": 16 } },
+        "loc": { "start": { "line": 47, "column": 2 }, "end": { "line": 47, "column": 54 } },
+        "line": 47
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 3, "column": 2 }, "end": { "line": 3, "column": 103 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 101 }, "end": { "line": 3, "column": 103 } }],
+        "line": 3
+      },
+      "1": {
+        "loc": { "start": { "line": 3, "column": 4 }, "end": { "line": 3, "column": 18 } },
+        "type": "default-arg",
+        "locations": [{ "start": { "line": 3, "column": 13 }, "end": { "line": 3, "column": 18 } }],
+        "line": 3
+      },
+      "2": {
+        "loc": { "start": { "line": 15, "column": 4 }, "end": { "line": 17, "column": 5 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 15, "column": 4 }, "end": { "line": 17, "column": 5 } },
+          { "start": {}, "end": {} }
+        ],
+        "line": 15
+      }
+    },
+    "s": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0
+    },
+    "f": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0 },
+    "b": { "0": [0], "1": [0], "2": [0, 0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/services/index.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/services/index.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/services/localStorage.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/services/localStorage.ts",
+    "statementMap": {
+      "0": { "start": { "line": 1, "column": 35 }, "end": { "line": 5, "column": 1 } },
+      "1": { "start": { "line": 2, "column": 27 }, "end": { "line": 2, "column": 52 } },
+      "2": { "start": { "line": 4, "column": 2 }, "end": { "line": 4, "column": 64 } },
+      "3": { "start": { "line": 7, "column": 35 }, "end": { "line": 9, "column": 1 } },
+      "4": { "start": { "line": 8, "column": 2 }, "end": { "line": 8, "column": 50 } },
+      "5": { "start": { "line": 11, "column": 38 }, "end": { "line": 13, "column": 1 } },
+      "6": { "start": { "line": 12, "column": 2 }, "end": { "line": 12, "column": 31 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 1, "column": 35 }, "end": { "line": 1, "column": 36 } },
+        "loc": { "start": { "line": 1, "column": 52 }, "end": { "line": 5, "column": 1 } },
+        "line": 1
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": { "start": { "line": 7, "column": 35 }, "end": { "line": 7, "column": 36 } },
+        "loc": { "start": { "line": 7, "column": 64 }, "end": { "line": 9, "column": 1 } },
+        "line": 7
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": { "start": { "line": 11, "column": 38 }, "end": { "line": 11, "column": 39 } },
+        "loc": { "start": { "line": 11, "column": 55 }, "end": { "line": 13, "column": 1 } },
+        "line": 11
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 4, "column": 9 }, "end": { "line": 4, "column": 63 } },
+        "type": "cond-expr",
+        "locations": [
+          { "start": { "line": 4, "column": 28 }, "end": { "line": 4, "column": 56 } },
+          { "start": { "line": 4, "column": 59 }, "end": { "line": 4, "column": 63 } }
+        ],
+        "line": 4
+      }
+    },
+    "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0 },
+    "f": { "0": 0, "1": 0, "2": 0 },
+    "b": { "0": [0, 0] }
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/themes/colors.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/themes/colors.ts",
+    "statementMap": { "0": { "start": { "line": 1, "column": 22 }, "end": { "line": 44, "column": 1 } } },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0 },
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/themes/index.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/themes/index.ts",
+    "statementMap": { "0": { "start": { "line": 10, "column": 21 }, "end": { "line": 30, "column": 2 } } },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0 },
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/themes/typography.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/themes/typography.ts",
+    "statementMap": {
+      "0": { "start": { "line": 1, "column": 21 }, "end": { "line": 4, "column": 1 } },
+      "1": { "start": { "line": 6, "column": 25 }, "end": { "line": 20, "column": 1 } },
+      "2": { "start": { "line": 22, "column": 27 }, "end": { "line": 28, "column": 1 } },
+      "3": { "start": { "line": 30, "column": 27 }, "end": { "line": 37, "column": 1 } },
+      "4": { "start": { "line": 39, "column": 22 }, "end": { "line": 42, "column": 1 } }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0 },
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/themes/components/button.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/themes/components/button.ts",
+    "statementMap": { "0": { "start": { "line": 3, "column": 22 }, "end": { "line": 42, "column": 2 } } },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0 },
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/themes/components/card.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/themes/components/card.ts",
+    "statementMap": { "0": { "start": { "line": 3, "column": 20 }, "end": { "line": 17, "column": 2 } } },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0 },
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/themes/components/heading.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/themes/components/heading.ts",
+    "statementMap": { "0": { "start": { "line": 3, "column": 23 }, "end": { "line": 34, "column": 2 } } },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0 },
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/themes/components/index.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/themes/components/index.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/themes/components/input.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/themes/components/input.ts",
+    "statementMap": { "0": { "start": { "line": 3, "column": 21 }, "end": { "line": 32, "column": 2 } } },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0 },
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/themes/components/link.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/themes/components/link.ts",
+    "statementMap": { "0": { "start": { "line": 3, "column": 20 }, "end": { "line": 9, "column": 2 } } },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0 },
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/themes/components/text.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/themes/components/text.ts",
+    "statementMap": { "0": { "start": { "line": 3, "column": 20 }, "end": { "line": 34, "column": 2 } } },
+    "fnMap": {},
+    "branchMap": {},
+    "s": { "0": 0 },
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/types/auth.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/types/auth.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/types/index.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/types/index.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/types/payment.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/types/payment.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/types/student.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/types/student.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/utils/date.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/utils/date.ts",
+    "statementMap": {
+      "0": { "start": { "line": 1, "column": 26 }, "end": { "line": 15, "column": 1 } },
+      "1": { "start": { "line": 2, "column": 15 }, "end": { "line": 2, "column": 34 } },
+      "2": { "start": { "line": 3, "column": 14 }, "end": { "line": 3, "column": 31 } },
+      "3": { "start": { "line": 4, "column": 16 }, "end": { "line": 4, "column": 65 } },
+      "4": { "start": { "line": 5, "column": 15 }, "end": { "line": 5, "column": 36 } },
+      "5": { "start": { "line": 7, "column": 2 }, "end": { "line": 12, "column": 3 } },
+      "6": { "start": { "line": 8, "column": 26 }, "end": { "line": 8, "column": 75 } },
+      "7": { "start": { "line": 9, "column": 25 }, "end": { "line": 9, "column": 67 } },
+      "8": { "start": { "line": 11, "column": 4 }, "end": { "line": 11, "column": 54 } },
+      "9": { "start": { "line": 14, "column": 2 }, "end": { "line": 14, "column": 48 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 1, "column": 26 }, "end": { "line": 1, "column": 27 } },
+        "loc": { "start": { "line": 1, "column": 86 }, "end": { "line": 15, "column": 1 } },
+        "line": 1
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 7, "column": 2 }, "end": { "line": 12, "column": 3 } },
+        "type": "if",
+        "locations": [
+          { "start": { "line": 7, "column": 2 }, "end": { "line": 12, "column": 3 } },
+          { "start": {}, "end": {} }
+        ],
+        "line": 7
+      }
+    },
+    "s": { "0": 1, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0, 0] },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "309b3deeab9f0d607f03a02a23656f7554532b22"
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/utils/index.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/utils/index.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "a156b5397f2e3c3e419b631f9cf10d3cce9add04"
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/utils/input.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/utils/input.ts",
+    "statementMap": {
+      "0": { "start": { "line": 6, "column": 34 }, "end": { "line": 12, "column": 1 } },
+      "1": { "start": { "line": 11, "column": 2 }, "end": { "line": 11, "column": 58 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 6, "column": 34 }, "end": { "line": 6, "column": 35 } },
+        "loc": { "start": { "line": 10, "column": 11 }, "end": { "line": 12, "column": 1 } },
+        "line": 10
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 11, "column": 2 }, "end": { "line": 11, "column": 57 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 11, "column": 2 }, "end": { "line": 11, "column": 28 } },
+          { "start": { "line": 11, "column": 32 }, "end": { "line": 11, "column": 57 } }
+        ],
+        "line": 11
+      }
+    },
+    "s": { "0": 1, "1": 0 },
+    "f": { "0": 0 },
+    "b": { "0": [0, 0] },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "1ae1fcb073d953ebae2168de0e76fa7c7a86c73f"
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/utils/string.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/utils/string.ts",
+    "statementMap": {
+      "0": { "start": { "line": 1, "column": 27 }, "end": { "line": 10, "column": 1 } },
+      "1": { "start": { "line": 2, "column": 16 }, "end": { "line": 2, "column": 33 } },
+      "2": { "start": { "line": 3, "column": 16 }, "end": { "line": 3, "column": 18 } },
+      "3": { "start": { "line": 5, "column": 2 }, "end": { "line": 7, "column": 5 } },
+      "4": { "start": { "line": 6, "column": 4 }, "end": { "line": 6, "column": 23 } },
+      "5": { "start": { "line": 9, "column": 2 }, "end": { "line": 9, "column": 17 } },
+      "6": { "start": { "line": 12, "column": 31 }, "end": { "line": 22, "column": 1 } },
+      "7": { "start": { "line": 13, "column": 26 }, "end": { "line": 13, "column": 28 } },
+      "8": { "start": { "line": 15, "column": 2 }, "end": { "line": 19, "column": 3 } },
+      "9": { "start": { "line": 15, "column": 15 }, "end": { "line": 15, "column": 16 } },
+      "10": { "start": { "line": 16, "column": 30 }, "end": { "line": 16, "column": 56 } },
+      "11": { "start": { "line": 18, "column": 4 }, "end": { "line": 18, "column": 64 } },
+      "12": { "start": { "line": 21, "column": 2 }, "end": { "line": 21, "column": 27 } },
+      "13": { "start": { "line": 24, "column": 31 }, "end": { "line": 34, "column": 1 } },
+      "14": { "start": { "line": 25, "column": 26 }, "end": { "line": 25, "column": 28 } },
+      "15": { "start": { "line": 27, "column": 2 }, "end": { "line": 31, "column": 3 } },
+      "16": { "start": { "line": 27, "column": 15 }, "end": { "line": 27, "column": 16 } },
+      "17": { "start": { "line": 28, "column": 30 }, "end": { "line": 28, "column": 65 } },
+      "18": { "start": { "line": 30, "column": 4 }, "end": { "line": 30, "column": 64 } },
+      "19": { "start": { "line": 33, "column": 2 }, "end": { "line": 33, "column": 27 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 1, "column": 27 }, "end": { "line": 1, "column": 28 } },
+        "loc": { "start": { "line": 1, "column": 47 }, "end": { "line": 10, "column": 1 } },
+        "line": 1
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": { "start": { "line": 5, "column": 16 }, "end": { "line": 5, "column": 17 } },
+        "loc": { "start": { "line": 5, "column": 26 }, "end": { "line": 7, "column": 3 } },
+        "line": 5
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": { "start": { "line": 12, "column": 31 }, "end": { "line": 12, "column": 32 } },
+        "loc": { "start": { "line": 12, "column": 53 }, "end": { "line": 22, "column": 1 } },
+        "line": 12
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": { "start": { "line": 24, "column": 31 }, "end": { "line": 24, "column": 32 } },
+        "loc": { "start": { "line": 24, "column": 62 }, "end": { "line": 34, "column": 1 } },
+        "line": 24
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 1,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 1,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 1,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0
+    },
+    "f": { "0": 0, "1": 0, "2": 0, "3": 0 },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "5f93b2c141c3a872926141a1f4861b31212ffc4c"
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/utils/testUtils.tsx": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/utils/testUtils.tsx",
+    "statementMap": {
+      "0": { "start": { "line": 6, "column": 0 }, "end": { "line": 8, "column": 4 } },
+      "1": { "start": { "line": 6, "column": 25 }, "end": { "line": 8, "column": 1 } },
+      "2": { "start": { "line": 10, "column": 0 }, "end": { "line": 15, "column": 4 } },
+      "3": { "start": { "line": 10, "column": 31 }, "end": { "line": 15, "column": 1 } },
+      "4": { "start": { "line": 17, "column": 24 }, "end": { "line": 19, "column": 1 } },
+      "5": { "start": { "line": 21, "column": 21 }, "end": { "line": 21, "column": 94 } },
+      "6": { "start": { "line": 21, "column": 68 }, "end": { "line": 21, "column": 94 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 6, "column": 18 }, "end": { "line": 6, "column": 19 } },
+        "loc": { "start": { "line": 6, "column": 25 }, "end": { "line": 8, "column": 1 } },
+        "line": 6
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": { "start": { "line": 10, "column": 24 }, "end": { "line": 10, "column": 25 } },
+        "loc": { "start": { "line": 10, "column": 31 }, "end": { "line": 15, "column": 1 } },
+        "line": 10
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": { "start": { "line": 17, "column": 24 }, "end": { "line": 17, "column": 25 } },
+        "loc": { "start": { "line": 17, "column": 30 }, "end": { "line": 19, "column": 1 } },
+        "line": 17
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": { "start": { "line": 21, "column": 21 }, "end": { "line": 21, "column": 22 } },
+        "loc": { "start": { "line": 21, "column": 68 }, "end": { "line": 21, "column": 94 } },
+        "line": 21
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 1, "1": 1, "2": 1, "3": 1, "4": 1, "5": 1, "6": 2 },
+    "f": { "0": 1, "1": 1, "2": 0, "3": 2 },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "12f561e96065d30417ef7e41dd2db4acb5bf62ff"
+  },
+  "/Users/linhle/Documents/react-training/training-react/crud-operations/src/utils/validators.ts": {
+    "path": "/Users/linhle/Documents/react-training/training-react/crud-operations/src/utils/validators.ts",
+    "statementMap": {
+      "0": { "start": { "line": 6, "column": 28 }, "end": { "line": 6, "column": 78 } },
+      "1": { "start": { "line": 6, "column": 47 }, "end": { "line": 6, "column": 78 } },
+      "2": { "start": { "line": 8, "column": 35 }, "end": { "line": 14, "column": 1 } },
+      "3": { "start": { "line": 9, "column": 22 }, "end": { "line": 9, "column": 32 } },
+      "4": { "start": { "line": 11, "column": 2 }, "end": { "line": 11, "column": 55 } },
+      "5": { "start": { "line": 13, "column": 2 }, "end": { "line": 13, "column": 21 } },
+      "6": { "start": { "line": 16, "column": 25 }, "end": { "line": 31, "column": 1 } },
+      "7": { "start": { "line": 17, "column": 23 }, "end": { "line": 17, "column": 55 } },
+      "8": { "start": { "line": 20, "column": 14 }, "end": { "line": 28, "column": 23 } },
+      "9": { "start": { "line": 30, "column": 2 }, "end": { "line": 30, "column": 13 } },
+      "10": { "start": { "line": 33, "column": 28 }, "end": { "line": 37, "column": 1 } },
+      "11": { "start": { "line": 34, "column": 27 }, "end": { "line": 34, "column": 37 } },
+      "12": { "start": { "line": 36, "column": 2 }, "end": { "line": 36, "column": 51 } },
+      "13": { "start": { "line": 39, "column": 25 }, "end": { "line": 44, "column": 1 } },
+      "14": { "start": { "line": 40, "column": 17 }, "end": { "line": 40, "column": 54 } },
+      "15": { "start": { "line": 41, "column": 22 }, "end": { "line": 41, "column": 57 } },
+      "16": { "start": { "line": 43, "column": 2 }, "end": { "line": 43, "column": 17 } }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": { "start": { "line": 6, "column": 28 }, "end": { "line": 6, "column": 29 } },
+        "loc": { "start": { "line": 6, "column": 47 }, "end": { "line": 6, "column": 78 } },
+        "line": 6
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": { "start": { "line": 8, "column": 35 }, "end": { "line": 8, "column": 36 } },
+        "loc": { "start": { "line": 8, "column": 54 }, "end": { "line": 14, "column": 1 } },
+        "line": 8
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": { "start": { "line": 16, "column": 25 }, "end": { "line": 16, "column": 26 } },
+        "loc": { "start": { "line": 16, "column": 74 }, "end": { "line": 31, "column": 1 } },
+        "line": 16
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": { "start": { "line": 33, "column": 28 }, "end": { "line": 33, "column": 29 } },
+        "loc": { "start": { "line": 33, "column": 63 }, "end": { "line": 37, "column": 1 } },
+        "line": 33
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": { "start": { "line": 39, "column": 25 }, "end": { "line": 39, "column": 26 } },
+        "loc": { "start": { "line": 39, "column": 71 }, "end": { "line": 44, "column": 1 } },
+        "line": 39
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": { "start": { "line": 36, "column": 9 }, "end": { "line": 36, "column": 50 } },
+        "type": "binary-expr",
+        "locations": [
+          { "start": { "line": 36, "column": 9 }, "end": { "line": 36, "column": 18 } },
+          { "start": { "line": 36, "column": 22 }, "end": { "line": 36, "column": 50 } }
+        ],
+        "line": 36
+      }
+    },
+    "s": {
+      "0": 1,
+      "1": 0,
+      "2": 1,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 1,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 1,
+      "11": 0,
+      "12": 0,
+      "13": 1,
+      "14": 0,
+      "15": 0,
+      "16": 0
+    },
+    "f": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0 },
+    "b": { "0": [0, 0] },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "4cc81489e19541e13ac6ca18a7e4af79bcdd9222"
+  }
+}
