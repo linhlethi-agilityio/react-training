@@ -1,18 +1,18 @@
 import { memo } from 'react';
-import { VStack, Icon } from '@chakra-ui/react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { VStack, Icon } from '@chakra-ui/react';
 
 // Constants
 import { SIDEBAR_NAVIGATION } from '@constants';
 
 // Components
-import SideBarItem from '@components/SideBarItem';
+import { SideBarItem } from '@components';
 
 interface NavigationProps {
   isShorter?: boolean;
 }
 
-const Navigation = ({ isShorter }: NavigationProps) => {
+const Navigation = ({ isShorter = false }: NavigationProps) => {
   const navigate = useNavigate();
   const location = useLocation();
 

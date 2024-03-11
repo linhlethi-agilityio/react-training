@@ -21,11 +21,11 @@ import { ERROR_MESSAGES, MIN_PASSWORD_LENGTH, ROUTERS } from '@constants';
 // Utils
 import { clearErrorOnChange, isValidEmail } from '@utils';
 
-// Components
-import { BrandLogo } from '@components';
-
 // Hooks
 import { useAuth, useToastCustom } from '@hooks';
+
+// Components
+import { BrandLogo } from '@components';
 
 interface LoginFormData {
   email: string;
