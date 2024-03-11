@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import { Flex } from '@chakra-ui/react';
 
 // Icons
@@ -13,14 +14,16 @@ const DashboardPage = () => {
   const { payments } = usePayments();
   const { students } = useStudents();
 
-  const calculateTotalAmountPaid = payments?.reduce((total, payment) => total + payment.amountPaid, 0) || 0;
+  const calculateTotalAmountPaid = useMemo(() => {
+    return (payments || []).reduce((total, payment) => total + payment.amountPaid, 0) || 0;
+  }, [payments]);
 
   const dashboardItems = [
     {
       name: 'Students',
       icon: <GraduationIcon />,
       cardColor: 'background.cardStudent',
-      count: students?.length || 0,
+      count: (students || []).length,
     },
     {
       name: 'Course',
@@ -39,7 +42,7 @@ const DashboardPage = () => {
       name: 'Users',
       icon: <UserIcon />,
       bgGradient: `linear(to-r, ${'primary'}, ${'background.body'})`,
-      color: 'while',
+      color: 'white',
       count: 3,
     },
   ];
@@ -51,6 +54,7 @@ const DashboardPage = () => {
 
         return (
           <CardItem
+            key={`dashboard-${name}`}
             name={name}
             icon={icon}
             isMoney={isMoney}

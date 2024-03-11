@@ -10,7 +10,7 @@ export const Button = defineStyleConfig({
   variants: {
     solid: {
       backgroundColor: 'primary',
-      color: 'while',
+      color: 'white',
       fontSize: 'base',
       lineHeight: 'sm',
 

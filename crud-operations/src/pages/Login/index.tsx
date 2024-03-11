@@ -159,7 +159,7 @@ const LoginPage = () => {
             </Button>
           </FormControl>
           <Text mt={27}>
-            Forgot your password?{' '}
+            Forgot your password?&nbsp;
             <Link color="primary" textDecoration="underline" _hover={{ textDecoration: 'underline' }}>
               <Text as="span">Reset Password</Text>
             </Link>

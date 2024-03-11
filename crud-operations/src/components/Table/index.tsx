@@ -59,7 +59,7 @@ const Table = <T,>({ columns, data, isStriped = false }: CustomTableProps<T>) =>
           <TableRow key={`table-row-${index}`}>
             {columns.map((columnConfig, indexColumn) => {
               return (
-                <TableCell bg={!isStriped ? 'while' : 'background.table'} key={`table-cell-${indexColumn}`}>
+                <TableCell bg={!isStriped ? 'white' : 'background.table'} key={`table-cell-${indexColumn}`}>
                   {renderCell(item, columnConfig.accessor)}
                 </TableCell>
               );

@@ -1,6 +1,6 @@
 export const colors = {
   default: ' #000000',
-  while: '#FFFFFF',
+  white: '#FFFFFF',
   primary: '#FEAF00',
   secondary: '#FF0000',
   tableHeader: '#ACACAC',
