@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, memo } from 'react';
 import { Tr, TableRowProps as ChakraTableRowProps } from '@chakra-ui/react';
 
 interface TableRowProps extends ChakraTableRowProps {
@@ -12,4 +12,4 @@ const TableRow = ({ children, handleClickRow }: TableRowProps) => (
   </Tr>
 );
 
-export default TableRow;
+export default memo(TableRow);

@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { memo, useMemo } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 import { Box, Button, FormControl, FormHelperText, FormLabel, Input } from '@chakra-ui/react';
 
@@ -244,4 +244,4 @@ const StudentDetailModal = ({ isOpen, previewData, onClose }: StudentModalDetail
   );
 };
 
-export default StudentDetailModal;
+export default memo(StudentDetailModal);
