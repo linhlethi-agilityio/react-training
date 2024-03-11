@@ -17,18 +17,15 @@
     "paths": {
       "@components": ["src/components"],
       "@layouts": ["src/layouts"],
+      "@utils": ["src/utils"],
       "@pages": ["src/pages"],
       "@constants": ["src/constants"],
-      "@helpers": ["src/helpers"],
-      "@stores": ["src/stores"],
-      "@assets": ["src/assets"],
-      "@fonts": ["src/fonts"],
       "@hooks": ["src/hooks"],
       "@icons": ["src/icons"],
       "@types": ["src/types"],
       "@*": ["src/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "./jest-setup.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
