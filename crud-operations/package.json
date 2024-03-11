@@ -21,6 +21,7 @@
     "@chakra-ui/react": "2.5.5",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
+    "babel-plugin-transform-import-meta": "^2.2.1",
     "framer-motion": "^11.0.6",
     "jose": "^5.2.2",
     "react": "^18.2.0",
@@ -77,5 +78,8 @@
     "*.{json,js,ts,jsx,tsx,html}": [
       "prettier --write --ignore-unknown"
     ]
+  },
+  "transform": {
+    "\\.js$": "<rootDir>/node_modules/babel-jest"
   }
 }
