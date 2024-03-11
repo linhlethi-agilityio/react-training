@@ -3,6 +3,9 @@ import * as jose from 'jose';
 // Constants
 import { REGEX_PATTERN } from '@constants';
 
+/**
+ * Function to check if a given value is a valid email address.
+ */
 export const isValidEmail = (value: string) => REGEX_PATTERN.EMAIL.test(value);
 
 export const addHoursFromCurrent = (hours: number) => {
@@ -13,6 +16,9 @@ export const addHoursFromCurrent = (hours: number) => {
   return currentDate;
 };
 
+/**
+ * Function to create a JSON Web Token (JWT) with the provided data and secret.
+ */
 export const createJWT = async (data: jose.JWTPayload, secret: string) => {
   const secretEncode = new TextEncoder().encode(secret);
 
@@ -36,6 +42,9 @@ export const isFutureTime = (timestamp: number | undefined) => {
   return timestamp && timestamp > currentTimestamp;
 };
 
+/**
+ * Utility function to verify a JSON Web Token (JWT) using the provided token and secret.
+ */
 export const verifyJWT = async (token: string, secretInput: string) => {
   const secret = new TextEncoder().encode(secretInput);
   const { payload } = await jose.jwtVerify(token, secret);
