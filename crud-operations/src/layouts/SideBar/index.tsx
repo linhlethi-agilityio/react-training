@@ -54,7 +54,7 @@ const SideBar = ({ isClosed, onNavigate, onLogout }: SideBarProps) => {
           </VStack>
         </VStack>
 
-        <VStack w="100%" justifyContent="space-between" h="100%">
+        <VStack w="full" justifyContent="space-between" h="full">
           {/* Menu */}
           <Navigation isShorter={isClosed} />
 
