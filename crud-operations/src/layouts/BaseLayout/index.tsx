@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { memo, useCallback, useEffect, useState } from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
 import { Box, Flex } from '@chakra-ui/react';
 
@@ -99,4 +99,4 @@ const BaseLayout = ({ onSearch }: BaseLayoutProps) => {
   );
 };
 
-export default BaseLayout;
+export default memo(BaseLayout);

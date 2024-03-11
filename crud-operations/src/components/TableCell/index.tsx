@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, memo } from 'react';
 import { Td, TableCellProps as ChakraTableCellProps } from '@chakra-ui/react';
 
 interface TableCellProps extends ChakraTableCellProps {
@@ -11,4 +11,4 @@ const TableCell = ({ children, ...rest }: TableCellProps) => (
   </Td>
 );
 
-export default TableCell;
+export default memo(TableCell);

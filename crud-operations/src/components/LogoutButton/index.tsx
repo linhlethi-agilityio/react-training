@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { Button, Icon } from '@chakra-ui/react';
 
 // Icons
@@ -15,4 +16,4 @@ const LogoutButton = ({ text = 'Logout', isShorter, onLogout }: LogoutButtonProp
   </Button>
 );
 
-export default LogoutButton;
+export default memo(LogoutButton);

@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { VStack, Icon } from '@chakra-ui/react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
@@ -40,4 +41,4 @@ const Navigation = ({ isShorter }: NavigationProps) => {
   );
 };
 
-export default Navigation;
+export default memo(Navigation);

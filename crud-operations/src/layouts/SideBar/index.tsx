@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { memo, useEffect, useState } from 'react';
 import { Avatar, Heading, Text, VStack } from '@chakra-ui/react';
 
 // Constants
@@ -66,4 +66,4 @@ const SideBar = ({ isClosed, onNavigate, onLogout }: SideBarProps) => {
   );
 };
 
-export default SideBar;
+export default memo(SideBar);

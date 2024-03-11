@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { memo, useState } from 'react';
 import { Button, Flex, Icon } from '@chakra-ui/react';
 
 // Icons
@@ -43,4 +43,4 @@ const Header = ({ isClosedSideBar, onToggleSideBar, onSearch }: HeaderProps) => 
   );
 };
 
-export default Header;
+export default memo(Header);
