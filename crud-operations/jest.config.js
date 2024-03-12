@@ -22,4 +22,19 @@ export default {
   transform: {
     '^.+\\.[t|j]sx?$': 'babel-jest',
   },
+  coveragePathIgnorePatterns: [
+    '<rootDir>/src/icons/(?!variables/.*)',
+    '<rootDir>/src/constants/(?!variables/.*)',
+    '<rootDir>/src/themes/(?!variables/.*)',
+    '<rootDir>/src/types/(?!variables/.*)',
+    '<rootDir>/src/services/index.ts',
+    '<rootDir>/src/utils/index.ts',
+    '<rootDir>/src/pages/index.ts',
+    '<rootDir>/src/components/index.ts',
+    // '<rootDir>/src/components/*.stories.tsx',
+    '<rootDir>/src/hooks/index.ts',
+    '<rootDir>/src/App.tsx',
+    '<rootDir>/src/main.tsx',
+    '<rootDir>/src/vite-env.d.ts',
+  ],
 };

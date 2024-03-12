@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BrandLogo component component 1`] = `
+exports[`BrandLogo component should match snapshot for BrandLogo 1`] = `
 <div>
   <a
     class="chakra-link css-1mgm4dv"

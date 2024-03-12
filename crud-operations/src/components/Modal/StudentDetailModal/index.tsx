@@ -16,6 +16,7 @@ import { useStudents, useToastCustom } from '@hooks';
 
 // Components
 import { CustomModal } from '@components';
+
 interface StudentModalDetailModalProps {
   isOpen: boolean;
   previewData?: Student | null;
