@@ -39,7 +39,11 @@ export const createJWT = async (data: jose.JWTPayload, secret: string) => {
 export const isFutureTime = (timestamp: number | undefined) => {
   const currentTimestamp = Date.now();
 
-  return timestamp && timestamp > currentTimestamp;
+  if (timestamp) {
+    return timestamp > currentTimestamp;
+  }
+
+  return false;
 };
 
 /**
