@@ -12,7 +12,7 @@ jest.mock('@hooks', () => ({
   useToastCustom: jest.fn(),
 }));
 
-jest.mock('@constants/messages', () => ({
+jest.mock('@constants', () => ({
   ERROR_MESSAGES: {
     FIELD_REQUIRED: 'Mocked field required message',
   },
