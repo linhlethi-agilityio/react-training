@@ -51,7 +51,6 @@ const verifyEmailAndPassword = async (emailInput: string, passwordInput: string)
  */
 export const getCurrentUser = async () => {
   const jwtToken = getItemLocalStorage(LOCAL_STORAGE_KEY.TOKEN);
-
   try {
     return await verifyJWT(jwtToken, ENVS.VITE_SECRET_KEY);
   } catch (error) {
