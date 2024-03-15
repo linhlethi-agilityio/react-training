@@ -7,6 +7,7 @@ exports[`Header component should match snapshot for Header 1`] = `
   >
     <button
       class="chakra-button css-4xx2wk"
+      data-testid="toggle-sidebar-button"
       type="button"
     >
       <svg
