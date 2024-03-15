@@ -41,7 +41,7 @@ const DashboardPage = () => {
     {
       name: 'Users',
       icon: <UserIcon />,
-      bgGradient: `linear(to-r, ${'primary'}, ${'background.body'})`,
+      bgGradient: 'linear(to-r, primary, background.body)',
       color: 'white',
       count: 3,
     },

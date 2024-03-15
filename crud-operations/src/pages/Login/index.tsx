@@ -79,7 +79,7 @@ const LoginPage = () => {
   }, [getCurrentUser, navigate]);
 
   return (
-    <Box bgGradient={`linear(to-r, ${'primary'}, ${'background.body'})`} height="100vh">
+    <Box bgGradient="linear(to-r, primary, background.body)" height="100vh">
       <Center h="full">
         <Card size="xl" w="full" px={30} py={42} alignItems="center">
           <BrandLogo size="lg" onClick={() => navigate(ROUTERS.DASHBOARD)} />

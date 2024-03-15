@@ -13,12 +13,12 @@ interface CardItemProps {
 
 const CardItem = ({
   isMoney = false,
-  cardColor,
+  cardColor = 'background.cardStudent',
   count,
   color = 'text.default',
   name,
   icon,
-  bgGradient,
+  bgGradient = '',
 }: CardItemProps) => {
   return (
     <Card bgColor={cardColor} padding={5} flex={1} bgGradient={bgGradient}>

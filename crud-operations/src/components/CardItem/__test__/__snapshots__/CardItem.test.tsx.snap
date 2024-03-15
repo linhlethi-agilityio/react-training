@@ -3,7 +3,7 @@
 exports[`CardItem component should match snapshot for CardItem 1`] = `
 <div>
   <div
-    class="chakra-card css-1uw53ah"
+    class="chakra-card css-1qyx9ah"
   >
     <div
       class="css-1xzsyzi"
