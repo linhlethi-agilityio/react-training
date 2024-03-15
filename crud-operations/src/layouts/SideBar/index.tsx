@@ -22,7 +22,7 @@ interface SideBarProps {
   onLogout: () => void;
 }
 
-const SideBar = ({ isClosed, onNavigate, onLogout }: SideBarProps) => {
+const SideBar = ({ isClosed = false, onNavigate, onLogout }: SideBarProps) => {
   const { getCurrentUser } = useAuth();
   const [currentUser, setCurrentUser] = useState<User | null>(null);
 

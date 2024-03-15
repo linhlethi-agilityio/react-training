@@ -4,6 +4,7 @@ exports[`LogoutButton component should match snapshot for LogoutButton 1`] = `
 <div>
   <button
     class="chakra-button css-4xx2wk"
+    data-testid="logout-button"
     type="button"
   >
     Logout

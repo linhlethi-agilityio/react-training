@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BaseLayout Component renders correctly 1`] = `
+<div>
+  <div
+    class="css-1yeiifd"
+  >
+    <div
+      class="chakra-stack css-13hpm2o"
+    >
+      <a
+        class="chakra-link css-1mgm4dv"
+      >
+        <h2
+          class="chakra-heading css-qis5cd"
+        />
+      </a>
+      <div
+        class="chakra-stack css-1w47v7o"
+      >
+        <div
+          class="chakra-stack css-a2ql3x"
+        >
+          <span
+            class="chakra-avatar css-1uwaj3j"
+          >
+            <svg
+              aria-label=" avatar"
+              class="chakra-avatar__svg css-16ite8i"
+              role="img"
+              viewBox="0 0 128 128"
+            >
+              <path
+                d="M103,102.1388 C93.094,111.92 79.3504,118 64.1638,118 C48.8056,118 34.9294,111.768 25,101.7892 L25,95.2 C25,86.8096 31.981,80 40.6,80 L87.4,80 C96.019,80 103,86.8096 103,95.2 L103,102.1388 Z"
+                fill="currentColor"
+              />
+              <path
+                d="M63.9961647,24 C51.2938136,24 41,34.2938136 41,46.9961647 C41,59.7061864 51.2938136,70 63.9961647,70 C76.6985159,70 87,59.7061864 87,46.9961647 C87,34.2938136 76.6985159,24 63.9961647,24"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+          <div
+            class="chakra-stack css-b52v2e"
+          >
+            <h2
+              class="chakra-heading css-vs99od"
+            />
+            <p
+              class="chakra-text css-jlefen"
+            />
+          </div>
+        </div>
+        <div
+          class="chakra-stack css-vvg5fj"
+        >
+          <div
+            class="chakra-stack css-1kae02p"
+          />
+          <button
+            class="chakra-button css-4xx2wk"
+            data-testid="logout-button"
+            type="button"
+          >
+            Logout
+            <span
+              class="chakra-button__icon css-1hzyiq5"
+            >
+              <svg
+                aria-hidden="true"
+                class="chakra-icon css-1jyhgcw"
+                focusable="false"
+                height="13"
+                viewBox="0 0 17 13"
+                width="17"
+              >
+                <path
+                  d="M5.313 5.208c0-.292.239-.53.53-.53h4.782V1.558c0-.235.286-.355.452-.189l4.701 4.751c.21.21.21.545 0 .754l-4.701 4.752a.265.265 0 0 1-.452-.19V8.32H5.844a.533.533 0 0 1-.532-.532v-2.58Zm-1.063 0v2.58c0 .88.714 1.594 1.594 1.594h3.718v2.055c0 1.179 1.428 1.777 2.265.94l4.705-4.748a1.595 1.595 0 0 0 0-2.258L11.827.62c-.833-.834-2.264-.243-2.264.94v2.055h-3.72c-.88 0-1.593.717-1.593 1.593ZM0 1.718v9.563c0 .88.714 1.594 1.594 1.594h4.383a.4.4 0 0 0 .398-.398v-.266a.4.4 0 0 0-.398-.399H1.594a.533.533 0 0 1-.532-.53V1.718c0-.292.24-.532.532-.532h4.383A.4.4 0 0 0 6.375.79V.523a.4.4 0 0 0-.398-.398H1.594C.714.125 0 .839 0 1.719Z"
+                  fill="#000000"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-7cknbz"
+    >
+      <div
+        class="css-1yb29l5"
+      >
+        <button
+          class="chakra-button css-4xx2wk"
+          data-testid="toggle-sidebar-button"
+          type="button"
+        >
+          <svg
+            class="chakra-icon css-1njqkp8"
+            focusable="false"
+            height="18"
+            viewBox="0 0 18 18"
+            width="18"
+          >
+            <path
+              d="M17.719 9A8.717 8.717 0 0 0 9 .281 8.717 8.717 0 0 0 .281 9 8.717 8.717 0 0 0 9 17.719 8.717 8.717 0 0 0 17.719 9ZM9 16.594c-4.173 0-7.594-3.379-7.594-7.594 0-4.173 3.379-7.594 7.594-7.594 4.173 0 7.594 3.379 7.594 7.594 0 4.173-3.379 7.594-7.594 7.594Zm1.125-4.219L6.75 9l3.375-3.375v6.75Zm1.125-6.75c0-.998-1.213-1.505-1.92-.795L5.955 8.205c-.439.44-.439 1.154 0 1.593l3.375 3.375c.707.707 1.92.207 1.92-.794V5.625Z"
+              fill="#C4C4C4"
+            />
+          </svg>
+        </button>
+        <div
+          class="css-1tmhq0v"
+        >
+          <div
+            class="chakra-input__group css-10ip56e"
+            data-group="true"
+          >
+            <input
+              class="chakra-input css-2pjcr"
+              placeholder="Search..."
+              value=""
+            />
+            <div
+              class="chakra-input__right-element css-dp9r5f"
+              style="cursor: pointer;"
+            >
+              <svg
+                height="14"
+                viewBox="0 0 14 14"
+                width="14"
+              >
+                <path
+                  d="M13.904 13.169 10.377 9.64a.325.325 0 0 0-.232-.095h-.282A5.687 5.687 0 0 0 5.688 0 5.687 5.687 0 0 0 0 5.687a5.687 5.687 0 0 0 9.546 4.179v.279c0 .087.035.17.095.232l3.528 3.527a.329.329 0 0 0 .465 0l.27-.27a.329.329 0 0 0 0-.465ZM5.688 10.5A4.81 4.81 0 0 1 .875 5.687 4.81 4.81 0 0 1 5.688.875 4.81 4.81 0 0 1 10.5 5.688 4.81 4.81 0 0 1 5.687 10.5Z"
+                  fill="#C4C4C4"
+                />
+              </svg>
+            </div>
+          </div>
+          <button
+            class="chakra-button css-4xx2wk"
+            type="button"
+          >
+            <svg
+              height="20"
+              viewBox="0 0 17 20"
+              width="17"
+            >
+              <path
+                d="M8.5 18.75c.67 0 1.215-.562 1.215-1.251h1.214c0 1.38-1.09 2.501-2.429 2.501-1.338 0-2.428-1.122-2.428-2.501h1.214c0 .69.544 1.251 1.214 1.251ZM.555 13.079c1.061-1.04 1.872-2.129 1.872-5.817 0-3.11 2.406-5.645 5.466-5.951V.625C7.893.28 8.165 0 8.5 0c.336 0 .607.28.607.625v.686c3.06.307 5.466 2.842 5.466 5.95 0 3.689.812 4.778 1.873 5.817.53.52.697 1.306.427 2.002a1.811 1.811 0 0 1-1.694 1.17H1.822c-.753 0-1.418-.46-1.694-1.17a1.855 1.855 0 0 1 .427-2.002ZM1.822 15h13.357c.54 0 .81-.643.43-1.016-1.323-1.296-2.25-2.748-2.25-6.722C13.359 4.63 11.186 2.5 8.5 2.5c-2.685 0-4.858 2.13-4.858 4.762 0 3.959-.919 5.418-2.25 6.722-.382.374-.108 1.016.43 1.016Z"
+                fill="#C4C4C4"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        class="css-1tpnsdz"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -1,4 +1,4 @@
-import { render } from '@test-utils';
+import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 // Components
@@ -12,6 +12,8 @@ jest.mock('@hooks', () => ({
   useToastCustom: jest.fn(),
 }));
 
+jest.mock('jose', () => ({}));
+
 jest.mock('@constants', () => ({
   ERROR_MESSAGES: {
     FIELD_REQUIRED: 'Mocked field required message',
@@ -24,7 +26,7 @@ const mockProps = {
   previewData: null,
 };
 
-describe.skip('StudentDetailModal component', () => {
+describe('StudentDetailModal component', () => {
   test('should match snapshot for StudentDetailModal', () => {
     const { container } = render(<StudentDetailModal {...mockProps} />);
 

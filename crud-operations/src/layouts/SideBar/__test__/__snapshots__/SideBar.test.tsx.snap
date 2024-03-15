@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideBar Component renders correctly 1`] = `
+<div>
+  <div
+    class="chakra-stack css-13hpm2o"
+  >
+    <a
+      class="chakra-link css-1mgm4dv"
+    >
+      <h2
+        class="chakra-heading css-qis5cd"
+      />
+    </a>
+    <div
+      class="chakra-stack css-1w47v7o"
+    >
+      <div
+        class="chakra-stack css-a2ql3x"
+      >
+        <span
+          class="chakra-avatar css-1uwaj3j"
+        >
+          <svg
+            aria-label=" avatar"
+            class="chakra-avatar__svg css-16ite8i"
+            role="img"
+            viewBox="0 0 128 128"
+          >
+            <path
+              d="M103,102.1388 C93.094,111.92 79.3504,118 64.1638,118 C48.8056,118 34.9294,111.768 25,101.7892 L25,95.2 C25,86.8096 31.981,80 40.6,80 L87.4,80 C96.019,80 103,86.8096 103,95.2 L103,102.1388 Z"
+              fill="currentColor"
+            />
+            <path
+              d="M63.9961647,24 C51.2938136,24 41,34.2938136 41,46.9961647 C41,59.7061864 51.2938136,70 63.9961647,70 C76.6985159,70 87,59.7061864 87,46.9961647 C87,34.2938136 76.6985159,24 63.9961647,24"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+        <div
+          class="chakra-stack css-b52v2e"
+        >
+          <h2
+            class="chakra-heading css-vs99od"
+          />
+          <p
+            class="chakra-text css-jlefen"
+          />
+        </div>
+      </div>
+      <div
+        class="chakra-stack css-vvg5fj"
+      >
+        <div
+          class="chakra-stack css-1kae02p"
+        />
+        <button
+          class="chakra-button css-4xx2wk"
+          data-testid="logout-button"
+          type="button"
+        >
+          Logout
+          <span
+            class="chakra-button__icon css-1hzyiq5"
+          >
+            <svg
+              aria-hidden="true"
+              class="chakra-icon css-1jyhgcw"
+              focusable="false"
+              height="13"
+              viewBox="0 0 17 13"
+              width="17"
+            >
+              <path
+                d="M5.313 5.208c0-.292.239-.53.53-.53h4.782V1.558c0-.235.286-.355.452-.189l4.701 4.751c.21.21.21.545 0 .754l-4.701 4.752a.265.265 0 0 1-.452-.19V8.32H5.844a.533.533 0 0 1-.532-.532v-2.58Zm-1.063 0v2.58c0 .88.714 1.594 1.594 1.594h3.718v2.055c0 1.179 1.428 1.777 2.265.94l4.705-4.748a1.595 1.595 0 0 0 0-2.258L11.827.62c-.833-.834-2.264-.243-2.264.94v2.055h-3.72c-.88 0-1.593.717-1.593 1.593ZM0 1.718v9.563c0 .88.714 1.594 1.594 1.594h4.383a.4.4 0 0 0 .398-.398v-.266a.4.4 0 0 0-.398-.399H1.594a.533.533 0 0 1-.532-.53V1.718c0-.292.24-.532.532-.532h4.383A.4.4 0 0 0 6.375.79V.523a.4.4 0 0 0-.398-.398H1.594C.714.125 0 .839 0 1.719Z"
+                fill="#000000"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
