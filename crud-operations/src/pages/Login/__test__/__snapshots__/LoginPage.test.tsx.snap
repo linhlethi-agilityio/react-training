@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginPage Component renders correctly 1`] = `
+<div>
+  <div
+    class="css-1xypjzu"
+  >
+    <div
+      class="css-l84sf8"
+    >
+      <div
+        class="chakra-card css-2svjbt"
+      >
+        <a
+          class="chakra-link css-pqilmp"
+        >
+          <h2
+            class="chakra-heading css-1glaey6"
+          />
+        </a>
+        <h2
+          class="chakra-heading css-1omxs99"
+        >
+          Sign In
+        </h2>
+        <p
+          class="chakra-text css-uxfuux"
+        >
+          Enter your credentials to access your account
+        </p>
+        <div
+          class="chakra-form-control css-1h5wztp"
+          role="group"
+        >
+          <div
+            class="css-d2znx6"
+          >
+            <label
+              class="chakra-form__label css-15k0wdv"
+              for="field-:r0:"
+              id="field-:r0:-label"
+            >
+              Email
+            </label>
+            <input
+              class="chakra-input css-132xrut"
+              id="field-:r0:"
+              value=""
+            />
+          </div>
+          <div
+            class="css-d2znx6"
+          >
+            <label
+              class="chakra-form__label css-15k0wdv"
+              for="field-:r0:"
+              id="field-:r0:-label"
+            >
+              Password
+            </label>
+            <input
+              class="chakra-input css-132xrut"
+              id="field-:r0:"
+              type="password"
+              value=""
+            />
+          </div>
+          <button
+            class="chakra-button css-1ib6x77"
+            type="button"
+          >
+            Sign in
+          </button>
+        </div>
+        <p
+          class="chakra-text css-1178ru4"
+        >
+          Forgot your password? 
+          <a
+            class="chakra-link css-bo1wqf"
+          >
+            <span
+              class="chakra-text css-0"
+            >
+              Reset Password
+            </span>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <span
+    hidden=""
+    id="__chakra_env"
+  />
+</div>
+`;
