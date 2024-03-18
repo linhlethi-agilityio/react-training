@@ -6,8 +6,7 @@
       "createdAt": 1709407999762,
       "updatedAt": 1709407999762,
       "name": "Jons Jam",
-      "rule": "admin",
-      "id": "e72d"
+      "rule": "admin"
     }
   ],
   "payments": [
@@ -165,6 +164,15 @@
       "email": "john-smit@gmail.com",
       "dateOfAdmission": 1676134800000,
       "id": "6"
+    },
+    {
+      "enrollNumber": "123456789",
+      "name": "John Smith",
+      "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/219.jpg",
+      "phone": "7305477760",
+      "email": "john-smit@gmail.com",
+      "dateOfAdmission": 1676134800000,
+      "id": "7"
     }
   ]
 }

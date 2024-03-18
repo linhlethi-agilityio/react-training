@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaymentPage Component renders correctly 1`] = `
+<div>
+  <div
+    class="css-odz94x"
+  >
+    <div
+      class="css-12teqml"
+    >
+      <h2
+        class="chakra-heading css-0"
+      >
+        Payment Details
+      </h2>
+      <button
+        class="chakra-button css-4xx2wk"
+        type="button"
+      >
+        <svg
+          fill="#000000"
+          height="20"
+          id="Capa_1"
+          version="1.1"
+          viewBox="0 0 562.392 562.391"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g>
+            <g>
+              <path
+                d="M123.89,262.141h314.604c19.027,0,17.467-31.347,15.496-47.039c-0.605-4.841-3.636-11.971-6.438-15.967L303.965,16.533
+ c-12.577-22.044-32.968-22.044-45.551,0L114.845,199.111c-2.803,3.996-5.832,11.126-6.438,15.967
+ C106.43,230.776,104.863,262.141,123.89,262.141z"
+                fill="#fff"
+                stroke="#FEAF00"
+                stroke-width="20px"
+              />
+              <path
+                d="M114.845,363.274l143.569,182.584c12.577,22.044,32.968,22.044,45.551,0l143.587-182.609
+ c2.804-3.996,5.826-11.119,6.438-15.967c1.971-15.691,3.531-47.038-15.496-47.038H123.89c-19.027,0-17.46,31.365-15.483,47.062
+ C109.019,352.147,112.042,359.277,114.845,363.274z"
+                fill="#fff"
+                stroke="#FEAF00"
+                stroke-width="20px"
+              />
+            </g>
+          </g>
+        </svg>
+      </button>
+    </div>
+    <div
+      class="css-0"
+    >
+      <table
+        class="chakra-table css-0"
+      >
+        <thead
+          class="css-0"
+        >
+          <tr
+            class="css-0"
+          >
+            <th
+              class="css-tln5s8"
+            >
+              Name
+            </th>
+            <th
+              class="css-tln5s8"
+            >
+              Payment Schedule
+            </th>
+            <th
+              class="css-tln5s8"
+            >
+              Bill Number
+            </th>
+            <th
+              class="css-tln5s8"
+            >
+              Amount Paid
+            </th>
+            <th
+              class="css-tln5s8"
+            >
+              Balance amount
+            </th>
+            <th
+              class="css-tln5s8"
+            >
+              Date
+            </th>
+            <th
+              class="css-tln5s8"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class="css-0"
+        >
+          <tr
+            class="css-1w3yp13"
+          >
+            <td
+              class="css-1aj2amk"
+            >
+              John Doe
+            </td>
+            <td
+              class="css-1aj2amk"
+            >
+              Monthly
+            </td>
+            <td
+              class="css-1aj2amk"
+            >
+              12345
+            </td>
+            <td
+              class="css-1aj2amk"
+            >
+              INR 124545223
+            </td>
+            <td
+              class="css-1aj2amk"
+            >
+              INR 1500
+            </td>
+            <td
+              class="css-1aj2amk"
+            >
+              11-Feb, 2023
+            </td>
+            <td
+              class="css-1aj2amk"
+            >
+              <button
+                class="chakra-button css-4xx2wk"
+                type="button"
+              >
+                <svg
+                  class="chakra-icon css-13otjrl"
+                  focusable="false"
+                  height="12"
+                  viewBox="0 0 15 12"
+                  width="15"
+                >
+                  <path
+                    d="M7.5 6.875c.442 0 .866-.184 1.178-.513.313-.328.489-.773.489-1.237 0-.464-.176-.91-.489-1.237A1.627 1.627 0 0 0 7.5 3.375c-.026 0-.049.007-.074.008.08.232.096.484.045.725a1.319 1.319 0 0 1-.333.637 1.221 1.221 0 0 1-.607.35c-.23.053-.469.036-.69-.048 0 .027-.008.051-.008.078 0 .23.043.457.127.67.084.212.207.405.361.567.313.329.737.513 1.179.513Zm7.41-1.274C13.496 2.708 10.7.75 7.5.75 4.299.75 1.502 2.709.09 5.601a.92.92 0 0 0 0 .798C1.504 9.292 4.3 11.25 7.5 11.25c3.201 0 5.998-1.959 7.41-4.851a.922.922 0 0 0 0-.798ZM7.5 1.625c.66 0 1.304.205 1.852.59.548.384.975.931 1.228 1.57.252.64.318 1.344.19 2.023A3.557 3.557 0 0 1 9.856 7.6c-.466.49-1.06.823-1.707.958a3.186 3.186 0 0 1-1.926-.2A3.374 3.374 0 0 1 4.728 7.07a3.626 3.626 0 0 1-.561-1.944 3.595 3.595 0 0 1 .977-2.474A3.259 3.259 0 0 1 7.5 1.625Zm0 8.75C4.704 10.375 2.15 8.699.833 6a7.877 7.877 0 0 1 3.38-3.536 4.474 4.474 0 0 0-.88 2.661c0 1.16.44 2.273 1.22 3.094A4.069 4.069 0 0 0 7.5 9.5c1.105 0 2.165-.46 2.946-1.281a4.488 4.488 0 0 0 1.22-3.094 4.474 4.474 0 0 0-.879-2.661A7.878 7.878 0 0 1 14.167 6c-1.316 2.699-3.871 4.375-6.667 4.375Z"
+                    fill="#FEAF00"
+                  />
+                </svg>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
