@@ -11,9 +11,11 @@ import { TableColumn } from '@components/Table';
 // Hooks
 import { usePayments } from '@hooks';
 
+// Utils
+import { formatDate } from '@utils';
+
 // Components
 import { PaymentDetailModal, Table } from '@components';
-import { formatDate } from '@utils';
 
 interface PaymentsPageProps {
   keyword: string;
