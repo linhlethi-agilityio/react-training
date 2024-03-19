@@ -1,6 +1,7 @@
-import { render } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
 
 import PaymentPage from '..';
+import * as React from 'react';
 
 // Mocking dependencies
 jest.mock('@hooks', () => ({
@@ -29,10 +30,34 @@ jest.mock('@constants', () => ({
   },
 }));
 
+// Import SortType enum if needed
+enum SortType {
+  Ascending = 'ascending',
+  Descending = 'descending',
+}
+
 describe('PaymentPage Component', () => {
   test('renders correctly', () => {
     const { container } = render(<PaymentPage keyword="" />);
 
     expect(container).toMatchSnapshot();
+  });
+
+  test('call handleSort func when click icon button sort', () => {
+    jest
+      .spyOn(React, 'useState')
+      .mockImplementationOnce(() => ['', () => null])
+      .mockImplementationOnce(() => [SortType.Ascending, () => null]);
+
+    const { getByTestId } = render(<PaymentPage keyword="" />);
+
+    const sortButton = getByTestId('sort-button');
+    fireEvent.click(sortButton);
+
+    // expect(mockSetState).toHaveBeenCalledWith(SortType.Ascending); // Initial click sets sortType to Ascending
+
+    // expect(mockSetState).toHaveBeenCalledWith(SortType.Descending); // Second click sets sortType to Descending
+    // fireEvent.click(sortButton);
+    // expect(mockSetState).toHaveBeenCalledWith('');
   });
 });

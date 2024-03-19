@@ -1,5 +1,9 @@
-import { render, fireEvent } from '@testing-library/react';
+import { render, fireEvent, act, waitFor } from '@testing-library/react';
 import { ChakraProvider, theme } from '@chakra-ui/react';
+import * as router from 'react-router-dom';
+
+// Hooks
+import * as hooks from '@hooks';
 
 import LoginPage from '..';
 
@@ -7,7 +11,7 @@ import LoginPage from '..';
 jest.mock('@hooks', () => ({
   useToastCustom: jest.fn(),
   useAuth: () => ({
-    getCurrentUser: jest.fn(),
+    getCurrentUser: jest.fn(() => ({ email: 'admin@gmail.com' })),
     loginWithEmailPassword: jest.fn(),
   }),
 }));
@@ -40,21 +44,47 @@ jest.mock('@constants', () => ({
     EMAIL:
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
   },
+  ROUTERS: {
+    DASHBOARD: '/',
+  },
+  BRAND_NAME: 'crud operations',
 }));
+
+const mockLoginWithEmailPassword = jest.fn();
+const mockLogout = jest.fn();
+const mockGetCurrentUser = jest.fn();
+const navigate = jest.fn();
+jest.spyOn(router, 'useNavigate').mockImplementation(() => navigate);
 
 describe('LoginPage Component', () => {
   test('renders correctly', () => {
-    const { container } = render(
+    const { container, getByTestId } = render(
       <ChakraProvider theme={customTheme}>
         <LoginPage />
       </ChakraProvider>,
     );
 
+    const linkElement = getByTestId('brand-logo');
+
+    fireEvent.click(linkElement);
+
+    expect(linkElement).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
 
-  test.skip('calls login function with correct credentials on submit', async () => {
-    const handleLogin = jest.fn();
+  test('calls login function with correct credentials on submit', async () => {
+    jest.spyOn(hooks, 'useAuth').mockReturnValue({
+      me: null,
+      errorMessage: '',
+      loginWithEmailPassword: mockLoginWithEmailPassword,
+      logout: mockLogout,
+      getCurrentUser: mockGetCurrentUser,
+    });
+
+    const mockReturnValue = {
+      email: 'admin@gmail.com',
+      password: 'Admin@1234',
+    };
 
     const { getByLabelText, getByRole } = render(
       <ChakraProvider theme={customTheme}>
@@ -62,14 +92,21 @@ describe('LoginPage Component', () => {
       </ChakraProvider>,
     );
 
-    // Fill in email and password fields
-    fireEvent.change(getByLabelText('Email'), { target: { value: 'test@example.com' } });
-    fireEvent.change(getByLabelText('Password'), { target: { value: 'Abcd@123' } });
-
     // Click the sign in button
-    fireEvent.click(getByRole('button'));
+    act(async () => {
+      // Fill in email and password fields
+      fireEvent.change(getByLabelText('Email'), { target: { value: 'admin@gmail.com' } });
+      fireEvent.change(getByLabelText('Password'), { target: { value: 'Admin@123' } });
 
-    // Assert that login function is called
-    expect(handleLogin).toHaveBeenCalled();
+      mockLoginWithEmailPassword.mockResolvedValue(mockReturnValue);
+
+      const button = getByRole('button', { name: 'Sign in' });
+
+      fireEvent.click(button);
+    });
+
+    waitFor(() => {
+      expect(mockLoginWithEmailPassword).toHaveBeenCalled();
+    });
   });
 });

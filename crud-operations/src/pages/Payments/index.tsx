@@ -114,7 +114,7 @@ const PaymentPage = ({ keyword }: PaymentsPageProps) => {
       <Box mt={5}>
         <Flex justifyContent="space-between" alignItems="center" borderBottomWidth={1} pb={3}>
           <Heading size="md">Payment Details</Heading>
-          <Button variant="ghost" onClick={handleOnSort}>
+          <Button data-testid="sort-button" variant="ghost" onClick={handleOnSort}>
             <SortIcon isUp={sortType === SortType.Ascending} isDown={sortType === SortType.Descending} />
           </Button>
         </Flex>

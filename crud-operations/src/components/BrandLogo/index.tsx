@@ -19,6 +19,7 @@ const BrandLogo = ({ size = 'sm', isAcronym, onClick }: BrandLogoProps) => (
     _hover={{
       textDecoration: 'none',
     }}
+    data-testid="brand-logo"
     onClick={onClick}
   >
     <Heading
