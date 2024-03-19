@@ -6,7 +6,7 @@ import { EyeIcon, SortIcon } from '@icons';
 
 // Types
 import { Payment } from '@types';
-import { TableColumn } from '@components/Table';
+import { TableColumn } from 'src/components/Table';
 
 // Hooks
 import { usePayments } from '@hooks';

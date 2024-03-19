@@ -1,13 +1,31 @@
 export const getItemLocalStorage = (key: string) => {
-  const localStorageData = localStorage.getItem(key);
+  try {
+    const localStorageData = localStorage.getItem(key);
 
-  return localStorageData ? JSON.parse(localStorageData) : null;
+    return localStorageData ? JSON.parse(localStorageData) : null;
+  } catch (error) {
+    return {
+      status: 'error',
+    };
+  }
 };
 
 export const setItemLocalStorage = <T>(key: string, data: T) => {
-  localStorage.setItem(key, JSON.stringify(data));
+  try {
+    localStorage.setItem(key, JSON.stringify(data));
+  } catch (error) {
+    return {
+      status: 'error',
+    };
+  }
 };
 
 export const removeItemLocalStorage = (key: string) => {
-  localStorage.removeItem(key);
+  try {
+    localStorage.removeItem(key);
+  } catch (error) {
+    return {
+      status: 'error',
+    };
+  }
 };

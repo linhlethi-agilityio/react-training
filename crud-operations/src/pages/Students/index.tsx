@@ -6,7 +6,6 @@ import { PenIcon, SortIcon, TrashIcon } from '@icons';
 
 // Types
 import { Student } from '@types';
-import { TableColumn } from '@components/Table';
 
 // Hooks
 import { useStudents, useToastCustom } from '@hooks';
@@ -16,6 +15,7 @@ import { formatDate } from '@utils';
 
 // Components
 import { ConfirmModal, StudentDetailModal, Table } from '@components';
+import { TableColumn } from 'src/components/Table';
 
 interface StudentsPageProps {
   keyword: string;

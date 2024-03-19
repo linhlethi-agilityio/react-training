@@ -43,4 +43,4 @@ Crud operations is a system management users with base features are: crud studen
 
 - [Typescript](https://www.typescriptlang.org/): TypeScript is an open-source language which builds on JavaScript, one of the world's most used tools, by adding static type definitions.
 - [Husky](https://typicode.github.io/): Husky improves your commits and more! You can use it to lint your commit messages, run tests, lint code, etc... when you commit or push. Husky supports all Git hooks.
-- [jwt](https://jwt.io/): JWT stands for JSON Web Token. It is a compact, URL-safe means of representing claims between two parties. This token format is often used for authentication and authorization purposes in web development. JWTs consist of three parts: a header, a payload, and a signature.
+- [jwt - jose](https://github.com/panva/jose): JWT stands for JSON Web Token. It is a compact, URL-safe means of representing claims between two parties. This token format is often used for authentication and authorization purposes in web development. JWTs consist of three parts: a header, a payload, and a signature.

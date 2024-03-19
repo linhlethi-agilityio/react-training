@@ -24,8 +24,7 @@
       "@icons": ["src/icons"],
       "@types": ["src/types"],
       "@services": ["src/services"],
-      "@test-utils": ["src/utils/testUtils.tsx"],
-      "@*": ["src/*"]
+      "@test-utils": ["src/utils/testUtils.tsx"]
     }
   },
   "include": ["src", "./jest-setup.ts"],
