@@ -174,5 +174,17 @@
       "dateOfAdmission": 1676134800000,
       "id": "7"
     }
+  ],
+  "Course": [
+    {
+      "id": "1",
+      "name": "name 1",
+      "description": "lorem amountPaid Ankunding"
+    },
+    {
+      "id": "2",
+      "name": "name 2",
+      "description": "lorem amountPaid Ankunding"
+    }
   ]
 }
