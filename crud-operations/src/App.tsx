@@ -14,6 +14,9 @@ import { LoginPage } from '@pages';
 // Components
 import { BaseLayout } from '@components';
 
+/**
+ * This is a placeholder page used for pages that have not been implemented yet.
+ */
 const PlaceholderPage = ({ pageName }: { pageName: string }) => (
   <Box mt={30}>
     <Text>{pageName} page coming soon!...</Text>

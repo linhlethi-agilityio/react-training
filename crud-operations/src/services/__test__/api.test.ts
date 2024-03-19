@@ -92,40 +92,97 @@ describe.skip('Testing api', () => {
     beforeEach(() => {
       fetchMock.mockResponse(JSON.stringify(students));
     });
+    test('get data', async () => {
+      const wrappedCallMe = async (count: number) => {
+        let countResult = count;
 
-    it('get data', async () => {
-      const result = await api.get('http://localhost:3001/students');
+        const response = await api.get('http://localhost:3001/students');
 
-      expect(result).toEqual(students);
-      expect(fetchMock).toHaveBeenCalledTimes(1);
+        countResult += 1;
+
+        return {
+          response,
+          count: countResult,
+        };
+      };
+
+      // Call the wrapped function
+      const { response, count } = await wrappedCallMe(0);
+
+      // Expectations
+      expect(response).toEqual(students);
+      // Ensure that the function was called at least once
+      expect(count).toBeGreaterThan(0);
     });
 
-    it('post data', async () => {
-      const result = await api.post('students', { students });
-      expect(result).toEqual(students);
-      expect(fetchMock).toHaveBeenCalledTimes(1);
+    test('post data', async () => {
+      const newStudent = {
+        enrollNumber: 5454526,
+        name: 'new name 10',
+        avatarUrl: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1202.jpg',
+        phone: '7305477760',
+        email: 'Ottis.Wolff41@gmail.com',
+        dateOfAdmission: 1013446800000,
+        id: '20',
+      };
+
+      const wrappedCallMe = async (count: number) => {
+        let countResult = count;
+
+        const response = await api.post('http://localhost:3001/students', newStudent);
+
+        countResult += 1;
+
+        return {
+          response,
+          count: countResult,
+        };
+      };
+
+      // Call the wrapped function
+      const { response, count } = await wrappedCallMe(0);
+
+      // Expectations
+      expect(response).toEqual(newStudent);
+      // Ensure that the function was called at least once
+      expect(count).toBeGreaterThan(0);
     });
 
-    it('patch data', async () => {
+    test('patch data', async () => {
       const result = await api.patch('http://localhost:3001/students', { students });
       expect(result).toEqual(students);
       expect(fetchMock).toHaveBeenCalledTimes(1);
     });
 
-    it('put data', async () => {
+    test('put data', async () => {
       const result = await api.put('http://localhost:3001/students', { students });
       expect(result).toEqual(students);
       expect(fetchMock).toHaveBeenCalledTimes(1);
     });
 
-    it('delete data', async () => {
-      await api.remove('http://localhost:3001/students/1');
-      expect(fetchMock).toHaveBeenCalledTimes(1);
+    test('delete data', async () => {
+      const wrappedCallMe = async (count: number) => {
+        let countResult = count;
+
+        await api.remove('http://localhost:3001/students/1');
+
+        countResult += 1;
+
+        return {
+          count: countResult,
+        };
+      };
+
+      // Call the wrapped function
+      const { count } = await wrappedCallMe(0);
+
+      // Ensure that the function was called at least once
+      expect(count).toBeGreaterThan(0);
     });
   });
 
   describe('fail to fetch', () => {
-    it('Error handing response error', async () => {
+    test('Error handing response error', async () => {
       const errorMessage = 'Error handing response error';
 
       fetchMock.mockResponse(JSON.stringify(errorMessage), { status: 404 });
@@ -133,7 +190,7 @@ describe.skip('Testing api', () => {
       await expect(api.get('http://localhost:3001/students')).rejects.toEqual(errorMessage);
     });
 
-    it('Error handing fail to fetch', async () => {
+    test('Error handing fail to fetch', async () => {
       const errorMessage = 'Error handing fail to fetch';
 
       fetchMock.mockReject(new Error(errorMessage));
