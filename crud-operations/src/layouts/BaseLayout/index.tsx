@@ -12,7 +12,7 @@ import { useAuth, useToastCustom } from '@hooks';
 import { isFutureTime } from '@utils';
 
 // Services
-import { removeItemLocalStorage, setItemLocalStorage, getItemLocalStorage } from '@services';
+import { removeItemLocalStorage } from '@services';
 
 // Components
 import SideBar from '../SideBar';
@@ -58,7 +58,7 @@ const BaseLayout = ({ onSearch }: BaseLayoutProps) => {
   }, [getCurrentUser, navigate, toast]);
 
   useEffect(() => {
-    const getSideBarState = getItemLocalStorage('sidebar');
+    const getSideBarState = localStorage.getItem('sidebar');
 
     if (getSideBarState && sideBarState !== getSideBarState) {
       setSideBarState(getSideBarState);
@@ -74,7 +74,7 @@ const BaseLayout = ({ onSearch }: BaseLayoutProps) => {
     setSideBarState((prev) => {
       const nextState = prev === SideBarState.Open ? SideBarState.Closed : SideBarState.Open;
 
-      setItemLocalStorage('sidebar', nextState);
+      localStorage.setItem('sidebar', nextState);
 
       return nextState;
     });

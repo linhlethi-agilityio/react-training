@@ -10,6 +10,7 @@ export interface SideBarItemProps {
 
 const SideBarItem = ({ icon, label, isFocused, onClick }: SideBarItemProps) => (
   <HStack
+    data-testid={`sidebar-item-${label}`}
     spacing={15}
     pl={label ? 41 : 0}
     py={label ? 3 : 2}

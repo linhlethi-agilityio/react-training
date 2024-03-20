@@ -8,7 +8,7 @@ exports[`SearchInput component should match snapshot for SearchInput 1`] = `
   >
     <input
       class="chakra-input css-2pjcr"
-      placeholder="search..."
+      placeholder="Start typing..."
       value=""
     />
     <div

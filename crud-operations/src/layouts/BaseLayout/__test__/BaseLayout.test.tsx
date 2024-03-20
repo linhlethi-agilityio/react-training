@@ -25,6 +25,16 @@ jest.mock('@constants', () => ({
   ROUTERS: {
     LOGIN: '/login',
   },
+  SIDEBAR_NAVIGATION: [
+    {
+      label: 'Home',
+      router: '/',
+    },
+    {
+      label: 'Course',
+      router: '/course',
+    },
+  ],
 }));
 
 jest.mock('react-router-dom', () => ({

@@ -98,6 +98,7 @@ const StudentDetailModal = ({ isOpen, previewData, onClose }: StudentModalDetail
                 Name
               </FormLabel>
               <Input
+                data-testid="name"
                 isInvalid={!!error?.message}
                 onChange={(e) => {
                   onChange(e.target.value);
@@ -130,7 +131,7 @@ const StudentDetailModal = ({ isOpen, previewData, onClose }: StudentModalDetail
                 Email
               </FormLabel>
               <Input
-                aria-label="Email"
+                data-testid="email"
                 isInvalid={!!error?.message}
                 onChange={(e) => {
                   onChange(e.target.value);
@@ -160,6 +161,7 @@ const StudentDetailModal = ({ isOpen, previewData, onClose }: StudentModalDetail
                 Phone
               </FormLabel>
               <Input
+                data-testid="phone"
                 isInvalid={!!error?.message}
                 onChange={(e) => {
                   onChange(e.target.value);
@@ -184,11 +186,12 @@ const StudentDetailModal = ({ isOpen, previewData, onClose }: StudentModalDetail
           control={control}
           rules={{ required: ERROR_MESSAGES.FIELD_REQUIRED }}
           render={({ field: { name, onChange, ...rest }, fieldState: { error } }) => (
-            <Box marginBottom={error?.message ? 0 : '25px'}>
+            <Box marginBottom={error?.message ? 0 : 25}>
               <FormLabel fontSize="sm" lineHeight="sm" color="text.default">
                 Enroll number
               </FormLabel>
               <Input
+                data-testid="enrollNumber"
                 isInvalid={!!error?.message}
                 onChange={(e) => {
                   onChange(e.target.value);
@@ -218,6 +221,7 @@ const StudentDetailModal = ({ isOpen, previewData, onClose }: StudentModalDetail
                 Date of admission
               </FormLabel>
               <Input
+                data-testid="dateOfAdmission"
                 type="date"
                 value={formatDate(value, true)}
                 isInvalid={!!error?.message}
