@@ -4,6 +4,7 @@ exports[`SideBarItem component should match snapshot for SideBarItem 1`] = `
 <div>
   <a
     class="chakra-link chakra-stack css-1pcmnwy"
+    data-testid="sidebar-item-Payment"
   >
     <div
       class="css-dcng39"

@@ -8,7 +8,9 @@ exports[`BrandLogo component should match snapshot for BrandLogo 1`] = `
   >
     <h2
       class="chakra-heading css-qis5cd"
-    />
+    >
+      crud operations
+    </h2>
   </a>
 </div>
 `;

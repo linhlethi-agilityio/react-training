@@ -11,7 +11,9 @@ exports[`SideBar Component renders correctly 1`] = `
     >
       <h2
         class="chakra-heading css-qis5cd"
-      />
+      >
+        crud operations
+      </h2>
     </a>
     <div
       class="chakra-stack css-1w47v7o"
@@ -54,7 +56,92 @@ exports[`SideBar Component renders correctly 1`] = `
       >
         <div
           class="chakra-stack css-1kae02p"
-        />
+        >
+          <a
+            class="chakra-link chakra-stack css-1pcmnwy"
+            data-testid="sidebar-item-Home"
+          >
+            <div
+              class="css-dcng39"
+            >
+              <svg
+                class="chakra-icon css-onkibi"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M9,9a3,3,0,1,1,4,2.829,1.5,1.5,0,0,0-1,1.415V14.25"
+                    fill="none"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M12,17.25a.375.375,0,1,0,.375.375A.375.375,0,0,0,12,17.25h0"
+                    fill="currentColor"
+                    stroke-linecap="round"
+                  />
+                  <circle
+                    cx="12"
+                    cy="12"
+                    fill="none"
+                    r="11.25"
+                    stroke-miterlimit="10"
+                  />
+                </g>
+              </svg>
+            </div>
+            <p
+              class="chakra-text css-0"
+            >
+              Home
+            </p>
+          </a>
+          <a
+            class="chakra-link chakra-stack css-1pcmnwy"
+            data-testid="sidebar-item-Course"
+          >
+            <div
+              class="css-dcng39"
+            >
+              <svg
+                class="chakra-icon css-onkibi"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M9,9a3,3,0,1,1,4,2.829,1.5,1.5,0,0,0-1,1.415V14.25"
+                    fill="none"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M12,17.25a.375.375,0,1,0,.375.375A.375.375,0,0,0,12,17.25h0"
+                    fill="currentColor"
+                    stroke-linecap="round"
+                  />
+                  <circle
+                    cx="12"
+                    cy="12"
+                    fill="none"
+                    r="11.25"
+                    stroke-miterlimit="10"
+                  />
+                </g>
+              </svg>
+            </div>
+            <p
+              class="chakra-text css-0"
+            >
+              Course
+            </p>
+          </a>
+        </div>
         <button
           class="chakra-button css-4xx2wk"
           data-testid="logout-button"
@@ -67,6 +154,169 @@ exports[`SideBar Component renders correctly 1`] = `
             <svg
               aria-hidden="true"
               class="chakra-icon css-1jyhgcw"
+              focusable="false"
+              height="13"
+              viewBox="0 0 17 13"
+              width="17"
+            >
+              <path
+                d="M5.313 5.208c0-.292.239-.53.53-.53h4.782V1.558c0-.235.286-.355.452-.189l4.701 4.751c.21.21.21.545 0 .754l-4.701 4.752a.265.265 0 0 1-.452-.19V8.32H5.844a.533.533 0 0 1-.532-.532v-2.58Zm-1.063 0v2.58c0 .88.714 1.594 1.594 1.594h3.718v2.055c0 1.179 1.428 1.777 2.265.94l4.705-4.748a1.595 1.595 0 0 0 0-2.258L11.827.62c-.833-.834-2.264-.243-2.264.94v2.055h-3.72c-.88 0-1.593.717-1.593 1.593ZM0 1.718v9.563c0 .88.714 1.594 1.594 1.594h4.383a.4.4 0 0 0 .398-.398v-.266a.4.4 0 0 0-.398-.399H1.594a.533.533 0 0 1-.532-.53V1.718c0-.292.24-.532.532-.532h4.383A.4.4 0 0 0 6.375.79V.523a.4.4 0 0 0-.398-.398H1.594C.714.125 0 .839 0 1.719Z"
+                fill="#000000"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SideBar Component renders correctly with isClosed 1`] = `
+<div>
+  <div
+    class="chakra-stack css-o2jq8c"
+  >
+    <a
+      class="chakra-link css-1mgm4dv"
+      data-testid="brand-logo"
+    >
+      <h2
+        class="chakra-heading css-qis5cd"
+      >
+        co
+      </h2>
+    </a>
+    <div
+      class="chakra-stack css-1w47v7o"
+    >
+      <div
+        class="chakra-stack css-1etgy3s"
+      >
+        <span
+          class="chakra-avatar css-1hd9g3d"
+        >
+          <svg
+            aria-label=" avatar"
+            class="chakra-avatar__svg css-16ite8i"
+            role="img"
+            viewBox="0 0 128 128"
+          >
+            <path
+              d="M103,102.1388 C93.094,111.92 79.3504,118 64.1638,118 C48.8056,118 34.9294,111.768 25,101.7892 L25,95.2 C25,86.8096 31.981,80 40.6,80 L87.4,80 C96.019,80 103,86.8096 103,95.2 L103,102.1388 Z"
+              fill="currentColor"
+            />
+            <path
+              d="M63.9961647,24 C51.2938136,24 41,34.2938136 41,46.9961647 C41,59.7061864 51.2938136,70 63.9961647,70 C76.6985159,70 87,59.7061864 87,46.9961647 C87,34.2938136 76.6985159,24 63.9961647,24"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+        <div
+          class="chakra-stack css-1nq74a3"
+        >
+          <h2
+            class="chakra-heading css-1ddqvh7"
+          >
+            undefined
+          </h2>
+          <p
+            class="chakra-text css-1h928e3"
+          />
+        </div>
+      </div>
+      <div
+        class="chakra-stack css-vvg5fj"
+      >
+        <div
+          class="chakra-stack css-10i4byr"
+        >
+          <a
+            class="chakra-link chakra-stack css-1moqzjr"
+            data-testid="sidebar-item-false"
+          >
+            <div
+              class="css-sktdp4"
+            >
+              <svg
+                class="chakra-icon css-onkibi"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M9,9a3,3,0,1,1,4,2.829,1.5,1.5,0,0,0-1,1.415V14.25"
+                    fill="none"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M12,17.25a.375.375,0,1,0,.375.375A.375.375,0,0,0,12,17.25h0"
+                    fill="currentColor"
+                    stroke-linecap="round"
+                  />
+                  <circle
+                    cx="12"
+                    cy="12"
+                    fill="none"
+                    r="11.25"
+                    stroke-miterlimit="10"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+          <a
+            class="chakra-link chakra-stack css-1moqzjr"
+            data-testid="sidebar-item-false"
+          >
+            <div
+              class="css-sktdp4"
+            >
+              <svg
+                class="chakra-icon css-onkibi"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M9,9a3,3,0,1,1,4,2.829,1.5,1.5,0,0,0-1,1.415V14.25"
+                    fill="none"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M12,17.25a.375.375,0,1,0,.375.375A.375.375,0,0,0,12,17.25h0"
+                    fill="currentColor"
+                    stroke-linecap="round"
+                  />
+                  <circle
+                    cx="12"
+                    cy="12"
+                    fill="none"
+                    r="11.25"
+                    stroke-miterlimit="10"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <button
+          class="chakra-button css-4xx2wk"
+          data-testid="logout-button"
+          type="button"
+        >
+          <span
+            class="chakra-button__icon css-1hzyiq5"
+          >
+            <svg
+              aria-hidden="true"
+              class="chakra-icon css-1uwn6wz"
               focusable="false"
               height="13"
               viewBox="0 0 17 13"

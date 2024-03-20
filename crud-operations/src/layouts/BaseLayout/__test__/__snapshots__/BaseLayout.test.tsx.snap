@@ -57,7 +57,92 @@ exports[`BaseLayout Component renders correctly 1`] = `
         >
           <div
             class="chakra-stack css-1kae02p"
-          />
+          >
+            <a
+              class="chakra-link chakra-stack css-1img8g8"
+              data-testid="sidebar-item-Home"
+            >
+              <div
+                class="css-dcng39"
+              >
+                <svg
+                  class="chakra-icon css-onkibi"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M9,9a3,3,0,1,1,4,2.829,1.5,1.5,0,0,0-1,1.415V14.25"
+                      fill="none"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M12,17.25a.375.375,0,1,0,.375.375A.375.375,0,0,0,12,17.25h0"
+                      fill="currentColor"
+                      stroke-linecap="round"
+                    />
+                    <circle
+                      cx="12"
+                      cy="12"
+                      fill="none"
+                      r="11.25"
+                      stroke-miterlimit="10"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <p
+                class="chakra-text css-0"
+              >
+                Home
+              </p>
+            </a>
+            <a
+              class="chakra-link chakra-stack css-1pcmnwy"
+              data-testid="sidebar-item-Course"
+            >
+              <div
+                class="css-dcng39"
+              >
+                <svg
+                  class="chakra-icon css-onkibi"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M9,9a3,3,0,1,1,4,2.829,1.5,1.5,0,0,0-1,1.415V14.25"
+                      fill="none"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M12,17.25a.375.375,0,1,0,.375.375A.375.375,0,0,0,12,17.25h0"
+                      fill="currentColor"
+                      stroke-linecap="round"
+                    />
+                    <circle
+                      cx="12"
+                      cy="12"
+                      fill="none"
+                      r="11.25"
+                      stroke-miterlimit="10"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <p
+                class="chakra-text css-0"
+              >
+                Course
+              </p>
+            </a>
+          </div>
           <button
             class="chakra-button css-4xx2wk"
             data-testid="logout-button"

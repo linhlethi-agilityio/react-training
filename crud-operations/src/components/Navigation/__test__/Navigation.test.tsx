@@ -1,22 +1,16 @@
-import { render } from '@test-utils';
+import { fireEvent, render } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { MemoryRouter, useLocation } from 'react-router-dom';
 
 // Components
 import Navigation from '..';
 
-const mockProps = {
-  isShorter: false,
-};
+jest.mock('jose', () => ({}));
 
-jest.mock('react-router-dom', () => ({
-  ...jest.requireActual('react-router-dom'),
-  useNavigate: () => jest.fn(),
-  useLocation: () => jest.fn(),
-}));
-
-// Mock the constants module
 jest.mock('@constants', () => ({
+  ENVS: {
+    VITE_API_ENDPOINT: 'import.meta.env.VITE_API_ENDPOINT',
+    VITE_SECRET_KEY: 'import.meta.env.VITE_SECRET_KEY',
+  },
   SIDEBAR_NAVIGATION: [
     {
       label: 'Home',
@@ -29,23 +23,36 @@ jest.mock('@constants', () => ({
   ],
 }));
 
+const mockNavigate = jest.fn();
+
+jest.mock('react-router-dom', () => ({
+  ...jest.requireActual('react-router-dom'),
+  useNavigate: () => mockNavigate,
+  useLocation: () =>
+    jest.fn(() => ({
+      pathname: '/',
+    })),
+}));
+
 describe('Navigation component', () => {
   test('should match snapshot for Navigation', () => {
-    const { container } = render(<Navigation {...mockProps} />);
+    const { container } = render(<Navigation isShorter />);
 
     expect(container).toMatchSnapshot();
   });
 
-  it.skip('renders navigation items correctly', () => {
-    (useLocation as jest.Mock).mockReturnValue({ location: { pathname: '/' } });
-
-    const { getByText } = render(
-      <MemoryRouter>
-        <Navigation />
-      </MemoryRouter>,
-    );
+  test('renders navigation items correctly', () => {
+    const { getByText } = render(<Navigation />);
 
     expect(getByText('Home')).toBeInTheDocument();
     expect(getByText('Course')).toBeInTheDocument();
+  });
+
+  test('navigate router when click navigation item', () => {
+    const { getByTestId } = render(<Navigation />);
+
+    fireEvent.click(getByTestId('sidebar-item-Course'));
+
+    expect(mockNavigate).toHaveBeenCalled();
   });
 });

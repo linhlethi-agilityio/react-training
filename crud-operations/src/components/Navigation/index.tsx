@@ -24,7 +24,7 @@ const Navigation = ({ isShorter = false }: NavigationProps) => {
       w={isShorter ? '100%' : 193}
       transition="1s"
     >
-      {(SIDEBAR_NAVIGATION || []).map(({ label, icon, router }) => {
+      {SIDEBAR_NAVIGATION.map(({ label, icon, router }) => {
         const isFocused = router === location.pathname;
 
         return (
