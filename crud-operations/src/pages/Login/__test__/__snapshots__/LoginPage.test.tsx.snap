@@ -13,10 +13,13 @@ exports[`LoginPage Component renders correctly 1`] = `
       >
         <a
           class="chakra-link css-pqilmp"
+          data-testid="brand-logo"
         >
           <h2
             class="chakra-heading css-1glaey6"
-          />
+          >
+            crud operations
+          </h2>
         </a>
         <h2
           class="chakra-heading css-1omxs99"

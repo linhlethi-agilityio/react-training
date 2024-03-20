@@ -7,6 +7,7 @@ exports[`SideBar Component renders correctly 1`] = `
   >
     <a
       class="chakra-link css-1mgm4dv"
+      data-testid="brand-logo"
     >
       <h2
         class="chakra-heading css-qis5cd"

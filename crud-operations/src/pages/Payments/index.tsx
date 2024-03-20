@@ -27,13 +27,13 @@ enum SortType {
 }
 
 const PaymentPage = ({ keyword }: PaymentsPageProps) => {
-  const [sortType, setSortType] = useState<string>('');
   const [previewData, setPreviewData] = useState<Payment | null>(null);
 
   const { payments, isLoading } = usePayments();
 
   const { isOpen: isOpenPaymentDetail, onOpen: onOpenPaymentDetail, onClose: onClosePaymentDetail } = useDisclosure();
 
+  const [sortType, setSortType] = useState<string>('');
   const handleOnSort = useCallback(() => {
     if (!sortType) {
       return setSortType(SortType.Ascending);
@@ -92,7 +92,11 @@ const PaymentPage = ({ keyword }: PaymentsPageProps) => {
     },
     {
       accessor: (data: Payment) => (
-        <Button variant="ghost" onClick={() => handleOpenPaymentDetailModal(data.id)}>
+        <Button
+          data-testid="payment-detail-button-icon"
+          variant="ghost"
+          onClick={() => handleOpenPaymentDetailModal(data.id)}
+        >
           <Icon as={EyeIcon} />
         </Button>
       ),
@@ -114,7 +118,7 @@ const PaymentPage = ({ keyword }: PaymentsPageProps) => {
       <Box mt={5}>
         <Flex justifyContent="space-between" alignItems="center" borderBottomWidth={1} pb={3}>
           <Heading size="md">Payment Details</Heading>
-          <Button variant="ghost" onClick={handleOnSort}>
+          <Button data-testid="sort-button" variant="ghost" onClick={handleOnSort}>
             <SortIcon isUp={sortType === SortType.Ascending} isDown={sortType === SortType.Descending} />
           </Button>
         </Flex>

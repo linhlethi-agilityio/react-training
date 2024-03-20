@@ -74,7 +74,7 @@ describe('Testing api', () => {
       const wrappedCallMe = async (count: number) => {
         let countResult = count;
 
-        const response = await api.post('http://localhost:3001/students', newCourse);
+        const response = await api.post('http://localhost:3001/course', newCourse);
 
         countResult += 1;
 

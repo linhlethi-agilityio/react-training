@@ -15,6 +15,7 @@ exports[`PaymentPage Component renders correctly 1`] = `
       </h2>
       <button
         class="chakra-button css-4xx2wk"
+        data-testid="sort-button"
         type="button"
       >
         <svg
@@ -137,6 +138,7 @@ exports[`PaymentPage Component renders correctly 1`] = `
             >
               <button
                 class="chakra-button css-4xx2wk"
+                data-testid="payment-detail-button-icon"
                 type="button"
               >
                 <svg
