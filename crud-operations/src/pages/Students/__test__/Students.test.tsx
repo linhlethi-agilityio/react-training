@@ -49,13 +49,11 @@ describe('StudentsPage Component', () => {
     expect(getByText('Add Student')).toBeInTheDocument(); // Assuming there's a heading with text 'Add Student' in the modal
   });
 
-  test.skip('call handleEditStudent func when on button click', () => {
-    const handleEditStudent = jest.fn();
-
-    const { getByTestId } = render(<StudentsPage keyword="" />);
+  test('call handleEditStudent func when on button click', () => {
+    const { getByTestId, getByText } = render(<StudentsPage keyword="" />);
     fireEvent.click(getByTestId('edit-button'));
 
-    expect(handleEditStudent).toHaveBeenCalled(); // Assuming there's a heading with text 'Add Student' in the modal
+    expect(getByText('Update Student')).toBeInTheDocument(); // Assuming there's a heading with text 'Add Student' in the modal
   });
 
   test('opens confirm delete modal on delete button click', async () => {

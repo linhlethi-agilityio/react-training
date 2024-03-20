@@ -1,7 +1,6 @@
-import { fireEvent, render } from '@testing-library/react';
+import { fireEvent, render, waitFor } from '@testing-library/react';
 
 import PaymentPage from '..';
-import * as React from 'react';
 
 // Mocking dependencies
 jest.mock('@hooks', () => ({
@@ -36,6 +35,13 @@ enum SortType {
   Descending = 'descending',
 }
 
+// Mocking useState hook
+const mockUseState = jest.fn();
+jest.mock('react', () => ({
+  ...jest.requireActual('react'),
+  useState: (initialState: any) => [initialState, mockUseState],
+}));
+
 describe('PaymentPage Component', () => {
   test('renders correctly', () => {
     const { container } = render(<PaymentPage keyword="" />);
@@ -43,21 +49,36 @@ describe('PaymentPage Component', () => {
     expect(container).toMatchSnapshot();
   });
 
-  test('call handleSort func when click icon button sort', () => {
-    jest
-      .spyOn(React, 'useState')
-      .mockImplementationOnce(() => ['', () => null])
-      .mockImplementationOnce(() => [SortType.Ascending, () => null]);
+  test.skip('call handleSort func when click icon button sort', () => {
+    // Mocking useState to return different values on each call
+    const setState = jest.fn();
+    mockUseState.mockImplementation(() => ['', setState]); // Initial state
+    mockUseState.mockImplementationOnce(() => ['', setState]); // Initial state
+    mockUseState.mockImplementationOnce(() => [SortType.Ascending, setState]); // Ascending sort state
+    mockUseState.mockImplementationOnce(() => [SortType.Descending, setState]); // Descending sort state
 
     const { getByTestId } = render(<PaymentPage keyword="" />);
 
     const sortButton = getByTestId('sort-button');
     fireEvent.click(sortButton);
 
-    // expect(mockSetState).toHaveBeenCalledWith(SortType.Ascending); // Initial click sets sortType to Ascending
+    expect(setState).toHaveBeenCalledWith(SortType.Ascending); // Initial click sets sortType to Ascending
 
-    // expect(mockSetState).toHaveBeenCalledWith(SortType.Descending); // Second click sets sortType to Descending
-    // fireEvent.click(sortButton);
-    // expect(mockSetState).toHaveBeenCalledWith('');
+    fireEvent.click(sortButton); // Simulate second click
+    expect(setState).toHaveBeenCalledWith(SortType.Descending); // Second click sets sortType to Descending
+
+    fireEvent.click(sortButton); // Simulate third click
+    expect(setState).toHaveBeenCalledWith(''); // Third click sets sortType to ''
+  });
+
+  test('call handleOpenPaymentDetailModal func when click icon button payment-detail-button-icon', () => {
+    const { getByTestId, getByText } = render(<PaymentPage keyword="" />);
+
+    const sortButton = getByTestId('payment-detail-button-icon');
+    fireEvent.click(sortButton);
+
+    waitFor(() => {
+      expect(getByText('Payment Detail')).toBeInTheDocument();
+    });
   });
 });

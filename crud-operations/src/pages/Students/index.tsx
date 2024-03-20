@@ -82,10 +82,10 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
     {
       accessor: (data: Student) => (
         <HStack justifyContent="flex-end" spacing={0}>
-          <Button variant="ghost" data-testID="edit-button" onClick={() => handleEditStudent(data?.id)}>
+          <Button variant="ghost" data-testid="edit-button" onClick={() => handleEditStudent(data?.id)}>
             <Icon as={PenIcon} />
           </Button>
-          <Button data-testID="delete-button" variant="ghost" onClick={() => openConfirmModal(data?.id)}>
+          <Button data-testid="delete-button" variant="ghost" onClick={() => openConfirmModal(data?.id)}>
             <Icon as={TrashIcon} />
           </Button>
         </HStack>
