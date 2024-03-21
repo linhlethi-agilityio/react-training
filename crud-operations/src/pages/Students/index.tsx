@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react';
-import { Avatar, Box, Button, Flex, HStack, Heading, Icon, Spinner, Text, useDisclosure } from '@chakra-ui/react';
+import { Box, Button, Flex, HStack, Heading, Icon, Spinner, Text, useDisclosure } from '@chakra-ui/react';
 
 // Icons
 import { PenIcon, SortIcon, TrashIcon } from '@icons';
@@ -57,7 +57,9 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
 
   const studentsColumns: TableColumn<Student>[] = [
     {
-      accessor: (data: Student) => <Avatar src={data.avatarUrl} borderRadius={8} objectFit="contain" />,
+      accessor: (data: Student) => (
+        <Box as="img" w={65} h={55} src={data.avatarUrl} alt={`avatar-${data.name}`} borderRadius={8} />
+      ),
     },
     {
       header: 'Name',
@@ -82,10 +84,20 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
     {
       accessor: (data: Student) => (
         <HStack justifyContent="flex-end" spacing={0}>
-          <Button variant="ghost" data-testid="edit-button" onClick={() => handleEditStudent(data?.id)}>
+          <Button
+            aria-label="edit"
+            variant="ghost"
+            data-testid="edit-button"
+            onClick={() => handleEditStudent(data?.id)}
+          >
             <Icon as={PenIcon} />
           </Button>
-          <Button data-testid="delete-button" variant="ghost" onClick={() => openConfirmModal(data?.id)}>
+          <Button
+            aria-label="delete"
+            data-testid="delete-button"
+            variant="ghost"
+            onClick={() => openConfirmModal(data?.id)}
+          >
             <Icon as={TrashIcon} />
           </Button>
         </HStack>
@@ -149,10 +161,12 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
         <Flex justifyContent="space-between" alignItems="center" borderBottomWidth={1} pb={3}>
           <Heading size="md">Students List</Heading>
           <Flex gap={1}>
-            <Button variant="ghost" onClick={handleOnSort}>
+            <Button aria-label="sort" variant="ghost" onClick={handleOnSort}>
               <SortIcon isUp={sortType === SortType.Ascending} isDown={sortType === SortType.Descending} />
             </Button>
-            <Button onClick={handleAddNewStudent}>Add new student</Button>
+            <Button aria-label="add-student" onClick={handleAddNewStudent}>
+              Add new student
+            </Button>
           </Flex>
         </Flex>
         <Box>

@@ -154,7 +154,7 @@ const LoginPage = () => {
                 </Box>
               )}
             />
-            <Button w="full" mt={5} onClick={handleSubmit(handleLogin)}>
+            <Button aria-label="sign-in" w="full" mt={5} onClick={handleSubmit(handleLogin)}>
               Sign in
             </Button>
           </FormControl>

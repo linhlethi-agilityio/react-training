@@ -241,7 +241,13 @@ const StudentDetailModal = ({ isOpen, previewData, onClose }: StudentModalDetail
             </Box>
           )}
         />
-        <Button type="submit" w="full" marginBottom={5} onClick={handleSubmit(handleOnSubmit)}>
+        <Button
+          aria-label="button-submit"
+          type="submit"
+          w="full"
+          marginBottom={5}
+          onClick={handleSubmit(handleOnSubmit)}
+        >
           Submit
         </Button>
       </FormControl>
