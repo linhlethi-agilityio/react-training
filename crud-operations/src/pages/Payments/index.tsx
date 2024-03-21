@@ -93,6 +93,7 @@ const PaymentPage = ({ keyword }: PaymentsPageProps) => {
     {
       accessor: (data: Payment) => (
         <Button
+          aria-label="payment-detail-button"
           data-testid="payment-detail-button-icon"
           variant="ghost"
           onClick={() => handleOpenPaymentDetailModal(data.id)}
@@ -118,7 +119,7 @@ const PaymentPage = ({ keyword }: PaymentsPageProps) => {
       <Box mt={5}>
         <Flex justifyContent="space-between" alignItems="center" borderBottomWidth={1} pb={3}>
           <Heading size="md">Payment Details</Heading>
-          <Button data-testid="sort-button" variant="ghost" onClick={handleOnSort}>
+          <Button aria-label="sort" data-testid="sort-button" variant="ghost" onClick={handleOnSort}>
             <SortIcon isUp={sortType === SortType.Ascending} isDown={sortType === SortType.Descending} />
           </Button>
         </Flex>

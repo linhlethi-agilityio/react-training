@@ -12,6 +12,7 @@ interface LogoutButtonProps {
 
 const LogoutButton = ({ text = 'Logout', isShorter, onLogout }: LogoutButtonProps) => (
   <Button
+    aria-label="logout"
     data-testId="logout-button"
     rightIcon={<Icon as={LogoutIcon} ml={isShorter ? 0 : 15} />}
     variant="ghost"

@@ -18,10 +18,10 @@ const ConfirmModal = ({ isOpen, onCancel, title, onConfirm, description, buttonL
     <Box paddingBottom={30}>
       <Text textAlign="center">{description}</Text>
       <Flex textAlign="center" gap={5} justifyContent="space-between" marginTop={5}>
-        <Button onClick={onConfirm} flex={1}>
+        <Button aria-label="button-label" onClick={onConfirm} flex={1}>
           {buttonLabel}
         </Button>
-        <Button onClick={onCancel} variant="outline" flex={1}>
+        <Button aria-label="button-center" onClick={onCancel} variant="outline" flex={1}>
           CanCel
         </Button>
       </Flex>
