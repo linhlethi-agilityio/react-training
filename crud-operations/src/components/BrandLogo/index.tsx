@@ -15,6 +15,7 @@ interface BrandLogoProps {
 
 const BrandLogo = ({ size = 'sm', isAcronym, onClick }: BrandLogoProps) => (
   <Link
+    href="#"
     w="fit-content"
     _hover={{
       textDecoration: 'none',

@@ -1,5 +1,5 @@
 import { ReactNode, memo } from 'react';
-import { Box, HStack, Link, Text } from '@chakra-ui/react';
+import { Box, HStack, Text } from '@chakra-ui/react';
 
 export interface SideBarItemProps {
   isFocused?: boolean;
@@ -16,8 +16,8 @@ const SideBarItem = ({ icon, label, isFocused, onClick }: SideBarItemProps) => (
     py={label ? 3 : 2}
     onClick={onClick}
     w="100%"
-    as={Link}
     transition="1s"
+    cursor="pointer"
     _hover={{
       textDecoration: 'none',
     }}
