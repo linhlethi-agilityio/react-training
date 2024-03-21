@@ -25,7 +25,7 @@ const Header = ({ isClosedSideBar, onToggleSideBar, onSearch }: HeaderProps) => 
 
   return (
     <Flex justifyContent="space-between" alignItems="center" padding={3}>
-      <Button data-testid="toggle-sidebar-button" variant="ghost" onClick={onToggleSideBar}>
+      <Button aria-label="toggle-sidebar" data-testid="toggle-sidebar-button" variant="ghost" onClick={onToggleSideBar}>
         <Icon
           as={CaretIcon}
           boxSize={18}
@@ -35,7 +35,7 @@ const Header = ({ isClosedSideBar, onToggleSideBar, onSearch }: HeaderProps) => 
       </Button>
       <Flex gap={27} alignItems="center">
         <SearchInput placeholder="Search..." onChange={handleOnChange} value={searchValue} />
-        <Button variant="ghost">
+        <Button aria-label="notification" variant="ghost">
           <BellIcon />
         </Button>
       </Flex>

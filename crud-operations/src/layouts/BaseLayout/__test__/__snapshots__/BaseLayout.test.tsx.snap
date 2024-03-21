@@ -177,6 +177,7 @@ exports[`BaseLayout Component renders correctly 1`] = `
         class="css-1yb29l5"
       >
         <button
+          aria-label="toggle-sidebar"
           class="chakra-button css-4xx2wk"
           data-testid="toggle-sidebar-button"
           type="button"
@@ -223,6 +224,7 @@ exports[`BaseLayout Component renders correctly 1`] = `
             </div>
           </div>
           <button
+            aria-label="notification"
             class="chakra-button css-4xx2wk"
             type="button"
           >
