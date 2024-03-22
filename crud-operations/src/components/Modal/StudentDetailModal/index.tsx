@@ -174,6 +174,7 @@ const StudentDetailModal = ({ isOpen, previewData, onClose }: StudentModalDetail
                 Phone
               </FormLabel>
               <Input
+                maxLength={10}
                 data-testid="phone"
                 isInvalid={!!error?.message}
                 onChange={(e) => {
@@ -207,6 +208,7 @@ const StudentDetailModal = ({ isOpen, previewData, onClose }: StudentModalDetail
                 Enroll number
               </FormLabel>
               <Input
+                maxLength={10}
                 data-testid="enrollNumber"
                 isInvalid={!!error?.message}
                 onChange={(e) => {
