@@ -1,4 +1,4 @@
-import { useCallback, useEffect } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Controller, useForm } from 'react-hook-form';
 import {
@@ -33,12 +33,14 @@ interface LoginFormData {
 }
 
 const LoginPage = () => {
+  const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+
   const navigate = useNavigate();
   const toast = useToastCustom();
   const { loginWithEmailPassword, getCurrentUser } = useAuth();
   const {
     control,
-    formState: { errors },
+    formState: { errors, isValid },
     clearErrors,
     handleSubmit,
   } = useForm<LoginFormData>({
@@ -77,6 +79,11 @@ const LoginPage = () => {
 
     handleValidate();
   }, [getCurrentUser, navigate]);
+
+  useEffect(() => {
+    // Update the disabled state based on form validity
+    setIsButtonDisabled(!isValid);
+  }, [isValid]);
 
   return (
     <Box bgGradient="linear(to-r, primary, background.body)" height="100vh">
@@ -154,7 +161,13 @@ const LoginPage = () => {
                 </Box>
               )}
             />
-            <Button aria-label="sign-in" w="full" mt={5} onClick={handleSubmit(handleLogin)}>
+            <Button
+              isDisabled={isButtonDisabled}
+              aria-label="sign-in"
+              w="full"
+              mt={5}
+              onClick={handleSubmit(handleLogin)}
+            >
               Sign in
             </Button>
           </FormControl>

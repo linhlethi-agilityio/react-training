@@ -16,10 +16,18 @@ export const Button = defineStyleConfig({
 
       _hover: {
         backgroundColor: 'button.primary',
+
+        _disabled: {
+          backgroundColor: 'background.body',
+        },
       },
 
       _active: {
         backgroundColor: 'button.primary',
+      },
+
+      _disabled: {
+        backgroundColor: 'background.body',
       },
     },
     outline: {

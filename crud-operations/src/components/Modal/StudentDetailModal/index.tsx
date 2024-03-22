@@ -1,4 +1,4 @@
-import { memo, useMemo } from 'react';
+import { memo, useEffect, useMemo, useState } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 import { Box, Button, FormControl, FormHelperText, FormLabel, Input } from '@chakra-ui/react';
 
@@ -6,7 +6,7 @@ import { Box, Button, FormControl, FormHelperText, FormLabel, Input } from '@cha
 import { ERROR_MESSAGES } from '@constants';
 
 // Utils
-import { clearErrorOnChange, formatDate, isValidEmail } from '@utils';
+import { clearErrorOnChange, formatDate, isValidEmail, isValidNumber } from '@utils';
 
 // Types
 import { Student } from '@types';
@@ -34,14 +34,16 @@ const initFormData = {
 };
 
 const StudentDetailModal = ({ isOpen, previewData, onClose }: StudentModalDetailModalProps) => {
-  const { createStudent, updateStudent } = useStudents();
+  const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+
+  const { createStudent, updateStudent, isLoading: isLoadingStudent } = useStudents();
   const toast = useToastCustom();
 
   const {
     control,
     clearErrors,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isValid, isDirty },
   } = useForm<StudentFormState>({
     mode: 'onBlur',
     reValidateMode: 'onBlur',
@@ -49,6 +51,14 @@ const StudentDetailModal = ({ isOpen, previewData, onClose }: StudentModalDetail
   });
 
   const isEditMode = useMemo(() => !!previewData?.id, [previewData?.id]);
+
+  useEffect(() => {
+    // Update the disabled state based on form validity
+    setIsButtonDisabled(!isValid);
+  }, [isValid]);
+
+  const shouldEnable = isDirty && !Object.keys(errors).length;
+  const isDisableSubmit = !shouldEnable || isButtonDisabled || isLoadingStudent;
 
   const handleOnSubmit = async (fromData: StudentFormState) => {
     let response = null;
@@ -154,7 +164,10 @@ const StudentDetailModal = ({ isOpen, previewData, onClose }: StudentModalDetail
         <Controller
           name="phone"
           control={control}
-          rules={{ required: ERROR_MESSAGES.FIELD_REQUIRED }}
+          rules={{
+            required: ERROR_MESSAGES.FIELD_REQUIRED,
+            validate: (phone) => isValidNumber(phone) || ERROR_MESSAGES.INVALID_PHONE_NUMBER,
+          }}
           render={({ field: { name, onChange, ...rest }, fieldState: { error } }) => (
             <Box marginBottom={error?.message ? 0 : 27}>
               <FormLabel fontSize="sm" lineHeight="sm" color="text.default">
@@ -184,7 +197,10 @@ const StudentDetailModal = ({ isOpen, previewData, onClose }: StudentModalDetail
         <Controller
           name="enrollNumber"
           control={control}
-          rules={{ required: ERROR_MESSAGES.FIELD_REQUIRED }}
+          rules={{
+            required: ERROR_MESSAGES.FIELD_REQUIRED,
+            validate: (enrollNumber) => isValidNumber(enrollNumber) || ERROR_MESSAGES.INVALID_ENROLL_NUMBER,
+          }}
           render={({ field: { name, onChange, ...rest }, fieldState: { error } }) => (
             <Box marginBottom={error?.message ? 0 : 25}>
               <FormLabel fontSize="sm" lineHeight="sm" color="text.default">
@@ -242,6 +258,7 @@ const StudentDetailModal = ({ isOpen, previewData, onClose }: StudentModalDetail
           )}
         />
         <Button
+          isDisabled={isDisableSubmit}
           aria-label="button-submit"
           type="submit"
           w="full"
