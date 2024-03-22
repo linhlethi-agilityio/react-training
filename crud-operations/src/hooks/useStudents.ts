@@ -16,7 +16,10 @@ export const useStudents = () => {
 
   const createStudent = async (newStudent: Partial<Student>) => {
     try {
-      const response: Student = await post(studentsEndPoint, newStudent);
+      const response: Student = await post(studentsEndPoint, {
+        ...newStudent,
+        avatarUrl: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/956.jpg',
+      });
 
       // Optimistically update the local data without waiting for the server response
       mutateStudents([...(data || []), response], false);
