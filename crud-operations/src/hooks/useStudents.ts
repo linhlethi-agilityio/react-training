@@ -18,7 +18,7 @@ export const useStudents = () => {
     try {
       const response: Student = await post(studentsEndPoint, {
         ...newStudent,
-        avatarUrl: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/956.jpg',
+        avatarUrl: 'https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg',
       });
 
       // Optimistically update the local data without waiting for the server response

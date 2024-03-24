@@ -112,12 +112,12 @@ exports[`StudentsPage Component renders correctly 1`] = `
               class="css-fsw37u"
             >
               <div
-                class="css-1t7kaq9"
+                class="css-1ep1tad"
               >
                 <img
                   alt="avatar-name 8"
                   class="css-rl6otz"
-                  src="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/956.jpg"
+                  src="public/avatar.webp"
                 />
               </div>
             </td>
