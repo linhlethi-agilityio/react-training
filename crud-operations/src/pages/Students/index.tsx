@@ -58,9 +58,9 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
   const studentsColumns: TableColumn<Student>[] = [
     {
       accessor: (data: Student) => (
-        <Box w={65} h={55}>
-          <Box as="img" src={data.avatarUrl} alt={`avatar-${data.name}`} borderRadius={8} />
-        </Box>
+        <Flex w={65} h={55}>
+          <Box as="img" src="public/avatar.webp" alt={`avatar-${data.name}`} borderRadius={8} />
+        </Flex>
       ),
     },
     {
