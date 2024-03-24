@@ -5,8 +5,8 @@ exports[`Navigation component should match snapshot for Navigation 1`] = `
   <div
     class="chakra-stack css-10i4byr"
   >
-    <a
-      class="chakra-link chakra-stack css-1moqzjr"
+    <div
+      class="chakra-stack css-1hcl0ll"
       data-testid="sidebar-item-false"
     >
       <div
@@ -41,9 +41,9 @@ exports[`Navigation component should match snapshot for Navigation 1`] = `
           </g>
         </svg>
       </div>
-    </a>
-    <a
-      class="chakra-link chakra-stack css-1moqzjr"
+    </div>
+    <div
+      class="chakra-stack css-1hcl0ll"
       data-testid="sidebar-item-false"
     >
       <div
@@ -78,7 +78,7 @@ exports[`Navigation component should match snapshot for Navigation 1`] = `
           </g>
         </svg>
       </div>
-    </a>
+    </div>
   </div>
 </div>
 `;

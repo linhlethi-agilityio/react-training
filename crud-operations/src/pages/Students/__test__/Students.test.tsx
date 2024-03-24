@@ -33,6 +33,11 @@ jest.mock('@constants', () => ({
     FIELD_REQUIRED: 'This field is required',
     MIN_PASSWORD_LENGTH: jest.fn(),
   },
+  REGEX_PATTERN: {
+    EMAIL:
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+    NUMBER: /^[0-9]{10}$/,
+  },
 }));
 
 describe('StudentsPage Component', () => {
