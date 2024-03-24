@@ -2,7 +2,7 @@
 
 exports[`BrandLogo component should match snapshot for BrandLogo 1`] = `
 <div>
-  <a
+  <button
     class="chakra-link css-1mgm4dv"
     data-testid="brand-logo"
   >
@@ -11,6 +11,6 @@ exports[`BrandLogo component should match snapshot for BrandLogo 1`] = `
     >
       crud operations
     </h2>
-  </a>
+  </button>
 </div>
 `;

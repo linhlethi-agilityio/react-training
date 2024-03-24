@@ -5,7 +5,7 @@ exports[`SideBar Component renders correctly 1`] = `
   <div
     class="chakra-stack css-13hpm2o"
   >
-    <a
+    <button
       class="chakra-link css-1mgm4dv"
       data-testid="brand-logo"
     >
@@ -14,7 +14,7 @@ exports[`SideBar Component renders correctly 1`] = `
       >
         crud operations
       </h2>
-    </a>
+    </button>
     <div
       class="chakra-stack css-1w47v7o"
     >
@@ -178,7 +178,7 @@ exports[`SideBar Component renders correctly with isClosed 1`] = `
   <div
     class="chakra-stack css-o2jq8c"
   >
-    <a
+    <button
       class="chakra-link css-1mgm4dv"
       data-testid="brand-logo"
     >
@@ -187,7 +187,7 @@ exports[`SideBar Component renders correctly with isClosed 1`] = `
       >
         co
       </h2>
-    </a>
+    </button>
     <div
       class="chakra-stack css-1w47v7o"
     >

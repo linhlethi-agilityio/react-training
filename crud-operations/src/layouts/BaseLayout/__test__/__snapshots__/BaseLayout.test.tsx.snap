@@ -8,14 +8,14 @@ exports[`BaseLayout Component renders correctly 1`] = `
     <div
       class="chakra-stack css-13hpm2o"
     >
-      <a
+      <button
         class="chakra-link css-1mgm4dv"
         data-testid="brand-logo"
       >
         <h2
           class="chakra-heading css-qis5cd"
         />
-      </a>
+      </button>
       <div
         class="chakra-stack css-1w47v7o"
       >
