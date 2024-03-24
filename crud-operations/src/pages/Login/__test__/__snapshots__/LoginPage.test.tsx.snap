@@ -11,7 +11,7 @@ exports[`LoginPage Component renders correctly 1`] = `
       <div
         class="chakra-card css-2svjbt"
       >
-        <a
+        <button
           class="chakra-link css-pqilmp"
           data-testid="brand-logo"
         >
@@ -20,7 +20,7 @@ exports[`LoginPage Component renders correctly 1`] = `
           >
             crud operations
           </h2>
-        </a>
+        </button>
         <h2
           class="chakra-heading css-1omxs99"
         >
@@ -81,7 +81,7 @@ exports[`LoginPage Component renders correctly 1`] = `
           class="chakra-text css-1178ru4"
         >
           Forgot your password? 
-          <a
+          <button
             class="chakra-link css-bo1wqf"
           >
             <span
@@ -89,7 +89,7 @@ exports[`LoginPage Component renders correctly 1`] = `
             >
               Reset Password
             </span>
-          </a>
+          </button>
         </p>
       </div>
     </div>
