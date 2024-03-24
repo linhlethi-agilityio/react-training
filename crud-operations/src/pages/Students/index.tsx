@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react';
-import { Box, Button, Flex, HStack, Heading, Icon, Spinner, Text, useDisclosure } from '@chakra-ui/react';
+import { Avatar, Box, Button, Flex, HStack, Heading, Icon, Spinner, Text, useDisclosure } from '@chakra-ui/react';
 
 // Icons
 import { PenIcon, SortIcon, TrashIcon } from '@icons';
@@ -57,11 +57,7 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
 
   const studentsColumns: TableColumn<Student>[] = [
     {
-      accessor: (data: Student) => (
-        <Flex w={65} h={55}>
-          <Box as="img" src="public/avatar.webp" alt={`avatar-${data.name}`} borderRadius={8} />
-        </Flex>
-      ),
+      accessor: () => <Avatar w={65} h={55} borderRadius={8} />,
     },
     {
       header: 'Name',
