@@ -69,7 +69,9 @@ exports[`LoginPage Component renders correctly 1`] = `
             />
           </div>
           <button
+            aria-label="sign-in"
             class="chakra-button css-1ib6x77"
+            disabled=""
             type="button"
           >
             Sign in

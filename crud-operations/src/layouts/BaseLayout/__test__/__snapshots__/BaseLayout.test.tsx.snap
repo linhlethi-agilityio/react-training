@@ -58,8 +58,8 @@ exports[`BaseLayout Component renders correctly 1`] = `
           <div
             class="chakra-stack css-1kae02p"
           >
-            <a
-              class="chakra-link chakra-stack css-1img8g8"
+            <div
+              class="chakra-stack css-8vp5on"
               data-testid="sidebar-item-Home"
             >
               <div
@@ -99,9 +99,9 @@ exports[`BaseLayout Component renders correctly 1`] = `
               >
                 Home
               </p>
-            </a>
-            <a
-              class="chakra-link chakra-stack css-1pcmnwy"
+            </div>
+            <div
+              class="chakra-stack css-oph79"
               data-testid="sidebar-item-Course"
             >
               <div
@@ -141,9 +141,10 @@ exports[`BaseLayout Component renders correctly 1`] = `
               >
                 Course
               </p>
-            </a>
+            </div>
           </div>
           <button
+            aria-label="logout"
             class="chakra-button css-4xx2wk"
             data-testid="logout-button"
             type="button"

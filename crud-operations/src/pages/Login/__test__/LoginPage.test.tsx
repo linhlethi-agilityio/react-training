@@ -100,7 +100,7 @@ describe('LoginPage Component', () => {
 
       mockLoginWithEmailPassword.mockResolvedValue(mockReturnValue);
 
-      const button = getByRole('button', { name: 'Sign in' });
+      const button = getByRole('button', { name: 'sign-in' });
 
       fireEvent.click(button);
     });
