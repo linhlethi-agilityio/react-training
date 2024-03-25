@@ -32,6 +32,14 @@ Crud operations is a system management users with base features are: crud studen
 - `pnpm run dev`
 - open localhost to view it in the browser
 
+### Run Storybook
+
+- `pnpm run storybook`
+
+### Run Unit Test
+
+- `pnpm run test`
+
 ## TECH STACKS
 
 ### Frameworks & Libraries
