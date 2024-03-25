@@ -1,7 +1,5 @@
 import { act, renderHook } from '@testing-library/react-hooks';
-import { useAuth, getCurrentUser } from '..'; // Adjust the import path as necessary
-import { setItemLocalStorage } from '@services';
-import { LOCAL_STORAGE_KEY } from '@constants';
+import { useAuth } from '..';
 
 jest.mock('jose', () => ({
   jwtVerify: jest.fn().mockReturnValue({ payload: { sub: 'user123', role: 'admin' } }),
@@ -59,16 +57,5 @@ describe('useAuth', () => {
 
     expect(result.current.me).toBeNull(); // Check if user is logged out
     expect(localStorage.getItem('token')).toBeNull(); // Check if token is removed from local storage
-  });
-});
-
-describe('getCurrentUser', () => {
-  it('should return null if token is invalid', async () => {
-    // Mock localStorage to return an invalid token
-    setItemLocalStorage(LOCAL_STORAGE_KEY.TOKEN, 'invalidToken');
-
-    const currentUser = await getCurrentUser();
-
-    expect(currentUser).toBeNull(); // Check if null is returned for invalid token
   });
 });

@@ -8,7 +8,7 @@ interface CustomModalProps {
   children: ReactNode;
 }
 
-const CustomModal = ({ isOpen, onClose, children, title }: CustomModalProps) => (
+const CustomModal = ({ isOpen, children, title, onClose }: CustomModalProps) => (
   <Modal isOpen={isOpen} onClose={onClose} isCentered>
     <ModalOverlay />
     <ModalContent opacity={0.6}>

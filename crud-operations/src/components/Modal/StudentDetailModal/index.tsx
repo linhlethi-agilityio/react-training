@@ -33,7 +33,7 @@ const initFormData = {
   dateOfAdmission: '',
 };
 
-const StudentDetailModal = ({ isOpen, previewData, onClose }: StudentModalDetailModalProps) => {
+const StudentDetailModal = ({ isOpen, previewData = null, onClose }: StudentModalDetailModalProps) => {
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 
   const { createStudent, updateStudent, isLoading: isLoadingStudent } = useStudents();

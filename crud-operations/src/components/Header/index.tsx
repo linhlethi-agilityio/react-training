@@ -13,7 +13,7 @@ interface HeaderProps {
   onSearch: (keyword: string) => void;
 }
 
-const Header = ({ isClosedSideBar, onToggleSideBar, onSearch }: HeaderProps) => {
+const Header = ({ isClosedSideBar = false, onToggleSideBar, onSearch }: HeaderProps) => {
   const [searchValue, setSearchValue] = useState<string>('');
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {

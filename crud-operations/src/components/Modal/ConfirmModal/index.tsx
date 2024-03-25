@@ -8,9 +8,9 @@ interface ConfirmModalProps {
   isOpen: boolean;
   description: string;
   buttonLabel: string;
+  title: string;
   onConfirm?: () => void;
   onCancel: () => void;
-  title: string;
 }
 
 const ConfirmModal = ({ isOpen, onCancel, title, onConfirm, description, buttonLabel }: ConfirmModalProps) => (
