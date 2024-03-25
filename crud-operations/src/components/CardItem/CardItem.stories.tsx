@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-// Icons
-import { SquareIcon } from '@icons';
-
 // Components
 import CardItem from '.';
+import { SquareIcon } from '@components';
 
 const meta: Meta<typeof CardItem> = {
   component: CardItem,

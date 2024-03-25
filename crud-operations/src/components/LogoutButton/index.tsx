@@ -1,8 +1,8 @@
 import { memo } from 'react';
 import { Button, Icon } from '@chakra-ui/react';
 
-// Icons
-import { LogoutIcon } from '@icons';
+// Components
+import { LogoutIcon } from '@components';
 
 interface LogoutButtonProps {
   text?: string;

@@ -10,6 +10,9 @@ export { default as LogoutButton } from './LogoutButton';
 // Layouts
 export { default as BaseLayout } from '../layouts/BaseLayout';
 
+// Icons
+export * from './Icons';
+
 // Table
 export { default as Table } from './Table';
 export { default as TableCell } from './TableCell';
