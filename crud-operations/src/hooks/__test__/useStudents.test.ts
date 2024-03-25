@@ -100,7 +100,7 @@ describe('useStudents', () => {
     expect(result.current.students).toEqual([...mockStudents, newStudentData]);
   });
 
-  it.skip('should update an existing student', async () => {
+  it('should update an existing student', async () => {
     // Mock the return value of useSWR
     (useSWR as jest.Mock).mockReturnValueOnce({
       data: mockStudents,
@@ -126,7 +126,7 @@ describe('useStudents', () => {
     // Call updateStudent
     await result.current.updateStudent({
       enrollNumber: '54547',
-      name: 'update name 8',
+      name: 'name 8',
       avatarUrl: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/956.jpg',
       phone: '7305477760',
       email: 'Carson31@gmail.com',
@@ -138,7 +138,7 @@ describe('useStudents', () => {
     expect(result.current.students).toEqual([
       {
         enrollNumber: '54547',
-        name: 'update name 8',
+        name: 'name 8',
         avatarUrl: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/956.jpg',
         phone: '7305477760',
         email: 'Carson31@gmail.com',
