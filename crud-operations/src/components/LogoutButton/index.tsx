@@ -10,7 +10,7 @@ interface LogoutButtonProps {
   onLogout: () => void;
 }
 
-const LogoutButton = ({ text = 'Logout', isShorter, onLogout }: LogoutButtonProps) => (
+const LogoutButton = ({ text = 'Logout', isShorter = false, onLogout }: LogoutButtonProps) => (
   <Button
     aria-label="logout"
     data-testId="logout-button"

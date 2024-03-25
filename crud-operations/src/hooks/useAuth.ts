@@ -46,18 +46,6 @@ const verifyEmailAndPassword = async (emailInput: string, passwordInput: string)
   }
 };
 
-/**
- * @deprecated Moved to useAuth, please don't use it
- */
-export const getCurrentUser = async () => {
-  const jwtToken = getItemLocalStorage(LOCAL_STORAGE_KEY.TOKEN);
-  try {
-    return await verifyJWT(jwtToken, ENVS.VITE_SECRET_KEY);
-  } catch (error) {
-    return null;
-  }
-};
-
 export const useAuth = () => {
   const [errorMessage, setErrorMessage] = useState('');
   const [me, setMe] = useState<Me | null>(null);
