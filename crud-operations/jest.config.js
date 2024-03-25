@@ -23,7 +23,7 @@ export default {
     '^.+\\.[t|j]sx?$': 'babel-jest',
   },
   coveragePathIgnorePatterns: [
-    '<rootDir>/src/icons/',
+    '<rootDir>/src/components/Icons/',
     '<rootDir>/src/constants/',
     '<rootDir>/src/themes/',
     '<rootDir>/src/types/',

@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-// Icons
-import { PaymentIcon } from '@icons';
-
 // Components
 import SideBarItem from '.';
+import { PaymentIcon } from '@components';
 
 const meta: Meta<typeof SideBarItem> = {
   component: SideBarItem,

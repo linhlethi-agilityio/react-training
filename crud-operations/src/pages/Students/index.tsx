@@ -1,9 +1,6 @@
 import { useCallback, useState } from 'react';
 import { Avatar, Box, Button, Flex, HStack, Heading, Icon, Spinner, Text, useDisclosure } from '@chakra-ui/react';
 
-// Icons
-import { PenIcon, SortIcon, TrashIcon } from '@icons';
-
 // Types
 import { Student } from '@types';
 
@@ -14,7 +11,7 @@ import { useStudents, useToastCustom } from '@hooks';
 import { formatDate } from '@utils';
 
 // Components
-import { ConfirmModal, StudentDetailModal, Table } from '@components';
+import { ConfirmModal, StudentDetailModal, Table, PenIcon, SortIcon, TrashIcon } from '@components';
 import { TableColumn } from 'src/components/Table';
 
 interface StudentsPageProps {
@@ -172,16 +169,12 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
             <Box textAlign="center" mt={10}>
               <Spinner size="lg" />
             </Box>
+          ) : formattedStudents?.length ? (
+            <Table<Student> columns={studentsColumns} data={formattedStudents || []} />
           ) : (
-            <>
-              {formattedStudents?.length ? (
-                <Table<Student> columns={studentsColumns} data={formattedStudents || []} />
-              ) : (
-                <Text textAlign="center" mt={20} fontSize="md">
-                  No record not found!
-                </Text>
-              )}
-            </>
+            <Text textAlign="center" mt={20} fontSize="md">
+              No record not found!
+            </Text>
           )}
         </Box>
       </Box>

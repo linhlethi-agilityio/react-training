@@ -1,11 +1,11 @@
-// Icons
-import { BookmarkIcon, GraduationSmallIcon, HomeIcon, PaymentIcon, ReportIcon, SettingIcon } from '@icons';
-
 // Routers
 import { ROUTERS } from './routes';
 
 // Pages
 import { DashboardPage, PaymentsPage, StudentsPage } from '@pages';
+
+// Components
+import { BookmarkIcon, GraduationSmallIcon, HomeIcon, PaymentIcon, ReportIcon, SettingIcon } from '@components';
 
 export const SIDEBAR_NAVIGATION = [
   {

@@ -1,9 +1,6 @@
 import { useCallback, useState } from 'react';
 import { Box, Button, Flex, Heading, Icon, Spinner, Text, useDisclosure } from '@chakra-ui/react';
 
-// Icons
-import { EyeIcon, SortIcon } from '@icons';
-
 // Types
 import { Payment } from '@types';
 import { TableColumn } from 'src/components/Table';
@@ -15,7 +12,7 @@ import { usePayments } from '@hooks';
 import { formatDate } from '@utils';
 
 // Components
-import { PaymentDetailModal, Table } from '@components';
+import { PaymentDetailModal, Table, EyeIcon, SortIcon } from '@components';
 
 interface PaymentsPageProps {
   keyword: string;
@@ -128,16 +125,12 @@ const PaymentPage = ({ keyword }: PaymentsPageProps) => {
             <Box textAlign="center" mt={10}>
               <Spinner size="lg" />
             </Box>
+          ) : formattedPayments?.length ? (
+            <Table isStriped columns={paymentColumns} data={formattedPayments || []} />
           ) : (
-            <>
-              {formattedPayments?.length ? (
-                <Table isStriped columns={paymentColumns} data={formattedPayments || []} />
-              ) : (
-                <Text textAlign="center" mt={20} fontSize="md">
-                  No record not found!
-                </Text>
-              )}
-            </>
+            <Text textAlign="center" mt={20} fontSize="md">
+              No record not found!
+            </Text>
           )}
         </Box>
       </Box>

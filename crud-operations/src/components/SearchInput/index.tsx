@@ -1,8 +1,8 @@
 import { memo } from 'react';
 import { Input, InputProps, InputGroup, InputRightElement } from '@chakra-ui/react';
 
-// Icons
-import { SearchIcon } from '@icons';
+// Components
+import { SearchIcon } from '@components';
 
 interface SearchInputProps extends InputProps {
   placeholder?: string;

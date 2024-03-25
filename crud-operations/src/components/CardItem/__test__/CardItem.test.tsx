@@ -1,11 +1,9 @@
 import { render } from '@test-utils';
 import '@testing-library/jest-dom';
 
-// Icons
-import { SquareIcon } from '@icons';
-
 // Components
 import CardItem from '..';
+import { SquareIcon } from '@components';
 
 const mockProps = {
   cardColor: 'background.cardPayment',

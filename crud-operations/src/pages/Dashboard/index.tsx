@@ -1,14 +1,11 @@
 import { useMemo } from 'react';
 import { Flex } from '@chakra-ui/react';
 
-// Icons
-import { BookmarkMediumIcon, GraduationIcon, SquareIcon, UserIcon } from '@icons';
-
 // Hooks
 import { usePayments, useStudents } from '@hooks';
 
 // Components
-import { CardItem } from '@components';
+import { CardItem, BookmarkMediumIcon, GraduationIcon, SquareIcon, UserIcon } from '@components';
 
 const DashboardPage = () => {
   const { payments } = usePayments();

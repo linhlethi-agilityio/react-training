@@ -1,11 +1,9 @@
 import { render } from '@test-utils';
 import '@testing-library/jest-dom';
 
-// Icons
-import { PaymentIcon } from '@icons';
-
 // Components
 import SideBarItem from '..';
+import { PaymentIcon } from '@components';
 
 const mockProps = {
   isFocused: false,

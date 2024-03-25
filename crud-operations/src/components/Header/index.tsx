@@ -1,11 +1,8 @@
 import { memo, useState } from 'react';
 import { Button, Flex, Icon } from '@chakra-ui/react';
 
-// Icons
-import { BellIcon, CaretIcon } from '@icons';
-
 // Components
-import { SearchInput } from '@components';
+import { SearchInput, BellIcon, CaretIcon } from '@components';
 
 interface HeaderProps {
   isClosedSideBar?: boolean;
