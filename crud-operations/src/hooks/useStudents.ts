@@ -18,7 +18,6 @@ export const useStudents = () => {
     try {
       const response: Student = await post(studentsEndPoint, {
         ...newStudent,
-        avatarUrl: 'https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg',
       });
 
       // Optimistically update the local data without waiting for the server response

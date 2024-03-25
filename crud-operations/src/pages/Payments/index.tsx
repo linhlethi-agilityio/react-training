@@ -25,12 +25,11 @@ enum SortType {
 
 const PaymentPage = ({ keyword }: PaymentsPageProps) => {
   const [previewData, setPreviewData] = useState<Payment | null>(null);
+  const [sortType, setSortType] = useState<string>('');
 
   const { payments, isLoading } = usePayments();
-
   const { isOpen: isOpenPaymentDetail, onOpen: onOpenPaymentDetail, onClose: onClosePaymentDetail } = useDisclosure();
 
-  const [sortType, setSortType] = useState<string>('');
   const handleOnSort = useCallback(() => {
     if (!sortType) {
       return setSortType(SortType.Ascending);
