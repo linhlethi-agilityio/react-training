@@ -1,4 +1,4 @@
-import { memo, useState } from 'react';
+import { memo, useCallback, useState } from 'react';
 import { Button, Flex, Icon } from '@chakra-ui/react';
 
 // Components
@@ -13,12 +13,15 @@ interface HeaderProps {
 const Header = ({ isClosedSideBar = false, onToggleSideBar, onSearch }: HeaderProps) => {
   const [searchValue, setSearchValue] = useState<string>('');
 
-  const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const textInputted = e.target.value;
+  const handleOnChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      const textInputted = e.target.value;
 
-    setSearchValue(textInputted);
-    onSearch(textInputted);
-  };
+      setSearchValue(textInputted);
+      onSearch(textInputted);
+    },
+    [onSearch],
+  );
 
   return (
     <Flex justifyContent="space-between" alignItems="center" padding={3}>

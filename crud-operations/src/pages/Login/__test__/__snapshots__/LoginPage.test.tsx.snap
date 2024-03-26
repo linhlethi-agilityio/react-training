@@ -78,7 +78,7 @@ exports[`LoginPage Component renders correctly 1`] = `
           </button>
         </div>
         <p
-          class="chakra-text css-1178ru4"
+          class="chakra-text css-167s4vc"
         >
           Forgot your password? 
           <button

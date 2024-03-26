@@ -11,6 +11,9 @@ const DashboardPage = () => {
   const { payments = [] } = usePayments();
   const { students = [] } = useStudents();
 
+  /**
+   * Func Calculate Total Amount Paid
+   */
   const calculateTotalAmountPaid = useMemo(() => {
     return payments.reduce((total, payment) => total + payment.amountPaid, 0) || 0;
   }, [payments]);

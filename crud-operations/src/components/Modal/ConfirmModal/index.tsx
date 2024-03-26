@@ -13,7 +13,7 @@ interface ConfirmModalProps {
   onCancel: () => void;
 }
 
-const ConfirmModal = ({ isOpen, onCancel, title, onConfirm, description, buttonLabel }: ConfirmModalProps) => (
+const ConfirmModal = ({ isOpen, title, description, buttonLabel, onCancel, onConfirm }: ConfirmModalProps) => (
   <CustomModal isOpen={isOpen} onClose={onCancel} title={title}>
     <Box paddingBottom={30}>
       <Text textAlign="center">{description}</Text>

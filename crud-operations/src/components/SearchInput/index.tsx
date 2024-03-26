@@ -6,8 +6,8 @@ import { SearchIcon } from '@components';
 
 interface SearchInputProps extends InputProps {
   placeholder?: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const SearchInput = ({ placeholder = 'Start typing...', onChange, value, ...rest }: SearchInputProps) => (
