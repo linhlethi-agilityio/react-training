@@ -1,9 +1,12 @@
 import { useCallback, useState } from 'react';
 import { Box, Button, Flex, Heading, Icon, Spinner, Text, useDisclosure } from '@chakra-ui/react';
 
+// Constants
+import { ASCENDING, DESCENDING } from '@constants';
+
 // Types
 import { Payment } from '@types';
-import { TableColumn } from 'src/components/Table';
+import { TableColumnType } from 'src/components/Table';
 
 // Hooks
 import { usePayments } from '@hooks';
@@ -18,11 +21,6 @@ interface PaymentsPageProps {
   keyword: string;
 }
 
-enum SortType {
-  Ascending = 'ascending',
-  Descending = 'descending',
-}
-
 const PaymentPage = ({ keyword }: PaymentsPageProps) => {
   const [previewData, setPreviewData] = useState<Payment | null>(null);
   const [sortType, setSortType] = useState<string>('');
@@ -35,15 +33,15 @@ const PaymentPage = ({ keyword }: PaymentsPageProps) => {
    */
   const handleSort = useCallback(() => {
     if (!sortType) {
-      return setSortType(SortType.Ascending);
+      return setSortType(ASCENDING);
     }
 
     if (sortType) {
-      if (sortType === SortType.Descending) {
+      if (sortType === DESCENDING) {
         return setSortType('');
       }
 
-      setSortType(sortType === SortType.Ascending ? SortType.Descending : SortType.Ascending);
+      setSortType(sortType === ASCENDING ? DESCENDING : ASCENDING);
     }
   }, [sortType]);
 
@@ -56,15 +54,13 @@ const PaymentPage = ({ keyword }: PaymentsPageProps) => {
     .filter((payment) => JSON.stringify(Object.values(payment)).toLowerCase().includes(keyword.toLowerCase()))
     .sort((prev, next) => {
       if (sortType) {
-        return sortType === SortType.Ascending
-          ? prev.name.localeCompare(next.name)
-          : next.name.localeCompare(prev.name);
+        return sortType === ASCENDING ? prev.name.localeCompare(next.name) : next.name.localeCompare(prev.name);
       }
 
       return 1;
     });
 
-  const paymentColumns: TableColumn<Payment>[] = [
+  const paymentColumns: TableColumnType<Payment>[] = [
     {
       header: 'Name',
       accessor: 'name',
@@ -119,7 +115,7 @@ const PaymentPage = ({ keyword }: PaymentsPageProps) => {
         <Flex justifyContent="space-between" alignItems="center" borderBottomWidth={1} pb={3}>
           <Heading size="md">Payment Details</Heading>
           <Button aria-label="sort" data-testid="sort-button" variant="ghost" onClick={handleSort}>
-            <SortIcon isUp={sortType === SortType.Ascending} isDown={sortType === SortType.Descending} />
+            <SortIcon isUp={sortType === ASCENDING} isDown={sortType === DESCENDING} />
           </Button>
         </Flex>
         <Box>

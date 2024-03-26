@@ -6,14 +6,14 @@ import { TableCell, TableRow } from '@components';
 
 export type TTableAccessor<T> = ((item: T, inputProps?: object) => ReactNode) | keyof T;
 
-export interface TableColumn<T> {
+export interface TableColumnType<T> {
   fieldName?: string;
   accessor: TTableAccessor<T>;
   header?: string;
 }
 
 interface CustomTableProps<T> {
-  columns: TableColumn<T>[];
+  columns: TableColumnType<T>[];
   isStriped?: boolean;
   data: T[];
 }

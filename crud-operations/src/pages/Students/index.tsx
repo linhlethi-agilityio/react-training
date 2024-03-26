@@ -1,6 +1,9 @@
 import { useCallback, useState } from 'react';
 import { Avatar, Box, Button, Flex, HStack, Heading, Icon, Spinner, Text, useDisclosure } from '@chakra-ui/react';
 
+// Constants
+import { ASCENDING, DESCENDING } from '@constants';
+
 // Types
 import { Student } from '@types';
 
@@ -10,17 +13,14 @@ import { useStudents, useToastCustom } from '@hooks';
 // Utils
 import { formatDate } from '@utils';
 
+// Types
+import { TableColumnType } from 'src/components/Table';
+
 // Components
 import { ConfirmModal, StudentDetailModal, Table, PenIcon, SortIcon, TrashIcon } from '@components';
-import { TableColumn } from 'src/components/Table';
 
 interface StudentsPageProps {
   keyword: string;
-}
-
-enum SortType {
-  Ascending = 'ascending',
-  Descending = 'descending',
 }
 
 const StudentsPage = ({ keyword }: StudentsPageProps) => {
@@ -41,15 +41,13 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
     .filter((student) => JSON.stringify(Object.values(student)).toLowerCase().includes(keyword.toLowerCase()))
     .sort((prev, next) => {
       if (sortType) {
-        return sortType === SortType.Ascending
-          ? prev.name.localeCompare(next.name)
-          : next.name.localeCompare(prev.name);
+        return sortType === ASCENDING ? prev.name.localeCompare(next.name) : next.name.localeCompare(prev.name);
       }
 
       return 1;
     });
 
-  const studentsColumns: TableColumn<Student>[] = [
+  const studentsColumns: TableColumnType<Student>[] = [
     {
       accessor: () => <Avatar w={65} h={55} borderRadius={8} />,
     },
@@ -139,15 +137,15 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
 
   const handleSort = useCallback(() => {
     if (!sortType) {
-      return setSortType(SortType.Ascending);
+      return setSortType(ASCENDING);
     }
 
     if (sortType) {
-      if (sortType === SortType.Descending) {
+      if (sortType === DESCENDING) {
         return setSortType('');
       }
 
-      setSortType(sortType === SortType.Ascending ? SortType.Descending : SortType.Ascending);
+      setSortType(sortType === ASCENDING ? DESCENDING : ASCENDING);
     }
   }, [sortType]);
 
@@ -163,7 +161,7 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
           <Heading size="md">Students List</Heading>
           <Flex gap={1}>
             <Button aria-label="sort" variant="ghost" onClick={handleSort}>
-              <SortIcon isUp={sortType === SortType.Ascending} isDown={sortType === SortType.Descending} />
+              <SortIcon isUp={sortType === ASCENDING} isDown={sortType === DESCENDING} />
             </Button>
             <Button aria-label="add-student" onClick={handleAddNewStudent}>
               Add new student
