@@ -171,7 +171,7 @@ const LoginPage = () => {
               Sign in
             </Button>
           </FormControl>
-          <Text mt={27}>
+          <Text color="text.default" mt={27}>
             Forgot your password?&nbsp;
             <Link as="button" color="primary" textDecoration="underline" _hover={{ textDecoration: 'underline' }}>
               <Text as="span">Reset Password</Text>
