@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import { useState } from 'react';
 import { Box, Button, Flex, Heading, Icon, Spinner, Text, useDisclosure } from '@chakra-ui/react';
 
 // Constants
@@ -31,7 +31,7 @@ const PaymentPage = ({ keyword }: PaymentsPageProps) => {
   /**
    * Func sort payments
    */
-  const handleSort = useCallback(() => {
+  const handleSort = () => {
     if (!sortType) {
       return setSortType(ASCENDING);
     }
@@ -43,7 +43,7 @@ const PaymentPage = ({ keyword }: PaymentsPageProps) => {
 
       setSortType(sortType === ASCENDING ? DESCENDING : ASCENDING);
     }
-  }, [sortType]);
+  };
 
   const formattedPayments: Payment[] | undefined = payments
     ?.map((payment) => ({
@@ -91,7 +91,7 @@ const PaymentPage = ({ keyword }: PaymentsPageProps) => {
           aria-label="payment-detail-button"
           data-testid="payment-detail-button-icon"
           variant="ghost"
-          onClick={() => handleOpenPaymentDetailModal(data.id)}
+          onClick={() => openPaymentDetailModal(data.id)}
         >
           <Icon as={EyeIcon} />
         </Button>
@@ -99,7 +99,7 @@ const PaymentPage = ({ keyword }: PaymentsPageProps) => {
     },
   ];
 
-  const handleOpenPaymentDetailModal = (selectedId: string) => {
+  const openPaymentDetailModal = (selectedId: string) => {
     const currentPayment = formattedPayments?.find(({ id }) => id === selectedId);
 
     onOpenPaymentDetail();
@@ -132,6 +132,7 @@ const PaymentPage = ({ keyword }: PaymentsPageProps) => {
           )}
         </Box>
       </Box>
+
       {isOpenPaymentDetail && (
         <PaymentDetailModal previewData={previewData} isOpen={isOpenPaymentDetail} onClose={onClosePaymentDetail} />
       )}

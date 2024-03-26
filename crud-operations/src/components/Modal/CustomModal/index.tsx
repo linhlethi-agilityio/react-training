@@ -3,9 +3,9 @@ import { Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, ModalOve
 
 interface CustomModalProps {
   isOpen: boolean;
-  onClose: () => void;
   title: string;
   children: ReactNode;
+  onClose: () => void;
 }
 
 const CustomModal = ({ isOpen, children, title, onClose }: CustomModalProps) => (

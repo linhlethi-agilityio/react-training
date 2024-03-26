@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Controller, useForm } from 'react-hook-form';
 import {
@@ -56,21 +56,18 @@ const LoginPage = () => {
   /**
    * Func handle login
    */
-  const handleLogin = useCallback(
-    async ({ email, password }: LoginFormData) => {
-      const loginResponse = await loginWithEmailPassword(email, password);
-      if (loginResponse) {
-        navigate(ROUTERS.DASHBOARD);
-      } else {
-        toast({
-          title: ERROR_MESSAGES.LOGIN_FAILED,
-          description: ERROR_MESSAGES.USER_NOT_FOUND,
-          status: 'error',
-        });
-      }
-    },
-    [loginWithEmailPassword, navigate, toast],
-  );
+  const handleLogin = async ({ email, password }: LoginFormData) => {
+    const loginResponse = await loginWithEmailPassword(email, password);
+    if (loginResponse) {
+      navigate(ROUTERS.DASHBOARD);
+    } else {
+      toast({
+        title: ERROR_MESSAGES.LOGIN_FAILED,
+        description: ERROR_MESSAGES.USER_NOT_FOUND,
+        status: 'error',
+      });
+    }
+  };
 
   useEffect(() => {
     const handleValidate = async () => {

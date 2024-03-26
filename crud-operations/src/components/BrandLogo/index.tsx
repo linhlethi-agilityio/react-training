@@ -13,7 +13,7 @@ interface BrandLogoProps {
   onClick: () => void;
 }
 
-const BrandLogo = ({ size = 'sm', isAcronym, onClick }: BrandLogoProps) => (
+const BrandLogo = ({ size = 'sm', isAcronym = false, onClick }: BrandLogoProps) => (
   <Link
     as="button"
     w="fit-content"

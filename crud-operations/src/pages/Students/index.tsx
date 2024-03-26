@@ -96,7 +96,7 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
   ];
 
   /**
-   * Func Delete Student
+   * Func delete student
    */
   const handleDeleteStudent = useCallback(() => {
     onCloseConfirm();
@@ -135,6 +135,9 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
     }
   };
 
+  /**
+   * Func sort student
+   */
   const handleSort = useCallback(() => {
     if (!sortType) {
       return setSortType(ASCENDING);
@@ -149,7 +152,10 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
     }
   }, [sortType]);
 
-  const handleAddNewStudent = useCallback(() => {
+  /**
+   * Func add student
+   */
+  const handleAddStudent = useCallback(() => {
     onOpenAddStudent();
     setPreviewData(null);
   }, [onOpenAddStudent]);
@@ -163,7 +169,7 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
             <Button aria-label="sort" variant="ghost" onClick={handleSort}>
               <SortIcon isUp={sortType === ASCENDING} isDown={sortType === DESCENDING} />
             </Button>
-            <Button aria-label="add-student" onClick={handleAddNewStudent}>
+            <Button aria-label="add-student" onClick={handleAddStudent}>
               Add new student
             </Button>
           </Flex>
