@@ -2,7 +2,7 @@ import type { Meta } from '@storybook/react';
 import { Avatar } from '@chakra-ui/react';
 
 // Components
-import Table, { TableColumn } from '.';
+import Table, { TableColumnType } from '.';
 import { Student } from '@types';
 
 const meta: Meta<typeof Table> = {
@@ -11,7 +11,7 @@ const meta: Meta<typeof Table> = {
 
 export default meta;
 
-const columnsTable: TableColumn<Student>[] = [
+const columnsTable: TableColumnType<Student>[] = [
   {
     accessor: () => <Avatar w={65} h={55} borderRadius={8} />,
   },
