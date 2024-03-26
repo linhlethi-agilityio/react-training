@@ -8,11 +8,11 @@ import { usePayments, useStudents } from '@hooks';
 import { CardItem, BookmarkMediumIcon, GraduationIcon, SquareIcon, UserIcon } from '@components';
 
 const DashboardPage = () => {
-  const { payments } = usePayments();
-  const { students } = useStudents();
+  const { payments = [] } = usePayments();
+  const { students = [] } = useStudents();
 
   const calculateTotalAmountPaid = useMemo(() => {
-    return (payments || []).reduce((total, payment) => total + payment.amountPaid, 0) || 0;
+    return payments.reduce((total, payment) => total + payment.amountPaid, 0) || 0;
   }, [payments]);
 
   const dashboardItems = [
@@ -20,7 +20,7 @@ const DashboardPage = () => {
       name: 'Students',
       icon: <GraduationIcon />,
       cardColor: 'background.cardStudent',
-      count: (students || []).length,
+      count: students.length,
     },
     {
       name: 'Course',

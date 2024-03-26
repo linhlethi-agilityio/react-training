@@ -38,6 +38,7 @@ const LoginPage = () => {
   const navigate = useNavigate();
   const toast = useToastCustom();
   const { loginWithEmailPassword, getCurrentUser } = useAuth();
+
   const {
     control,
     formState: { errors, isValid },
@@ -52,6 +53,9 @@ const LoginPage = () => {
     },
   });
 
+  /**
+   * Func handle login
+   */
   const handleLogin = useCallback(
     async ({ email, password }: LoginFormData) => {
       const loginResponse = await loginWithEmailPassword(email, password);
@@ -96,7 +100,10 @@ const LoginPage = () => {
           <Text mt={2} color="text.default">
             Enter your credentials to access your account
           </Text>
+
+          {/* Login Form */}
           <FormControl mt={50}>
+            {/* Email */}
             <Controller
               name="email"
               control={control}
@@ -127,6 +134,8 @@ const LoginPage = () => {
                 </Box>
               )}
             />
+
+            {/* Password */}
             <Controller
               name="password"
               control={control}
