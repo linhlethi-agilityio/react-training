@@ -28,9 +28,10 @@ interface BaseLayoutProps {
 }
 
 const BaseLayout = ({ onSearch }: BaseLayoutProps) => {
+  const [sideBarState, setSideBarState] = useState('');
+
   const navigate = useNavigate();
   const toast = useToastCustom();
-  const [sideBarState, setSideBarState] = useState('');
   const { logout, getCurrentUser } = useAuth();
 
   useEffect(() => {
@@ -67,6 +68,7 @@ const BaseLayout = ({ onSearch }: BaseLayoutProps) => {
 
   const handleLogout = useCallback(() => {
     logout();
+
     navigate(ROUTERS.LOGIN);
   }, [logout, navigate]);
 

@@ -27,10 +27,13 @@ const PaymentPage = ({ keyword }: PaymentsPageProps) => {
   const [previewData, setPreviewData] = useState<Payment | null>(null);
   const [sortType, setSortType] = useState<string>('');
 
-  const { payments, isLoading } = usePayments();
+  const { payments = [], isLoading } = usePayments();
   const { isOpen: isOpenPaymentDetail, onOpen: onOpenPaymentDetail, onClose: onClosePaymentDetail } = useDisclosure();
 
-  const handleOnSort = useCallback(() => {
+  /**
+   * Func sort payments
+   */
+  const handleSort = useCallback(() => {
     if (!sortType) {
       return setSortType(SortType.Ascending);
     }
@@ -115,7 +118,7 @@ const PaymentPage = ({ keyword }: PaymentsPageProps) => {
       <Box mt={5}>
         <Flex justifyContent="space-between" alignItems="center" borderBottomWidth={1} pb={3}>
           <Heading size="md">Payment Details</Heading>
-          <Button aria-label="sort" data-testid="sort-button" variant="ghost" onClick={handleOnSort}>
+          <Button aria-label="sort" data-testid="sort-button" variant="ghost" onClick={handleSort}>
             <SortIcon isUp={sortType === SortType.Ascending} isDown={sortType === SortType.Descending} />
           </Button>
         </Flex>

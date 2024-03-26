@@ -24,15 +24,12 @@ enum SortType {
 }
 
 const StudentsPage = ({ keyword }: StudentsPageProps) => {
-  const { students, isLoading, deleteStudent } = useStudents();
   const [sortType, setSortType] = useState('');
-
   const [previewData, setPreviewData] = useState<Student | null>(null);
 
+  const { students, isLoading, deleteStudent } = useStudents();
   const { isOpen: isOpenAddStudent, onOpen: onOpenAddStudent, onClose: onCloseAddStudent } = useDisclosure();
-
   const { isOpen: isOpenConfirm, onOpen: onOpenConfirm, onClose: onCloseConfirm } = useDisclosure();
-
   const toast = useToastCustom();
 
   const formattedStudents: Student[] | undefined = students
@@ -100,6 +97,9 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
     },
   ];
 
+  /**
+   * Func Delete Student
+   */
   const handleDeleteStudent = useCallback(() => {
     onCloseConfirm();
 
@@ -113,6 +113,9 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
     });
   }, [deleteStudent, onCloseConfirm, previewData?.id, toast]);
 
+  /**
+   * Func open confirm delete student modal
+   */
   const openConfirmModal = (selectedId?: string) => {
     const currentStudent = formattedStudents?.find(({ id }) => id === selectedId);
 
@@ -122,6 +125,9 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
     }
   };
 
+  /**
+   * Func edit student
+   */
   const handleEditStudent = async (selectedId?: string) => {
     const currentStudent = formattedStudents?.find(({ id }) => id === selectedId);
 
@@ -131,7 +137,7 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
     }
   };
 
-  const handleOnSort = useCallback(() => {
+  const handleSort = useCallback(() => {
     if (!sortType) {
       return setSortType(SortType.Ascending);
     }
@@ -156,7 +162,7 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
         <Flex justifyContent="space-between" alignItems="center" borderBottomWidth={1} pb={3}>
           <Heading size="md">Students List</Heading>
           <Flex gap={1}>
-            <Button aria-label="sort" variant="ghost" onClick={handleOnSort}>
+            <Button aria-label="sort" variant="ghost" onClick={handleSort}>
               <SortIcon isUp={sortType === SortType.Ascending} isDown={sortType === SortType.Descending} />
             </Button>
             <Button aria-label="add-student" onClick={handleAddNewStudent}>
