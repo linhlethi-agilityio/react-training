@@ -207,40 +207,42 @@ const StudentDetailModal = ({ isOpen, previewData = null, onClose }: StudentModa
         />
 
         {/* Enroll number */}
-        <Controller
-          name="enrollNumber"
-          control={control}
-          rules={{
-            required: ERROR_MESSAGES.FIELD_REQUIRED,
-            minLength: { value: 10, message: ERROR_MESSAGES.INVALID_ENROLL_NUMBER },
-          }}
-          render={({ field: { name, onChange, ...rest }, fieldState: { error } }) => (
-            <Box marginBottom={error?.message ? 0 : 25}>
-              <FormLabel fontSize="sm" lineHeight="sm" color="text.default">
-                Enroll number
-              </FormLabel>
-              <Input
-                maxLength={10}
-                data-testid="enrollNumber"
-                isInvalid={!!error?.message}
-                onChange={(e) => {
-                  const value = e.target.value;
+        {isEditMode && (
+          <Controller
+            name="enrollNumber"
+            control={control}
+            rules={{
+              required: ERROR_MESSAGES.FIELD_REQUIRED,
+              minLength: { value: 10, message: ERROR_MESSAGES.INVALID_ENROLL_NUMBER },
+            }}
+            render={({ field: { name, onChange, ...rest }, fieldState: { error } }) => (
+              <Box marginBottom={error?.message ? 0 : 25}>
+                <FormLabel fontSize="sm" lineHeight="sm" color="text.default">
+                  Enroll number
+                </FormLabel>
+                <Input
+                  maxLength={10}
+                  data-testid="enrollNumber"
+                  isInvalid={!!error?.message}
+                  onChange={(e) => {
+                    const value = e.target.value;
 
-                  onChange(clearPhoneNumberFormat(value));
+                    onChange(clearPhoneNumberFormat(value));
 
-                  // Clear error message on change
-                  clearErrorOnChange(name, errors, clearErrors);
-                }}
-                {...rest}
-              />
-              {error?.message && (
-                <FormHelperText color="error" fontSize="xs" mb={1} textAlign="left">
-                  {error.message}
-                </FormHelperText>
-              )}
-            </Box>
-          )}
-        />
+                    // Clear error message on change
+                    clearErrorOnChange(name, errors, clearErrors);
+                  }}
+                  {...rest}
+                />
+                {error?.message && (
+                  <FormHelperText color="error" fontSize="xs" mb={1} textAlign="left">
+                    {error.message}
+                  </FormHelperText>
+                )}
+              </Box>
+            )}
+          />
+        )}
 
         {/* Date of admission */}
         <Controller

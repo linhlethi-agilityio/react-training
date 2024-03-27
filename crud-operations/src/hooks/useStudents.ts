@@ -6,6 +6,9 @@ import { get, post, put, remove } from '@services';
 // Constants
 import { API_ENDPOINTS, ENVS } from '@constants';
 
+// Utils
+import { generateRandomNumbers } from '@utils';
+
 // Types
 import { Student } from '@types';
 
@@ -18,6 +21,7 @@ export const useStudents = () => {
     try {
       const response: Student = await post(studentsEndPoint, {
         ...newStudent,
+        enrollNumber: generateRandomNumbers(),
       });
 
       // Optimistically update the local data without waiting for the server response

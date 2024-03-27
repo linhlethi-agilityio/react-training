@@ -104,42 +104,6 @@
   ],
   "students": [
     {
-      "enrollNumber": 4545474,
-      "name": "A ame 9",
-      "avatarUrl": "https://source.unsplash.com/random/50x50/?people",
-      "phone": "7305477760",
-      "email": "Ora.Ankunding@yahoo.com",
-      "dateOfAdmission": 981824400000,
-      "id": "1"
-    },
-    {
-      "enrollNumber": 54354354,
-      "name": "name 13",
-      "avatarUrl": "https://source.unsplash.com/random/50x50/?people",
-      "phone": "7305477760",
-      "email": "karthi@gmmail.com",
-      "dateOfAdmission": 1108141200000,
-      "id": "5"
-    },
-    {
-      "enrollNumber": "123456789",
-      "name": "John Smith",
-      "avatarUrl": "https://source.unsplash.com/random/50x50/?people",
-      "phone": "7305477760",
-      "email": "john-smit@gmail.com",
-      "dateOfAdmission": 1676134800000,
-      "id": "6"
-    },
-    {
-      "enrollNumber": "123456789",
-      "name": "John Smith",
-      "avatarUrl": "https://source.unsplash.com/random/50x50/?people",
-      "phone": "7305477760",
-      "email": "john-smit@gmail.com",
-      "dateOfAdmission": 1676134800000,
-      "id": "7"
-    },
-    {
       "id": "5a7a",
       "name": "Linh Le",
       "email": "lin@gmail.com",
@@ -153,6 +117,30 @@
       "email": "lin@gmail.com",
       "phone": "464-668-6787",
       "enrollNumber": "5467868678",
+      "dateOfAdmission": 1711411200000
+    },
+    {
+      "id": "87f7",
+      "name": "Linh Le",
+      "email": "admin@gmail.com",
+      "phone": "534-543-5435",
+      "enrollNumber": [3, 6, 5, 7, 9, 1, 0, 7, 1, 4],
+      "dateOfAdmission": 1710374400000
+    },
+    {
+      "name": "Linh Ne",
+      "email": "lin@gmail.com",
+      "phone": "654-654-6546",
+      "enrollNumber": "4103464645",
+      "dateOfAdmission": 1711386000000,
+      "id": "5bc5"
+    },
+    {
+      "id": "dba4",
+      "name": "Linh Linh",
+      "email": "lin455@gmail.com",
+      "phone": "353-464-5645",
+      "enrollNumber": "0775579351",
       "dateOfAdmission": 1711411200000
     }
   ],
