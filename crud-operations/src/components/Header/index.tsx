@@ -24,7 +24,7 @@ const Header = ({ isClosedSideBar = false, onToggleSideBar, onSearch }: HeaderPr
   );
 
   return (
-    <Flex justifyContent="space-between" alignItems="center" padding={3}>
+    <Flex justifyContent="space-between" alignItems="center" p={3}>
       <Button aria-label="toggle-sidebar" data-testid="toggle-sidebar-button" variant="ghost" onClick={onToggleSideBar}>
         <Icon
           as={CaretIcon}

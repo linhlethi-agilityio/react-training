@@ -57,7 +57,11 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
     },
     {
       header: 'Email',
-      accessor: 'email',
+      accessor: (data: Student) => (
+        <Text textOverflow="ellipsis" overflow="hidden" wordBreak="break-word">
+          {data.email}
+        </Text>
+      ),
     },
     {
       header: 'Phone',
@@ -138,7 +142,7 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
   /**
    * Func sort student
    */
-  const handleSort = useCallback(() => {
+  const handleSort = () => {
     if (!sortType) {
       return setSortType(ASCENDING);
     }
@@ -150,7 +154,7 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
 
       setSortType(sortType === ASCENDING ? DESCENDING : ASCENDING);
     }
-  }, [sortType]);
+  };
 
   /**
    * Func add student

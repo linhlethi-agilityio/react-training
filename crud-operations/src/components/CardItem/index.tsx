@@ -1,5 +1,5 @@
 import { ReactNode, memo } from 'react';
-import { Card, Heading, Text, Box, Flex } from '@chakra-ui/react';
+import { Card, Heading, Text, Box, Flex, Tooltip } from '@chakra-ui/react';
 
 interface CardItemProps {
   cardColor?: string;
@@ -20,21 +20,31 @@ const CardItem = ({
   name,
   icon,
 }: CardItemProps) => (
-  <Card bgColor={cardColor} padding={5} flex={1} bgGradient={bgGradient}>
+  <Card bgColor={cardColor} p={5} flex={1} bgGradient={bgGradient}>
     <Box h={10}>{icon}</Box>
-    <Heading fontSize="text.sm" lineHeight="sm" fontWeight="normal" color={color} marginTop={15}>
+    <Heading fontSize="text.sm" lineHeight="sm" fontWeight="normal" color={color} mt={15}>
       {name}
     </Heading>
-    <Flex justifyContent="end">
-      {isMoney && (
-        <Text fontSize={18} lineHeight="xl" mr={1} fontWeight="bold">
-          INR
+    <Tooltip label={isMoney ? `INR ${count}` : count}>
+      <Flex justifyContent="end">
+        {isMoney && (
+          <Text fontSize={18} lineHeight="xl" mr={1} fontWeight="bold">
+            INR
+          </Text>
+        )}
+        <Text
+          textAlign="end"
+          size="large"
+          fontWeight="bold"
+          w={130}
+          textOverflow="ellipsis"
+          overflow="hidden"
+          whiteSpace="nowrap"
+        >
+          {count}
         </Text>
-      )}
-      <Text textAlign="end" size="large" fontWeight="bold">
-        {count}
-      </Text>
-    </Flex>
+      </Flex>
+    </Tooltip>
   </Card>
 );
 
