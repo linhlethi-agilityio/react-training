@@ -8,7 +8,7 @@ import { REGEX_PATTERN } from '@constants';
  */
 export const isValidEmail = (value: string) => REGEX_PATTERN.EMAIL.test(value);
 
-export const isValidNumber = (value: string) => REGEX_PATTERN.NUMBER.test(value);
+export const isValidName = (value: string) => REGEX_PATTERN.NAME.test(value);
 
 export const addHoursFromCurrent = (hours: number) => {
   const currentDate = new Date();

@@ -104,15 +104,6 @@
   ],
   "students": [
     {
-      "enrollNumber": 54547,
-      "name": "name 8",
-      "avatarUrl": "https://source.unsplash.com/random/50x50/?people",
-      "phone": "7305477760",
-      "email": "Carson31@gmail.com",
-      "dateOfAdmission": 950288400000,
-      "id": "0"
-    },
-    {
       "enrollNumber": 4545474,
       "name": "A ame 9",
       "avatarUrl": "https://source.unsplash.com/random/50x50/?people",
@@ -120,33 +111,6 @@
       "email": "Ora.Ankunding@yahoo.com",
       "dateOfAdmission": 981824400000,
       "id": "1"
-    },
-    {
-      "enrollNumber": 5454526,
-      "name": "name 10",
-      "avatarUrl": "https://source.unsplash.com/random/50x50/?people",
-      "phone": "7305477760",
-      "email": "Ottis.Wolff41@gmail.com",
-      "dateOfAdmission": 1013446800000,
-      "id": "2"
-    },
-    {
-      "enrollNumber": 745459,
-      "name": "name 11",
-      "avatarUrl": "https://source.unsplash.com/random/50x50/?people",
-      "phone": "7305477760",
-      "email": "Estella73@gmail.com",
-      "dateOfAdmission": 1044982800000,
-      "id": "3"
-    },
-    {
-      "enrollNumber": 45435454,
-      "name": "A ame 12",
-      "avatarUrl": "https://source.unsplash.com/random/50x50/?people",
-      "phone": "7305477760",
-      "email": "Nikki67@yahoo.com",
-      "dateOfAdmission": 1076432400000,
-      "id": "4"
     },
     {
       "enrollNumber": 54354354,
@@ -174,6 +138,22 @@
       "email": "john-smit@gmail.com",
       "dateOfAdmission": 1676134800000,
       "id": "7"
+    },
+    {
+      "id": "5a7a",
+      "name": "Linh Le",
+      "email": "lin@gmail.com",
+      "phone": "455-454-5454",
+      "enrollNumber": "4645645654",
+      "dateOfAdmission": 1711411200000
+    },
+    {
+      "id": "9544",
+      "name": "Linh",
+      "email": "lin@gmail.com",
+      "phone": "464-668-6787",
+      "enrollNumber": "5467868678",
+      "dateOfAdmission": 1711411200000
     }
   ],
   "course": [
