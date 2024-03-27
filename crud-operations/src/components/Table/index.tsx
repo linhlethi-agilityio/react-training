@@ -52,7 +52,7 @@ const Table = <T,>({ columns, data, isStriped = false }: CustomTableProps<T>) =>
   };
 
   return (
-    <BaseTable {...(isStriped && { variant: 'striped', colorScheme: 'telegram' })}>
+    <BaseTable {...(isStriped && { variant: 'striped' })}>
       <Thead>{headerRow}</Thead>
       <Tbody>
         {data.map((item, index) => (

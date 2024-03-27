@@ -4,7 +4,7 @@ import { extendTheme } from '@chakra-ui/react';
 import { colors } from './colors';
 
 // Components styles
-import { Text, Button, Heading, Input, Card, Link } from './components';
+import { Text, Button, Heading, Input, Card, Link, Table } from './components';
 import { fontSizes, fontWeights, radius, fonts, lineHeights } from './typography';
 
 export const theme = extendTheme({
@@ -21,6 +21,7 @@ export const theme = extendTheme({
     Input,
     Card,
     Link,
+    Table,
     Box: {
       baseStyle: {
         marginTop: 0,

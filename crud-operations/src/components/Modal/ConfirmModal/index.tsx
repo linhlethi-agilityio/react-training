@@ -15,9 +15,9 @@ interface ConfirmModalProps {
 
 const ConfirmModal = ({ isOpen, title, description, buttonLabel, onCancel, onConfirm }: ConfirmModalProps) => (
   <CustomModal isOpen={isOpen} onClose={onCancel} title={title}>
-    <Box paddingBottom={30}>
+    <Box pb={30}>
       <Text textAlign="center">{description}</Text>
-      <Flex textAlign="center" gap={5} justifyContent="space-between" marginTop={5}>
+      <Flex textAlign="center" gap={5} justifyContent="space-between" mt={5}>
         <Button aria-label="button-label" onClick={onConfirm} flex={1}>
           {buttonLabel}
         </Button>
