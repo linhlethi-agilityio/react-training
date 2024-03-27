@@ -6,7 +6,14 @@ import { Box, Button, FormControl, FormHelperText, FormLabel, Input } from '@cha
 import { ERROR_MESSAGES } from '@constants';
 
 // Utils
-import { clearErrorOnChange, formatDate, isValidEmail, isValidNumber } from '@utils';
+import {
+  clearErrorOnChange,
+  clearPhoneNumberFormat,
+  formatDate,
+  formatPhoneNumber,
+  isValidEmail,
+  isValidName,
+} from '@utils';
 
 // Types
 import { Student } from '@types';
@@ -101,7 +108,10 @@ const StudentDetailModal = ({ isOpen, previewData = null, onClose }: StudentModa
         <Controller
           name="name"
           control={control}
-          rules={{ required: ERROR_MESSAGES.FIELD_REQUIRED }}
+          rules={{
+            required: ERROR_MESSAGES.FIELD_REQUIRED,
+            validate: (name) => isValidName(name) || ERROR_MESSAGES.INVALID_NAME,
+          }}
           render={({ field: { name, onChange, ...rest }, fieldState: { error } }) => (
             <Box marginBottom={error?.message ? 0 : 27}>
               <FormLabel fontSize="sm" lineHeight="sm" color="text.default">
@@ -166,7 +176,7 @@ const StudentDetailModal = ({ isOpen, previewData = null, onClose }: StudentModa
           control={control}
           rules={{
             required: ERROR_MESSAGES.FIELD_REQUIRED,
-            validate: (phone) => isValidNumber(phone) || ERROR_MESSAGES.INVALID_PHONE_NUMBER,
+            minLength: { value: 12, message: ERROR_MESSAGES.INVALID_PHONE_NUMBER },
           }}
           render={({ field: { name, onChange, ...rest }, fieldState: { error } }) => (
             <Box marginBottom={error?.message ? 0 : 27}>
@@ -174,11 +184,13 @@ const StudentDetailModal = ({ isOpen, previewData = null, onClose }: StudentModa
                 Phone
               </FormLabel>
               <Input
-                maxLength={10}
+                maxLength={12}
                 data-testid="phone"
                 isInvalid={!!error?.message}
                 onChange={(e) => {
-                  onChange(e.target.value);
+                  const value = e.target.value;
+
+                  onChange(formatPhoneNumber(value));
 
                   // Clear error message on change
                   clearErrorOnChange(name, errors, clearErrors);
@@ -200,7 +212,7 @@ const StudentDetailModal = ({ isOpen, previewData = null, onClose }: StudentModa
           control={control}
           rules={{
             required: ERROR_MESSAGES.FIELD_REQUIRED,
-            validate: (enrollNumber) => isValidNumber(enrollNumber) || ERROR_MESSAGES.INVALID_ENROLL_NUMBER,
+            minLength: { value: 10, message: ERROR_MESSAGES.INVALID_ENROLL_NUMBER },
           }}
           render={({ field: { name, onChange, ...rest }, fieldState: { error } }) => (
             <Box marginBottom={error?.message ? 0 : 25}>
@@ -212,7 +224,9 @@ const StudentDetailModal = ({ isOpen, previewData = null, onClose }: StudentModa
                 data-testid="enrollNumber"
                 isInvalid={!!error?.message}
                 onChange={(e) => {
-                  onChange(e.target.value);
+                  const value = e.target.value;
+
+                  onChange(clearPhoneNumberFormat(value));
 
                   // Clear error message on change
                   clearErrorOnChange(name, errors, clearErrors);
@@ -241,6 +255,7 @@ const StudentDetailModal = ({ isOpen, previewData = null, onClose }: StudentModa
               <Input
                 data-testid="dateOfAdmission"
                 type="date"
+                max={new Date().toISOString().split('T')[0]}
                 value={formatDate(value, true)}
                 isInvalid={!!error?.message}
                 onChange={(e) => {
