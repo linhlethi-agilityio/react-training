@@ -143,7 +143,11 @@ exports[`StudentsPage Component renders correctly 1`] = `
             <td
               class="css-fsw37u"
             >
-              Carson31@gmail.com
+              <p
+                class="chakra-text css-jby5hl"
+              >
+                Carson31@gmail.com
+              </p>
             </td>
             <td
               class="css-fsw37u"

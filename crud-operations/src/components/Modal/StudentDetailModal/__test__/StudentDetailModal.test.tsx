@@ -26,6 +26,7 @@ jest.mock('@constants', () => ({
     EMAIL:
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     NUMBER: /^[0-9]{10}$/,
+    NAME: /^[a-zA-Z ]{1,40}$/,
   },
 }));
 
@@ -58,7 +59,6 @@ describe('StudentDetailModal component', () => {
       fireEvent.change(getByTestId('name'), { target: { value: 'jonh' } });
       fireEvent.change(getByTestId('email'), { target: { value: 'test@gmail.com' } });
       fireEvent.change(getByTestId('phone'), { target: { value: '5765756756' } });
-      fireEvent.change(getByTestId('enrollNumber'), { target: { value: 5765756756 } });
       fireEvent.change(getByTestId('dateOfAdmission'), { target: { value: '2024-03-21' } });
 
       const button = getByRole('button', { name: 'button-submit' });
