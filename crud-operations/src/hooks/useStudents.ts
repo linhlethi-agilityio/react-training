@@ -15,7 +15,7 @@ import { Student } from '@types';
 export const useStudents = () => {
   const studentsEndPoint = `${ENVS.VITE_API_ENDPOINT}${API_ENDPOINTS.STUDENTS}`;
 
-  const { data, error, isValidating, mutate: mutateStudents } = useSWR<Student[]>(studentsEndPoint, get);
+  const { data, error, isValidating, isLoading, mutate: mutateStudents } = useSWR<Student[]>(studentsEndPoint, get);
 
   const createStudent = async (newStudent: Partial<Student>) => {
     try {
@@ -64,7 +64,8 @@ export const useStudents = () => {
 
   return {
     students: data,
-    isLoading: !data && !error,
+    isLoading,
+    error,
     isValidating,
     createStudent,
     updateStudent,

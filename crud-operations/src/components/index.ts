@@ -6,6 +6,7 @@ export { default as Header } from './Header';
 export { default as BrandLogo } from './BrandLogo';
 export { default as Navigation } from './Navigation';
 export { default as LogoutButton } from './LogoutButton';
+export { default as LoadingIndicator } from './LoadingIndicator';
 
 // Layouts
 export { default as BaseLayout } from '../layouts/BaseLayout';

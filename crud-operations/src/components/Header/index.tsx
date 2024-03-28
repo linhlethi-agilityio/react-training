@@ -7,7 +7,7 @@ import { SearchInput, BellIcon, CaretIcon } from '@components';
 interface HeaderProps {
   isClosedSideBar?: boolean;
   onToggleSideBar?: () => void;
-  onSearch: (keyword: string) => void;
+  onSearch?: (keyword: string) => void;
 }
 
 const Header = ({ isClosedSideBar = false, onToggleSideBar, onSearch }: HeaderProps) => {
@@ -18,7 +18,7 @@ const Header = ({ isClosedSideBar = false, onToggleSideBar, onSearch }: HeaderPr
       const textInputted = e.target.value;
 
       setSearchValue(textInputted);
-      onSearch(textInputted);
+      onSearch && onSearch(textInputted);
     },
     [onSearch],
   );
@@ -34,7 +34,7 @@ const Header = ({ isClosedSideBar = false, onToggleSideBar, onSearch }: HeaderPr
         />
       </Button>
       <Flex gap={27} alignItems="center">
-        <SearchInput placeholder="Search..." onChange={handleOnChange} value={searchValue} />
+        {onSearch && <SearchInput placeholder="Search..." onChange={handleOnChange} value={searchValue} />}
         <Button aria-label="notification" variant="ghost">
           <BellIcon />
         </Button>
