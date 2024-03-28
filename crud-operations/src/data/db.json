@@ -120,14 +120,6 @@
       "dateOfAdmission": 1711411200000
     },
     {
-      "id": "87f7",
-      "name": "Linh Le",
-      "email": "admin@gmail.com",
-      "phone": "534-543-5435",
-      "enrollNumber": [3, 6, 5, 7, 9, 1, 0, 7, 1, 4],
-      "dateOfAdmission": 1710374400000
-    },
-    {
       "name": "Linh Ne",
       "email": "lin@gmail.com",
       "phone": "654-654-6546",
@@ -153,51 +145,6 @@
     {
       "id": "2",
       "name": "name 2",
-      "description": "lorem amountPaid Ankunding"
-    },
-    {
-      "id": "3",
-      "name": "name 3",
-      "description": "lorem amountPaid Ankunding"
-    },
-    {
-      "id": "3",
-      "name": "name 3",
-      "description": "lorem amountPaid Ankunding"
-    },
-    {
-      "id": "3",
-      "name": "name 3",
-      "description": "lorem amountPaid Ankunding"
-    },
-    {
-      "id": "3",
-      "name": "name 3",
-      "description": "lorem amountPaid Ankunding"
-    },
-    {
-      "id": "3",
-      "name": "name 3",
-      "description": "lorem amountPaid Ankunding"
-    },
-    {
-      "id": "3",
-      "name": "name 3",
-      "description": "lorem amountPaid Ankunding"
-    },
-    {
-      "id": "3",
-      "name": "name 3",
-      "description": "lorem amountPaid Ankunding"
-    },
-    {
-      "id": "3",
-      "name": "name 3",
-      "description": "lorem amountPaid Ankunding"
-    },
-    {
-      "id": "3",
-      "name": "name 3",
       "description": "lorem amountPaid Ankunding"
     }
   ],

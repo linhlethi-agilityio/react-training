@@ -1,5 +1,5 @@
 import { memo, useCallback, useEffect, useState } from 'react';
-import { Outlet, useNavigate } from 'react-router-dom';
+import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { Box, Flex } from '@chakra-ui/react';
 
 // Constants
@@ -31,6 +31,7 @@ const BaseLayout = ({ onSearch }: BaseLayoutProps) => {
   const [sideBarState, setSideBarState] = useState('');
 
   const navigate = useNavigate();
+  const location = useLocation();
   const toast = useToastCustom();
   const { logout, getCurrentUser } = useAuth();
 
@@ -89,7 +90,7 @@ const BaseLayout = ({ onSearch }: BaseLayoutProps) => {
         {/* Header */}
         <Header
           isClosedSideBar={sideBarState === SideBarState.Closed}
-          onSearch={onSearch}
+          {...(location.pathname !== ROUTERS.DASHBOARD && { onSearch: onSearch })}
           onToggleSideBar={handleToggleSideBar}
         />
 

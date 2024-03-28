@@ -17,7 +17,7 @@ import { formatDate } from '@utils';
 import { TableColumnType } from 'src/components/Table';
 
 // Components
-import { ConfirmModal, StudentDetailModal, Table, PenIcon, SortIcon, TrashIcon } from '@components';
+import { ConfirmModal, StudentDetailModal, Table, PenIcon, SortIcon, TrashIcon, LoadingIndicator } from '@components';
 
 interface StudentsPageProps {
   keyword: string;
@@ -192,6 +192,8 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
           )}
         </Box>
       </Box>
+
+      {isLoading && <LoadingIndicator />}
 
       {isOpenAddStudent && (
         <StudentDetailModal isOpen={isOpenAddStudent} onClose={onCloseAddStudent} previewData={previewData} />
