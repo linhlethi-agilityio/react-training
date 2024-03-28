@@ -156,8 +156,6 @@ const StudentsPage = ({ keyword }: StudentsPageProps) => {
     }
   };
 
-  console.log(isLoading);
-
   /**
    * Func add student
    */
