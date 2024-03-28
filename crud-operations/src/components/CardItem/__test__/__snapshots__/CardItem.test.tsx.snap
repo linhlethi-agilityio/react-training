@@ -28,7 +28,7 @@ exports[`CardItem component render default value when do not pass props optional
       class="css-ckyhk3"
     >
       <p
-        class="chakra-text css-mg5oef"
+        class="chakra-text css-1q0rewa"
       >
         3
       </p>
@@ -65,7 +65,7 @@ exports[`CardItem component should match snapshot for CardItem 1`] = `
       class="css-ckyhk3"
     >
       <p
-        class="chakra-text css-mg5oef"
+        class="chakra-text css-1q0rewa"
       >
         3
       </p>
