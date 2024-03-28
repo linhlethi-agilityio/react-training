@@ -28,7 +28,7 @@ const CardItem = ({
     <Tooltip label={isMoney ? `INR ${count}` : count}>
       <Flex justifyContent="end">
         {isMoney && (
-          <Text fontSize={18} lineHeight="xl" mr={1} fontWeight="bold">
+          <Text pt={1} fontSize={18} lineHeight="xl" mr={1} fontWeight="bold">
             INR
           </Text>
         )}
@@ -36,7 +36,7 @@ const CardItem = ({
           textAlign="end"
           size="large"
           fontWeight="bold"
-          w={130}
+          maxW={150}
           textOverflow="ellipsis"
           overflow="hidden"
           whiteSpace="nowrap"

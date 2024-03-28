@@ -6,6 +6,7 @@ import { usePayments, useStudents } from '@hooks';
 
 // Components
 import { CardItem, BookmarkMediumIcon, GraduationIcon, SquareIcon, UserIcon } from '@components';
+import { formatMoney } from '@utils';
 
 const DashboardPage = () => {
   const { payments = [] } = usePayments();
@@ -35,7 +36,7 @@ const DashboardPage = () => {
       name: 'Payments',
       icon: <SquareIcon />,
       cardColor: 'background.cardPayment',
-      count: calculateTotalAmountPaid,
+      count: formatMoney(calculateTotalAmountPaid),
       isMoney: true,
     },
     {
